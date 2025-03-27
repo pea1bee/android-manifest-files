@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.earlysalary.android" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="analytics.app.packages" android:scheme="upswing"/>
+        </intent>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.NFC" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.earlysalary.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.earlysalary.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher_default" android:label="@string/app_name" android:largeHeap="true" android:name="com.earlysalary.android.ui.base.FibeApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round_default" android:stopWithTask="false" android:supportsRtl="true" android:theme="@style/Theme.Fibe" android:usesCleartextTraffic="false">
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.FixDepositActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.enagagement.views.activities.EngagementActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.earlysalary.android" android:exported="false" android:grantUriPermissions="false" android:initOrder="101" android:name="com.earlysalary.android.utilities.crash.UncaughtExceptionHandlerContentProvider"/>
+        <activity android:exported="true" android:name="com.earlysalary.android.ui.main.views.activities.SplashScreenActivity" android:noHistory="true" android:protectionLevel="signature" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="portal.fibe.in"/>
+                <data android:path="/personal-loan"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.fibe.in"/>
+                <data android:path="/lp/cash-loan/"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="false" android:icon="@mipmap/ic_launcher_default" android:label="@string/app_name" android:name="com.earlysalary.android.ui.main.views.activities.SplashScreenActivityChristmas" android:roundIcon="@mipmap/ic_launcher_round_default" android:screenOrientation="portrait" android:targetActivity="com.earlysalary.android.ui.main.views.activities.SplashScreenActivity" android:theme="@style/Theme.Fibe.Fullscreen"/>
+        <activity-alias android:enabled="true" android:exported="false" android:icon="@mipmap/ic_launcher_default" android:name="com.earlysalary.android.ui.main.views.activities.SplashScreenActivityDefault" android:roundIcon="@mipmap/ic_launcher_round_default" android:screenOrientation="portrait" android:targetActivity="com.earlysalary.android.ui.main.views.activities.SplashScreenActivity" android:theme="@style/Theme.Fibe.Fullscreen"/>
+        <activity android:launchMode="singleTop" android:name="com.earlysalary.android.ui.main.views.activities.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.earlysalary.android.ui.main.views.activities.JourneyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.earlysalary.android.ui.main.views.activities.RepaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.earlysalary.android.ui.main.views.activities.NotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.LoanStatementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.InstantCashActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.LimitEnhanceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Fibe.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.ReferEarnActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.FaqActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.GiftVoucherActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Fibe.Fullscreen"/>
+        <activity android:launchMode="singleTop" android:name="com.earlysalary.android.ui.main.views.activities.LoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="com.earlysalary.android.ui.main.views.activities.OnboardingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.PermissionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.YoutubeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.CheckoutActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.ContactUsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.credit_card.views.activities.CreditCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.HubActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.ChatBotActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.earlysalary.android.ui.main.views.activities.KreditBeeWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleInstance" android:name="com.earlysalary.android.ui.main.views.activities.FibeVideoActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true"/>
+        <provider android:authorities="com.earlysalary.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.earlysalary.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.earlysalary.android.views.receivers.PackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.earlysalary.android.views.receivers.OTPBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/teal"/>
+        <service android:exported="false" android:foregroundServiceType="remoteMessaging" android:name="com.moengage.firebase.MoEFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTask" android:name="one.upswing.sdk.ui.UpswingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="analytics.app.packages" android:scheme="upswing"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ybl.ypp.sdk.DeRegisterUserActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.ybl.ypp.sdk.GetTokenActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.ybl.ypp.sdk.SendOutwardSMSActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:exported="false" android:label="@string/moe_inbox_notification_title" android:name="com.moengage.inbox.ui.view.InboxActivity" android:theme="@style/MoEInboxTheme.NoActionBar"/>
+        <provider android:authorities="com.earlysalary.android.cashfreecorecontentprovider" android:exported="false" android:name="com.cashfree.pg.api.CashfreeCoreContentProvider"/>
+        <meta-data android:name="cashfree_pg_core_auto_initialization_enabled" android:value="@bool/cashfree_pg_core_auto_initialize_enabled"/>
+        <meta-data android:name="cashfree_pg_core_reporting_enabled" android:value="@bool/cashfree_pg_core_reporting_enabled"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.ui.hidden.checkout.CashfreeNativeCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/CFUITheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.ui.hidden.seamless.CFDropSeamlessActivity" android:theme="@style/CFSeamlessStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreUPIPaymentActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreModalActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CashfreeCoreNativeVerificationActivity" android:screenOrientation="portrait" android:theme="@style/CFCoreTheme"/>
+        <meta-data android:name="cashfree_pg_logging_level" android:value="@integer/cashfree_pg_logging_level"/>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:banner="@drawable/moengage_inapp_close" android:exported="false" android:name="com.moengage.inapp.internal.activity.MoEInAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="cashfree_custom_analytics_subscriber_enabled" android:value="@bool/cashfree_custom_analytics_subscriber_enabled"/>
+        <meta-data android:name="cashfree_pg_core_encrypt_pref_enabled" android:value="@bool/cashfree_pg_core_encrypt_pref_enabled"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.earlysalary.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <provider android:authorities="com.earlysalary.android.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.earlysalary.android.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.earlysalary.android.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

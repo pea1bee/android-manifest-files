@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.vedantu.app" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:minSdkVersion="23" android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.vedantu.app.MainApplication" android:requestLegacyExternalStorage="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="true" android:name="com.facebook.flipper.android.diagnostics.FlipperDiagnosticActivity"/>
+        <activity android:exported="false" android:name="com.vedantu.app.nativemodules.inAppFeedback.inAppFeedback.InAppFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.vedantu.app.nativemodules.instasolv.home.InstasolvHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.previous_qna.PreviousQnaActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.ask_in_community.AskInCommunityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.match_history.MatchHistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.subject_listing.SubjectListingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.camera_and_crop.CameraAndCropActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.instantMatch.InstantMatchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.answerFlow.AnswerFlowActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.answerFlow.FullScreenPhotoViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.classify.ClassifyActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.instasolv.chapter_selection.ChapterSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.vedantu.app.nativemodules.common.videoPlayer.VideoPlayerActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="5927f134d2a5c2486523dccde9b1a418"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.vedantu.app.MainActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="vedantuapp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="vedantuandroid.page.link" android:scheme="https"/>
+                <data android:host="vedantuandroid.page.link" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.vedantuint.net" android:scheme="https"/>
+                <data android:host="vel.vedantu.com" android:scheme="https"/>
+                <data android:host="vedantu.app.link" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/iit-jee/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/tracks//" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/find-me-a-teacher/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/ncert-solutions/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/previous-year-question-paper/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/exams/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/sample-papers/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/rd-sharma-solutions/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/rs-aggarwal-solutions/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/hc-verma-solutions/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/textbook-solutions/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/icse/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/revision-notes/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/syllabus/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/cbse/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/formula/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/masterclass/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/become-a-teacher/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/about-us/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/reviews/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/contacts/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/pub/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/igcse/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/benefits/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/vedantu-advantage/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/v/news/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/tnc/" android:scheme="https"/>
+                <data android:host="www.vedantu.com" android:pathPrefix="/privacy-policy/" android:scheme="https"/>
+                <data android:host="blog.vedantu.com" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="vsat.vedantu.com" android:pathPrefix="/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_pbRmzE49hVHHzuN6I9ZHsjogAxdmWo0f"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_bbRgqB28kQOTuFIY0lefSndiDybd6c3q"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <service android:exported="true" android:name="com.moengage.firebase.MoEFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:foregroundServiceType="dataSync|mediaPlayback" android:name="com.vedantu.app.BackgroundService"/>
+        <receiver android:exported="true" android:name="com.vedantu.app.LocalNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.localNotification.RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.vedantu.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.vedantu.app.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.vedantu.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.RNFetchBlob.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.vedantu.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="false"/>
+        <provider android:authorities="com.vedantu.app.notifee-init-provider" android:exported="false" android:initOrder="-100" android:name="io.invertase.notifee.NotifeeInitProvider"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="true"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="true"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <provider android:authorities="com.vedantu.app.reactnativefirebasecrashlyticsinitprovider" android:exported="false" android:initOrder="98" android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value=""/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/white"/>
+        <meta-data android:name="app_data_collection_default_enabled" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.vedantu.app.reactnativefirebaseappinitprovider" android:exported="false" android:initOrder="99" android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"/>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.vedantu.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.ReactNativeBlobUtil.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.vedantu.app.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.vedantu.app.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.vedantu.app.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.vedantu.app.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.vedantu.app.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.moengage.core.internal.data.reports.DataSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:exported="false" android:name="app.notifee.core.ReceiverService"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="app.notifee.core.NotificationReceiverActivity" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="app.notifee.core.ForegroundService"/>
+        <receiver android:exported="false" android:name="app.notifee.core.RebootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="app.notifee.core.AlarmPermissionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="app.notifee.core.NotificationAlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="app.notifee.core.BlockStateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="9aefa70d-bacc-4727-bfb8-5d2cd49c4f42"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

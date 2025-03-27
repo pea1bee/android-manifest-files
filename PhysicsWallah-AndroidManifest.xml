@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="xyz.penpencil.physicswala" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:name="android.webkit.PermissionRequest"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <queries>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <package android:name="com.truecaller.debug"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+    </queries>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="xyz.penpencil.physicswala.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="xyz.penpencil.physicswala.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/app_logo" android:label="@string/app_name" android:largeHeap="true" android:name="com.penpencil.physicswallah.utils.MyApplication" android:networkSecurityConfig="@xml/network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/app_logo" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <provider android:authorities="xyz.penpencil.physicswala.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="xyz.penpencil.physicswala.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.penpencil.physicswallah.startup.initializers.StartupTimeInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.penpencil.pw.ui.initializer.JLatexInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.gun0912.tedpermission.provider.TedPermissionInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:exported="true" android:name="com.penpencil.ai.personalisation.AIPersonalisationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.penpencil.uxcc.accountdeletion.presentation.ui.AccountDeletionActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.gyanguru.ai.evaluation.AIEvaluationActivity"/>
+        <activity android:exported="false" android:name="com.penpencil.uxcc.profile.AdditionalSettingsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.penpencil.physicswallah.feature.threeDModels.ui.ThreeDModelActivity"/>
+        <activity android:configChanges="orientation" android:exported="true" android:name="com.ip.InfinitePracticeLandingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.penpencil.k8_timeless.ui.K8MainActivity"/>
+        <activity android:exported="false" android:name="com.battleground.BattlegroundLandingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.penpencil.sahayak.ui.SahayakMainActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.penpencil.ts.ui.feature.testseries.TestSeriesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.studypage.StudyPageDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.penpencil.unknown.contactus.contactus.ContactUsWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.penpencil.revenue.helpcentre.MyPurchaseWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.physicswallah.feature.infinitelearning.ui.landing.OtherOfferingsActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.penpencil.core.ui.fragment.ZoomAppLaunchBottomSheet$ZoomReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.penpencil.uxcc.player.audioservice.PWAudioService" android:stopWithTask="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.penpencil.core.utils.downloadHelper.DownloadService"/>
+        <activity android:exported="false" android:name="com.penpencil.physicswallah.feature.pwstudentmaster.StudentMasterActivity"/>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.testseries.objective.DppTestSeriesChooseActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.testseries.objective.MarkSeriesNavigationActivity" android:theme="@style/AppTheme.Main">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:name="com.penpencil.physicswallah.feature.scholar.PWScholarWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dashboard.activity.PowerBatchActivity" android:screenOrientation="portrait"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync|location" android:name="androidx.work.impl.foreground.SystemForegroundService" android:stopWithTask="false"/>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.testseries.objective.TestSeriesChooseActivity" android:theme="@style/AppTheme.Main">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.penpencil.uep.askDoubt.MyDoubtChapterActivity"/>
+        <activity android:exported="false" android:name="com.penpencil.physicswallah.feature.serverdown.ServerDownActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.dashboard.ezpay.ui.EzPayActivity"/>
+        <activity android:exported="false" android:name="com.penpencil.revenue.ContentSearchActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.penpencil.revenue.ScpPwStoreActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="false" android:name="com.dashboard.activity.RegistrationFormDialog"/>
+        <activity android:exported="false" android:name="com.penpencil.uxcc.doubts.ui.DoubtBaseActivity"/>
+        <activity android:exported="false" android:name="com.penpencil.revenue.BuyTogetherActivity" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="false" android:name="com.penpencil.physicswallah.feature.khazana.ui.KhazanaPlansActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_all_content" android:launchMode="singleTop" android:name="com.penpencil.physicswallah.feature.khazana.ui.AllContentActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_all_teachers_listing" android:name="com.penpencil.physicswallah.feature.khazana.ui.AllTeachersListingActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.penpencil.uep.library.LibraryActivity" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="false" android:name="com.penpencil.uep.askDoubt.MyDoubtActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.penpencil.physicswallah.activity.ServerDownStatusActivity"/>
+        <activity android:exported="true" android:name="com.penpencil.uep.library.RecentChapterActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.uep.library.SubjectContentActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.uep.library.TopicContentActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.revenue.BatchOrderSummaryActivity" android:theme="@style/AppTheme.Main"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:name="com.penpencil.uxcc.player.ui.activity.ExoPlayerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.VideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.penpencil.uxcc.player.ui.activity.YoutubePlayerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.VideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.penpencil.uxcc.player.ui.activity.WebViewPlayerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.VideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.penpencil.revenue.PaymentActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.physicswallah.dialog.ImageZoomDialog" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.revenue.PaymentSuccessfulActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.uxncc.feature.dppomr.ui.QuizOMRActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme13"/>
+        <activity android:name="com.penpencil.physicswallah.feature.infinitelearning.ui.offerning.InfiniteLearningOfferingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme13"/>
+        <activity android:name="com.penpencil.revenue.OrderDetailActivity"/>
+        <activity android:name="com.penpencil.revenue.OrderSummary"/>
+        <activity android:name="com.penpencil.revenue.book.EditAddressActivity"/>
+        <activity android:name="com.ip.ui.InfinitePracticeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="layoutDirection|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.community.ui.CommunityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ip.ui.sessionsummary.SessionSummaryActivity"/>
+        <activity android:name="com.ip.ui.mydashboard.MyDashboardActivity"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/app_logo"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorWhite"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <service android:exported="false" android:name="com.penpencil.physicswallah.fcm.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.penpencil.uxncc.feature.feed.FeedComments"/>
+        <activity android:name="com.penpencil.unknown.extras.TermsAndCondition2" android:theme="@style/AppTheme.Main"/>
+        <activity android:name="com.penpencil.unknown.AboutUs" android:theme="@style/AppTheme.Main"/>
+        <activity android:name="com.penpencil.revenue.OffersActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.penpencil.revenue.WalletActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.penpencil.uxcc.OfflineVideos" android:theme="@style/AppTheme.VideoPlayer"/>
+        <activity android:name="com.penpencil.revenue.BuyStore" android:theme="@style/AppTheme13"/>
+        <activity android:name="com.penpencil.uxcc.profile.ProfileActivityNew" android:theme="@style/AppTheme2"/>
+        <activity android:name="com.penpencil.unknown.bookmark.BookmarksActivity"/>
+        <activity android:name="com.penpencil.unknown.bookmark.BookmarksQuestionMode"/>
+        <activity android:name="com.penpencil.unknown.bookmark.BookmarksSubjectActivity" android:theme="@style/AppTheme2"/>
+        <activity android:name="com.penpencil.markTech.notification.NotificationActivity" android:theme="@style/AppTheme2"/>
+        <activity android:name="com.penpencil.uxncc.feature.feed.FeedDetail" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.penpencil.uxncc.feature.studypage.WeeklyScheduleActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.physicswallah.activity.k8.ClassActivity" android:theme="@style/AppTheme3"/>
+        <activity android:name="com.penpencil.physicswallah.activity.k8.ClassActivityK8"/>
+        <activity android:name="com.penpencil.physicswallah.activity.PDFActivity" android:theme="@style/AppTheme.Main"/>
+        <activity android:name="com.penpencil.physicswallah.AppNavigationActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:exported="false" android:name="com.penpencil.refer_earn.ui.ReferEarnActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.penpencil.markTech.deeplink.DeepLinkDispatchActivity" android:theme="@style/AppTheme.Main">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="@string/app_dynamic_link_url"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="@string/app_dynamic_link_url_without_www"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_dynamic_link_url_without_www" android:scheme="@string/app_small_name"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="@string/store_link_host"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="Physics Wallah" android:launchMode="singleTop" android:name="com.penpencil.physicswallah.activity.navigation.AppNavigationContainerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Starting" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/app_logo" android:label="@string/app_name" android:name="com.penpencil.physicswallah.SplashActivityAliasNormal" android:roundIcon="@mipmap/app_logo" android:targetActivity="com.penpencil.physicswallah.activity.navigation.AppNavigationContainerActivity" android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.penpencil.markTech.deeplink.DeepLinkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mainactivity" android:scheme="@string/appsflyer_template_id"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="physicswallah.onelink.me" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.penpencil.uxncc.PWMainTestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTask" android:name="com.penpencil.uxcc.login.LoginActivity2" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.penpencil.physicswallah.fragments.login.loginNew.ui.LoginSignUpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.penpencil.apponboarding.NewLoginSignUpActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.penpencil.uxncc.feature.feed.FeedActivity"/>
+        <activity android:name="com.penpencil.physicswallah.feature.common.ui.ImageViewerActivity"/>
+        <activity android:name="com.penpencil.sarthi.ui.chat.FileViewActivity" android:theme="@style/AppTheme13"/>
+        <activity android:exported="true" android:name="com.penpencil.revenue.PaymentFailureActivity" android:theme="@style/AppTheme3"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <receiver android:exported="false" android:name="com.penpencil.markTech.localNotification.NotificationPublisher"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/partnerKeyRelease"/>
+        <receiver android:exported="false" android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:host="rzp.io" android:scheme="io.rzp"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.penpencil.revenue.AllBatchContainerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:name="com.penpencil.player_engagement.misc_engagement.hundredms.ui.HundredMSMeetingActivity" android:screenOrientation="behind"/>
+        <service android:enabled="true" android:exported="true" android:name="com.penpencil.sarthi.chatDocument.ChatFileUploadService" android:stopWithTask="true"/>
+        <activity android:exported="true" android:name="com.penpencil.uxncc.StudyPageActivity" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.penpencil.physicswallah.feature.order.OrderActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.example.library.LibraryRevampActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.reels.ui.MicroLearningActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.penpencil.uxcc.mentee.ui.MenteeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="true" android:name="com.penpencil.uxncc.feature.studypage.HistoryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.penpencil.vidhyapeeth.VidhyapeethActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="delivery_metrics_exported_to_big_query_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <meta-data android:name="SMT_APP_ID" android:value="@string/netcore_smart_id"/>
+        <meta-data android:name="HANSEL_APP_ID" android:value="@string/hansel_app_id"/>
+        <meta-data android:name="HANSEL_APP_KEY" android:value="@string/hansel_app_key"/>
+        <meta-data android:name="SMT_USE_ENCRYPTION" android:value="true"/>
+        <meta-data android:name="FRESH_CHAT_APP_ID" android:value="@string/fresh_chat_app_id"/>
+        <meta-data android:name="FRESH_CHAT_APP_KEY" android:value="@string/fresh_chat_app_key"/>
+        <meta-data android:name="FRESH_CHAT_DOMAIN" android:value="@string/fresh_chat_domain"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.penpencil.player.manager.offline.DRMVideoDownloadService">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.penpencil.uxcc.utils.SmsBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.studypage.ExerciseRatingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.studypage.ui.ThirdPartyWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.ts.ui.feature.dpp.DppActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.penpencil.revenue.batchlanding.ui.study.DeepLinkWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.uxncc.feature.testseries.subjectiveTestSeries.SubjectiveTestActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.ts.ui.subjective.SubjectiveTestActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.penpencil.player.composePlayer.FullScreenComposePlayerActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Main"/>
+        <activity android:exported="false" android:name="com.penpencil.learn2earn.Learn2EarnActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.penpencil.ts.ui.feature.bookmark.BookmarkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.gyanguru.ai.evaluation.ImageToPDFConverterActivity"/>
+        <activity android:exported="true" android:name="com.dashboard.activity.DashboardActivity" android:screenOrientation="portrait" android:theme="@style/OverViewActivityTheme"/>
+        <activity android:exported="true" android:name="com.dashboard.activity.OverviewActivity" android:screenOrientation="portrait" android:theme="@style/OverViewActivityTheme"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.dashboard.activity.NoDisplayCallbackFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoDisplay"/>
+        <activity android:name="com.dashboard.activity.SATWebViewActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="true" android:name="com.dashboard.fragments.mahapack.FreeScheduleActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main"/>
+        <activity android:name="com.dashboard.activity.WebViewActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.gyanguru.ui.GyanGuruActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.gyanguru.ui.fullimage.GyanGuruFullImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.gyanguru.ui.onboarding.GyanGuruOnboardingActivity" android:theme="@style/AppTheme.Transparent2"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.gyanguru.ui.video.AIGuruPlayerActivity" android:theme="@style/AppTheme.Transparent2"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.penpencil.live_class.presentation.ui.LiveClassActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.VideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.penpencil.live_class.presentation.ui.LiveClassResourcesDownloadActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.VideoPlayer" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.example.learntoearn_lib.streak.StreakInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mentorship.ui.MentorshipActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Main" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.onboarding.OnboardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.onboarding.ChangeGoalActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.penpencil.network.services.FileDownloadService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.penpencil.core.ui.activity.ZoomWebViewActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <service android:exported="false" android:name="org.eclipse.paho.android.service.MqttService"/>
+        <activity android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.paytm.pgsdk.AioMatchUserActivity" android:theme="@style/TransparentActivityTheme"/>
+        <service android:exported="false" android:name="com.paytm.pgsdk.IntentServicePostNotification"/>
+        <service android:exported="false" android:name="com.paytm.pgsdk.IntentServicePreNotification"/>
+        <service android:exported="false" android:name="easypay.appinvoke.utils.EasyPayConfigDownloader" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="easypay.appinvoke.utils.AnalyticsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.pwcamerax.container.CameraXActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="xyz.penpencil.physicswala" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.juspay.hypernfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|orientation|screenLayout|screenSize|uiMode" android:name="com.gun0912.tedpermission.TedPermissionActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Permission"/>
+        <activity android:banner="@drawable/moengage_inapp_close" android:exported="false" android:name="com.moengage.inapp.internal.activity.MoEInAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="net.gotev.uploadservice.UploadService"/>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20201"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base,threedmodels"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@2114060288"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

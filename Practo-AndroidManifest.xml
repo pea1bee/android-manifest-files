@@ -1,0 +1,1247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.practo.fabric" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <permission android:name="com.practo.fabric.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.practo.fabric.permission.START_BROADCAST" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.phonepe.app.preprod"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="upi" android:scheme="mandate"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+    </queries>
+    <permission android:name="com.practo.fabric.permission.START_ACTIVITY" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_REMOTE_MESSAGING"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.practo.fabric.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.practo.fabric.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:logo="@null" android:name="com.practo.fabric.FabricApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="false" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Fabric.Styled">
+        <activity android:exported="false" android:name="com.practo.fabric.RootDectedActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.practo.fabric.search.reach.ui.ReachAllPracticeLocationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/all_location" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_delete_account" android:name="com.practo.fabric.DeleteAccountActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.practo.home.view.ConsultationOptionActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="consumer" android:path="/options" android:scheme="practo"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.practo.fabric.LauncherActivity" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/launcher" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="prac.to" android:path="/practo-home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.practo.com" android:pathPattern="/.*/doctor/.*" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:exported="true" android:name="com.practo.fabric.LauncherAlias" android:targetActivity="com.practo.fabric.LauncherActivity" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="Practo"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="prac.to" android:path="/practo-home" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/.*/doctor/.*" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/.*/clinic/.*" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/.*/hospital/.*" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/consult" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/consult/direct" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/consult/new_question" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/consult/my_queries" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/consult/direct/new_consultation" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/consult/direct/chat" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/consult/.*/q" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/order" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/order/pdp" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/order/cart" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:path="/order/" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/order/search" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/order/track" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/order/chat" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/health-checkup-packages" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/labs" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/tests" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/coronavirus" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/care" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/support/chat" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/appointments/list" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/appointment/status/.*" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPrefix="/share" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="@string/app_deeplink_web_host" android:pathPattern="/abdm/abha" android:scheme="@string/app_deeplink_web_scheme"/>
+                <data android:host="practo.onelink.me" android:pathPrefix="/1025359428" android:scheme="@string/app_deeplink_web_scheme"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.practo.fabric.search.omni.FindAndBookActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/search" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.search.omni.info.FindAndBookInfoActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/search/info" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:name="com.practo.fabric.search.result.SearchResultActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/search/listing" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/app_name" android:name="com.practo.fabric.search.omni.OmniLocationSearchActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/title_activity_city" android:name="com.practo.fabric.misc.NewCitySelectionActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="true" android:name="com.practo.fabric.establishment.EstablishmentActivity" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Transparent" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/establishment" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.appointment.BookAppointmentActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/slots" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_patient_details" android:name="com.practo.fabric.patientdetails.PatientDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/title_patient_details" android:launchMode="singleTop" android:name="com.practo.fabric.patientdetails.views.book_checkout.BookPaymentSummaryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/book/payment" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/title_patient_details" android:launchMode="singleTop" android:name="com.practo.fabric.patientdetails.views.book_checkout.BookPaymentSummaryV4Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/book/checkout" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_appointment" android:name="com.practo.fabric.appointment.AppointmentActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_appointment_details" android:name="com.practo.fabric.appointment.AppointmentDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/appointment_help" android:launchMode="singleTop" android:name="com.practo.fabric.appointment.AppointmentHelpActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_verifymobile" android:name="com.practo.fabric.login.MobileVerificationActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/title_activity_about" android:name="com.practo.fabric.AboutActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/enter_code" android:name="com.practo.fabric.appointment.AppointmentConfirmationActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/give_feedback" android:name="com.practo.fabric.doctor.feedback.PostFeedBackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/feedback" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_feedback" android:name="com.practo.fabric.reviews.SymptomsFeedbackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Theme.Fabric.PlainTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/title_activity_mydoctors" android:name="com.practo.fabric.doctor.MyDoctorsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/mydoctor" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.NewOnBoardingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.practo.fabric.profilecompletion.ProfileCompletionActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_preferences" android:name="com.practo.fabric.PreferencesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/settings" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.gallery.GalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_preferences" android:name="com.practo.fabric.phr.reminder.MyReminderActivity" android:parentActivityName="com.practo.fabric.PreferencesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/profile/reminders" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.practo.fabric.provider.data" android:enabled="true" android:exported="false" android:name="com.practo.fabric.provider.FabricContentProvider"/>
+        <provider android:authorities="com.practo.fabric.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.practo.fabric.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.pushtemplates.PTNotificationIntentService">
+            <intent-filter>
+                <action android:name="com.clevertap.PT_PUSH_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.practo.fabric.notification.FcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_status_bar_logo"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_color"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/channel_alerts"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.pushtemplates.PushTemplateReceiver"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyA9TmwejGyLGVmEy2p9bpx0EI5Cdn_YynA"/>
+        <service android:enabled="true" android:exported="false" android:name="com.practo.fabric.service.FabricService"/>
+        <service android:exported="false" android:name="com.practo.core.network.caching.ManifestDownloadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.practo.fabric.consult.service.ConsultService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.practo.fabric.receiver.LocalReminderReceiver">
+            <intent-filter>
+                <action android:name="FabricAppointmentReminderAction"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/TransparentBackGround"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.practo.fabric.core.WebViewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/url" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_report_error" android:name="com.practo.fabric.report.ReportErrorActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/title_activity_post_query" android:name="com.practo.fabric.consult.ask.PostQueryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/free" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/new_question" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.consult.followup.FollowUpReplyActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/title_activity_question" android:name="com.practo.fabric.consult.qna.QnaActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/questions" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="" android:name="com.practo.fabric.consult.FragmentLoaderActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/my_queries_title" android:launchMode="singleTop" android:name="com.practo.fabric.consult.home.MyQueriesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Grey">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/chats" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/my_query" android:name="com.practo.fabric.consult.home.MyQueriesWithPaidActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.consult.paid.problemarea.PaidProblemAreasListActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:exported="false" android:label="@string/str_consult_feed" android:name="com.practo.fabric.consult.feeds.FeedActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/question_feed" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.consult.NewSpecialityActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="" android:name="com.practo.fabric.fit.ExploreActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="true" android:label="" android:name="com.practo.fabric.fit.DetailActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/healthfeed/detail" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.phr.gallery.SelfUploadGalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Black"/>
+        <activity android:name="com.practo.fabric.phr.selfupload.camera.CameraActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.practo.fabric.phr.selfupload.controller.SelfUploadControllerActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.practo.fabric.phr.rxreminder.BootReceiver" android:permission="com.practo.fabric.permission.START_BROADCAST">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.practo.fabric.UpgradeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/title_pdf_activity" android:name="com.practo.fabric.phr.selfupload.picker.pdfPicker.PdfPickerActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.consult.qna.FeedBackDialogActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Theme.MyDialog" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="" android:name="com.practo.fabric.fit.ReadLaterActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <receiver android:exported="true" android:name="com.practo.fabric.appointment.NotificationActionClickReceiver">
+            <intent-filter>
+                <action android:name="com.practo.fabric.appointmentReminderCancelAction"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/title_activity_cancel_appoinment" android:name="com.practo.fabric.appointment.AppointmentCancelConfirmationActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Theme.Fabric.BlueTheme"/>
+        <activity android:exported="false" android:name="com.practo.fabric.phr.records.recordtimeline.RecordsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/records" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/drive" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.phr.profile.ViewProfileActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/edit" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.phr.profile.questions.QuestionGalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.practo.fabric.phr.profile.questions.MedsearchActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.practo.payments.netbanking.NetBankingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.selfupload.picker.imagePicker.ImagePicker" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.RxSetting" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/title_activity_add_reminder" android:name="com.practo.fabric.phr.reminder.ReminderMedicineSearchActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/reminder_performance" android:name="com.practo.fabric.phr.reminder.adherence.AdherenceFilterActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.adherence.AdherenceReportActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.AddReminderActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.picker.ReminderTimingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.picker.ReminderRecurrenceActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.reminder.ReminderImagePreviewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Black"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.practo.fabric.phr.reminder.alarm.AlarmActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Fabric.New.Theme.NoActionBar.TransparentActivity"/>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="dataSync" android:name="com.practo.fabric.phr.reminder.scheduler.ReminderSchedulerService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.practo.fabric.phr.reminder.scheduler.TimeOnChangeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.practo.fabric.phr.reminder.scheduler.ReminderScheduleReceiver"/>
+        <activity android:exported="false" android:name="com.practo.diagnostics.DiagnosticsWebViewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/diagnostic" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/diagnostic/orders" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.doctor.feedback.MyFeedbackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.phr.profile.questions.AddImageSheetActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Fabric.New.Theme.NoActionBar.TransparentActivity"/>
+        <activity android:name="com.practo.fabric.phr.profile.ProfileOTPVerifyActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.todo.HostActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:label="@string/health_record_activity_login_screen_title" android:name="com.practo.fabric.appointment.AppointmentHistoryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.consult.ConsultSupportActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.consult.ChooseSpecialityActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.recorddetails.RecordDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.recordgallery.RecordGalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.practo.fabric.phr.sync.PhrSyncService"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.recordedit.EditRecordActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.RecordDeleteReasonActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.RayPrescriptionActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.practo.fabric.phr.PhrIntentService"/>
+        <activity android:exported="false" android:label="@string/consult_direct" android:launchMode="singleTop" android:name="com.practo.fabric.consult.feeds.PaidConsultActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Grey">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/recent_chats" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.consult.connect.message.MessageActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.practo.fabric.consult.connect.ChatDetailLauncherActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/chats" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPrefix="/direct/chat" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.common.picker.PickerActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Fabric.New.Theme.NoActionBar.TransparentActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.practo.fabric.common.picker.CaptionActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.practo.fabric.consult.connect.message.FirebaseGalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.practo.fabric.consult.connect.ChatDialogActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Theme.MyDialog" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/feedback_chats" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.support.SupportMessageActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.practo.fabric.consult.connect.sendbird.SendbirdActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.practo.fabric.support.SupportSegmentsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/support/home" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.consult.paid.DocDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar.Grey" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.practo.fabric.support.SupportIssuesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:excludeFromRecents="true" android:name="com.practo.fabric.controller.ratings.ui.RatingAlertActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/RatingDialog"/>
+        <activity android:name="com.practo.fabric.consult.paid.instant.InstantActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.practo.fabric.phr.records.share.RecordShareActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.filter.InternalFilterActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar.TransparentActivity"/>
+        <activity android:name="com.practo.fabric.filter.SearchInsuranceActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.practo.payments.mypayments.MyPaymentsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/payments" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.payments.mypayments.HealthCashHomeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/healthcash" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.logout.LogoutActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:exported="false" android:name="com.practo.fabric.offers.ui.OffersListActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/offers" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.payments.FreeCreditActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.controller.ui.activity.AppDeprecatedActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.practo.fabric.consult.ConsultFaqActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.practo.fabric.doctor.feedback.DoctorReviewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="true" android:name="com.practo.fabric.fit.misc.FitJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.practo.fabric.backgroundtasks.taskhandlers.CommonTaskHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.practo.fabric.backgroundtasks.taskhandlers.PhrTaskHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.practo.fabric.backgroundtasks.taskhandlers.AppointmentsTaskHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.practo.fabric.backgroundtasks.taskhandlers.NotificationsTaskHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.practo.fabric.module.consult.paid.ConsultationReminderAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.practo.fabric.ACTION_RETARGET_ALARM"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.practo.fabric.home.aurora.MainActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/home" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.landingpage.LandingPageActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/landing-page" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/read_about_health" android:name="com.practo.fabric.fit.FitArticlesListActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/healthfeed/list" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/healthfeed" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.fabric.droid.plus.common.view.PlusCommonActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.practo.fabric.doctorreview.allreviews.ui.AllReviewsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="@string/app_link_host" android:path="/establishment/reviews" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="FCM_SENDER_ID" android:value="id:680027294602"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value="LauncherActivity, OrderHomeActivity, DiagnosticsActivity, BoardingActivity, NewOnBoardingActivity,             MyQueriesActivity, ConsultHomeActivity, PaidConsultActivity, FeedActivity, ProblemDescriptionActivity,             PostQueryActivity, PlusActivity"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.practo.fabric.consult.connect.message.UpcomingConsultDetailActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/transactions" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.droid.consult.view.chat.SelfieVideoCallActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.practo.fabric.appointment.CheckInActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/checkin" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleInstance" android:name="com.practo.fabric.consult.connect.sendbird.SendbirdGalleryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <service android:exported="true" android:name="com.practo.feature.consult.video.call.CallConnectionService" android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.practo.fabric.frida.FridaDetectService"/>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.frida.RootDectecteddActivity" android:theme="@style/Fabric.New.Theme.NoActionBar.TransparentActivity"/>
+        <activity android:exported="true" android:name="com.practo.fabric.module.consult.home.view.ConsultHomeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/paid_consultations" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/consult/new_consultation" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/consult/paid_problem" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/paid" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/offer" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/dxconsultation" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/direct" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.module.consult.home.view.ConsultSearchActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/consult/search" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.module.consult.summary.view.PaymentSummaryActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/payment" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.practo.fabric.module.consult.compose.ConsultChoiceStartActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/choice" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.practo.fabric.module.consult.compose.ConsultListingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/listing" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.practo.fabric.module.consult.compose.ConsultProfileActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/consult/profile" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.pdp.PdpActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/pdp" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.fabric.module.order.feedbackV2.FeedbackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/feedback" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.fabric.module.order.search.OrderSearchActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/search" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.fabric.module.order.serviceability.OrderServiceabilityActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/order/offer" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/practo_pharmacy" android:launchMode="singleTop" android:name="com.practo.fabric.module.order.newHomeV2.OrderHomeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="true" android:name="com.practo.fabric.module.order.listing.OrderListingIntermediateActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/listing" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.module.order.listing.OrderListingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="true" android:name="com.practo.fabric.module.order.track.OrderTrackIntermediateActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/track" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/order/details" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.module.order.details.OrderDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.fabric.module.order.track.OrderTrackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.practo.fabric.module.order.prescription.ui.PrescriptionServiceErrorActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.fabric.module.order.guide.IndividualGuideActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.practo.fabric.module.order.prescription.ui.PrescriptionUploadActivity" android:parentActivityName="com.practo.fabric.module.order.newHomeV2.OrderHomeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/upload_prescription" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/my_cart" android:name="com.practo.fabric.module.order.cart.DrugCartActivity" android:parentActivityName="com.practo.fabric.module.order.newHomeV2.OrderHomeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/cart" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.module.order.cart.SubstitutesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar.TransparentActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.module.order.flow.OrderFlowActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/feedback" android:name="com.practo.fabric.module.order.feedback.FeedbackActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/add_new_address" android:name="com.practo.fabric.module.order.location.SaveAddressActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.practo.fabric.module.order.others.OrderUpgradeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="true" android:label="@string/my_orders" android:name="com.practo.fabric.module.order.orderdetails.MyOrdersActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/profile/orders" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/order/orders_list" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/saved_addresses" android:name="com.practo.fabric.module.order.flow.OrderAddressListActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/share_and_save" android:name="com.practo.fabric.module.order.feedback.ReferralShareActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.serviceability.OrderServiceabilityActivityOld" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.practo.fabric.module.order.OrderService"/>
+        <activity android:name="com.practo.fabric.module.order.phr.client.healthdrive.RecordFilterActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.phr.client.healthdrive.HealthDrivePickerActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/medicine_subscription" android:name="com.practo.fabric.module.order.subscription.view.ActiveRefillsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.payment.PaymentStartActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/schedule_details" android:name="com.practo.fabric.module.order.subscription.view.ScheduleDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.payment.PaymentSuccessActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.orderresult.OrderFailureActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:name="com.practo.fabric.module.order.orderresult.PlaceOrderActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:label="@string/search_medicines" android:launchMode="singleTop" android:name="com.practo.fabric.module.order.newhome.OrderHomeActivityOld" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.practo.fabric.module.order.paymentdetails.PaymentDetailsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.fabric.module.order.track.OrderTrackActivityOld" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.practo.fabric.module.order.OrderWebViewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/verification_reasons_title" android:name="com.practo.fabric.module.order.verificationfailure.VerificationFailureActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.practo.fabric.module.order.medicineinfo.MedicineInfoActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:label="" android:name="com.practo.fabric.module.order.location.places.PlacePickerActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/order/location_picker" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.fabric.module.order.delivery.SplitOrderActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="true" android:name="com.practo.fabric.module.order.service.OrderAppIndexingService" android:permission="com.google.android.gms.permission.APPINDEXING">
+            <intent-filter>
+                <action android:name="com.google.firebase.appindexing.UPDATE_INDEX"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.practo.fabric.module.order.backgroundtasks.taskhandlers.OrderTaskHandler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.practo.abdm.ui.home.share.ShareAbhaProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.practo.abdm.ui.create.CreateAbhaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.practo.abdm.ui.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_activity_abha_intermediate" android:name="com.practo.abdm.AbhaIntermediateActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPrefix="/abdm/abha" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.practo.abdm.ui.home.view_abha.ViewAbhaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.practo.search.ui.VnCallActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar.TransparentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/vncall" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.provider.profile.ui.ProviderProfileActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/provider" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.profile.feedback.view.contexts.AllContextsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <activity android:exported="false" android:name="com.fabric.droid.plus.view.BottomsheetWebViewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar.TransparentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/bottomsheet/webview" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.fabric.droid.plus.view.PlusActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/plus" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/affinity" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.phonepe.android.sdk.MerchantId" android:value=""/>
+        <meta-data android:name="com.phonepe.android.sdk.AppId" android:value=""/>
+        <meta-data android:name="com.phonepe.android.sdk.Debuggable" android:value="false"/>
+        <activity android:exported="false" android:name="com.practo.payments.PaymentOptionsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/payment/option" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.payments.card.DebitCreditInputActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.payments.webview.PaymentWebViewActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/Fabric.New.Theme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.practo.payments.phonepe.ui.PhonePeActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/payment/phonepe" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.practo.payments.paypal.view.PaypalActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.payments.upi.view.UpiActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.payments.amazonpay.view.AmazonPayActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.payments.olamoney.view.OlaMoneyActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.practo.payments.simpl.view.SimplActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.practo.feature.consult.video.VideoConsultActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:supportsPictureInPicture="true" android:taskAffinity="com.practo.fabric.consult.video" android:theme="@style/AppTheme.NoActionbar.FullScreen" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="@string/title_referral" android:name="com.practo.fabric.referral.ReferralActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/referral" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/dynamic_options" android:name="com.practo.fabric.configurable.fields.view.DynamicOptionsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="true" android:name="com.practo.fabric.ui.onboarding.OnboardingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.practo.home.view.SectionAllCardsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionbar.TransparentActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/section/cards" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.appointments.detail.AppointmentsDetailActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="@string/app_link_host" android:path="/appointment" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.appointments.listing.AppointmentsActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:pathPattern="/profile/appointments" android:scheme="@string/app_link_scheme"/>
+                <data android:host="@string/app_link_host" android:path="/appointments" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.practo.salesforce.SalesforceMainActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/support" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.practo.salesforce.in_app_messaging.SalesforceInAppMessagingActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/support/v2" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_beneficiearies" android:name="com.practo.fabric.cowin.vaccination.ui.beneficiaries.BeneficiariesActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.practo.fabric.cowin.vaccination.ui.auth.CowinMobileVerificationActivity" android:permission="com.practo.fabric.permission.START_ACTIVITY" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/salesforce" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.practo.uhi_eua.UHIConsultActivity" android:theme="@style/Fabric.New.Theme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_link_host" android:path="/uhi/consult" android:scheme="@string/app_link_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.practo.provider.profile.ui.video.PlayerActivity" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="androidx.media3.demo.main.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="content"/>
+                <data android:scheme="asset"/>
+                <data android:scheme="file"/>
+                <data android:scheme="ssai"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.media3.demo.main.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.media3.demo.main.action.VIEW_LIST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="8W6-695-WK5Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="5c6-60b"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <provider android:authorities="com.practo.fabric.com.salesforce.android.smi.ui" android:exported="false" android:grantUriPermissions="true" android:name="com.salesforce.android.smi.ui.UIFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/smi_attachment_file_paths"/>
+        </provider>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.salesforce.android.smi.ui.MessagingInappActivity" android:theme="@style/smi_theme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.practo.fabric" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="in.juspay.hyperapay.CompletionActivity"/>
+        <activity android:exported="false" android:name="com.phonepe.intent.sdk.ui.B2BPGActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <activity android:configChanges="orientation" android:name="com.phonepe.intent.sdk.ui.TransactionActivity" android:theme="@style/phonepeThemeInvisibleCompat" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:exported="false" android:name="com.phonepe.intent.sdk.ui.PreCacheService"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.OpenIntentTransactionActivity" android:theme="@style/PhonePeTheme"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.UpiAppsSelectionDialogActivity" android:theme="@style/phonepeThemeInvisible"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteThemeOverlay" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:exported="false" android:name="com.amazon.apay.hardened.activity.APayBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name="com.amazon.apay.hardened.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.practo.fabric" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.salesforce.android.chat.ui.internal.chatfeed.ChatFeedActivity" android:theme="@style/SalesforceTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.salesforce.android.chat.ui.internal.prechat.PreChatActivity" android:theme="@style/SalesforceTheme.Floating"/>
+        <provider android:authorities="com.practo.fabric.com.salesforce.android.chat.ui" android:exported="false" android:grantUriPermissions="true" android:name="com.salesforce.android.chat.ui.ChatFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/chat_file_paths"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.practo.fabric.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.practo.fabric" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.practo.fabric" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <service android:foregroundServiceType="remoteMessaging" android:name="com.salesforce.android.chat.core.internal.service.ChatService"/>
+        <service android:name="com.salesforce.android.service.common.liveagentlogging.internal.service.LiveAgentLoggingService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService">
+            <intent-filter>
+                <action android:name="com.google.firebase.auth.api.gms.service.START"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.practo.fabric.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.practo.fabric.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.sendbird.android.SendBirdFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.SendBirdFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.SendBirdHmsMessagingService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.flipkart.android" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:mimeType="vnd.android.cursor.dir/contact"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <package android:name="com.google.ar.core"/>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="global" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.phonepe.app.preprod"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="upi" android:scheme="mandate"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.front"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <permission android:name="com.flipkart.android.mwcpRead" android:protectionLevel="signatureOrSystem"/>
+    <permission android:name="com.flipkart.android.mwcpWrite" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.flipkart.android.mwcpRead"/>
+    <uses-permission android:name="com.flipkart.android.mwcpWrite"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <permission android:name="com.flipkart.app.ecom.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_OWNER_DATA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.flipkart.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.flipkart.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.HIGH_SAMPLING_RATE_SENSORS"/>
+    <uses-feature android:glEsVersion="0x00030000" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/fk_ic_launcher" android:label="Flipkart" android:largeHeap="true" android:name="com.flipkart.android.init.FlipkartApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="com.flipkart.android.activity.PictureInPictureActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:taskAffinity=":pip" android:theme="@style/Theme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.phonepe.android.sdk.MerchantId" android:value="@string/phonepe_merchantid"/>
+        <meta-data android:name="com.phonepe.android.sdk.AppId" android:value="@string/phonepe_appid"/>
+        <meta-data android:name="com.phonepe.android.sdk.Debuggable" android:value="@bool/phonepe_debuggable"/>
+        <meta-data android:name="com.phonepe.android.sdk.isUAT" android:value="@bool/phonepe_debuggable"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="true"/>
+        <provider android:authorities="com.flipkart.android.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.flipkart.android.providers.FlipkartFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="true" android:label="Flipkart" android:name="com.flipkart.android.SplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.SplashScreenStype" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.flipkart.youtubeview.activity.YouTubeActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:label="Flipkart" android:launchMode="singleTask" android:name="com.flipkart.android.activity.HomeFragmentHolderActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/Theme.ActionBarStyledNoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden">
+            <intent-filter>
+                <data android:scheme="flipkart"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:label="Image Search">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.VOICE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="dl.flipkart.com" android:pathPrefix="/dl/" android:scheme="http"/>
+                <data android:host="dl.flipkart.com" android:pathPrefix="/dl/" android:scheme="https"/>
+                <data android:host="www.flipkart.com" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="www.flipkart.com" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="voco.flipkart.net" android:pathPrefix="/" android:scheme="https"/>
+                <data android:host="voco.flipkart.net" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="travel.flipkart.com" android:pathPrefix="/" android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flipkart.app.link" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.flipkart.android.activity.HomeFragmentHolderActivityUpiAlias" android:targetActivity="com.flipkart.android.activity.HomeFragmentHolderActivity">
+            <intent-filter android:label="@string/flipkart_upi">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="upi"/>
+                <data android:pathPattern=".*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.flipkart.android.activity.FirstLaunchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:name="com.flipkart.android.activity.ReactFailureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.flipkart.android.activity.BlockActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ActionBarStyledNoTitleBar"/>
+        <activity android:exported="false" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.flipkart.android.activity.RecaptchaWebViewActivity"/>
+        <service android:name="com.flipkart.android.services.LocationService"/>
+        <receiver android:exported="true" android:name="com.flipkart.android.campaignmanager.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.flipkart.android.campaignmanager.PackageUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.flipkart.android.receiver.AutoReadSMSReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.flipkart.android.notification.RateNotificationHandler"/>
+        <meta-data android:name="APP_NAME" android:value="com.flipkart.android"/>
+        <meta-data android:name="USEHTTPS" android:value="ON"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.flipkart.android.services.UploadService"/>
+        <provider android:authorities="com.flipkart.android.productpage.data.provider.ProductPageContentProviderWrapper" android:exported="false" android:label="ProductPageCPWrapper" android:name="com.flipkart.android.productpage.data.provider.ProductPageContentProviderWrapper"/>
+        <provider android:authorities="com.flipkart.android.newmultiwidget.data.provider.MultiWidgetContentProvider" android:exported="false" android:label="MultiWidget" android:name="com.flipkart.android.newmultiwidget.data.provider.MultiWidgetContentProvider" android:readPermission="com.flipkart.android.mwcpRead" android:writePermission="com.flipkart.android.mwcpWrite"/>
+        <provider android:authorities="com.flipkart.android.localization.FkFontsProvider" android:enabled="true" android:exported="false" android:label="FontProvider" android:name="com.flipkart.android.localization.FkFontsProvider"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-1929607989907451~8360303186"/>
+        <meta-data android:name="com.flipkart.satyabhama.models.SatyaGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.flipkart.pushnotification.SecondaryIcon" android:resource="@null"/>
+        <meta-data android:name="com.flipkart.pushnotification.NotificationColor" android:resource="@color/notification_mask_color"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/truecaller_partner_key"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="true" android:name="in.juspay.godel.core.CustomtabActivity"/>
+        <activity android:exported="true" android:name="com.flipkart.android.activity.FkSSOActivity" android:theme="@style/Theme.TransparentActivity">
+            <intent-filter>
+                <action android:name="com.flipkart.android.FETCH_DATA"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="false" android:exported="true" android:icon="@mipmap/minutes_ic_launcher" android:label="Minutes" android:launchMode="singleTask" android:name="com.flipkart.android.activity.launchershortcut.MinutesLauncherShortcutActivity" android:theme="@style/Theme.MinutesSplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.flipkart.pushnotification.registration.RegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.flipkart.pushnotification.services.FCMMessageListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.flipkart.pushnotification.services.FCMIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.flipkart.pushnotification.receivers.FCMIntentReceiver">
+            <intent-filter>
+                <action android:name="show_notification_alarm_received"/>
+                <action android:name="expiry_notification_alarm_received"/>
+                <action android:name="pn_carousal_left"/>
+                <action android:name="pn_carousal_right"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.flipkart.pushnotification.receivers.NotificationDeleteIntentReceiver">
+            <intent-filter>
+                <action android:name="notification_delete_action"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.flipkart.android.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="false" android:exported="@bool/enable_gcm_scheduler_default" android:name="androidx.work.impl.background.gcm.WorkManagerGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.flipkart.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.flipkart.android.providers.init" android:exported="false" android:initOrder="1000" android:name="com.flipkart.initProvider.FlipkartInitProvider"/>
+        <provider android:authorities="com.flipkart.android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.flipkart.android.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.flipkart.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:label="" android:name="com.flipkart.pcr.activities.CropRotate" android:screenOrientation="portrait" android:theme="@style/Theme.CropRotateTheme"/>
+        <activity android:name="com.flipkart.pcr.activities.Crop" android:screenOrientation="portrait" android:theme="@style/Theme.CropRotateTheme"/>
+        <activity android:label="Add Image" android:name="com.flipkart.dip.activities.DeviceImagePicker" android:screenOrientation="portrait" android:theme="@style/Theme.DeviceImagePicker"/>
+        <activity android:exported="false" android:name="com.phonepe.intent.sdk.ui.B2BPGActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <activity android:configChanges="orientation" android:name="com.phonepe.intent.sdk.ui.TransactionActivity" android:theme="@style/phonepeThemeInvisibleCompat" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:exported="false" android:name="com.phonepe.intent.sdk.ui.PreCacheService"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.OpenIntentTransactionActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.UpiAppsSelectionDialogActivity" android:theme="@style/phonepeThemeInvisible"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <service android:exported="false" android:name="com.flipkart.polygraph.service.PolygraphService"/>
+        <activity android:name="com.flipkart.polygraph.activity.TouchScreenActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <meta-data android:name="com.snap.camerakit.app.id" android:value="b35d69b1-c88d-485a-9c4c-a9170c90f12d"/>
+        <meta-data android:name="com.snap.camerakit.api.token" android:value="eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjQ0MzQ4MTQ3LCJzdWIiOiJiMzVkNjliMS1jODhkLTQ4NWEtOWM0Yy1hOTE3MGM5MGYxMmR-UFJPRFVDVElPTn41ZWU4YmI4YS01NDk5LTRmNTUtOGVmNC1kZjRkYTI0NGE5MGYifQ.v8d_ZCwMpZuS56U57ckKTNjPY1S-OkKToM5KV_sCq3o"/>
+        <meta-data android:name="com.snap.camerakit.legal.prompt.bypass" android:value="MEYCIQDUceRb8/54Z3twVkz5IwCjKi3uyg6bAtirVyopnAokQwIhAKiwgBXKKqKRPXDAQr+iODCTYAdnwz8isVrTK/IxTviT"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.flipkart.datauploader.service.UploaderService"/>
+        <meta-data android:name="com.google.ar.core.min_apk_version" android:value="220920000"/>
+        <meta-data android:name="com.google.ar.core" android:value="optional"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTop" android:name="com.google.ar.core.InstallActivity" android:theme="@android:style/Theme.Material.Light.Dialog.Alert"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="base,cameramodule"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

@@ -1,0 +1,1497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="net.one97.paytm" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <permission android:name="net.one97.paytm.permission.UA_DATA" android:protectionLevel="signature"/>
+    <uses-permission android:name="net.one97.paytm.permission.UA_DATA"/>
+    <permission android:name="net.one97.paytm.permission.ACCOUNT_SERIVCE" android:protectionLevel="signature"/>
+    <permission android:name="net.one97.paytm.permission.LAYER_PUSH" android:protectionLevel="signature"/>
+    <uses-permission android:name="net.one97.paytm.permission.LAYER_PUSH"/>
+    <permission android:name="net.one97.paytm.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="net.one97.paytm.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <permission android:name="net.one97.paytm.upi.provider.permission.READ_MODES" android:protectionLevel="normal"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <permission android:name="net.one97.paytm.permission.ACTIVITY_OPEN_UPI_OCA" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="net.one97.paytm.upi.provider.permission.READ_MODES"/>
+    <uses-permission android:name="net.one97.paytm.COMMON_NATIVE_BROADCAST_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="net.one97.paytm.COMMON_BROADCAST_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="net.one97.paytm.upi.provider.permission.WRITE_MODES"/>
+    <queries>
+        <package android:name="net.one97.paytm"/>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+        <package android:name="com.google.android.youtube"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <permission android:name="net.one97.paytm.permission.NOTIFICATION" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_*"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="net.one97.paytm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="net.one97.paytm.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.screen.landscape"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/action_bar_logo_with_bg" android:name="net.one97.paytm.app.CJRJarvisApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/JarvisAppTheme">
+        <activity android:exported="true" android:name="net.one97.paytm.app.LauncherActivity" android:theme="@style/ThemeSplashScreen"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="net.one97.paytm.landingpage.activity.AJRMainActivity" android:screenOrientation="portrait" android:theme="@style/ThemeSplashScreen" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:name="net.one97.paytm.AJRJarvisSplash" android:screenOrientation="portrait" android:theme="@style/ThemeSplashScreen"/>
+        <activity android:name="net.one97.paytm.AJRYoutubeVideoPlay" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.AJRMyAccounts" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="net.one97.paytm.landingpage.activity.AJRNativeOffersDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:label="@string/title_activity_verifier_process_call_back" android:name="net.one97.paytm.verifier.activity.VerifierBasicActivity" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.verifier.activity.VerificationSelectionActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.verifier.activity.VerificationProcessActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:name="net.one97.paytm.upgradeKyc.activity.KycParentConsentRequired" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upgradeKyc.activity.KycAadhaarAlreadyLinked" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upgradeKyc.activity.KycVerifyOtpParentMobile" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upgradeKyc.activity.KnowMoreMinorKyc" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.auth.activity.AJRAuthActivity" android:theme="@style/Auth.Theme.Transparent"/>
+        <activity android:name="net.one97.paytm.travel.AJRFlightPaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.travel.AJRTrainPaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.travel.AJRBusPaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.DeferredCheckoutPaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="true" android:name="net.one97.paytm.account.PaytmAccountService" android:permission="net.one97.paytm.permission.ACCOUNT_SERIVCE">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <provider android:authorities="net.one97.paytm.trustlogin.TrustInfo" android:exported="true" android:name="net.one97.paytm.trustlogin.TrustLoginContentProvider"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.pushnotifcation.NotificationActionReceiver">
+            <intent-filter>
+                <action android:name="com.paytm.notification.OPENED"/>
+                <action android:name="com.paytm.notification.DISMISSED"/>
+                <action android:name="com.paytm.notification.BUTTON_CLICK"/>
+                <action android:name="com.paytm.notification.SILENT"/>
+                <action android:name="com.paytm.notification.COUNT_RECEIVED"/>
+                <action android:name="com.paytm.notification.RECEIVED"/>
+                <action android:name="com.paytm.notification.ACTION_BUTTON"/>
+                <category android:name="net.one97.paytm"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="net.one97.paytm.nativesdk.PGPPSSDKPostTxnActivity" android:theme="@style/NoActionBar"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_geo_places_key"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="966f7c6edfc711efd8a491e40879f73393b2a1be"/>
+        <meta-data android:name="android.splashscreen.exception_opt_out" android:value="true"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <activity android:exported="false" android:name="net.one97.paytm.AJRTransparentActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <data android:scheme="message"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.one97.paytm.AJRForgotPassword" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="net.one97.paytm.AJRRechargePaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.AJRAddMoneyPaymentActivity" android:theme="@style/AJRRechargeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.AJREmbedWebView" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="net.one97.paytm.AJRNotificationSettingsWebview" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="net.one97.paytm.AJRWebViewActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="net.one97.paytm.AJROrderSummaryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter android:label="@string/filter_cash_wallet">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="paytm.com" android:pathPrefix="/order_summary" android:scheme="paytmgn"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="net.one97.paytm.AJRNativePaymentActivity" android:theme="@style/Paytm.Theme.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="securegw.paytm.in" android:pathPrefix="/theia/api/v1/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytm.in" android:pathPrefix="/theia/api/v1/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytmpayments.com" android:pathPrefix="/theia/api/v1/showPaymentPage" android:scheme="https"/>
+                <data android:host="securegw.paytm.in" android:pathPrefix="/theia/api/v2/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytm.in" android:pathPrefix="/theia/api/v2/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytmpayments.com" android:pathPrefix="/theia/api/v2/showPaymentPage" android:scheme="https"/>
+                <data android:host="securegw.paytm.in" android:pathPrefix="/theia/api/v3/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytm.in" android:pathPrefix="/theia/api/v3/showPaymentPage" android:scheme="https"/>
+                <data android:host="secure.paytmpayments.com" android:pathPrefix="/theia/api/v3/showPaymentPage" android:scheme="https"/>
+                <data android:host="paytm.business" android:pathPrefix="/link/onlinePayment" android:scheme="https"/>
+                <data android:host="link.paytmpayments.com" android:pathPrefix="/link/onlinePayment" android:scheme="https"/>
+                <data android:host="paytm.business" android:pathPrefix="/link/emiPayment" android:scheme="https"/>
+                <data android:host="link.paytmpayments.com" android:pathPrefix="/link/emiPayment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.chromium.intent.action.PAY"/>
+            </intent-filter>
+            <meta-data android:name="org.chromium.default_payment_method_name" android:value="https://secure.paytmpayments.com/pay"/>
+            <meta-data android:name="org.chromium.payment_method_names" android:resource="@array/method_names"/>
+        </activity>
+        <activity android:name="net.one97.paytm.AJRPGAppLinkLauncherActivity" android:theme="@style/Paytm.Theme.Transparent"/>
+        <activity android:name="net.one97.paytm.savedPaymentItem.AJRSavedPaymentActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.AJRUpdateMessage" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="net.one97.paytm.AJRAppLockSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.AJRScanSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.AJRScreenRecordingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.AJRPaytmAutomaticConfirmActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.wallet.activity.AJRConfirmIFSCActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.AddNewQuickPaymentActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.QuickPaymentResultActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.QuickPaymentEditActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.QuickPayEditAccountActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.QuickPayDeeplinkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.wallet.newdesign.activity.CJRBankListActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="net.one97.paytm.EmailMobileActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="net.one97.paytm.wallet.newdesign.nearby.NearbyBrowseCategoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.wallet.newdesign.acceptmoney.InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.landingpage.activity.AJRLauncherUtility" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/title_activity_linked_merchant" android:name="net.one97.paytm.LinkedMerchantActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.registration.view.UpiSelectBankActivity" android:theme="@style/ActivityBottomSheetTheme"/>
+        <activity android:name="net.one97.paytm.upi.registration.view.UpiRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkTheme"/>
+        <activity android:name="net.one97.paytm.upi.referral.UpiReferralActivity" android:screenOrientation="portrait" android:theme="@style/UpiAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.registration.view.UpiLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.UpiQrCodeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.ProfileCreateVpaActivity" android:screenOrientation="portrait" android:theme="@style/Trans.Theme"/>
+        <activity android:name="net.one97.paytm.upi.requestmoney.view.UpiRequestMoneyStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.registration.view.AccountProviderActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.ChooseBankAccountActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.UpiPostRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:exported="true" android:name="net.one97.paytm.upi.awareness.view.UpiOnboardingCallbackActivity" android:permission="net.one97.paytm.permission.ACTIVITY_OPEN_UPI_OCA" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme">
+            <intent-filter>
+                <action android:name="net.one97.paytm.action.upi.onboarding.CHECK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.one97.paytm.upi.profile.view.BankVpaCreationActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.UpiProfileActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.profile.view.UpiProfileAccountDetailActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.requestmoney.view.UpiRequestMoneyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.requestmoney.view.UpiRequestMoneyPagerActivity" android:theme="@style/ActivityBottomSheetTheme"/>
+        <activity android:name="net.one97.paytm.upi.passbook.view.UpiPassbookTransactionDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.wallet.newdesign.postcard.PostCardMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar" android:windowSoftInputMode="adjustNothing|stateHidden"/>
+        <activity android:label="@string/title_activity_my_postcard" android:name="net.one97.paytm.wallet.newdesign.postcard.MyPostcardsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_how_it_works" android:name="net.one97.paytm.wallet.newdesign.postcard.HowItWorksActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_my_postcard_animation" android:name="net.one97.paytm.wallet.newdesign.postcard.MyPostcardAnimationActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_view_postcard" android:name="net.one97.paytm.wallet.newdesign.postcard.ViewPostcardActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_view_postcard" android:name="net.one97.paytm.wallet.newdesign.independencedaypostcard.IndependancePostCardMainActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.paytm.network.activity.AJRCommonNetworkDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:excludeFromRecents="true" android:name="net.one97.paytm.MockUrlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:excludeFromRecents="true" android:name="net.one97.paytm.DebugPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.view.activities.MoneyTransferLinkAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.view.activities.MoneyTransferUserHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.view.activities.MoneyTransferAddBeneficiaryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="@string/title_activity_deeplink_decider" android:name="net.one97.paytm.DeeplinkDeciderActivity"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.SetReminderActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:label="@string/title_activity_quick_view_all" android:name="net.one97.paytm.quickpay.activity.QuickViewAll" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upgradeKyc.AJRProfileImageView" android:screenOrientation="portrait" android:theme="@style/TransparentActivity"/>
+        <activity android:name="net.one97.paytm.landingpage.utils.croptool.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.MockHeaderActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.awareness.view.UpiAwarenessActivity" android:screenOrientation="portrait" android:theme="@style/UpiAppTheme"/>
+        <activity android:name="net.one97.paytm.impsRefund.view.RefundHomePageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.quickpay.activity.PaymentReminderCreationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.walletpassbook.WalletPassbookInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.dynamicModule.CommonDynamicLoaderActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.AJRNativeBannerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.dynamicModule.test.DynamicModuleTestActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.p2b.view.Activity.SendMoneyToBankActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.p2b.view.Activity.SendMoneyToBankPostTxnActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="true" android:name="net.one97.paytm.nativesdk.InvokePaytmTransparentActivity" android:theme="@style/AJRRechargeTransparent"/>
+        <activity android:exported="false" android:name="net.one97.paytm.MockAppsFlyerActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.packageScanner.view.SecurityAlertActivity" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:exported="true" android:name="net.one97.paytm.AJRUserPhoneMatchActivity" android:theme="@style/AJRRechargeTransparent"/>
+        <activity android:exported="true" android:name="net.one97.paytm.AJRUserLoggedInCheckActivity" android:theme="@style/AJRRechargeTransparent"/>
+        <activity android:name="net.one97.paytm.dynamic.module.cashback.CashbackInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleInstance" android:name="net.one97.paytm.dynamic.module.mall.MallInitActivity" android:theme="@style/MallTheme.Transparent"/>
+        <activity android:name="net.one97.paytm.dynamic.module.bank.BankInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.dynamic.module.creditcard.CreditCardInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="paytm_first.PaytmFirstInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.CSTInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.h5.helper.H5LoginHelperActivity" android:theme="@style/h5TransparentTheme"/>
+        <activity android:name="net.one97.paytm.PhoenixDebugActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="one97.paytm.PhoenixEventFluxBridgeDemoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.movies.MovieInitActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActivity"/>
+        <service android:name="net.one97.paytm.InAppPushNotification.CJRNotificationPublisherService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.app.LocaleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="net.one97.paytm.CJRRoamingNotificationPublisher"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.InAppPushNotification.CJRNotificationPublisher"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.flyout.ShareUPIReceiver"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.common.utils.shareDeeplink.ShareBroadcastReceiver"/>
+        <provider android:authorities="net.one97.paytm.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/paytm_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="net.one97.paytm.notification.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="net.one97.paytm.landingpage.activity.DeepLinkActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/ThemeSplashScreen">
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/chat_share_shortcut"/>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="paytm.com" android:pathPrefix="/homepage" android:scheme="paytmgn"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <meta-data android:name="com.paytm.push.INCLUDE_FLASH_SHOW" android:value="true"/>
+            <meta-data android:name="com.paytm.push.flash.container" android:resource="@id/flash_msg"/>
+            <intent-filter>
+                <data android:scheme="@string/schema_name"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="@string/ondc_scheme_name"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="@string/uhi_scheme_name"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/care" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/settings" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/automatic" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/paytmwallet" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/digitalgold" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/credit-score" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/postpaid" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/login" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/myorders" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/electricity-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/education" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/landline-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/metro-card-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/broadband-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/dth-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/datacard-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/datacard-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/gas-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/financial-services" android:pathPrefix="/insurance-premium-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/water-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/movies" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/flights" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/flights" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/international-flights" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/bus-tickets" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/bus-tickets" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/bus" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/train-tickets" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/train-tickets" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/trains" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/events" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/hotels" android:scheme="https"/>
+                <data android:host="tickets.paytm.com" android:pathPrefix="/hotels" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/amusement-parks" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/google-play-gift-card-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/shop/h/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/shop/g/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/shop/p/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/imax" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/mobile-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/challan-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/cabletv" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/cabletv-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/loan-emi-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/toll-tag-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/devotion" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/credit-card-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/municipal-payments" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/fastag" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/commercial-vehicle-fastag" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/depository-services" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/credit-score" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/coupons" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/apartments-electricity-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:path="/buy-insurance" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/postpaid" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/fastag-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/fastag/toll-plaza " android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/fastag" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/rental-bill-payment" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/cylinder-gas-recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/offer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/offers" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/movies/list" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/movies/celebrity" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/movies/upcoming-movies" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/passbook" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/nearby" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/helpinghand" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/devotion" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/coupons" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/cart" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/money-transfer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/instore-payments" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.com" android:pathPrefix="/blog" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytmmall.com" android:scheme="https"/>
+                <data android:host="paytmmall.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytminsurance.co.in" android:scheme="https"/>
+                <data android:host="paytminsurance.co.in" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="discuss.paytm.com" android:scheme="https"/>
+                <data android:host="discuss.paytm.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:icon="@drawable/ic_launcher">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/net.one97.paytm.send_money"/>
+            </intent-filter>
+            <intent-filter android:icon="@drawable/ic_launcher">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/net.one97.paytm.recharge_mobile"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paytm.onelink.me" android:pathPrefix="/xCTH" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="p.paytm.me" android:pathPrefix="/xCTH" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="stocks-mini.paytmmoney.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="vnd.android.cursor.item/net.one97.paytm.chat"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="" android:name="net.one97.paytm.upi.UpiLiteHandlerActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkThemeWithTransparentStatus"/>
+        <activity android:name="net.one97.paytm.finance.FinanceInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.finance.FinancePaymentHelperActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActivity"/>
+        <activity android:name="net.one97.paytm.dynamic.module.eduforms.activity.EduformsInitActivity"/>
+        <activity android:name="net.one97.paytm.dynamic.module.insurance.InsuranceInitActivity"/>
+        <activity android:name="net.one97.paytm.nearbuy_h5.AJRNearbuyCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/AJRRechargeTransparent"/>
+        <activity android:name="net.one97.paytm.nearbuy_h5.NearbuyInitActivity"/>
+        <activity android:name="net.one97.paytm.dynamic.module.paytm_money.PmLiteControllerActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.karza.aadhaarsdk.AadharActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.dynamic.module.paytm_money.PaytmMoneyPaymentSDKActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="net.one97.paytm.permission.TransparentPermissionRequestActivity" android:screenOrientation="portrait" android:theme="@style/Theme.FullTransparent"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="net.one97.paytm.TransparentClearCacheRequestActivity" android:theme="@style/Theme.FullTransparent"/>
+        <activity android:exported="false" android:name="com.google.zxing.client.android.encode.EncodeActivity" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.ENCODE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/x-vcard"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/sbc_name" android:name="com.google.zxing.client.android.book.SearchBookContentsActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true">
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SEARCH_BOOK_CONTENTS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="net.one97.paytm.landingpage.activity.darkmode.UiModeChangeLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Paytm.Theme.FullScreenAnimation"/>
+        <activity android:exported="false" android:name="androidx.biometric.DeviceCredentialHandlerActivity" android:theme="@style/DeviceCredentialHandlerTheme"/>
+        <activity android:exported="false" android:name="net.one97.paytm.fragmented.PhoenixFragmentActivity" android:theme="@style/AppThemeNoActionBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled" android:value="true"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/CLTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.aa.AnumatiStartActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.perfios.aadhaarxmlsdk.AadhaarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.travel.train.activity.AJRTrainLoginActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.travel.train.activity.AJRTrainOrderStatus" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="com.travel.train.activity.AJREmbedWebView" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.recharge.common.activity.AJRRechargeUtilityActivity" android:screenOrientation="portrait" android:theme="@style/UtilityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.recharge.metro.activity.AJRActiveMetroTicketListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.recharge.metro.activity.AJRActiveMetroPassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.recharge.ordersummary.activity.AJRechargeOrderSummaryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.recharge.automatic.activity.AJRAutomaticOptionListActivity" android:screenOrientation="portrait" android:theme="@style/WhiteStatusBarTheme"/>
+        <activity android:name="net.one97.paytm.recharge.automatic.activity.AJRAutomaticPaymentFAQs" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="net.one97.paytm.nativesdk.Utils.LocationInfoRequest" android:theme="@style/NativeBottomSheetDialogTheme"/>
+        <activity android:name="net.one97.paytm.nativesdk.linkPayments.view.LinkPostTxnActivity"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.linkPayments.view.EnterAmountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.nativesdk.transactionsummary.TxnSummaryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.nativesdk.instruments.upicollect.view.UpiBankAppsListActivity" android:screenOrientation="portrait" android:theme="@style/NativePaytmAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.transcation.PayActivityNew" android:theme="@style/NativeBottomSheetDialogTheme"/>
+        <activity android:name="net.one97.paytm.nativesdk.transcation.NativePlusPayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateVisible"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.instruments.InstrumentActivity" android:theme="@style/NativeBottomSheetDialogTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.orflow.promo.view.PromoSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.orflow.transaction.activity.BankOfferTransactionActivity" android:theme="@style/Paytm.Theme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="net.one97.paytm.nativesdk.orflow.promo.view.MallPromoSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.nativesdk.orflow.promo.view.FreebieSelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.nativesdk.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.nativesdk.Utils.PgChangeUrlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.tokenizationbase.TermsAndConditionActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <service android:enabled="true" android:exported="true" android:name="net.one97.paytm.tokenizationbase.TokenizationPaymentService" android:permission="android.permission.BIND_NFC_SERVICE">
+            <intent-filter>
+                <action android:name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="android.nfc.cardemulation.host_apdu_service" android:resource="@xml/apduservice"/>
+        </service>
+        <activity android:name="com.google.androidbrowserhelper.trusted.LauncherActivity"/>
+        <receiver android:exported="false" android:name="com.paytmbank.upgradeKyc.utils.KycPointServiceTriggerReciever">
+            <intent-filter>
+                <action android:name="KycPointServiceTriggerReciever"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.paytmbank.upgradeKyc.utils.KycPointsNotifierService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.paytmbank.imageupload.croptool.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.upgradeKyc.activity.KYCNavigationActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.imageupload.camera.CustomCameraUI" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.upgradeKyc.activity.KYCH5HelperActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.imageupload.camera.CustomCKycCameraUI" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.upgradeKyc.activity.KycAppointmentOrderSummary" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.BankTabActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.BankFlowActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.BankStatusCheckingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.biometricAuthWall.BiometricSettingsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.paytmbank.paymentsBank.passcode.BankPasscodeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.PBEnteringFlowPasscodeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.PBWalletPassBookBridgeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.payments.activity.AJRSetPasscode" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.paytmbank.payments.activity.AJRWalletSetPasscode" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.PBH5LoginActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.RootedDeviceActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar.BackArrowHomeAsUpIndicator"/>
+        <activity android:name="com.paytmbank.paymentsBank.activity.BlockedActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar.BackArrowHomeAsUpIndicator"/>
+        <activity android:name="com.paytmbank.bankCommon.activity.PBWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="net.one97.paytm.moneytransfer.eas.view.activity.MTEnterAmountActivity" android:theme="@style/MTUltraSupportedLightModeTransparent"/>
+        <activity android:name="net.one97.paytm.moneytransfer.merchantsdk.view.MTSdkActivity" android:screenOrientation="portrait" android:theme="@style/MtSdkTheme"/>
+        <activity android:name="net.one97.paytm.moneytransfer.toself.view.ToSelfActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.postpayment.view.MTPostTxnV2" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="" android:name="net.one97.paytm.moneytransfer.merchantsdk.view.UpiPushActivity" android:screenOrientation="portrait" android:theme="@style/MtSdkTheme"/>
+        <activity android:exported="false" android:name="net.one97.paytm.moneytransfer.collect.view.activity.PaymentReqActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.postpayment.view.DebitActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.moneytransfer.eas.view.activity.MTLinkAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.paytmbank.walletnew.gv.view.AddMoneyToGVActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.gv.view.AddMoneyToGVStatusActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.gv.view.AddMoneyToGvSelfStatusActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.walletaddmoney.newdesign.view.NearByAddMoneyActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.walletaddmoney.status.view.AddMoneyStatusActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.walletaddmoney.towallet.view.AddMoneyToWalletPostTxnActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="com.paytmbank.walletnew.walletlanding.view.AddMoneyNewActivity" android:screenOrientation="portrait" android:theme="@style/AddMoneyAppThemeNoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="true" android:name="com.paytmbank.walletnew.googleflow.view.GoogleTopUpRedirectionActivity" android:screenOrientation="portrait" android:theme="@style/GoogleTopUpAddMoneyAppThemeNoActionBar">
+            <intent-filter>
+                <action android:name="com.google.android.payments.standard.TOPUP_V1"/>
+                <action android:name="com.google.android.payments.standard.AUTHENTICATE_V1"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.paytmbank.walletnew.p2b.view.activity.SendMoneyToBankActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="com.paytmbank.walletnew.p2b.view.activity.SendMoneyToBankPostTxnActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.spendanalytics.activities.SpendsByCategoryActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.spendanalytics.activities.SpendAnalyticsTransactionDetailActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.paytmbank.walletnew.passbook.transactionDetail.RecentTransactionsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.subWallet.WalletLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.paytmbank.walletnew.passbook.subWallet.PassbookSubwalletActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.giftVoucher.GiftVoucherRedeemActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.statementDownload.activity.StatementDownloadActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.statementDownload.SelectDurationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.toll_kotlin.imported.PassageHistoryDetail" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.paytmbank.walletnew.passbook.transactionDetail.PassbookTransactionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.subWallet.PassbookDetailInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.spendanalytics.activities.SpendAnalyticsMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.genericPassbook.activity.PassbookL2Activity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.paymentslimit.activity.AJRPaymentLimitHomePageNew" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.paymentslimit.activity.AJRPaymentLimitOTP" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.paytmbank.walletnew.ifsc.activity.AJRConfirmIFSCActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.paytmbank.walletnew.ifsc.activity.CJRBankListActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="com.paytmbank.walletnew.passbook.search.PassbookSearchActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.paytmbank.walletnew.walletaddmoney.toppb.view.AddMoneyToPPBActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="net.one97.paytm.passbook.v2.home.ui.PassbookHomeActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="net.one97.paytm.passbook.uthdetails.TransactionDetailsV2Activity" android:screenOrientation="portrait" android:theme="@style/PassbookUltraTheme"/>
+        <activity android:name="net.one97.paytm.passbook.upipassbook.UpiPassbookActivity" android:screenOrientation="portrait" android:theme="@style/PassbookUltraTheme"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.passbook.home.PassbookHomeActivity" android:screenOrientation="portrait" android:theme="@style/PassbookUltraTheme"/>
+        <activity android:name="net.one97.paytm.passbook.search.activity.SearchTransactionHistory" android:screenOrientation="portrait" android:theme="@style/PassbookUltraTheme" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:name="net.one97.paytm.cashier_page.activity.AJRNativeOTPActivity" android:theme="@style/Theme.AppCompat.TransparentActivity"/>
+        <activity android:name="net.one97.paytm.cashier_page.activity.AJRLocationCaptureActivity" android:theme="@style/Theme.AppCompat.TransparentActivity"/>
+        <activity android:name="net.one97.paytm.paymentslimit.activity.AJRPaymentLimitHomePageNew" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.paymentslimit.activity.AJRPaymentLimitOTP" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="net.one97.paytm.paymentslimit.activity.AJRPaymentLimitOTP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.cashier_page.ui.AJRScanWebView" android:screenOrientation="portrait" android:theme="@style/Theme.PaySendActivity"/>
+        <activity android:name="net.one97.paytm.scanner.activity.PaySendInfoActivity" android:theme="@style/ActivityBottomSheetTheme"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.scanner.receiver.InstallReceiver" android:permission="">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="net.one97.paytm.scanner.activity.PaySendActivityV2" android:screenOrientation="portrait" android:theme="@style/Theme.PaySendActivityScanOnly" android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <data android:scheme="paytmscanner"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="net.one97.paytm.cashier_page.activity.NetBankingListActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.cashier_page.activity.EMIBankListActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.scanner.activity.PaySendActivityFastTag" android:theme="@style/Theme.PaySendActivityScanOnly" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="net.one97.paytm.cashier_page.activity.CashierSheetActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.postpayment.activity.PostPaymentActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.cashier_page.activity.LoaderActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="net.one97.paytm.upi.onboarding.profile.view.UpiSetMPINActivity" android:theme="@style/ThemeTransparent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="net.one97.paytm.upi.onboarding.profile.adhaar.presentation.SetPinAadhaarCardActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.transaction.mandate.p2p.CreateMandateActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.transaction.deeplink.DummyDeepLinkActivity"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.transaction.paytmhome.UpiHomeQREducation" android:theme="@style/ActivityBottomSheetTheme"/>
+        <activity android:name="net.one97.paytm.upi.transaction.referral.UpiReferralActivity" android:screenOrientation="portrait" android:theme="@style/UpiAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.onboarding.registration.view.UpiLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.view.UpiQrCodeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.view.UpiProfileCreateVpaActivity" android:screenOrientation="portrait" android:theme="@style/Trans.Theme"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.view.UpiPostRegistrationActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.view.UpiProfileActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.view.UpiProfileAccountDetailActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.transaction.requestmoney.view.UpiRequestMoneyPagerActivity" android:theme="@style/ActivityBottomSheetTheme"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.onboarding.helper.UpiAddBankHelperForSettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.onboarding.profile.view.UpiStartMpinActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.onboarding.helper.UpiOnboardingHelperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:enabled="false" android:exported="true" android:label="Paytm" android:name="net.one97.paytm.upi.transaction.deeplink.UPIDeeplinkActivity" android:theme="@style/MTUltraSupportedLightModeTransparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="pay" android:scheme="upi"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="Paytm" android:name="net.one97.paytm.upi.transaction.deeplink.PaytmMerchantUPIDeeplinkActivity" android:screenOrientation="portrait" android:theme="@style/ActivityBottomSheetThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="upimerchant" android:scheme="paytm"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:enabled="false" android:exported="true" android:label="Paytm" android:name="net.one97.paytm.upi.transaction.mandate.deeplink.UpiMandateDeepLinkActivity" android:screenOrientation="portrait" android:theme="@style/ActivityBottomSheetThemeNoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <data android:host="mandate" android:scheme="upi"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Paytm" android:name="net.one97.paytm.upi.transaction.deeplink.UPIQRScanDeeplinkActivity" android:screenOrientation="portrait" android:theme="@style/ActivityBottomSheetThemeNoActionBar"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.transaction.mandate.view.MandatePostTransactionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="" android:name="net.one97.paytm.upi.transaction.mandate.view.DefferedMandatePostTransactionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.common.util.UpiWebViewActivity" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.transaction.mandate.confirmation.activity.MandateConfirmationDetailActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.onboarding.registration.view.UPISettingsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.upi.onboarding.reactivation.UPIReactivationActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.transaction.deeplink.DeeplinkResolverActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.upi.transaction.mandate.ipo.activities.IPOLandingActivity" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.transaction.mandate.detail.activity.MandateDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.upi.onboarding.profile.setpin.view.SetPinOptionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.profile.adhaar.presentation.UpiSetMPinResultActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:label="" android:launchMode="singleTop" android:name="net.one97.paytm.upi.transaction.h5.MtEbdH5HandlerActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkTheme"/>
+        <activity android:name="net.one97.paytm.upi.onboarding.setdefaultbank.view.UpiSetPrimaryBankActivity" android:theme="@style/UpiSdkThemeTranslucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.pluginupi.mediator.UpiPluginMediatorActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkThemeWithTransparentStatus" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.pluginupi.mpinForTransaction.StartMpinForTransactionActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkThemeWithTransparentStatus" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="net.one97.paytm.pluginupi.selectbank.view.activity.UpiPluginBankLAPActivity" android:theme="@style/UpiSdkThemeTranslucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.pluginupi.accountlinking.singlebank.view.activity.SingleBankLinkingActivity" android:theme="@style/UpiSdkThemeTranslucent"/>
+        <activity android:name="net.one97.paytm.pluginupi.accountlinking.singlebank.view.activity.UpiPluginChooseBankAccountActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme"/>
+        <activity android:name="net.one97.paytm.pluginupi.accountlinking.singlebank.view.activity.UpiPluginNoBankAccountFoundActivity" android:theme="@style/UpiSdkThemeTranslucent"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.pluginupi.onboarding.view.UpiPluginMblCongratsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.pluginupi.accountlinking.multibank.SignUpAddBankActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.pluginupi.setmpin.view.UpiPluginSetMPINDebitCardActivity" android:screenOrientation="portrait" android:theme="@style/JarvisToolbarTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:label="" android:name="net.one97.paytm.pluginupi.accountlinking.multilinking.view.activity.UpiAddBankHelperActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.pluginupi.lite.UpiPluginAuthHelper" android:screenOrientation="portrait" android:theme="@style/UpiSdkThemeWithTransparentStatus"/>
+        <activity android:exported="true" android:name="net.one97.paytm.pluginupi.lite.UpiLitePluginActivity" android:screenOrientation="portrait" android:theme="@style/UpiSdkThemeWithTransparentStatus"/>
+        <activity android:name="net.one97.paytm.coins.activity.PaytmCoinPendingListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.v2.features.offerdetail.ui.CashbackCompaignGameDetail" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.v2.features.offerdetail.ui.CashbackDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.v2.features.offerdetail.ui.CashBackOfferDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.vipcashback.activity.AJRVIPCashBackActivity" android:screenOrientation="portrait" android:theme="@style/CashbackWithoutAppBarTheme"/>
+        <activity android:name="net.one97.paytm.vipcashback.activity.CashbackAdditionalOfferActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActionBar"/>
+        <activity android:name="net.one97.paytm.vipcashback.activity.MerchantCashbackOfferDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.vipcashback.activity.MerchantPaymentDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.vipcashback.activity.CashbackVoucherDetailsActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActionBar"/>
+        <activity android:name="net.one97.paytm.coins.activity.PaytmCoinLandingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.v2.features.cashbackoffers.ui.OfferListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="net.one97.paytm.referral.activity.ContactReferralActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.referral.activity.V2ReferralLandingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.referral.activity.ContactReferralTAndCActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.referral.activity.RefereeTransparentActivity" android:theme="@style/Theme.AppCompat.ReferralTranslucent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.referral.activity.ReferralDashboardLandingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="net.one97.paytm.v2.features.scratchcard.v2.V2ScratchCardCarouselActivity" android:theme="@style/Theme.AppCompat.ScratchCardCarousel" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.business.common_module.view.ActivityRecreateHelper" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="net.one97.paytm.oauth.sdk.ClientLoginAndRefreshTokenActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.OAuthMainActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="net.one97.paytm.oauth.activity.OauthWebViewActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.AJRChangePassword" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="net.one97.paytm.oauth.activity.ForgotPasswordContainerActivity" android:screenOrientation="portrait" android:theme="@style/WhiteThemeActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.UpdatePhoneNumberActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.UpdateEmailActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.AccountBlockLoginLogoutActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.AccountUnblockActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.UpgradePasswordActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.oauth.activity.AppLockIntermediateActivity" android:screenOrientation="portrait" android:theme="@style/AuthFullWhiteThemeNoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="net.one97.paytm.riskengine.verifier.activity.VerifierActivity" android:screenOrientation="portrait" android:theme="@style/AuthFullWhiteThemeNoActionBar"/>
+        <activity android:name="net.one97.paytm.oauth.activity.TransparentAppLockActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.acceptPayment.activities.AcceptPaymentInitActivity" android:noHistory="true" android:theme="@style/Theme.MerchantPayment.Transparent.NoActionBar"/>
+        <activity android:launchMode="singleTop" android:name="net.one97.paytm.acceptPayment.onBoarding.view.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AcceptPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.acceptPayment.activities.AddPhotoQRActivity" android:theme="@style/ApTheme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="net.one97.paytm.acceptPayment.webview.TransparentAPWebViewActivity" android:screenOrientation="portrait" android:theme="@style/ApTheme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="net.one97.paytm.acceptPayment.webview.AcceptPaymentWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AcceptPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:name="net.one97.paytm.acceptPayment.home.AcceptPaymentMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AcceptPayment.Ultra"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="net.one97.paytm.acceptPayment.webviewutils.activity.APSurveyWebViewActivity" android:theme="@style/ApTheme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="net.one97.paytm.acceptPayment.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="net.one97.paytm.acceptPayment.utils.FileProviderForShare">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.business.merchant_payments.payment.view.BWDayTransactionDetailActivity" android:screenOrientation="portrait" android:theme="@style/MaterialTheme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:exported="false" android:name="com.business.merchant_payments.payment.view.PaymentsSettlementsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.Ultra.WhiteStatusBar"/>
+        <activity android:name="com.business.merchant_payments.acceptpayments.AddMobileOTPActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:label="" android:name="com.business.merchant_payments.biometrics.PaymentsP4BLockActivity" android:theme="@style/Theme.MerchantPayment.Transparent"/>
+        <activity android:name="com.business.merchant_payments.common.view.EmbedWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:name="com.business.merchant_payments.settlement.SettlementDetail" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:name="com.business.merchant_payments.payment.daterange.PaymentsDateRangeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.business.merchant_payments.topicPush.fullScreenNotification.LockScreenNotification" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.BlueStatusBar"/>
+        <activity android:name="com.business.merchant_payments.merchantSetting.AcceptPaymentMerchantSettings" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.BlueStatusBar"/>
+        <activity android:name="com.business.merchant_payments.merchantSetting.storefront.SFCustomActivity"/>
+        <activity android:name="com.business.merchant_payments.ImageHelperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MerchantPayment.NoActionBar.WhiteStatusBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.business.merchant_payments.notification.recevier.StickyNotificationRecciver"/>
+        <activity android:name="com.paytm.android.chat.activity.APCProfile" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:name="com.paytm.android.chat.activity.APCShareSplit" android:theme="@style/ChatTransparentTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.paytm.android.chat.activity.APCChat" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytm.android.chat.activity.groups.APCSplitPaymentActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytm.android.chat.activity.groups.APCContactsSelectionActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytm.android.chat.activity.groups.APCSplitDetailActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.paytm.android.chat.activity.APCFullScreenSharedFilesActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme.DarkStatusBar"/>
+        <activity android:name="com.paytm.android.chat.activity.APCSharedFilesActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:name="com.paytm.android.chat.activity.ChatImageCropActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.paytm.android.chat.activity.ChatSearchSendContactsActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.paytm.android.chat.activity.SendOrAddContactsActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.paytm.android.chat.activity.ChatSelectContactsSendActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.paytm.android.chat.activity.ChatSearchActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.paytm.android.chat.activity.GroupChannelActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.paytm.android.chat.activity.PaytmChatMainActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme"/>
+        <activity android:name="com.paytm.android.chat.activity.groups.APCAddMembersActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.paytm.android.chat.activity.ChatChannelSelectionActivity" android:screenOrientation="portrait" android:theme="@style/ChatAppTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/png"/>
+                <data android:mimeType="image/gif"/>
+                <data android:mimeType="image/x-ms-bmp"/>
+                <data android:mimeType="image/webp"/>
+                <data android:mimeType="audio/mpeg"/>
+                <data android:mimeType="audio/ogg"/>
+                <data android:mimeType="video/*"/>
+                <data android:mimeType="text/x-vcard"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="text/comma-separated-values"/>
+                <data android:mimeType="text/csv"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+        </activity>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.paytm.android.chat.services.MediaPlayerService"/>
+        <receiver android:name="com.paytm.android.chat.receiver.ChatNotificationReceiver"/>
+        <activity android:name="com.paytm.android.pd.tobank.activity.APDToBankLanding" android:screenOrientation="portrait"/>
+        <activity android:name="com.paytm.android.pd.tomobile.activities.APDScannerToMobile" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:exported="false" android:name="com.paytm.android.pd.common.activities.APDSearchSheet" android:theme="@style/SFTranslucent"/>
+        <activity android:launchMode="singleTop" android:name="com.paytm.android.ebd.view.EBDActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.profilecard.activity.ProfileCardActivity" android:theme="@style/ProfileCard"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.homepage.fragment.HomeUpiMendateActivity" android:theme="@style/ProfileCard"/>
+        <activity android:exported="false" android:label="" android:name="net.one97.paytm.sflanding.activity.SFDeeplinkActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.searchv2.ui.AJRSearchActivityV2" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="net.one97.paytm.notificationcenter.activity.NotificationCenterActivity" android:theme="@style/SFTranslucent"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.paytm.widget.oswidget.HomeOSWidgetActivity" android:theme="@style/TransparentActivityTheme"/>
+        <receiver android:exported="false" android:label="@string/scan_amp_pay" android:name="net.one97.paytm.appwidgets.singleservice.SingleServiceWidgetProviderTwo">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="updateSingleServiceWidgetTwo"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/single_service_provider_info_two"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/receive_money_qr" android:name="net.one97.paytm.appwidgets.qrwidget.QRWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="qrWidget"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/qr_widget_provider_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/banking_payments" android:name="net.one97.paytm.appwidgets.provider.PayGridWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="updateMultiServiceWidget"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/pay_grid_provider_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/scan_amp_pay" android:name="net.one97.paytm.appwidgets.singleservice.SingleServiceWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="updateSingleServiceWidget"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/single_service_provider_info"/>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.storefront.view.activity.FloatingInterstitialActivity" android:theme="@style/SFInterstitialAdTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.storefront.sfpopuplanding.ui.SFPopupLandingActivity" android:theme="@style/SFTranslucent"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.storefront.view.activity.SFSliderActivity" android:theme="@style/SFTranslucent"/>
+        <activity android:exported="false" android:name="net.one97.storefront.view.activity.SFBrowseCategoryActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.storefront.view.activity.InterstetialActivity" android:theme="@style/SFInterstitialAdTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="net.one97.storefront.view.activity.BlockingInterstitialActivity" android:theme="@style/SFInterstitialAdTheme"/>
+        <activity android:exported="false" android:name="net.one97.storefront.view.activity.SFTabbed1FilterActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar"/>
+        <receiver android:exported="false" android:name="net.one97.paytm.instrumentation.broadcast.InstrumentationBroadcast">
+            <intent-filter>
+                <action android:name="net.one97.paytm.END.INSTRUMENTATION"/>
+                <action android:name="net.one97.paytm.DELETE.EC.FILE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="net.one97.paytm.nammayatri.NammayatriActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="true" android:name="com.paytm.notification.fcm.PaytmNotificationService" android:permission="net.one97.paytm.permission.NOTIFICATION">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.paytm.notification.receivers.ActionReceiver">
+            <intent-filter android:priority="-999">
+                <category android:name="net.one97.paytm"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.paytm.notification.receivers.OnFlashDismissReceiver">
+            <intent-filter>
+                <action android:name="com.paytm.notification.OnFlashDismissed"/>
+                <category android:name="net.one97.paytm"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.paytm.notification.service.TimerService">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="This feature sends time-limited promotional notifications with a custom layout, showing a countdown timer, progress bar, and image. A foreground service updates the notification in timer and progress bar. It auto-dismisses when the timer ends or the user interacts, ensuring clear visibility of limited-time offers."/>
+        </service>
+        <activity android:exported="false" android:name="com.paytm.notification.ui.NotificationTrampolineActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <receiver android:exported="true" android:name="net.one97.paytm.smssdk.common.receiver.CommonSmsListener" android:priority="1000" android:protectionLevel="signature">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.paytm.paymentsettings.merchantSubscriptions.view.ActiveSubscriptionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.paytm.paymentsettings.paytmassist.view.ui.PaytmAssistSettingsActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.paytmmoney.lite.mod.H5MoneyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.paytmmoney.lite.mod.PaymentWebview" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.paytmmoney.lite.mod.GenericWebView" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="net.one97.paytm.phoenix.ui.TransparentPhoenixActivity" android:theme="@style/Theme.Phoenix.Light.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="net.one97.paytm.phoenix.ui.PhoenixActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.phoenix.ui.PhoenixDialogActivity" android:theme="@style/Theme.Phoenix.Light.Transparent"/>
+        <activity android:name="net.one97.paytm.phoenix.AddressDialog.PhoenixSaveAddressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="net.one97.paytm.phoenix.ui.camera.BaazoculusCameraActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:exported="true" android:name="net.one97.paytm.phoenix.helper.PhoenixDownloadManagerReceiver" android:permission="android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="in.juspay.mobility.common.cropImage.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="net.one97.paytm" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.paytmbank.networkmodule.activity.PBCommonNetworkDialogActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog"/>
+        <activity android:exported="false" android:name="com.paytmbank.oauth.login.LogoutActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar"/>
+        <activity android:exported="false" android:name="com.paytmbank.oauth.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.paytmbank.oauth.activity.EnterMobileActivity" android:screenOrientation="portrait" android:theme="@style/AuthAppWhiteThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <receiver android:exported="false" android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.google.android.gms.cast.framework.media.MediaNotificationService"/>
+        <service android:exported="false" android:name="com.google.android.gms.cast.framework.ReconnectionService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="net.one97.paytm.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:authorities="net.one97.paytm.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.webp.WebpGlideModule" android:value="GlideModule"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="net.one97.paytm.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdHmsMessagingService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.google.zxing.client.android.CaptureActivity" android:screenOrientation="portrait" android:stateNotNeeded="true" android:theme="@style/CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="@string/preferences_name" android:name="com.google.zxing.client.android.PreferencesActivity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:name="com.google.zxing.client.android.share.ShareActivity" android:screenOrientation="user" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:label="@string/history_title" android:name="com.google.zxing.client.android.history.HistoryActivity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:label="@string/bookmark_picker_name" android:name="com.google.zxing.client.android.share.BookmarkPickerActivity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:label="@string/app_picker_name" android:name="com.google.zxing.client.android.share.AppPickerActivity" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:label="@string/menu_help" android:name="com.google.zxing.client.android.HelpActivity" android:screenOrientation="user" android:stateNotNeeded="true"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:name="net.one97.paytm.dynamic.module.movie.EventInitActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:name="com.travel.AJRTravelPreferencesActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme"/>
+        <activity android:name="com.travel.CJRActionBarBaseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.travel.AJRTravelOffersActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:clearTaskOnLaunch="true" android:configChanges="uiMode" android:launchMode="singleTask" android:name="com.travel.travels.activity.AJRTravelsHomeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppBaseTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.travel.booking.activity.AJRTravelBookingList" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.travel.TravelGenericNavActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="net.one97.paytm.feature.tokenization.TokenizationInitActivity"/>
+        <receiver android:name="net.one97.paytm.feature.tokenization.TokenizationNotificationReceiver"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.newui.provisioning.activity.CardProvisioningActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.newui.provisioning.activity.CCHCardProvisioningActivity" android:screenOrientation="portrait" android:theme="@style/TokenizationAppThemeTransparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.newui.onboarding.activity.TokenOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.payments.NowTryAgainActivity" android:parentActivityName="net.one97.paytm.tokenization.newui.onboarding.activity.TokenOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.deviceSecurity.DeviceSecurityActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.onboarding.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.transaction.TransactionHistoryActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.SavedCardListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.payments.transaction.TransactionStatusActivity" android:parentActivityName="net.one97.paytm.tokenization.newui.onboarding.activity.TokenOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.howitworks.TokenizationHowItWorksActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.howitworks.TokenizationYouTubeActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.SupportedCardsActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.newui.transaction.activity.TokenizedCardPayNowActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.newui.onboarding.activity.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <activity android:exported="false" android:name="net.one97.paytm.tokenization.ui.howitworks.IFrameYoutube" android:screenOrientation="portrait" android:theme="@style/JarvisAppThemeNoActionBar"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="tflite_dynamite:3:required" android:value=""/>
+        </service>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

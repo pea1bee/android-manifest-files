@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.dream11.fantasy.cricket.football.kabaddi" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <permission android:name="com.dream11.fantasy.cricket.football.kabaddi.sporta.permission.AUTH_INFO" android:protectionLevel="normal"/>
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.dream11sportsguru"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.phonepe.app.preprod"/>
+        <package android:name="com.phonepe.simulator"/>
+        <package android:name="com.phonepe.simulator.debug"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="upi" android:scheme="mandate"/>
+        </intent>
+    </queries>
+    <permission android:name="com.dream11.fantasy.cricket.football.kabaddi.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.dream11.fantasy.cricket.football.kabaddi.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <permission android:name="com.dream11.fantasy.cricket.football.kabaddi.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.dream11.fantasy.cricket.football.kabaddi.permission.MIPUSH_RECEIVE"/>
+    <meta-data android:name="com.google.android.gms.version" android:value="@integer/2131427339"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.AD_SERVICES_CONFIG"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appCategory="game" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/2132082688" android:hardwareAccelerated="true" android:icon="@mipmap/app_icon" android:label="@string/app_name" android:largeHeap="true" android:name="com.app.dream11.dream11.DreamApplication" android:networkSecurityConfig="@xml/2132082692" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/2131951632" android:usesCleartextTraffic="false">
+        <activity android:name="com.app.dream11.pdfviewer.PDFViewerActivity"/>
+        <activity android:name="com.app.dream11.social.ui.FullScreenImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.app.dream11.social.ui.FullScreenImageWithBlockSSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.app.dream11.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.app.dream11.crop.NativeImagePickerActivity" android:theme="@style/2131952462"/>
+        <activity android:name="com.app.dream11.crop.NativeCropImageActivity"/>
+        <activity android:name="com.app.dream11.crop.NativeCropActivity" android:theme="@style/2131952462"/>
+        <activity android:name="com.app.dream11.crop.NativeVideoPickerActivity" android:theme="@style/2131952462"/>
+        <activity android:name="com.app.dream11.crop.NativeCameraPickerActivity" android:theme="@style/2131952462"/>
+        <activity android:name="com.app.dream11.dream11.WebViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:launchMode="singleTask" android:name="com.app.dream11.dream11.ReactHomeActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/2131952295">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="https"/>
+                <data android:host="@string/2131887884"/>
+                <data android:host="@string/2131887264"/>
+                <data android:host="@string/2131887126"/>
+                <data android:host="@string/2131887125"/>
+                <data android:host="@string/2131887124"/>
+                <data android:host="dream11.onelink.me"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="dream11"/>
+                <data android:host="open"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.app.dream11.dream11.ReactTransparentActivity" android:theme="@style/2131952486" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/2131886710"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.dream11.fantasy.cricket.football.kabaddi" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app.dream11.chat.groups.GroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.app.dream11.chat.EditImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.app.dream11.fclogin.FCLoginLoaderActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="so.plotline.insights.Activities.PlotlineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="connect" android:scheme="plotline-a1048"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/2131886241"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_notification"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value="SplashActivity"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="CLEVERTAP_IDENTIFIER" android:value="Identity"/>
+        <meta-data android:name="com.phonepe.android.sdk.MerchantId" android:value="@string/2131887473"/>
+        <meta-data android:name="com.phonepe.android.sdk.AppId" android:value="@string/2131887470"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/2132082693"/>
+        </provider>
+        <provider android:authorities="@string/2131886255" android:exported="true" android:grantUriPermissions="false" android:name="com.app.dream11.core.service.DataShareService">
+            <grant-uri-permission android:path="@string/2131886453"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.app.dream11.chat.NotificationDeleteReceiver" android:process=":D11PushProcess"/>
+        <service android:enabled="true" android:exported="false" android:name="com.app.dream11.chat.D11PushNotificationService" android:process=":D11PushProcess">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":D11PushProcess"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:process=":D11PushProcess">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.app.dream11.utils.MainProcessServerService"/>
+        <service android:foregroundServiceType="specialUse" android:name="com.app.dream11.notifications.D11ForegroundNotificationService" android:process=":D11PushProcess">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="Display the user's match status to enable them to promptly update their team during a short period of time which is critical"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService" android:process=":D11PushProcess">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <activity android:exported="false" android:name="com.dreampay.cards.juspay.JusPayCardActivity" android:theme="@style/2131952682"/>
+        <activity android:exported="false" android:name="com.dreampay.ui.onboarding.WalletOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/2131951975" android:windowSoftInputMode="adjustPan">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:name="com.dreampay.ui.wallets.WalletLinkActivity" android:screenOrientation="portrait" android:theme="@style/2131951974" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.dreampay.ui.card.CardActivity" android:screenOrientation="portrait" android:theme="@style/2131951974" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.dreampay.ui.upi.UPIOptionListActivity" android:screenOrientation="portrait" android:theme="@style/2131951974"/>
+        <activity android:name="com.dreampay.webview.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/2131951982"/>
+        <activity android:name="com.dreampay.ui.paylater.PayLaterActivity" android:screenOrientation="portrait" android:theme="@style/2131951974"/>
+        <activity android:name="com.dreampay.cards.CardWebViewActivity" android:screenOrientation="portrait" android:theme="@style/2131951982"/>
+        <activity android:name="com.dreampay.netbanking.NetBankingWebViewActivity" android:screenOrientation="portrait" android:theme="@style/2131951982"/>
+        <activity android:name="com.dreampay.upi.UpiWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dreampay.upi.UpiActivity" android:theme="@style/2131952682"/>
+        <activity android:name="com.dreampay.wallets.WalletActivity" android:theme="@style/2131952682"/>
+        <activity android:name="com.dreampay.wallets.mobikwik.MobikwikWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dreampay.wallets.dreampay.DreamPayWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.dreampay.upi.direct.UpiDirectActivity" android:theme="@style/2131952682"/>
+        <meta-data android:name="com.phonepe.android.sdk.isUAT" android:value="@bool/2131034124"/>
+        <activity android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait" android:theme="@style/2131952483"/>
+        <service android:exported="false" android:name="com.paytm.pgsdk.IntentServicePostNotification"/>
+        <service android:exported="false" android:name="com.paytm.pgsdk.IntentServicePreNotification"/>
+        <service android:enabled="true" android:exported="true" android:name="easypay.utils.EasypayLoaderService"/>
+        <service android:enabled="true" android:exported="true" android:name="easypay.utils.AnalyticsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="easypay.utils.EasyPayConfigDownloader" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="easypay.AnalyticsManagerInfoDisplayActivity"/>
+        <activity android:name="com.yalantis.ucrop.MainActivitytest"/>
+        <activity android:configChanges="orientation|screenSize" android:name="droidninja.filepicker.FilePickerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="droidninja.filepicker.MediaDetailsActivity"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.droidninja.filepicker.provider" android:exported="false" android:grantUriPermissions="true" android:name="droidninja.filepicker.utils.FilePickerProvider" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/2132082693"/>
+        </provider>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="a" android:value=""/>
+        </activity>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.mipush.sdk.data" android:exported="false" android:name="com.xiaomi.channel.commonutils.android.MIPushProvider" android:permission="com.dream11.fantasy.cricket.football.kabaddi.permission.MIPUSH_RECEIVE"/>
+        <activity android:name="com.amazon.apay.hardened.activity.APayBrowserActivity"/>
+        <activity android:exported="true" android:name="com.amazon.apay.hardened.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.dream11.fantasy.cricket.football.kabaddi" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.dream11.fantasy.cricket.football.kabaddi" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="eu1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.dream11.react.D11ReactActivity" android:screenOrientation="portrait" android:theme="@style/2131953078"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.dream11.react.D11ReactTransparentActivity" android:theme="@style/2131952486" android:windowSoftInputMode="adjustResize"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/2131427339"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:theme="@style/2131952484"/>
+        <activity android:name="com.dreampay.webview.BaseWebViewActivity" android:screenOrientation="portrait" android:theme="@style/2131951982"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.dream11.fantasy.cricket.football.kabaddi" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/2131952464"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.dream.sports.provider.ui.AuthProviderActivity" android:process=":PluggerAuthProviderProcess" android:screenOrientation="portrait" android:theme="@style/2131952579">
+            <intent-filter>
+                <action android:name="com.plugger.sdk.intent.action.v1.SHARE_PROFILE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.ReactNativeBlobUtil.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/2132082693"/>
+        </provider>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.rnshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="cl.json.RNShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/2132082695"/>
+        </provider>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/2132082689"/>
+        </provider>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <uses-library android:name="android.test.base" android:required="false"/>
+        <uses-library android:name="android.test.mock" android:required="false"/>
+        <activity android:exported="false" android:name="so.plotline.insights.PlotlineActivity"/>
+        <receiver android:exported="false" android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver" android:process=":remote"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.instabug.survey.ui.SurveyActivity" android:theme="@style/2131952110" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.instabug.survey.announcements.ui.activity.AnnouncementActivity" android:theme="@style/2131952110" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.instabug.CrashContentProvider" android:exported="false" android:initOrder="2147483646" android:name="com.instabug.crash.CrashContentProvider"/>
+        <activity android:name="com.instabug.bug.invocation.invocationdialog.InstabugDialogActivity" android:theme="@style/2131952110"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.instabug.bug.view.reporting.ReportingContainerActivity" android:theme="@style/2131952093" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.instabug.bug.view.InstabugThanksActivity" android:theme="@style/2131952110" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.instabug.bug.onboardingbugreporting.OnboardingActivity" android:theme="@style/2131952110"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.instabug.chat.ui.ChatActivity" android:theme="@style/2131952093" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.instabug.bug.internal.video.ScreenRecordingService"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.instabug.featuresrequest.ui.FeaturesRequestActivity" android:theme="@style/2131952483" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.instabug.featuresrequest.ui.custom.ThanksActivity" android:theme="@style/2131952110" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.applaunch.contentprovider.AppLaunchContentProvider" android:exported="false" android:initOrder="2147483647" android:name="com.instabug.apm.contentprovider.APMContentProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.instabug.library.internal.video.RequestPermissionActivity" android:theme="@style/2131952110"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.internal.contentprovider.InstabugContentProvider" android:enabled="true" android:exported="false" android:initOrder="2147483644" android:name="com.instabug.library.internal.contentprovider.InstabugContentProvider"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.instabug.library.screenshot.ScreenshotCaptureService"/>
+        <activity android:exported="false" android:name="com.phonepe.intent.sdk.ui.B2BPGActivity" android:theme="@style/2131953088"/>
+        <activity android:configChanges="orientation" android:name="com.phonepe.intent.sdk.ui.TransactionActivity" android:theme="@style/2131953088" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:exported="false" android:name="com.phonepe.intent.sdk.ui.PreCacheService"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.OpenIntentTransactionActivity" android:theme="@style/2131953088"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.UpiAppsSelectionDialogActivity" android:theme="@style/2131953087"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/2131034116" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/2131034118" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/2131034117" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/2131034116" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.sendbird.android.push.SendbirdHmsMessagingService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/2131952573"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.vmax.ng.videohelper.rewardedvideo.VmaxRewardedVideoActivity"/>
+        <provider android:authorities="com.dream11.fantasy.cricket.football.kabaddi.ProcessLaunchProvider" android:exported="false" android:name="com.conviva.platforms.android.ProcessLaunchProvider"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/2131951616"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/2131951616" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

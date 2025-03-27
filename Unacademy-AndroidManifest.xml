@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.unacademyapp" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <package android:name="com.byjus.thelearningapp"/>
+        <package android:name="com.vedantu.app"/>
+        <package android:name="xyz.penpencil.physicswala"/>
+        <package android:name="com.allen.allenPlus"/>
+        <package android:name="com.marrow"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.byjus.aakash.thelearningapp"/>
+        <package android:name="com.adda247.app"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <package android:name="com.digitalturbine.igniteui.provider.SingularContentProvider"/>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaSessionService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaLibraryService"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.singular.preinstall.READ_PERMISSION_SINGULAR"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <permission android:name="com.unacademyapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.unacademyapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.unacademy.app.ReleaseApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/Theme.Unacademy" android:usesCleartextTraffic="false">
+        <profileable android:shell="true"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <activity android:exported="true" android:name="com.unacademy.app.deeplink.DeepLinkActivity" android:theme="@style/NoUiAppTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.unacademy.com" android:scheme="https"/>
+                <data android:host="unacademy.com" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.unacademyapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <service android:exported="false" android:name="com.unacademy.app.service.FcmPushListenerService" android:process=":firebase">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.unacademyapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.unacademy.app.initializer.DeviceIdInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.app.initializer.SoLoaderInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.app.initializer.ModelInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.app.initializer.BugsnagInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.consumption.unacademyapp.initializer.FacebookSdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.consumption.unacademyapp.initializer.BugSnagInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.unacademy.consumption.unacademyapp.initializer.FirebaseInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:name="com.unacademy.consumption.unacademyapp.OHRedirectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.parentawareness.view.GetParentAppLinkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.webengage.sdk.android.actions.render.WebEngageActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.InAppUpdater"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.NothingEmpty"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.BaseActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.unacademyapp" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.unacademy.consumption.unacademyapp.SplashActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*" android:scheme="unacademy"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.CourseLessonActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.native_player.NativeCourseLessonActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleInstance" android:name="com.unacademy.consumption.unacademyapp.NewCourseLessonActivity" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:taskAffinity="com.unacademy.player"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.ManageDownloadActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.ReviewListActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.unacademy.consumption.unacademyapp.ReviewActivity" android:theme="@style/Theme.UserDialog"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.InvitationSuccessfullActivity" android:screenOrientation="portrait" android:theme="@style/Theme.UserDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.CommentListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.CommentThreadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.ContactUsRedirectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.CourseOverviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.UserDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAnimationsLegacy"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:launchMode="singleInstance" android:name="com.unacademy.consumption.unacademyapp.ImageUploadActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.OTPVerificationActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAnimations" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.EmailOtpVerificationLayout" android:screenOrientation="portrait" android:theme="@style/MaterialAnimations" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.MobileNumberInputActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAnimations" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.EmailInputActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAnimations" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.SupportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.ForgotPasswordActivity" android:screenOrientation="portrait" android:theme="@style/MaterialAnimations" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.StreakInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.DownloadsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.RedirectDownloadActivity" android:screenOrientation="portrait" android:theme="@style/NoUiAppTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.DownloadedCourseActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.InviteUserActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.LessonRedirectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.CourseRedirectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.TermsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.PrivacyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.CourseListDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.UserDialog"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:name="com.unacademy.consumption.unacademyapp.UnacademyReactActivity" android:screenOrientation="portrait" android:theme="@style/ReactAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.native_player.PlayerFullscreenActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.consumption.unacademyapp.LivePlayerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:label="Processing your payment" android:name="in.juspay.godel.PaymentActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.unacademy.consumption.unacademyapp.PdfReaderActivity" android:screenOrientation="sensor"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.FullScreenExoPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.SpecialClassRedirectionActivity"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.WebViewPaymentActivity"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.ImageCropActivity"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.SignUpWallActivity" android:screenOrientation="portrait" android:theme="@style/LandingPageTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:label="Open House" android:launchMode="singleTop" android:name="com.rnunacademyplayer.openhouse.OpenHouseActivity" android:theme="@style/OpenHouseTheme" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="GCM_SENDER_ID" android:value="id:607899131049"/>
+        <meta-data android:name="com.razorpay.ApiKey" android:value="rzp_live_UOYIPLUl3fnUqc"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="848-6R9-RK5Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="c26-b4b"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="16c235f8bcc1da201fda1292938f3971"/>
+        <meta-data android:name="com.webengage.sdk.android.auto_gcm_registration" android:value="false"/>
+        <meta-data android:name="com.webengage.sdk.android.small_icon" android:resource="@null"/>
+        <meta-data android:name="com.webengage.sdk.android.debug" android:value="false"/>
+        <meta-data android:name="com.webengage.sdk.android.key" android:value="8261829c"/>
+        <meta-data android:name="com.webengage.sdk.android.location_tracking" android:value="false"/>
+        <meta-data android:name="com.appsee.ApiKey" android:value="7ed042f49b9c44d69a247ad295b21d0e"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/true_caller_sdk"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_stat_logo"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_pbvYNBbZiLsXF1KM1AzNXhbltriDG40A"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_mmrYJrbXmPC5u0LGXEyG6glezugsL32o"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="true"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.unacademy.consumption.unacademyapp.utils.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.unacademy.consumption.unacademyapp.utils.OnUpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:path="com.unacademyapp" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="io.branch.referral.InstallListener">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.unacademy.consumption.unacademyapp.native_player.UnMediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.webengage.sdk.android.ExecutorService"/>
+        <service android:name="com.webengage.sdk.android.EventLogService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND" android:process=":firebase">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.webengage.sdk.android.WebEngageJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":webengage"/>
+        <receiver android:exported="false" android:name="com.webengage.sdk.android.WebEngageReceiver" android:process=":webengage">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.ACTION"/>
+                <category android:name="com.unacademyapp"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.unacademy.consumption.unacademyapp.service.VideoService"/>
+        <service android:exported="true" android:name="com.unacademy.consumption.unacademyapp.service.PopupVideoService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.unacademy.consumption.unacademyapp.utils.CancelNotificationReceiver"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.FullScreenImageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.consumption.unacademyapp.DocumentViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.auth.global.ui.GlobalLoginActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.unacademy.auth.login.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.askadoubt.ui.AskADoubtActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.askadoubt.postclassrecommendation.PostClassRecommendationActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Blendiarmus.Inverse"/>
+        <activity android:name="com.unacademy.askadoubt.postclassrecommendation.vertical.PostClassRecommendationVerticalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.batch.BatchDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.discover.continuewatching.ContinueWatchingActivity"/>
+        <activity android:exported="false" android:name="com.unacademy.discover.flashcards.FlashCardActivity"/>
+        <activity android:name="com.unacademy.enrollments.EnrollmentsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.enrollments.PreSubEnrollmentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.platformbatches.view.BatchGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.platformbatches.view.BatchGroupDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.platformbatches.view.EnrollmentBatchGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.consumption.setup.glo.blocker.GLOBlockerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:exported="true" android:name="com.unacademy.consumption.setup.glo.GoalSelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="unacademy.com" android:pathPattern="/explore" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.unacademy.consumption.setup.glo.GLOActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:name="com.unacademy.consumption.setup.iconicOnboarding.ui.IconicOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:name="com.unacademy.consumption.setup.recommendation.RecommendationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:name="com.unacademy.consumption.setup.addresscapture.ui.AddressCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="com.unacademy.consumption.setup.glo.GLOGoalWelcomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="unacademy.com" android:pathPattern="/glo/.*/.*/welcome" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.unacademy.consumption.setup.askNotification.AskNotifyPermissionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:exported="false" android:name="com.unacademy.presubscription.ui.FreeTrialExpWelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.presubscription.ui.FreeTrialExpiryInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.presubscription.util.PreSubYoutubePlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.ui.TopicGroupHomeFeedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.ui.SubscriptionOffersActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.feedback.ui.PreSubscriptionFeedBackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.presubscription.ui.WelcomeHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.feedback.ui.PostPositiveFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.ui.PlaylistDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.presubscription.offlineCentre.ui.OfflineCentreActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.unacademy.unacademyhome.ttu.TTUActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.unacademyhome.educator.EducatorFollowListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.unacademyhome.testandpractice.TestPracticeD7Activity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.unacademyhome.scholarship.ScholarshipTestActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.unacademyhome.lmp.PostLmpFeed" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.unacademy.unacademyhome.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.unacademyhome.lmp.freesessionbooking.ui.LMPFreeSessionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.subscriptions.ui.activity.SubscriptionPlanSelection" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.subscriptions.ui.activity.SubscriptionValueProps" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.browse.batchenrolment.BatchEnrolmentActivity"/>
+        <activity android:name="com.unacademy.browse.ui.LevelsFAQsActivity"/>
+        <activity android:name="com.unacademy.browse.ui.BrowseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.unacademy.community.activity.CommunityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityOnboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityGuidelinesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityPostsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityExclusiveGroupActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.community.activity.CommunityTopEducatorSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.checkout.ComparePlansActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.checkout.PaymentThankYouActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.crashcourse.ui.CrashCourseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.compete.ui.activities.CompeteRatingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.compete.CompeteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.compete.ui.activities.CompeteLeaderBoardRankActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:name="com.unacademy.compete.CompeteLandingPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.compete.ui.activities.CompeteFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.compete.ui.activities.CompeteSolutionsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.download.ui.DownloadActivity" android:screenOrientation="portrait"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.unacademy.download.DownloadService" android:permission="android.permission.FOREGROUND_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.unacademy.download.receiver.CancelDownloadBroadcastReceiver"/>
+        <activity android:name="com.unacademy.devicelimitation.ui.DeviceLimitationActivity" android:theme="@style/Theme.AppCompat.Transparent.DeviceLimit"/>
+        <activity android:exported="false" android:name="com.unacademy.documentreader.ui.DocumentReaderActivity"/>
+        <activity android:label="Reader" android:name="com.unacademy.documentreader.reader.ui.ReaderActivity"/>
+        <activity android:exported="false" android:name="com.unacademy.educatorprofile.EducatorProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:exported="false" android:name="com.unacademy.educatorprofile.v2.EducatorDetailsV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.educator.seeAll.view.EducatorSeeAllActivity"/>
+        <activity android:exported="false" android:name="com.unacademy.featureactivation.d7flow.FeatureActivationD7Activity" android:screenOrientation="portrait" android:theme="@style/UnActivitySlideUpDownAnimation" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.feedback.freetrial.FreeTrialFeedbackActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.unacademy.feedback.learner.LearnerFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.globaltestprep.ui.GtpLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.globaltestprep.ui.SubscribedGtpBlockerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.globaltestprep.ui.GoalNotAvailableActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="true" android:name="com.unacademy.groups.GroupActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:name="com.unacademy.groups.ui.GroupsIntroActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.home.anyfeed.AnyFeedViewAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.home.anyfeed.AnyFeedLessonViewAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.home.anyfeed.AnyFeedCourseViewAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.course.VideoIconsActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Draggable"/>
+        <activity android:name="com.unacademy.icons.course.CourseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.home.IconsHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.icons.lesson.LessonActivity" android:screenOrientation="landscape" android:theme="@style/AppTheme.Draggable"/>
+        <activity android:name="com.unacademy.livementorship.ui.LMActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.livementorship.ui.ImageCropActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.livementorship.feedback.RCFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.livementorship.lmpsales.InstantConnectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.notes.ui.activity.NotesFeedbackActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.notes.ui.activity.NotesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.notes.ui.activity.NotesErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.notes.notepdp.ui.NoteDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.notes.notepdp.ui.NotesTrackingStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.openhouse.activity.OpenHouseOnboardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.openhouse.activity.OpenHouseLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.openhouse.activity.OpenHouseSeeAllSessionsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.EmiCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.EmiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.ExternalSubscriptionActivationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.WalletActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.NetbankingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.PostPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.UpiActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.JuspayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.CardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.PaymentsHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payment.ui.activity.NothingPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.loans.LoansActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.payinparts.PayInPartsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.unacademy.payincash.ui.PayInCashHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.planner.batchrating.BatchRatingActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.planner.practicereminder.PracticeReminderActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.planner.practicereminder.PracticeEmptyStateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.planner.languageselection.LanguageSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.planner.addcoursestoplanner.ui.AddCoursePlannerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.planner.addcoursestoplanner.ui.AddToPlannerBsActivity" android:theme="@style/UnReactOverlay"/>
+        <activity android:exported="false" android:name="com.unacademy.planner.buildplanner.ui.BuildPlannerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.testfeature.ui.TestSeriesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.testfeature.ui.GtpTestSeriesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.testfeature.ui.activities.TestSeriesDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.testfeature.test_report.TestReportActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.unacademy.web.ui.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.practice.ui.PracticeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.profile.achievements.AchievementsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.profile.credit.CreditsHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.profile.managesubscription.ManageSubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.profile.weeklysummery.WeeklySummaryActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.profile.myeducator.MyEducatorsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.recorded.ui.RecordedContinueWatchingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.referral.ReferralActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.unacademy.referral.ui.activity.ReferralLeaderboardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.saved.ui.SavedActivity" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/Theme.Unacademy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.saved.notebook.ui.ScreenshotGalleryActivity" android:theme="@style/GalleryCustomTheme"/>
+        <activity android:name="com.unacademy.search.ui.activity.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.settings.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.settings.editProfile.EditProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.unacademy.specialclass.ui.activity.SpecialClassActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.unacademy.specialclass.ui.activity.SpecialClassDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.store.ui.activity.StoreMyPurchaseActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.unacademy.syllabus.ui.SyllabusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:exported="false" android:name="com.unacademy.syllabus.ui.SyllabusSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:exported="false" android:name="com.unacademy.syllabus.ui.SyllabusSeeAllActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Unacademy"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenSize" android:name="com.unacademy.consumption.basestylemodule.utils.YoutubePlayerActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:exported="false" android:name="com.rnunacademyplayer.openhouse.OpenHouseService"/>
+        <activity android:name="org.readium.r2.navigator.epub.R2EpubActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="org.readium.r2.navigator.cbz.R2CbzActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="org.readium.r2.navigator.audiobook.R2AudiobookActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="org.readium.r2.navigator.divina.R2DiViNaActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="org.readium.r2.navigator.pdf.R2PdfActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.unacademyapp" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.tonyodev.fetch.FetchService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.unacademy.unacademyplayer.views.UnacademyPlayerActivity"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.unacademyapp.rnshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="cl.json.RNShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_download_paths"/>
+        </provider>
+        <provider android:authorities="com.unacademyapp.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <provider android:authorities="com.unacademyapp.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <activity android:name="com.imagepicker.CameraActivityLib" android:theme="@style/Camera.FullScreen" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.unacademyapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.unacademyapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.webengage.sdk.android.NotificationClickHandlerService">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.ACTION"/>
+                <category android:name="com.unacademyapp"/>
+            </intent-filter>
+        </service>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:name="com.webengage.sdk.android.WETransparentActivity" android:theme="@style/Theme.Transparent"/>
+        <service android:exported="true" android:name="com.webengage.sdk.android.actions.render.TimerService">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.PROGRESS_BAR"/>
+                <category android:name="com.unacademyapp"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.masteratul.exceptionhandler.DefaultErrorScreen"/>
+        <receiver android:exported="false" android:name="com.github.yamill.orientation.OrientationReceiver">
+            <intent-filter>
+                <action android:name="onConfigurationChanged"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.unacademyapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.RNFetchBlob.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="c23230e7-c1e1-4f8f-a51c-c2dedfd64f67"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

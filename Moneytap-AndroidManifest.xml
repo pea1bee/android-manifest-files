@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.mycash.moneytap.app" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="rzp.device_token.share"/>
+        </intent>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.otpless.app"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.michatapp.im"/>
+        <package android:name="com.discord"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.viber.voip"/>
+        <package android:name="org.thoughtcrime.securesms"/>
+        <package android:name="im.thebot.messenger"/>
+        <package android:name="com.truecaller"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.phonepe.app.preprod"/>
+        <package android:name="com.phonepe.simulator"/>
+        <package android:name="com.phonepe.simulator.debug"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="upi" android:scheme="mandate"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaSessionService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaLibraryService"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.GET_SIGNATURES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.mycash.moneytap.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.mycash.moneytap.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@drawable/ic_launcher" android:label="@string/app_name_moneytap" android:name="com.mycash.moneytap.app.application.MoneyTapApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="com.mycash.moneytap.app.features.qual.customerprofile.CustomerProfileCompletionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap.DarkStatus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.customerprofile.workdetails.LoanApplicationFormActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.CustomViewFinderActivity"/>
+        <activity android:name="com.mycash.moneytap.app.features.foreclosure.activity.ForeclosurePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.foreclosure.activity.ForeclosureFlowPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.repaymentV2.activity.RepaymentPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/channel_default_notification"/>
+        <service android:exported="true" android:name="com.mycash.moneytap.app.jobs.AppFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.mycash.moneytap.app.features.qual.softpull.SoftPullActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="true" android:label="@string/app_name_moneytap" android:name="com.mycash.moneytap.app.features.splash.SplashActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:exported="true" android:name="com.mycash.moneytap.app.view.activity.DeepLinkActivity" android:noHistory="true"/>
+        <activity android:launchMode="singleTask" android:name="com.mycash.moneytap.app.features.qual.DashboardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.DefaultPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.placeholder.PlaceholderPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.login.RegistrationPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.netbanking.NetBankingPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.beneficiary.BankInfoPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.password.ForgotPasswordPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.webview.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.ScanActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.mycash.moneytap.app.features.perfios.PerfiosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.base.view.activity.PhotoViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.InfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.emi.EmiListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.billinginfo.BillingInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.fundtransfer.ImpsOtpVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.base.feature.passcode.PinLockActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.setting.SettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.mycash.moneytap.app.features.postaip.cmlegacy.CMDashboardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.fundtransfer.FundsTransferBeneficiaryDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.GreyBackground"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.loanreview.legacy.LoanReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.BaseActionBarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.aip.ApprovedDetailsPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.mycash.moneytap.app.features.kyc.KycDocumentPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.rating.RatingPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.common.camera.CameraActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.mycash.moneytap.app.features.qual.telepd.TelePdRejectActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.profile.ProfilePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.eligibility.EligibilityPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.address.CurrentResidencePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.otherdetails.WorkPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.financehistory.FinanceHistoryPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.employment.EmploymentPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.loanreview.LoanReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.profile.SelfiePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.bankformality.BankFormalitiesPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.InviteCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.mycash.moneytap.app.features.esign.ESignActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.TransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.kyc.KycExplanationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.UnlistedCityActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.applicationstatus.ApplicationStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.postaip.cmlegacy.CreditLineConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.postaip.PostAipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.block.QualBlockPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.postaip.actioncenter.rating.RatingReviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.emi.AmortizationScheduleActivity"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.fundtransfer.legacy.FundTransferResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.fundtransfer.FundTransferResultActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.paylater.FreoPayUpsellActivity" android:screenOrientation="portrait" android:theme="@style/FreoPayTheme"/>
+        <activity android:name="com.mycash.common.framework.media.activity.VideoMediaActivity"/>
+        <activity android:name="com.mycash.common.framework.media.activity.GifMediaActivity"/>
+        <activity android:name="com.mycash.common.framework.media.activity.LottieMediaActivity"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.AppGcmRegistrationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.libs.base.services.base.MessageTaskService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.mycash.moneytap.app.libs.base.services.base.MessageTaskJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.InstalledAppsIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.GeoLocationSyncService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.CompanyListIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.PhoneVerificationIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.SmsSyncService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.mycash.moneytap.app.jobs.SmsReaderService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.mycash.moneytap.app.jobs.IncomingSmsReceiver" android:permission="android.permission.RECEIVE_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mycash.moneytap.app.jobs.broadcast.CheckNetworkReceiver" android:permission="android.permission.ACCESS_NETWORK_STATE">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mycash.moneytap.app.manager.analytics.InstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.mycash.moneytap.app.libs.base.services.base.MessageTaskReceiver">
+            <intent-filter>
+                <action android:name="com.mycash.moneytap.app.service.broadcast.MessageTaskReceiver.ACTION_MESSAGE_TASK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.mycash.moneytap.app.jobs.broadcast.GeoLocationSyncReceiver">
+            <intent-filter>
+                <action android:name="com.mycash.moneytap.app.service.broadcast.GeoLocationSyncReceiver.ACTION_LOCATION_SYNC"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="f2a57195f6da7a1e0f9e981b185328684f7f9f66"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+        <service android:exported="false" android:name="com.moengage.hms.pushkit.MoEPushKitMessageService">
+            <intent-filter>
+                <action android:name="com.huawei.push.action.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.appvirality.appviralityui.activities.GrowthHackActivity" android:screenOrientation="portrait" android:theme="@style/AppViralityThemeCustom"/>
+        <activity android:name="com.appvirality.appviralityui.activities.WebViewActivity"/>
+        <activity android:exported="false" android:name="com.appvirality.appviralityui.activities.WelcomeScreenActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.appvirality.sdk.AppViralityApiKey" android:value="@string/appvirality_app_key"/>
+        <meta-data android:name="com.appvirality.sdk.TestMode" android:value="@bool/appvirality_test_mode"/>
+        <activity android:name="com.mycash.moneytap.app.features.nach.enach.ENachDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.nach.NachPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.nach.NachSignatureCameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.nach.NachDescriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.transaction.v2.MyTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.repayment.activity.MakePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.repaymentV2.activity.RepaymentMakePaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.docpickup.DocPickupPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.nimanagement.activity.ApprovedDetailsPageActivityV2" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.nimanagement.activity.NiManagementPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.libs.nimanagement.activity.SubmitBankStatementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.emandate.RepaymentSelectorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.emandate.InitRepaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.view.activity.CreditLimitUpsellActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.qual.curing.CuringPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.permissions.RequestPermissionPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.game.GamePageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.cupi.activity.UpiPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.loaninsurance.activity.InsuranceCoverageDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.repayment.activity.RepaymentFlowPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.moratorium.MoratoriumConsentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.poslending.activity.PosTenureSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.mycash.moneytap.app.features.rblrevamp.activity.PostQualActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.mycash.moneytap.app.features.rblrevamp.activity.TransactionListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:hardwareAccelerated="true" android:name="io.flutter.embedding.android.FlutterActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="true" android:hardwareAccelerated="true" android:name="com.mycash.moneytap.app.flutter.FlutterPluginActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app_start" android:scheme="moneytap"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="page" android:scheme="moneytap"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.moneytap.com" android:pathPrefix="/page" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.moneytap.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="moneytap.onelink.me" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.mycash.moneytap.app.features.loanrestructure.LoanRestructureActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.insurance.InsuranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.cupi.activity.UpiFundTransferActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.mycash.moneytap.app.features.docupload.activity.DocUploadPageActivity"/>
+        <activity android:name="com.mycash.moneytap.app.features.karza.KarzaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.moneytap.qualification.curring.DataErrorCurringActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.qualification.UserProfileQualificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.qualification.landing.QualLandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap.DarkStatus"/>
+        <service android:enabled="true" android:exported="false" android:name="com.moneytap.messenger.messagetask.base.TaskService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.moneytap.messenger.messagetask.base.TaskJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.moneytap.messenger.messagetask.base.TaskBroadCastReceiver">
+            <intent-filter>
+                <action android:name="com.moneytap.messenger.messagetask.base.TaskBroadCastReceiver.MESSAGE_TASK"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.moneytap.onboarding.login.linkemail.LinkEmailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.onboarding.login.mobile.VerifyMobileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.onboarding.login.OnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.moneytap.onboarding.login.receiver.OTPSmsRetriever" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.moneytap.support.faq.FAQActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap.DarkStatus"/>
+        <activity android:name="com.moneytap.support.common.activities.PhotoViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.support.common.activities.GifMediaActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.support.common.activities.VideoMediaActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.support.common.activities.LottieMediaActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <activity android:name="com.moneytap.sharedfeature.webview.MoneyTapWebLinkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MoneyTap"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <activity android:label="@string/title_activity_maps" android:name="com.mycash.locationselector.MapsActivity"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <provider android:authorities="com.mycash.moneytap.app.EventContentProvider" android:name="com.rudderstack.android.sdk.core.EventContentProvider"/>
+        <meta-data android:name="io.sentry.proguard-uuid" android:value=""/>
+        <activity android:name="com.payu.custombrowser.CBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.custombrowser" android:value="b1fab2ae-f123-4d20-b04a-fafeced4f367"/>
+        <activity android:name="com.payu.ui.view.activities.CheckoutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <activity android:launchMode="singleTask" android:name="com.payu.otpassist.PayUOtpAssistActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteThemeOverlay" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <meta-data android:name="com.facebook.sdk.CodelessDebugLogEnabled" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.mycash.moneytap.app" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.otpless.main.OtplessZeroTapReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.baseflow.geolocator.GeolocatorLocationService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.mycash.moneytap.app.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.moengage.hms.pushkit.PushClickTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="hmspushkit.com.mycash.moneytap.app" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <activity android:banner="@drawable/moengage_inapp_close" android:exported="false" android:name="com.moengage.inapp.internal.activity.MoEInAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.mycash.moneytap.app.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.mycash.moneytap.app.UEContentProvider" android:exported="false" android:initOrder="999999" android:name="com.userexperior.provider.UEContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.userexperior.ui.UEConsentActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEEventSession"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEScreenshotService"/>
+        <meta-data android:name="com.phonepe.android.sdk.Debuggable" android:value="false"/>
+        <meta-data android:name="com.phonepe.android.sdk.isUAT" android:value="false"/>
+        <activity android:name="com.payu.phonepe.PayUPhonePeActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:exported="false" android:name="com.phonepe.intent.sdk.ui.B2BPGActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <activity android:configChanges="orientation" android:name="com.phonepe.intent.sdk.ui.TransactionActivity" android:theme="@style/phonepeThemeInvisibleCompat" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:exported="false" android:name="com.phonepe.intent.sdk.ui.PreCacheService"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.OpenIntentTransactionActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <activity android:name="com.phonepe.intent.sdk.ui.UpiAppsSelectionDialogActivity" android:theme="@style/phonepeThemeInvisible"/>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <provider android:authorities="com.mycash.moneytap.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:authorities="com.mycash.moneytap.app.file_provider" android:exported="false" android:grantUriPermissions="true" android:name="com.sidlatau.flutteremailsender.FlutterEmailSenderFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/shared_file_paths"/>
+        </provider>
+        <activity android:name="com.payu.gpay.GPayResponseActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <activity android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="true" android:name="com.payu.nfc.view.NFCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <provider android:authorities="com.mycash.moneytap.app.flutter.image_provider" android:exported="false" android:grantUriPermissions="true" android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_image_picker_file_paths"/>
+        </provider>
+        <provider android:authorities="com.mycash.moneytap.app.fileProvider.com.crazecoder.openfile" android:exported="false" android:grantUriPermissions="true" android:name="com.crazecoder.openfile.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:authorities="com.mycash.moneytap.app.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.mycash.moneytap.app.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.mycash.moneytap.app.androidx-startup" android:directBootAware="true" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.payu.crashlogger.CrashProviderInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="splitties.init.AppCtxInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.sentry.uuid.com.payu.india" android:value="56e85479-6f07-4747-94aa-75369aedc0a5"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <provider android:authorities="com.mycash.moneytap.app.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.mycash.moneytap.app.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <provider android:authorities="com.mycash.moneytap.app.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:name="com.moengage.core.internal.data.reports.DataSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.moengage.trigger.evaluator.internal.CampaignEvaluationJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="com.mixpanel.android.mpmetrics.MixpanelNotificationRouteActivity"/>
+        <receiver android:name="com.mixpanel.android.mpmetrics.MixpanelPushNotificationDismissedReceiver"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.paymentparamhelper" android:value="78f2cb65-8c2e-4b8b-80be-ac736cc91514"/>
+    </application>
+</manifest>

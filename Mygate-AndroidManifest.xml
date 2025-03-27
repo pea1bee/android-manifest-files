@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.mygate.user" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="org.telegram.messenger"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.accounts.AccountAuthenticator"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="com.android.contacts" android:mimeType="vnd.android.cursor.item/*" android:scheme="content"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.mygate.user.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.mygate.user.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <permission android:name="com.mygate.user.permission.BLE_RECEIVER" android:protectionLevel="signatureOrSystem"/>
+    <uses-permission android:name="com.mygate.user.permission.BLE_RECEIVER"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="keyboardHidden|orientation" android:extractNativeLibs="true" android:icon="@mipmap/ic_launcher_new" android:keepScreenOn="true" android:label="@string/app_name" android:name="com.mygate.user.app.AppController" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_new_round" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/ThemeMyGate" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.NationalityPickerActivity"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.adView.ui.AdViewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.search.views.ui.GlobalSearchActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material"/>
+        <activity android:exported="false" android:label="@string/title_house_hold" android:launchMode="singleTop" android:name="com.mygate.user.modules.dashboard.ui.HouseHoldActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/title_activity_feed" android:launchMode="singleTop" android:name="com.mygate.user.modules.dashboard.ui.ActivityFeedActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.mygate.user.common.platform.NotificationForegroundService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.mygate.user.common.platform.VehicleNotificationForegroundService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.mygate.user.common.platform.SmartAccessBleService"/>
+        <activity android:exported="false" android:label="@string/select_address" android:launchMode="singleTop" android:name="com.mygate.user.modules.shared.MapActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.mygate.user.modules.shared.SplashActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_manage_user_request"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_dhelp_profile"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_dhelp_attendance"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mg_web_view"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mg_web_view_erp"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_home_tab"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_feed"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_vehicle_log"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_household"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_notice_board"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_intercom_step2"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_dhelp_profile_rate_now"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.open_web_get"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.open_web_post"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.open_web_get"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mygate.in" android:pathPrefix="/instantlogin" android:scheme="mygate"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mygate.in" android:pathPrefix="/dl" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mygate.com" android:pathPrefix="/dl" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="homes.mygate.in" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="homes.mygate.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_verified_partner"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_vehicle"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_kid"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_my_parcel"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_guests"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_my_daily_help"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.mygate.com" android:pathAdvancedPattern="((?!uap)|(?!img.static).mygate.com*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.mygate.in" android:pathAdvancedPattern="((?!uap)|(?!img.static).mygate.in*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="m628y.app.goo.gl" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="*.mgthunderbolt.xyz" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="mygate_campaign"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/signup" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.SimpleSignUpActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_activity_emergency_contacts" android:name="com.mygate.user.modules.apartment.ui.EmergencyContactsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_emergency_contacts" android:name="com.mygate.user.modules.apartment.ui.EmergencyAllContactsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_res_dir_catalog" android:name="com.mygate.user.modules.apartment.ui.ResDirCatalogActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/business_directory" android:name="com.mygate.user.modules.apartment.ui.SocietyInfoCentreActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Resident Directory" android:name="com.mygate.user.modules.apartment.ui.ResDirDetailActivity" android:parentActivityName="com.mygate.user.modules.apartment.ui.ResDirCatalogActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.mygate.user.modules.apartment.ui.ResDirCatalogActivity"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_manage_committe" android:name="com.mygate.user.modules.apartment.ui.ManageCommitteActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/user_approvals" android:launchMode="singleTask" android:name="com.mygate.user.modules.admin.ui.AdminManageUsersActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.admin.ui.AdminResidentDetailsEditActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Select Contact" android:launchMode="singleTop" android:name="com.mygate.user.modules.apartment.ui.SocietyInfoContactActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.LocalServicesActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="io.flutter.embedding.android.FlutterFragmentActivity" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.mygate.user.common.ui.flutter.BaseFlutterActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.LocalServicesListActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationResponseActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/ThemeMyGate.NoActionBar">
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_validate_visitor"/>
+                <action android:name="com.mygate.user.action.mygate_validate_visitor_status"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationReminderActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/ThemeMyGate.Translucent" android:turnScreenOn="true" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationCampaignActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationLockAlertActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationResponseDenyActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationResponseAllowActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.common.ui.CustomWebviewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.common.ui.CustomPartnerWebviewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.common.ui.GenericPartnerWebviewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_exit_history" android:launchMode="singleTask" android:name="com.mygate.user.modules.flats.ui.FamilyExitHistoryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/logo_notification"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/yellow_revamp"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="delivery_metrics_exported_to_big_query_enabled" android:value="true"/>
+        <service android:exported="false" android:name="com.mygate.user.common.platform.MyFcmListenerService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.mygate.user.utilities.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.mygate.user.common.platform.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.mygate.user.utilities.SMSReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/notification_help" android:launchMode="singleTop" android:name="com.mygate.user.common.ui.WebviewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <provider android:authorities="com.mygate.user.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.mygate.user.utilities.GenericFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:label="@string/title_activity_daily_help_attendance" android:launchMode="singleTask" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpAttendanceActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Daily Help" android:launchMode="singleTask" android:name="com.mygate.user.modules.helpservices.ui.LocalServicesCategoryListActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_notification_settings" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifications.ui.notificationsettings.NotificationSettingActivity" android:parentActivityName="com.mygate.user.modules.dashboard.ui.HomeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.mygate.user.modules.dashboard.ui.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:label="Daily Help" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.LocalServicesStartActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="History" android:launchMode="singleTop" android:name="com.mygate.user.modules.vehicles.ui.VehicleHistoryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/always_approve" android:launchMode="singleTop" android:name="com.mygate.user.modules.ecomm.ui.VerifiedPartnerActivity" android:parentActivityName="com.mygate.user.modules.dashboard.ui.HomeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.mygate.user.modules.dashboard.ui.HomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.mygate.user.modules.userprofile.ui.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.mygate.user.modules.dashboard.ui.HomeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="shortcut_community_page"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="shortcut_create_post"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="shortcut_preapprove_all"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="shortcut_preapprove_cab"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="shortcut_preapprove_delivery"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="shortcut_send_alert"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.ChooseCommunityActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/get_started_small" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.ForgotPasswordActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:label="Settings" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.SettingsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_profile_details_dailyhelp" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpProfileRevampActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_profile_details_dailyhelp" android:launchMode="singleTask" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpProfileEnhancedActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_activity_daily_help_reviews" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpReviewsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_daily_help_reviews" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpReviewsRevampActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_daily_help_edit_profile" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpEditProfileActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/title_activity_daily_help_gatepass_history" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.GatepassHistoryActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.UnapprovedStateActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_covid_safety_meter" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.CovidSafetyMeterActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/request_demo" android:launchMode="singleTop" android:name="com.mygate.user.modules.leads.ui.RequestDemoActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_how_it_works" android:launchMode="singleTop" android:name="com.mygate.user.modules.dashboard.ui.HowItWorksActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/advance_settings" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.AdvanceSettingsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.visitors.ui.GuestInviteActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="@string/detailed_review" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DetailsReviewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="@string/detailed_review" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DetailsReviewRevampActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifygate.ui.FrequentEntryLogActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/select_flats" android:launchMode="singleTop" android:name="com.mygate.user.modules.apartment.ui.FlatSelectActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Flat Settings" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.SettingDetailActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="e-Intercom Settings" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifications.ui.eIntercom.InterComSetupActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="MyGate" android:launchMode="singleTop" android:name="com.mygate.user.modules.shared.AppErrorActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Payment Details" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.PaymentDetailsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="UPI Money Transfer" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.MoneyTransferActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:label="@string/all_transactions" android:launchMode="singleTop" android:name="com.mygate.user.modules.helpservices.ui.DailyHelpAllTransactionsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.notifications.ui.NotificationEcomResponseActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/AppThemeMaterial">
+            <intent-filter>
+                <action android:name="com.mygate.user.action.mygate_validate_visitor"/>
+                <action android:name="com.mygate.user.action.mygate_validate_visitor_status"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:label="@string/admin_dashboard" android:launchMode="singleTop" android:name="com.mygate.user.modules.admin.ui.AdminDashboardActivityKotlin" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/admin_dashboard" android:launchMode="singleTop" android:name="com.mygate.user.modules.admin.ui.AdminSocietyListActivityKotlin" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="Non MyGate Units" android:launchMode="singleTop" android:name="com.mygate.user.modules.admin.ui.InActiveFlatActivityKotlin" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:label="@string/data_privacy_label" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.DataViewedLogsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/right_to_forgotten" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.RightToForgetActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/move_in_application" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.MoveInApplicationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/household" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.HouseholdActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/documents" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.DocumentsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/others" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.OtherSectionActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/move_in_status" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.MoveInStatusActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/move_out_status" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.MoveOutStatusActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.PaymentActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/move_out_application" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.MoveOutApplicationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/flat_details" android:launchMode="singleTop" android:name="com.mygate.user.modules.moveinmoveout.ui.activity.FlatDetailsActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="Add New" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifygate.ui.SelectSecurityAlertContactActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/security_alert_list" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifygate.ui.SecurityAlertListActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/my_pass" android:launchMode="singleTop" android:name="com.mygate.user.modules.visitors.ui.SeekingInviteList" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/select_phone_contact" android:launchMode="singleTop" android:name="com.mygate.user.modules.visitors.ui.ContactListActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:name="com.mygate.user.modules.visitors.ui.SeekInviteFullScreenNotificationActivity" android:screenOrientation="portrait" android:showForAllUsers="true" android:showOnLockScreen="true" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/approve_new_resident" android:launchMode="singleTop" android:name="com.mygate.user.modules.admin.ui.ApplicantDetailActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="Dev Test" android:name="com.mygate.user.utilities.TestEnvironmentSelectionActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material"/>
+        <activity android:exported="false" android:label="@string/select_country" android:name="com.mygate.user.modules.userprofile.ui.CountryPickerActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustPan|stateVisible"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.mygate.user.modules.communication.ui.p2pCalling.AudioCallActivity" android:screenOrientation="portrait" android:taskAffinity="call.audio" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_activity_add_apartment" android:launchMode="singleTop" android:name="com.mygate.user.modules.flats.ui.AddYourHomeActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.common.ui.video.VideoViewExoPlayer" android:resizeableActivity="true" android:screenOrientation="sensor" android:supportsPictureInPicture="true" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:label="@string/title_resident_profile" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.communityprofile.ResidentProfileActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/mygate_premium_plan" android:launchMode="singleTop" android:name="com.mygate.user.modules.userprofile.ui.SubscriptionPurchaseActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.testnotification.ui.TestNotificationActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGateInter" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.mygate.user.modules.notifications.ui.flashApproval.FlashApprovalKnowMoreActivity" android:screenOrientation="portrait" android:theme="@style/ThemeMyGate.NoActionBar.Material"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.mygate.user.common.platform.p2pCalling.WebRtcCallService"/>
+        <service android:foregroundServiceType="phoneCall" android:name="com.mygate.user.modules.notifications.ui.BubbleService"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.lyokone.location.FlutterLocationService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.mygate.user.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.mygate.user.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.mygate.user.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.mygate.user.flutter.image_provider" android:exported="false" android:grantUriPermissions="true" android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_image_picker_file_paths"/>
+        </provider>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.mygate.user.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="6.0.1"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:exported="false" android:name="com.ttlock.bl.sdk.service.DfuService"/>
+        <provider android:authorities="com.mygate.user.ttlock.sdk.provider" android:exported="false" android:multiprocess="true" android:name="com.ttlock.bl.sdk.provider.InitProvider"/>
+        <provider android:authorities="com.mygate.user.android7.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.ttlock.bl.sdk.util.DeviceFilePorvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

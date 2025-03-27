@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="in.indwealth" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.SIBMobile"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.samsung.android.spaymini"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.fss.pnbpsp"/>
+        <package android:name="com.fss.unbipsp"/>
+        <package android:name="com.fss.jnkpsp"/>
+        <package android:name="com.fss.idfcpsp"/>
+        <package android:name="com.mgs.induspsp"/>
+        <package android:name="com.YesBank"/>
+        <package android:name="com.olive.dcb.upi"/>
+        <package android:name="com.mgs.yesmerchantnative.prod"/>
+        <package android:name="com.upi.federalbank.org.lotza"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.mycompany.kvb"/>
+        <package android:name="com.icicibank.pockets"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.olive.kotak.upi"/>
+        <package android:name="com.bsb.hike"/>
+        <package android:name="com.enstage.wibmo.hdfc"/>
+        <package android:name="com.mipay.wallet.in"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.teamviewer.teamviewer.market.mobile"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.idfcfirstbank.optimus"/>
+        <package android:name="com.Version1"/>
+        <package android:name="com.fss.indus"/>
+        <package android:name="com.atomyes"/>
+        <package android:name="com.dcb"/>
+        <package android:name="com.fedmobile"/>
+        <package android:name="com.kvb.mobilebanking"/>
+        <package android:name="com.bankofbaroda.mconnect"/>
+        <package android:name="com.msf.kbank.mobile"/>
+        <package android:name="com.infrasoft.uboi"/>
+        <package android:name="com.boi.mpay"/>
+        <package android:name="com.IndianBank.IndOASIS"/>
+        <package android:name="ney.jupiter"/>
+        <package android:name="com.epifi.paisa"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <package android:name="win.c3.shareapp"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="com.sbi.SBIFreedomPlus"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.iexceed.appzillon.ippbMB"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.db.pbc.mybank.in"/>
+        <package android:name="com.canarabank.mobility"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.Slack"/>
+        <package android:name="org.telegram.messenger"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission android:name="in.indwealth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="in.indwealth.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <meta-data android:name="android.max_aspect" android:value="2.1"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher_app" android:label="@string/app_name" android:name="com.indwealth.android.App" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_app_round" android:supportsRtl="true" android:theme="@style/LightTheme" android:usesCleartextTraffic="false">
+        <meta-data android:name="delivery_metrics_exported_to_big_query_enabled" android:value="true"/>
+        <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="@string/facebook_application_id"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.indwealth.android.ui.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeLauncher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.indwealth.android.ui.profile.family.MemberRequestsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.federal.FederalKycActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.onboarding.ProfileMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="feature.onboarding.login.VerifyOTPActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.payment.ui.transactions.TransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.android.ui.home.HomeActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.indwealth.common.selectcountry.SelectCountryActivity" android:screenOrientation="portrait" android:theme="@style/Base.MaterialTheme"/>
+        <activity android:name="feature.mutualfunds.ui.existingfolio.ExistingFolioActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.android.ui.permissions.ManagePermissionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.kyc.DrawSignatureActivity" android:screenOrientation="landscape" android:theme="@style/LightTheme.White"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.android.ui.lifegoals.LifeGoalsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.RootedDeviceActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.indwealth.android.deeplink.DeeplinkActivity" android:theme="@style/Theme.Transparent">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/deeplink_host" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/deeplink_host_money" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="indmoney"/>
+                <data android:scheme="indwealth"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="indwealth.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="indmoney.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="go.ind.app" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app.ind.money" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.widgetslistpage.ui.TransparentWidgetListActivity" android:theme="@style/Theme.Transparent"/>
+        <provider android:authorities="in.indwealth.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="in.indwealth.dev.debug.shareprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="com.indwealth.core.util.SmsReceiver" android:permission="">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="service.FcmMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/fcm_notification_channel_id"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorPrimary"/>
+        <activity android:exported="false" android:name="com.indwealth.common.investments.explore.search.SearchStocksActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme" android:windowSoftInputMode="stateVisible">
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.indwealth.common.investments.explore.list.ExploreStocksListActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockOrderActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockOrderActivityNew" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.TradeScreenActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.TradeScreenActivityV2" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockOrderActivityStandardLaunchMode" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockOrderActivityBottomSheetActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockOrderActivityBottomSheetV2Activity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.positionsbottomsheet.WidgetMiniAppBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockDetailPageActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.StockDetailPageNormalActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.portfolio.domestic.stocks.detail.InStockDashboardActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.stocks.ui.sip.InSipInvestmentActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.indwealth.common.investments.miniapp.StockCategoryMainDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.drivewealth.profile.DrivewealthProfileActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.drivewealth.profile.AskAdvisorSuccessActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.portfolio.trades.detail.TradeDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.drivewealth.withdrawal.DriveWealthWithdrawalActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.stocks.ui.explore.detail.foreign.order.OrderForeignStocksActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.drivewealth.profile.accountCatalogue.DwAccountCatalogueActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.stocks.ui.drivewealth.fundtransfer.FundTransferActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.add.uploaddocs.AddStocksUploadDocsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.drivewealth.sip.UsSipInvestmentActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.stocks.ui.drivewealth.transfer.DriveWealthTransferSetupActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.usminiapp.miniusstockportfolio.MiniUsStocksPortfolioActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.stocks.ui.usminiapp.miniusstocksdetail.MiniUsStocksDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:launchMode="singleTask" android:name="feature.stocks.ui.trade.UsTradeActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.mutualfunds.ui.rebalancing.RebalancingOverviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.mutualfunds.ui.rebalancing.detail.RebalancingDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.mutualfunds.ui.rebalancing.summary.RebalancingSummaryActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.mutualfunds.ui.explore.search.SearchFundActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="feature.mutualfunds.ui.explore.invest.sip.SipInvestmentActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.mutualfunds.ui.rebalancing.RebalancingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.mutualfunds.ui.explore.detail.MfExploreDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="feature.mutualfunds.ui.stp.StpActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.DarkStatus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="feature.mutualfunds.ui.fundsearch.SearchFundsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.DarkStatus"/>
+        <activity android:name="feature.mutualfunds.ui.newexplore.NewExploreActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.DarkStatus"/>
+        <activity android:name="feature.mutualfunds.ui.stp.StpFundSelectionAmountActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.DarkStatus"/>
+        <activity android:name="feature.mutualfunds.ui.portfolio.OverallAnalysisActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoAnimation"/>
+        <activity android:name="feature.mutualfunds.ui.folioselection.FolioSelectionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoAnimation"/>
+        <activity android:name="feature.mutualfunds.ui.switch.FundSwitchSipActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:launchMode="singleTask" android:name="feature.mutualfunds.ui.managetracking.MFCentralTrackingRouterActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="feature.aif.ui.list.OtherAssetAnalysisActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.aif.ui.add.OtherAssetAddActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:launchMode="singleTop" android:name="feature.aif.ui.other.ppf.PpfPortfolioActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.aif.ui.other.ppf.recurring.RecurringTransactionActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="feature.aif.ui.other.nps.onboarding.NpsKnowYourFundManagerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="feature.aif.ui.other.nps.onboarding.level2.NpsOnboardingLevel2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="feature.aif.ui.other.nps.onboarding.level1.NpsOnboardingLevel1Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="feature.aif.ui.other.nps.indassure.NpsINDAssureActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="feature.aif.ui.other.nps.indassure.status.NpsINDAssureStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.aif.ui.other.nps.indassure.detail.NpsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.aif.ui.other.nps.onboarding.NpsAddActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="feature.rewards.minisave.view.MiniSaveMiniAppActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.rewards.view.activity.techstars.TechStarClaimActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="feature.rewards.view.activity.techstars.RewardsHomeActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:launchMode="singleTask" android:name="feature.rewards.view.activity.techstars.TechStarDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.rewards.view.activity.rewards.HowItWorksActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:launchMode="singleTask" android:name="feature.rewards.view.activity.techstars.TechStarConfirmActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:launchMode="singleTask" android:name="ui.home.InsuranceHomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="ui.paymentStatus.InsurancePaymentStatusActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="feature.tpap.ui.tpap.TpapPaymentActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="feature.tpap.ui.indWidgetListPopup.TpapWidgetListDialogActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="feature.tpap.ui.tpapSearch.TpapSearchActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.tpap.ui.qrScanner.TpapQrScanningActivity" android:theme="@style/CameraActivityTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:name="feature.tpap.ui.tpap.TpapBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="feature.tpap.ui.upiIntent.TpapExitActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.tabSearch.TabSearchActivity" android:theme="@style/LightTheme"/>
+        <activity android:enabled="false" android:exported="true" android:launchMode="singleTask" android:name="feature.tpap.ui.upiIntent.TpapUpiIntentActivity" android:taskAffinity="com.indwealth.indmoney.upiIntentTask" android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="upi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mandate" android:scheme="upi"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="feature.payment.ui.genericPayment.paymentstatus.PaymentsStatusActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:launchMode="singleTop" android:name="feature.payment.ui.PaymentActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.payment.ui.upiPayment.UpiActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.payment.ui.SIPPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoAnimation"/>
+        <activity android:name="feature.payment.ui.mandate.ExistingMandateActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.BankListActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.physical.MandateUploadActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.AddMandateActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.generic.GenericAddMandateActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.MandateListActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.payment.ui.mandate.digital.MandateVerificationActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.mandate.digital.VerifyMandateWebViewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.lumpsum.NetBankingWebViewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.transactions.order.detail.OrderBasketActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.payment.ui.transactions.order.detail.OrderDetailsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.transactions.sip.SipDetailsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.transactions.order.detail.SellOrderDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.payment.ui.transactions.order.detail.MfTransactionDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.payment.ui.transactions.newTransactions.TransactionListingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="feature.payment.ui.genericPayment.paymentoptions.page.PaymentsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.payment.ui.neobanktransaction.NeoBankWithdrawMoneyActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.payment.ui.neobanktransaction.NeoBankTransactionDetailActivity" android:theme="@style/LightTheme"/>
+        <activity android:name="feature.payment.ui.neobanktransaction.NeoBankConfirmOtpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="feature.payment.ui.redeem.twofa.TwoFAActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.payment.ui.transactions.sipCalendarView.SipBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="feature.payment.ui.genericPayment.paymentoptions.page.PaymentsBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.aafinvu.AccountAggregatorLinkingWebviewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="feature.bankaccounts.ui.viewalltransaction.NeoViewAllTransactionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="fixeddeposit.ui.digital.FdDigitalActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:exported="false" android:name="fixeddeposit.ui.portfolio.add.FdAddActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="fixeddeposit.ui.FDOrderSuccessfulActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="fixeddeposit.ui.portfolio.myfddetail.MyFdDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:exported="false" android:name="fixeddeposit.ui.payment.FDNetbankingWebviewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="fixeddeposit.ui.digital.DocumentPreviewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="fixeddeposit.ui.FdWithdrawConfirmActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="ui.invite.individual.InviteIndividualAccountActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="ui.invite.joint.CreateJointAccountActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="ui.invite.details.InvitationAccountDetailsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="globalsearch.ui.GlobalSearchActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:exported="false" android:name="com.indwealth.common.flutter.FlutterTrampolineActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.chartwebview.PreLoadedWebViewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.chartwebview.ChartScalperActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.indwealth.common.chartwebview.addchartoptions.AddChartOptionsActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.indwealth.common.chartwebview.chartsettings.ChartSettingsActivity" android:screenOrientation="behind" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.indwealth.common.kyc.kycliveliness.LivelinessCheckActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.indwealth.common.kyc.KycRoutingActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.indwealth.common.helpCenter.HelpCenterRoutingActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.widgetslistpage.ui.QaAutomationActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.sslErrorHandler.SslErrorHandlerActivity" android:theme="@style/LightTheme.White"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.indwealth.common.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.indwealth.common.widgetslistpage.ui.WidgetsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.scratchCard.ScratchCardActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.widgetslistpage.ui.PledgingWidgetActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.mpinbiometric.MPinBiometricActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.widgetslistpage.ui.widgetbottomsheet.WidgetsListBottomSheetActivity" android:screenOrientation="behind" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.indwidget.supersaverwidgets.bottomsheet.howitworks.HowItWorksBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.indwidget.supersaverwidgets.bottomsheet.editAccountBalance.EditAccountBalanceBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.kyc.DigioEsignVerificationWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.kyc.FederalVkycWebActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.indwealth.common.story.StoryActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.investments.alertinfosheet.CommonAlertInfoBottomSheetActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:launchMode="singleTask" android:name="com.indwealth.common.mpinflow.navigation.MPINTerminalNavigationActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.advisory.AdvisoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme.White"/>
+        <activity android:name="com.indwealth.common.genericSearch.GenericSearchActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="com.indwealth.common.indWidgetListDialog.WidgetListDialogActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.indwealth.common.login.ImageCarousalBottomCardActivity" android:screenOrientation="portrait" android:theme="@style/LightTheme"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <provider android:authorities="in.indwealth.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="in.indwealth.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <meta-data android:name="hostAppId" android:value="in.indwealth"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <provider android:authorities="in.indwealth.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="in.indwealth.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="in.indwealth.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="in.indwealth.easyphotopicker.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="pl.aprilapps.easyphotopicker.EasyImageFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/easyimage_filepaths"/>
+        </provider>
+        <activity android:name="com.finahub.clientauthlib.UI.NewPinCardValidityActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.ResetPinCardValidityActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.finahub.clientauthlib.UI.NewPinPanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.ResetByPANActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.finahub.clientauthlib.UI.StandingInstructionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.NewPinAnswersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.SecurityOTPActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.AnswerSecretActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.QuestionsValidatePinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.NewPinCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.ResetPinWithCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.AuthDebtActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.ChangePinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.ValidatePinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.CreateMpinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.finahub.clientauthlib.UI.SetSecurityQuestions" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.finahub.www.finakyclib.FaceAuthActivity" android:theme="@style/Theme.AppCompat.Light"/>
+        <activity android:name="com.finahub.www.finakyclib.AuthenticationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.finahub.www.finakyclib.OtpAuthentication" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="com.indwealth.flutter.UploadTransparentActivity" android:theme="@style/Theme.Transparent"/>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:hardwareAccelerated="true" android:name="com.indwealth.flutter.FlutterBaseActivity" android:screenOrientation="portrait" android:theme="@style/Base.MaterialTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

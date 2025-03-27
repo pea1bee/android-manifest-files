@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.zepto.rider" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <queries>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="in.swiggy.deliveryapp"/>
+        <package android:name="com.zomato.delivery"/>
+        <package android:name="app.blinkit.onboarding"/>
+        <package android:name="runner.dunzo.com.dunzo_runner"/>
+        <package android:name="com.carthero.driver"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="in.shadowfax.gandalf"/>
+        <package android:name="global.dostavista.courier"/>
+        <package android:name="com.theporter.android.driverapp"/>
+        <package android:name="com.loadshare.deliveryapp"/>
+        <package android:name="com.rapido.rider"/>
+        <package android:name="com.zeptoconsumerapp"/>
+        <intent>
+            <action android:name="android.intent.action.send"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="geo"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <permission android:name="com.zepto.rider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.zepto.rider.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:minSdkVersion="23" android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.zepto.rider.MainApplication" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <service android:foregroundServiceType="dataSync" android:name="com.asterinet.react.bgactions.RNBackgroundActionsTask"/>
+        <activity android:exported="false" android:label="@string/title_activity_notifications" android:name="bridges.know.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_courses_activity" android:name="bridges.know.CoursesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:launchMode="singleTask" android:name="com.zepto.rider.MainActivity" android:screenOrientation="portrait" android:showWhenLocked="true" android:turnScreenOn="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/DeepLinkHost" android:pathPrefix="@string/DeepLinkPrefix" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="zepton"/>
+                <data android:host="rider"/>
+                <data android:pathPrefix="/app"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/GoogleMapsApiKey"/>
+        <meta-data android:name="FCM_SENDER_ID" android:value="@string/FCMID"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/CleverTapAccountID"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/CleverTapToken"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="1"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTNotificationIntentService">
+            <intent-filter>
+                <action android:name="com.clevertap.PUSH_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.rider.service.ZFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.rider.receiver.StartUpBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_notification_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <receiver android:exported="true" android:name="bridges.zepto.GeofenceBroadcastReceiver"/>
+        <provider android:authorities="com.zepto.rider.notifee-init-provider" android:exported="false" android:initOrder="-100" android:name="io.invertase.notifee.NotifeeInitProvider"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="true"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <provider android:authorities="com.zepto.rider.reactnativefirebasecrashlyticsinitprovider" android:exported="false" android:initOrder="98" android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value=""/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/white"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="false"/>
+        <meta-data android:name="app_data_collection_default_enabled" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.zepto.rider.reactnativefirebaseappinitprovider" android:exported="false" android:initOrder="99" android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="com.zepto.rider.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.ReactNativeBlobUtil.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.zepto.rider.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.zepto.rider.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="co.hyperverge.hyperkyc.ui.WorkflowLoadingActivity" android:screenOrientation="portrait" android:theme="@style/HKTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:name="co.hyperverge.hyperkyc.ui.HKMainActivity" android:screenOrientation="portrait" android:theme="@style/HKTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="co.hyperverge.hyperkyc.REQUEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="hk_preloaded_fonts" android:resource="@array/hk_preloaded_fonts"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.zepto.rider.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.appsamurai.storyly.util.notification.StorylyNotificationReceiver" android:process=":remote"/>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.zepto.rider.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.zepto.rider.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.zepto.rider.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <provider android:authorities="com.zepto.rider.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.activities.issue.IssueReportActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_issue_details_view_compose" android:name="com.loctoc.knownuggetssdk.activities.issue.IssueDetailsViewComposeActivity" android:theme="@style/Theme.Knownuggetsandroid"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.activities.issue.IssueDetailsViewActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.views.forms.activity.FormListActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.mediaPicker.MediaPickEmptyActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.PDFNuggetActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.BlockingNuggetActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSOverlayActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSCardBaseActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSJourneyListActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LanguageSelectionActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSCourseModulesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.activities.form.FormFolderDetailListActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.views.stories.views.StoriesActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.socialfeed.views.SocialFeedDetailActivity"/>
+        <activity android:exported="true" android:name="com.loctoc.knownuggetssdk.activities.nugget.NuggetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.activities.search.SearchActivity"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.activities.attendance.AttendanceCameraActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.availability.AvailabilityPreferenceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.availability.AvailabilityCreateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.editShiftAttendance.EditShiftAttendanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.browser.BrowserActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.shiftSchedule.CreateShiftActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.userSearch.UserSearchActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.ScormActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.taskdetailnew.TaskDetailNewActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.form.FormPdfShareActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.pdfRenderActivity.PdfActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.attendance.AttendanceGeoMapActivity" android:screenOrientation="unspecified" android:theme="@style/NoTitleDialog"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.barcode.BarCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.leaveRequest.LeaveRequestWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.shiftDetail.AllShiftDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.chat.ChatMediaCenterActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.loctoc.knownuggetssdk.activities.form.FormViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.form.ResponsesFormsListActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.chat.ChatActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.chat.GroupMemberListActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.shiftDetail.ShiftDetailActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.macroNotification.MacroNotificationDialog" android:theme="@style/NoTitleDialog80"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.TextNotesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.TaskNuggetActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.SurveyNuggetActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.QuizNuggetActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.issue.IssueCloseActivity" android:theme="@style/NoTitleDialog"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.coursedetail.CourseDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.CarouselActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.MediaNuggetActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.ErrorActivity"/>
+        <activity android:label="@string/title_activity_playlist" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.PlaylistActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.CommentsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.YoutubePlayerActivity"/>
+        <activity android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.TextNuggetActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.VideoNuggetActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.YoutubeNuggetIFrameActivity"/>
+        <activity android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.TextImageNuggetActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.YoutubePlayerV2Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.loctoc.knownuggetssdk.matisse.ui.MatisseActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.loctoc.knownuggetssdk.matisse.internal.ui.AlbumPreviewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.loctoc.knownuggetssdk.matisse.internal.ui.SelectedPreviewActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.loctoc.knownuggetssdk.activities.MediaListActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.VideoPlayerActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.VerticalNuggetActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.PdfRenderActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:hardwareAccelerated="false" android:name="com.loctoc.knownuggetssdk.imageAnnotation.ImageAnnotationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.SignatureActivity" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:configChanges="orientation" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.IssueActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.ShareActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.loctoc.knownuggetssdk.customViews.tenor.search.activity.TenorMainActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.customViews.tenor.search.activity.TenorSearchActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.PDFNuggetActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.announcementsnew.AnnouncementV2Activity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.onboarding.OnBoardingTransitionActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.barcode.HuaweiBarCodeActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.SampleImageActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.lms.views.certificates.CertificateViewActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.activities.attendance.CustomCameraActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:label="NetworkChangeReceiver" android:name="com.loctoc.knownuggetssdk.utils.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="true" android:name="com.loctoc.knownuggetssdk.jobIntentServices.GeofenceTransitionsIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.loctoc.knownuggetssdk.jobIntentServices.GeofencePersistentIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.loctoc.knownuggetssdk.geofencingApi.GeofenceJobScheduler" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="location" android:name="com.loctoc.knownuggetssdk.geofencingApi.GeofenceForegroundService" android:stopWithTask="false"/>
+        <service android:enabled="true" android:foregroundServiceType="dataSync" android:name="com.loctoc.knownuggetssdk.uploader.MediaUploaderService"/>
+        <service android:name="com.loctoc.knownuggetssdk.beaconLiveTracking.BeaconJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.loctoc.knownuggetssdk.mediaUploadService.VideoUploadService"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.loctoc.knownuggetssdk.mediaUploadService.ContentUploadService"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.loctoc.knownuggetssdk.mediaUploadService.OtherFileUploadService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.zepto.rider.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="app.notifee.core.ReceiverService"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="app.notifee.core.NotificationReceiverActivity" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="app.notifee.core.ForegroundService"/>
+        <receiver android:exported="false" android:name="app.notifee.core.RebootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="app.notifee.core.AlarmPermissionBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="app.notifee.core.NotificationAlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="app.notifee.core.BlockStateBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

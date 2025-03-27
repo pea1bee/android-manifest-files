@@ -1,0 +1,1723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.whizdm.moneyview.loans" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-feature android:name="android.hardware.location" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <permission android:name="com.whizdm.moneyview.loans.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.whizdm.moneyview.simpleloan.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="vnd.android.cursor.item/*"/>
+        </intent>
+        <package android:name="com.kreditbee.android"/>
+        <package android:name="com.loan.cash.credit.easy.dhan.quick.udhaar.lend.game.jaldi.paisa.borrow.rupee.play.kredit"/>
+        <package android:name="com.indiaBulls"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="com.fastbanking"/>
+        <package android:name="com.mycash.moneytap.app"/>
+        <package android:name="com.paisabazaar"/>
+        <package android:name="com.earlysalary.android"/>
+        <package android:name="com.gopaysense.android.boost"/>
+        <package android:name="co.tslc.cashe.android"/>
+        <package android:name="com.kreditzy.android"/>
+        <package android:name="in.loanfront.android"/>
+        <package android:name="com.capitalfirst"/>
+        <package android:name="in.rebase.app"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.indialends.android"/>
+        <package android:name="com.datasignstech.lam"/>
+        <package android:name="com.stashfin.android"/>
+        <package android:name="com.goupwards"/>
+        <package android:name="in.cashmama.app"/>
+        <package android:name="com.avail.easyloans.android"/>
+        <package android:name="com.lendingadda.jienavi"/>
+        <package android:name="com.balancehero.truebalance"/>
+        <package android:name="com.mpokket.app"/>
+        <package android:name="com.GotoCash"/>
+        <package android:name="com.daamitt.walnut.app"/>
+        <package android:name="com.app.yelonow"/>
+        <package android:name="in.bajajfinservmarkets.app"/>
+        <package android:name="com.innofinsolutions.instamoney"/>
+        <package android:name="com.nucleus.finnone.mobile.mserve.hdb.eng"/>
+        <package android:name="com.nanocred.cash.kredit.loan.dhan.fast.quick.easy.borrow.lend.paisa"/>
+        <package android:name="com.creditmantri"/>
+        <package android:name="com.flashcashBangaloreTesting.cashnow"/>
+        <package android:name="com.nirafinance.customer"/>
+        <package android:name="com.branch_international.branch.branch_demo_android"/>
+        <package android:name="ina.rupeebus.pl.jk"/>
+        <package android:name="io.attabot.app.paymeindia"/>
+        <package android:name="com.jc.icredit"/>
+        <package android:name="com.cashbus.loan"/>
+        <package android:name="com.moneed.client"/>
+        <package android:name="com.bornbrave.ocash"/>
+        <package android:name="com.lending.lightingloan"/>
+        <package android:name="in.atome"/>
+        <package android:name="com.redcarpetup.rewardpay"/>
+        <package android:name="com.phoneparloanin"/>
+        <package android:name="com.finbus.irupee"/>
+        <package android:name="co.afg.rupie"/>
+        <package android:name="com.snapwork.tcl"/>
+        <package android:name="io.sumasoft.bflaf"/>
+        <package android:name="com.snt.mudrakwik"/>
+        <package android:name="com.rupeeredee.app"/>
+        <package android:name="com.indiabulls.yaari"/>
+        <package android:name="ind.robocash.nativemobile"/>
+        <package android:name="com.globalanalytics.oyeloanindia"/>
+        <package android:name="com.rong360.android_abroad_loans"/>
+        <package android:name="com.salarydost.cwtapp"/>
+        <package android:name="com.coralsea.credime"/>
+        <package android:name="com.quickcredit.mobile"/>
+        <package android:name="com.loanlite.india.android"/>
+        <package android:name="com.fl.tenminuteloan"/>
+        <package android:name="com.prosperbee.hicash"/>
+        <package android:name="com.in.loanflix"/>
+        <package android:name="moneyinminutes.in"/>
+        <package android:name="com.sbi.apps.sbi_loans"/>
+        <package android:name="india.news.dish"/>
+        <package android:name="com.getrupee.indiaapp"/>
+        <package android:name="com.fx.rupeemama"/>
+        <package android:name="in.paymintz2p"/>
+        <package android:name="com.kn.instarupee"/>
+        <package android:name="com.incred.customer"/>
+        <package android:name="com.iifl.mobile.hfc"/>
+        <package android:name="com.szxfd.kredit.uat"/>
+        <package android:name="com.lending.rupeehub"/>
+        <package android:name="com.cashtm.andriod"/>
+        <package android:name="com.india.beautycash"/>
+        <package android:name="com.moneed.wallet"/>
+        <package android:name="com.mywish.wishfin.view"/>
+        <package android:name="cash.moneymore.app"/>
+        <package android:name="com.inrloan.rupeecash"/>
+        <package android:name="com.atl.anytimeloan"/>
+        <package android:name="com.phocket"/>
+        <package android:name="com.easytfp.rupee"/>
+        <package android:name="com.fincare.mb"/>
+        <package android:name="com.fintech.goldenlightning"/>
+        <package android:name="com.aeon.aeonfast"/>
+        <package android:name="com.dealsofloan.com"/>
+        <package android:name="com.wbt.royal"/>
+        <package android:name="in.mystro"/>
+        <package android:name="in.loantap.app"/>
+        <package android:name="com.creditt"/>
+        <package android:name="in.credy.borrowerapp.full"/>
+        <package android:name="com.anniu.kash"/>
+        <package android:name="com.uucash"/>
+        <package android:name="com.fullerton.instaloan"/>
+        <package android:name="com.credicxo.loan.personal"/>
+        <package android:name="com.finnable.customer"/>
+        <package android:name="com.loanbro.googleplay"/>
+        <package android:name="com.loan.cash.cashbull.credit.dhan.udhaar.lend.game.jaldi.paisa.borrow.rupee.pay"/>
+        <package android:name="com.rupeestar.garden.tulip"/>
+        <package android:name="com.ns.cashplus"/>
+        <package android:name="com.moneyenjoy.android.app"/>
+        <package android:name="uni.modiloan"/>
+        <package android:name="com.loan.cash.cashmore.dhan.udhaar.lend.jaldi.paisa.borrow.rupee.pay"/>
+        <package android:name="com.earnwealth.b2c"/>
+        <package android:name="com.addventure.loanadda"/>
+        <package android:name="com.app.salarynow"/>
+        <package android:name="com.hzcf.superrupee"/>
+        <package android:name="cash.rupee.credit.loan.india"/>
+        <package android:name="com.LendingKart"/>
+        <package android:name="com.fintech.rupeehome"/>
+        <package android:name="homecredit.paperless.co.in"/>
+        <package android:name="com.loanservice.moneyloji"/>
+        <package android:name="com.krazybee.customer"/>
+        <package android:name="com.cashcredit.cash"/>
+        <package android:name="com.hero.AresLucky"/>
+        <package android:name="com.cashkumar.android"/>
+        <package android:name="com.loanbaba.app.android"/>
+        <package android:name="com.cashup.android"/>
+        <package android:name="com.moneylo.loanu"/>
+        <package android:name="com.pandarupees.app"/>
+        <package android:name="com.herofincorp.simplycash"/>
+        <package android:name="com.innofinsolutions.lendenclubborrower"/>
+        <package android:name="in.dhanadhan.loan.money.cash"/>
+        <package android:name="com.monexo.borrower"/>
+        <package android:name="com.sipl.udhaar"/>
+        <package android:name="com.supermoney.supermoney"/>
+        <package android:name="com.cashsailing.solu"/>
+        <package android:name="yd.incredit"/>
+        <package android:name="com.hzcf.loanstar"/>
+        <package android:name="com.india.fastcash"/>
+        <package android:name="in.com.weshare.rupeeclub"/>
+        <package android:name="com.cashinyou"/>
+        <package android:name="in.toucotor.cash"/>
+        <package android:name="com.loanit.app"/>
+        <package android:name="com.lexin.overseas"/>
+        <package android:name="com.loanrupee.rupee"/>
+        <package android:name="com.i2iborrower"/>
+        <package android:name="com.atdmoney.app"/>
+        <package android:name="com.gongxiang.youmi"/>
+        <package android:name="com.moneylo.lendnow"/>
+        <package android:name="com.perkloanapp"/>
+        <package android:name="com.customer.elsapp"/>
+        <package android:name="com.app.qx.yoc"/>
+        <package android:name="com.rupeefly.in"/>
+        <package android:name="com.indiabullsamc.investorapp"/>
+        <package android:name="com.virinchi.vmod"/>
+        <package android:name="in.galaxycard.android"/>
+        <package android:name="com.loanmart.app"/>
+        <package android:name="com.interstellarz.personalloanapp"/>
+        <package android:name="com.fintopia.INcashKey.google"/>
+        <package android:name="com.rupeek.customer"/>
+        <package android:name="com.k2digitalmarketing.cashwish"/>
+        <package android:name="in.apps.myloancare"/>
+        <package android:name="com.aojie.dooloan"/>
+        <package android:name="com.loan.instant.quick.lend.borrow.rupee.credit.easy.cashpost"/>
+        <package android:name="com.ruming.yoyo"/>
+        <package android:name="com.scnl.loanDost"/>
+        <package android:name="com.wisekredit.wisekredit"/>
+        <package android:name="com.paiselo.rupeehere"/>
+        <package android:name="package.technology.rupeeday"/>
+        <package android:name="com.oppokash.payments"/>
+        <package android:name="com.instacash7"/>
+        <package android:name="com.moneybag.ada"/>
+        <package android:name="com.ib.eHomeloans"/>
+        <package android:name="com.gopaysense.android.boost.partner"/>
+        <package android:name="com.flexiloan"/>
+        <package android:name="in.cashine.cashine"/>
+        <package android:name="com.particle.videoplayapp"/>
+        <package android:name="com.checkpoint.app"/>
+        <package android:name="com.moneyclick.in"/>
+        <package android:name="com.offermeloan.app.offermeloan"/>
+        <package android:name="com.basestonedata.worldmoneyapp"/>
+        <package android:name="com.loaneasy"/>
+        <package android:name="ng.com.fairmoney.fairmoney"/>
+        <package android:name="com.kreon.stucred"/>
+        <package android:name="com.minirupe.gotocash"/>
+        <package android:name="com.techsophy.abhipaisa"/>
+        <package android:name="com.carbikeloans.loans"/>
+        <package android:name="mudracircle.com.Cashdaddy"/>
+        <package android:name="quick.loans.bad.credit"/>
+        <package android:name="com.fintelligence.rupeecircle"/>
+        <package android:name="rutherfordit.com.instasalary"/>
+        <package android:name="ind.cashtok.app"/>
+        <package android:name="net.myweb4u.loanwix"/>
+        <package android:name="com.loan.bazaar"/>
+        <package android:name="com.orange5"/>
+        <package android:name="com.swiftpaygroup.easyfastmobileloans"/>
+        <package android:name="com.fintech.cashmenu"/>
+        <package android:name="com.sportshark.giman"/>
+        <package android:name="com.cmlon.loanapp"/>
+        <package android:name="com.fnance.fnance_android_app"/>
+        <package android:name="com.fx.dreamloan"/>
+        <package android:name="com.loan.cash.credit.easy.dhan.quick.udhaar.lend.game.jaldi.paisa.rupee.inditrade.shinebay.loanpro"/>
+        <package android:name="com.sudhapocket"/>
+        <package android:name="com.getallloaninstant.instantloanapply"/>
+        <package android:name="com.instarupie.easycash"/>
+        <package android:name="com.daishu.loan"/>
+        <package android:name="in.lendbox.microloans"/>
+        <package android:name="com.loantime.app"/>
+        <package android:name="com.bc.loanagent"/>
+        <package android:name="in.publicam.advancesalary"/>
+        <package android:name="com.bankloan.pro"/>
+        <package android:name="com.app.l_pesa"/>
+        <package android:name="com.finrays.www.finacri"/>
+        <package android:name="com.yisheng.m1"/>
+        <package android:name="com.pocketly"/>
+        <package android:name="com.myloanmitra.com"/>
+        <package android:name="in.loan.cutemoney.fast.Instant.online.credit.rupee.dhan.udhaar.adda.eim.app"/>
+        <package android:name="com.prefr.credit"/>
+        <package android:name="uni.UNIAB3CFB3"/>
+        <package android:name="com.fdagency"/>
+        <package android:name="com.cashtaxi.android"/>
+        <package android:name="com.instantpersonalloan.developingpanda"/>
+        <package android:name="com.mvalu.agent"/>
+        <package android:name="com.app.getmoneyindia"/>
+        <package android:name="com.cash.easycredit.money.coin.funds.bank.credit.loan"/>
+        <package android:name="id.lucklak.loan.program"/>
+        <package android:name="com.afinoz.lite"/>
+        <package android:name="net.loanmaster.app"/>
+        <package android:name="com.carbikeloans.car"/>
+        <package android:name="com.cash.star.quick.loan.easyloan"/>
+        <package android:name="com.forceten.centrum.centrum"/>
+        <package android:name="com.instantloanguide.instapersonalloan.personalloan.aadharloan"/>
+        <package android:name="com.loan.rupee.rupeerupee"/>
+        <package android:name="com.tachyloans"/>
+        <package android:name="con.modhe.uncash"/>
+        <package android:name="com.globalanalytics.draftyloc"/>
+        <package android:name="q.loan.credit.fintech.loans"/>
+        <package android:name="com.acdk.hubcar"/>
+        <package android:name="com.christmas.izwa.loans.instant"/>
+        <package android:name="com.app.overseasproject.india"/>
+        <package android:name="com.consumer.creditfair"/>
+        <package android:name="cricketmafia.instantloanguide.loanguide.instantloan.loanguide"/>
+        <package android:name="com.app.zestcredi"/>
+        <package android:name="com.cashkumar.lender.android"/>
+        <package android:name="com.magicbird.lemonrupee"/>
+        <package android:name="com.persnol.instantpersnolloan"/>
+        <package android:name="com.zedcrest.android.moneypal.v2"/>
+        <package android:name="smallbusinessloan.instantbusinessloan.smeloan.startuploan"/>
+        <package android:name="app.comein.cash_come"/>
+        <package android:name="app.emegazone.com"/>
+        <package android:name="com.alimama.cashwallet"/>
+        <package android:name="com.arinfosoft.creditme"/>
+        <package android:name="com.atmanirbharbharatloanyojnaguide.pmmodiatmanirbharbhartyojna.loanguide"/>
+        <package android:name="com.bag.indianloan"/>
+        <package android:name="com.bajajfinance.liteapp"/>
+        <package android:name="com.bbnpocket"/>
+        <package android:name="com.bf.lendingbazaar"/>
+        <package android:name="com.blindrupee.bruapp"/>
+        <package android:name="com.borrowerapp"/>
+        <package android:name="com.brainlow.finguide"/>
+        <package android:name="com.buddyloan.loanapp"/>
+        <package android:name="com.buddyloan.vls"/>
+        <package android:name="com.capitalfirst.connector"/>
+        <package android:name="com.capitalnow.mobile"/>
+        <package android:name="com.cash.creditking"/>
+        <package android:name="com.cash.go.tough"/>
+        <package android:name="com.cash.pay.way.branch"/>
+        <package android:name="com.cash.q.pesa.mobile.loans.online"/>
+        <package android:name="com.cashbro"/>
+        <package android:name="com.cashcredit.loan"/>
+        <package android:name="com.cashcube.app"/>
+        <package android:name="com.cashfly.global"/>
+        <package android:name="com.cashindihub.inapp"/>
+        <package android:name="com.cashloan.loan"/>
+        <package android:name="com.cashmi.imk"/>
+        <package android:name="com.cashredbull.cashredbull"/>
+        <package android:name="com.cashstar.mobile"/>
+        <package android:name="com.cat.loan.mobile"/>
+        <package android:name="com.ccq.user"/>
+        <package android:name="com.cd.mahindrafs"/>
+        <package android:name="com.chelsipocket"/>
+        <package android:name="com.chf.cholahousingfinance"/>
+        <package android:name="com.clikfin.clikfinapplication"/>
+        <package android:name="com.clix.selfserve"/>
+        <package android:name="com.comptech.cashere"/>
+        <package android:name="com.contrab.app.loanguide.atmanirbharbharatloan.loanapp"/>
+        <package android:name="com.cred.cashseed"/>
+        <package android:name="com.creditcash.india"/>
+        <package android:name="com.credithub.id.lm"/>
+        <package android:name="com.creditloan.india"/>
+        <package android:name="com.curafinance.android"/>
+        <package android:name="com.customer.herofincorp"/>
+        <package android:name="com.daddy.cashdaddy"/>
+        <package android:name="com.docredit.in.android"/>
+        <package android:name="com.doorstep.ogl"/>
+        <package android:name="com.dotants.flycash.app"/>
+        <package android:name="com.ducoinfotec.instantaadharloan"/>
+        <package android:name="com.dw.dwcash"/>
+        <package android:name="com.e.fastloan"/>
+        <package android:name="com.e.quickloan"/>
+        <package android:name="com.e.rapidloan"/>
+        <package android:name="com.easy.loan.instant.jsd"/>
+        <package android:name="com.easycash2021.app"/>
+        <package android:name="com.ecofin"/>
+        <package android:name="com.ecreditpoint.app"/>
+        <package android:name="com.ellison.paycash"/>
+        <package android:name="com.emsyne.loanathome"/>
+        <package android:name="com.entitled.loanapp"/>
+        <package android:name="com.epin.cashport"/>
+        <package android:name="com.estar.loan"/>
+        <package android:name="com.feadoo.loansolo.loan"/>
+        <package android:name="com.ffcredit.ffindia"/>
+        <package android:name="com.fintech.moneyhome"/>
+        <package android:name="com.fintech.rupeemenu"/>
+        <package android:name="com.fishball.superrupee"/>
+        <package android:name="com.fivepaisaloans.p2p.prod"/>
+        <package android:name="com.flashloan.india"/>
+        <package android:name="com.flashwallet"/>
+        <package android:name="com.fta.topcashs"/>
+        <package android:name="com.fullertonindia.gelsalesapp"/>
+        <package android:name="com.fund.funds.fastrupiya"/>
+        <package android:name="com.gp.indi.cash"/>
+        <package android:name="com.gpfincorp.kredeitmore"/>
+        <package android:name="com.gz.loanbaba"/>
+        <package android:name="com.happy.superhappyloan"/>
+        <package android:name="com.happycash.loan"/>
+        <package android:name="com.happyrupee"/>
+        <package android:name="com.hcin.cashfrog"/>
+        <package android:name="com.hdbfs.emicard"/>
+        <package android:name="com.homecredit.mobikwik"/>
+        <package android:name="com.honeyrupee.hruapp"/>
+        <package android:name="com.huirong.birdrupee"/>
+        <package android:name="com.huirong.fishloan"/>
+        <package android:name="com.hundredsfmillionsf.loanunion"/>
+        <package android:name="com.hztec.icashnow"/>
+        <package android:name="com.ibl.moneymanagement.app"/>
+        <package android:name="com.icash.top"/>
+        <package android:name="com.id.rupiyabus"/>
+        <package android:name="com.idealloan.loanapp"/>
+        <package android:name="com.idfcfirstbank.rural"/>
+        <package android:name="com.imoneyrupee.imrapp"/>
+        <package android:name="com.in.magnaloan"/>
+        <package android:name="com.ind.quick.cash"/>
+        <package android:name="com.india.cashking.mobi"/>
+        <package android:name="com.india.mob.tools"/>
+        <package android:name="com.indiajiayouya.starloan"/>
+        <package android:name="com.indiarupee.okloan"/>
+        <package android:name="com.indicashloan.loanapp"/>
+        <package android:name="com.indonesialoan.easydana"/>
+        <package android:name="com.inpaway.loantop"/>
+        <package android:name="com.instacredy"/>
+        <package android:name="com.instaloan.guideloanset"/>
+        <package android:name="com.instant.personal.loan.payhatch"/>
+        <package android:name="com.Instant.Rupee"/>
+        <package android:name="com.instantloan.newloanApp"/>
+        <package android:name="com.instantpersonalloan.loanbasket"/>
+        <package android:name="com.Instantt.Instanttloan"/>
+        <package android:name="com.ipistis.loanfirstss"/>
+        <package android:name="com.jaycode.jeevanshindia"/>
+        <package android:name="com.juscience.credit"/>
+        <package android:name="com.kcredit.mcredit"/>
+        <package android:name="com.keycredit.indiapp"/>
+        <package android:name="com.kisaninstant"/>
+        <package android:name="com.lb.market"/>
+        <package android:name="com.lendexpert.coldautumn"/>
+        <package android:name="com.leopard.credime"/>
+        <package android:name="com.loan.cash.credit.dhan.kredit"/>
+        <package android:name="com.loan.dhan.rupee.lend.credit.neorupee.india.quick.play.cash"/>
+        <package android:name="com.loan.play.rupee.lend.credit.cash.dhan.innovinity.fastcredit"/>
+        <package android:name="com.loan.urgentcash"/>
+        <package android:name="com.loanapp.Loan_app.loan_app.prasnal_loan.prasnal_loan"/>
+        <package android:name="com.loanapp.royalcreadit"/>
+        <package android:name="com.loaneasy.getloan"/>
+        <package android:name="com.loangopro.bestloanapp"/>
+        <package android:name="com.Loanindiaon"/>
+        <package android:name="com.loanklub.cwtapp"/>
+        <package android:name="com.loanpelite.loanapp"/>
+        <package android:name="com.loans.cash.cal"/>
+        <package android:name="com.loans.indi.ils"/>
+        <package android:name="com.loanzoom.loanapp"/>
+        <package android:name="com.loveaming.birdwallet"/>
+        <package android:name="com.luckydock.quiklan"/>
+        <package android:name="com.ludo.studentcredit"/>
+        <package android:name="com.macom.asirvadcollection"/>
+        <package android:name="com.mama.create.cash"/>
+        <package android:name="com.mani.moneyloan"/>
+        <package android:name="com.market.loan"/>
+        <package android:name="com.mayijinfu.rupeewallet"/>
+        <package android:name="com.miig.ezfinserv"/>
+        <package android:name="com.mnyrp.loanapp"/>
+        <package android:name="com.mobielwa.eriens"/>
+        <package android:name="com.mobilelone.fastrupe.fastcas"/>
+        <package android:name="com.mobilepelone.easyrupe.easycas"/>
+        <package android:name="com.mocpartnerportal"/>
+        <package android:name="com.mohua.pmsvanidhi"/>
+        <package android:name="com.money.moneybox.instant.loan"/>
+        <package android:name="com.money.wallet.rj"/>
+        <package android:name="com.moneyinstantpersonalloan"/>
+        <package android:name="com.moneype.llooaannappp"/>
+        <package android:name="com.moneyplanned.app"/>
+        <package android:name="com.mr.mobile.rupee"/>
+        <package android:name="com.mudrakwik.creditkartfincom"/>
+        <package android:name="com.mykredit.android"/>
+        <package android:name="com.mymobi.loans"/>
+        <package android:name="com.naviapp"/>
+        <package android:name="com.nexa.loanview"/>
+        <package android:name="com.ng_customer_app"/>
+        <package android:name="com.onlineloanapp.loancow"/>
+        <package android:name="com.optipay.libertycash"/>
+        <package android:name="com.optipay.littlecash"/>
+        <package android:name="com.or.cash.july"/>
+        <package android:name="com.oricred.mobicred"/>
+        <package android:name="com.p2caashhloan.loanapp"/>
+        <package android:name="com.panloanapp.activityapp"/>
+        <package android:name="com.paul.vridhi"/>
+        <package android:name="com.payby.android.cashnow"/>
+        <package android:name="com.paymate.pmx"/>
+        <package android:name="com.pearloans.smartquickcash"/>
+        <package android:name="com.personal.atmanirbhar.loan"/>
+        <package android:name="com.personalcpay.app"/>
+        <package android:name="com.pettycredit.beautiful"/>
+        <package android:name="com.phft.cashlena"/>
+        <package android:name="com.piggybank.tha"/>
+        <package android:name="com.pocket.market.loan"/>
+        <package android:name="com.pocket.market.loan.pro"/>
+        <package android:name="com.poet.loan"/>
+        <package android:name="com.prktech.dsloan"/>
+        <package android:name="com.purplecascade.mouncity.nceca"/>
+        <package android:name="com.quick.cashfamily"/>
+        <package android:name="com.quikcreditstore.app"/>
+        <package android:name="com.quikkloan.customer"/>
+        <package android:name="com.rcindia.rupeecow"/>
+        <package android:name="com.realmepay.payments"/>
+        <package android:name="com.repeebus.app"/>
+        <package android:name="com.ripple.moneybag"/>
+        <package android:name="com.riviera.indifi.app"/>
+        <package android:name="com.rk.cashgo"/>
+        <package android:name="com.rufilo.user"/>
+        <package android:name="com.rupee.on"/>
+        <package android:name="com.rupeecash.mikacash"/>
+        <package android:name="com.rupeemojo.application"/>
+        <package android:name="com.sailing.india.pdl"/>
+        <package android:name="com.satincreditcare.android.customerservice"/>
+        <package android:name="com.satsure.satsurecollections"/>
+        <package android:name="com.scale.cash.bl"/>
+        <package android:name="com.service.nanocash"/>
+        <package android:name="com.ship.pearl"/>
+        <package android:name="com.shyx.rupeebee"/>
+        <package android:name="com.socredit.androidapp"/>
+        <package android:name="com.sundai.dkuan"/>
+        <package android:name="com.sup.supercash"/>
+        <package android:name="com.superapps.loans.connect"/>
+        <package android:name="com.swiftpayco.in"/>
+        <package android:name="com.swiftx.cash"/>
+        <package android:name="com.takacash.india"/>
+        <package android:name="com.take.loan"/>
+        <package android:name="com.tech.rupeeonline"/>
+        <package android:name="com.tezrupee.best"/>
+        <package android:name="com.tinyloan"/>
+        <package android:name="com.upload.noboss"/>
+        <package android:name="com.use.money.finance.loan"/>
+        <package android:name="com.vashupocket"/>
+        <package android:name="com.vibhuprada.credithaat"/>
+        <package android:name="com.vyijia.eagleloan"/>
+        <package android:name="com.wcy.kings"/>
+        <package android:name="com.wecheerful.fragmentloan"/>
+        <package android:name="com.winfinityfintechSolCoIFSC_12370785"/>
+        <package android:name="com.wirdealoo.uipertast"/>
+        <package android:name="com.wisekredit.wisekredit.india"/>
+        <package android:name="com.xhy.loans"/>
+        <package android:name="com.xu.pineapple.free"/>
+        <package android:name="com.yellow.cash.june"/>
+        <package android:name="com.yjx.ffs"/>
+        <package android:name="com.youdao.wincash"/>
+        <package android:name="com.yuva.rupeeloan"/>
+        <package android:name="com.ziploan.borrower"/>
+        <package android:name="com.zxcash.zxapp"/>
+        <package android:name="compare.lender.reviews"/>
+        <package android:name="fastmoney.xyz.fast_money"/>
+        <package android:name="finance.loan.topcredit"/>
+        <package android:name="in.crepaytechnologies.crepay"/>
+        <package android:name="in.finway.customer"/>
+        <package android:name="in.florencecapital"/>
+        <package android:name="in.goldmoney.loancredit.easyfastcash.rupeepaisa"/>
+        <package android:name="in.trustrock.ucash"/>
+        <package android:name="in.zestmoney.android.zestlife"/>
+        <package android:name="india.kredit.loan.cash.app"/>
+        <package android:name="india.rupeehot.app"/>
+        <package android:name="io.anglefinance.instantloan14"/>
+        <package android:name="io.anglefinance.instantloan15"/>
+        <package android:name="io.ccservices.instantloan1"/>
+        <package android:name="io.ccservices.instantloan7"/>
+        <package android:name="kl.id.rupeepot"/>
+        <package android:name="loansbazaar.webview.feedports.com.lb"/>
+        <package android:name="net.rupeenow"/>
+        <package android:name="skiesloans.com"/>
+        <package android:name="tsc.loancash.com"/>
+        <package android:name="uni.UNI0450796"/>
+        <package android:name="uni.UNI407BB1E"/>
+        <package android:name="uni.UNI8523ADE"/>
+        <package android:name="uni.UNIA81236E"/>
+        <package android:name="com.bharatnational.india"/>
+        <package android:name="com.cash.quick.loan"/>
+        <package android:name="com.cash.tele"/>
+        <package android:name="com.earlycash.pro"/>
+        <package android:name="com.emkopolon.imara"/>
+        <package android:name="com.hello.multiplefun"/>
+        <package android:name="com.india.loan.crazywallet"/>
+        <package android:name="com.lion.cash.app"/>
+        <package android:name="com.loaninsure"/>
+        <package android:name="com.loanklub_partner"/>
+        <package android:name="com.loanpro.superfastloan.app"/>
+        <package android:name="com.longingloan"/>
+        <package android:name="com.macom.lmscutomerpay"/>
+        <package android:name="com.mathfun.learnskill"/>
+        <package android:name="com.mj_developer.loanguide"/>
+        <package android:name="com.money.help.in"/>
+        <package android:name="com.moneyloan4u.moneyloan4u"/>
+        <package android:name="com.muthootmicrofin.customerapp"/>
+        <package android:name="com.nexusappstore.onlineMakerApp"/>
+        <package android:name="com.ruiqi.kingcashs"/>
+        <package android:name="com.rupee.cash.get.money"/>
+        <package android:name="com.sophie.sophiecash"/>
+        <package android:name="com.tepu.loanapp"/>
+        <package android:name="com.tkashloans.kenyatoploans"/>
+        <package android:name="com.unimoni.customer"/>
+        <package android:name="in.adanicapital.myjosh"/>
+        <package android:name="in.loanmaster.getcredit.fastcredit.cashmaster.creditmaster"/>
+        <package android:name="io.anglefinance.instantloan"/>
+        <package android:name="io.financeopedia.intstantloan"/>
+        <package android:name="ma.dista.icicibank"/>
+        <package android:name="pvsw.loanindia"/>
+        <package android:name="app.kkloans"/>
+        <package android:name="club.quickrupaye.payday"/>
+        <package android:name="com.aadevelopers.cashloan"/>
+        <package android:name="com.ansky.printsupercredit"/>
+        <package android:name="com.badaa.badaaloan"/>
+        <package android:name="com.cash.fast"/>
+        <package android:name="com.cash.loan.personal.kash.cash9ja.xcredit.payday.credit9.money"/>
+        <package android:name="com.cash.loanbox"/>
+        <package android:name="com.cashstar.instantpersonalloan.easyapproval.apponlne"/>
+        <package android:name="com.cashup.app"/>
+        <package android:name="com.chengfeng.pandaloan"/>
+        <package android:name="com.clickloan.ree"/>
+        <package android:name="com.creditbee.in"/>
+        <package android:name="com.easy.easycashloans"/>
+        <package android:name="com.easycredit.india"/>
+        <package android:name="com.fastpaisa.money.cash.credit.rupee.loan.lend.app"/>
+        <package android:name="com.finance.express.jobsdirect.v2"/>
+        <package android:name="com.flash.loans.lenders"/>
+        <package android:name="com.FunDrop.moneyloots"/>
+        <package android:name="com.funzilla.onlineloan.loanonaadharcard.instantloan.personalloanonline.instantloan"/>
+        <package android:name="com.habile.cloudbankin.digimoney"/>
+        <package android:name="com.happytuesday.capital"/>
+        <package android:name="com.haycash.rupee"/>
+        <package android:name="com.indiacredit.misa"/>
+        <package android:name="com.instantpersonal.loanapp.online.loan"/>
+        <package android:name="com.loanmarket.seedrupee"/>
+        <package android:name="com.loanyojnabypm"/>
+        <package android:name="com.matualapps.loanmoney.instantloantips"/>
+        <package android:name="com.memeloan.app"/>
+        <package android:name="com.morerupeein.loan"/>
+        <package android:name="com.okoa.cash.loans"/>
+        <package android:name="com.personalbankloan.cashguideloan"/>
+        <package android:name="com.personalcreditbees.app"/>
+        <package android:name="com.primeloan.loanapp"/>
+        <package android:name="com.quickl.now.get"/>
+        <package android:name="com.rajiq.einstacash"/>
+        <package android:name="com.rectcom.doulaytning.etmula"/>
+        <package android:name="com.renmoney.android"/>
+        <package android:name="com.rich.cashloanmarket"/>
+        <package android:name="com.ruanshi.rupeemall"/>
+        <package android:name="com.rupee.bear.cash.loan"/>
+        <package android:name="com.rupee.cashclub"/>
+        <package android:name="com.rupeloan.cash.loan"/>
+        <package android:name="com.scf.easyfastmobileloans.loanmarket.pearloan.easyloan.easycash.loaneasy.getloan"/>
+        <package android:name="com.speedcash.raja"/>
+        <package android:name="com.superin.loan"/>
+        <package android:name="com.swift.urgent.loanx"/>
+        <package android:name="com.swifts.mobile.loans"/>
+        <package android:name="com.texas.shmodeltwoclient"/>
+        <package android:name="com.tigerloan.fee"/>
+        <package android:name="com.titoloan.adda"/>
+        <package android:name="com.toploan.ocrtext"/>
+        <package android:name="com.tvl.tvsdigital"/>
+        <package android:name="com.unboxingidea.PlushSalary"/>
+        <package android:name="com.upwards.unnati"/>
+        <package android:name="freeke.loader.koerrs"/>
+        <package android:name="in.app.loanchacha"/>
+        <package android:name="in.finbox.lending"/>
+        <package android:name="io.ccservices.instantloan"/>
+        <package android:name="io.ccservices.instantloan3"/>
+        <package android:name="io.repay.cust.capautoloan"/>
+        <package android:name="loan.moneyseed.onlineloanapp.getfastpaisa.instapersonalloan"/>
+        <package android:name="ma.dista"/>
+        <package android:name="smallloan.startuploan.smallbusinessloan.instantbusinessloan"/>
+        <package android:name="bsesensex.nseindia.sensex.etmoney.personalloanguidance"/>
+        <package android:name="com.bowen.loan"/>
+        <package android:name="com.CFC.rapidcash"/>
+        <package android:name="com.GBwhata.what"/>
+        <package android:name="com.instant.instantloan.personal.loan.loanonadhar.adharcardloan"/>
+        <package android:name="com.jk.selfloan.instant.personalloan.loan.quick.guide"/>
+        <package android:name="com.kings.cashloan"/>
+        <package android:name="com.loanguide.finance.loans"/>
+        <package android:name="com.loans.quickemergencyloans"/>
+        <package android:name="com.loansgo.info"/>
+        <package android:name="com.magic.lab.guide"/>
+        <package android:name="com.mkopoinstalonapp.rahisiapp"/>
+        <package android:name="com.moneyloan.quick.personal.loan"/>
+        <package android:name="com.mudraloanyojna.pmmudraloan.mudraloanguide.mudhraloan.yojna"/>
+        <package android:name="com.oakam.app.live"/>
+        <package android:name="com.prithvi.instantloanguide"/>
+        <package android:name="com.remote.credit.loan"/>
+        <package android:name="com.sooncredit.cash"/>
+        <package android:name="com.videoplayer.videocall.instantloan"/>
+        <package android:name="io.epix.loan_manager"/>
+        <package android:name="knightx.bsesensex.nseindia.sensex.etmoney.personalloanguidance"/>
+        <package android:name="com.basichomeloan.dsapp"/>
+        <package android:name="com.cash.instantloan"/>
+        <package android:name="com.cashgo.loan"/>
+        <package android:name="com.cashmax.loan.app"/>
+        <package android:name="com.cashraja"/>
+        <package android:name="com.credilio.credilio_advisor.prod"/>
+        <package android:name="com.foncrit.willer"/>
+        <package android:name="com.future.curve.androidapp"/>
+        <package android:name="com.go.installment"/>
+        <package android:name="com.halo.raja"/>
+        <package android:name="com.iiflfinance.mymoney"/>
+        <package android:name="com.kwikapps.status.downloaderfortiktok"/>
+        <package android:name="com.loan.time"/>
+        <package android:name="com.reverrel.hoodtank.evrodt"/>
+        <package android:name="com.suvidha.finance"/>
+        <package android:name="com.vaishaloan.rupeeloan.creditloan.bank"/>
+        <package android:name="com.vitacuro.aarush"/>
+        <package android:name="com.wonderhfl.customer"/>
+        <package android:name="com.zrloan.loanproduct"/>
+        <package android:name="in.loantap.partnerapp"/>
+        <package android:name="io.anglefinance.instantloan10"/>
+        <package android:name="com.aquick.flashs.loans"/>
+        <package android:name="com.drcash.android"/>
+        <package android:name="com.easyhomefinance.consumer"/>
+        <package android:name="com.fastcashloan.instant.loan.approvalloan"/>
+        <package android:name="com.ftcash.app.android.refer"/>
+        <package android:name="com.fulusicredit.kwikpesoloans"/>
+        <package android:name="com.instant.loanguide"/>
+        <package android:name="com.loanathome.agent"/>
+        <package android:name="com.loansmarket.blue"/>
+        <package android:name="com.mobil.quiick.cash"/>
+        <package android:name="com.plati.feb.loans"/>
+        <package android:name="com.ssdesigner.instant.loan.personal_loan.loanguide.aadharpeloan.creditscoreonlineloan"/>
+        <package android:name="vdoxon.expo.quickloan"/>
+        <package android:name="app.buzz.share"/>
+        <package android:name="bubbleshooter.orig"/>
+        <package android:name="club.fromfactory"/>
+        <package android:name="cn.wps.moffice_eng"/>
+        <package android:name="cn.xender"/>
+        <package android:name="com.adobe.cq.mobile.payback"/>
+        <package android:name="com.adobe.reader"/>
+        <package android:name="com.adobe.scan.android"/>
+        <package android:name="com.alibaba.intl.android.apps.poseidon"/>
+        <package android:name="com.amazon.avod.thirdpartyclient"/>
+        <package android:name="com.amazon.kindle"/>
+        <package android:name="com.amazon.mp3"/>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.app.abhibus"/>
+        <package android:name="com.application.zomato"/>
+        <package android:name="com.appsomniacs.da2"/>
+        <package android:name="com.appstar.callrecorder"/>
+        <package android:name="com.aranoah.healthkart.plus"/>
+        <package android:name="com.atomic.apps.ringtone.cutter"/>
+        <package android:name="com.atomyes"/>
+        <package android:name="com.awt.kalnirnay"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.balaji.alt"/>
+        <package android:name="com.bankbazaar.app"/>
+        <package android:name="com.bankofbaroda.mconnect"/>
+        <package android:name="com.bigbasket.mobileapp"/>
+        <package android:name="com.bittorrent.client"/>
+        <package android:name="com.boi.mpay"/>
+        <package android:name="com.bsb.hike"/>
+        <package android:name="com.bsbportal.music"/>
+        <package android:name="com.bt.bms"/>
+        <package android:name="com.cam001.selfie"/>
+        <package android:name="com.camerasideas.instashot"/>
+        <package android:name="com.canarabank.mobility"/>
+        <package android:name="com.cgt.bharatgas"/>
+        <package android:name="com.citiuat"/>
+        <package android:name="com.commsource.beautyplus"/>
+        <package android:name="com.confirmtkt.lite"/>
+        <package android:name="com.cricbuzz.android"/>
+        <package android:name="com.cris.utsmobile"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.CultureAlley.japanese.english"/>
+        <package android:name="com.cyberlink.youperfect"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.digilocker.android"/>
+        <package android:name="com.divum.MoneyControl"/>
+        <package android:name="com.Dominos"/>
+        <package android:name="com.downlood.sav.whmedia"/>
+        <package android:name="com.dts.freefireth"/>
+        <package android:name="com.dunzo.user"/>
+        <package android:name="com.duokan.phone.remotecontroller"/>
+        <package android:name="com.duokan.phone.remotecontroller.peel.plugin"/>
+        <package android:name="com.enstage.wibmo.hdfc"/>
+        <package android:name="com.eterno"/>
+        <package android:name="com.eyecon.global"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.facebook.mlite"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.finance.loan.emicalculator"/>
+        <package android:name="com.fingersoft.hillclimb"/>
+        <package android:name="com.flipkart.android"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.freedomrewardz"/>
+        <package android:name="com.fsn.nykaa"/>
+        <package android:name="com.fss.indus"/>
+        <package android:name="com.ftw_and_co.happn"/>
+        <package android:name="com.funcamerastudio.videomaker"/>
+        <package android:name="com.fundevs.app.mediaconverter"/>
+        <package android:name="com.fungames.sniper3d"/>
+        <package android:name="com.gaana"/>
+        <package android:name="com.gamma.scan"/>
+        <package android:name="com.ge.capital.konysbiapp"/>
+        <package android:name="com.goibibo"/>
+        <package android:name="com.google.android.apps.adm"/>
+        <package android:name="com.google.android.apps.books"/>
+        <package android:name="com.google.android.apps.cloudprint"/>
+        <package android:name="com.google.android.apps.docs"/>
+        <package android:name="com.google.android.apps.docs.editors.docs"/>
+        <package android:name="com.google.android.apps.docs.editors.sheets"/>
+        <package android:name="com.google.android.apps.docs.editors.slides"/>
+        <package android:name="com.google.android.apps.enterprise.dmagent"/>
+        <package android:name="com.google.android.apps.googleassistant"/>
+        <package android:name="com.google.android.apps.inputmethod.hindi"/>
+        <package android:name="com.google.android.apps.magazines"/>
+        <package android:name="com.google.android.apps.nbu.files"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.google.android.apps.photos"/>
+        <package android:name="com.google.android.apps.tachyon"/>
+        <package android:name="com.google.android.apps.translate"/>
+        <package android:name="com.google.android.calculator"/>
+        <package android:name="com.google.android.calendar"/>
+        <package android:name="com.google.android.contacts"/>
+        <package android:name="com.google.android.inputmethod.latin"/>
+        <package android:name="com.google.android.keep"/>
+        <package android:name="com.google.android.music"/>
+        <package android:name="com.google.android.play.games"/>
+        <package android:name="com.google.android.talk"/>
+        <package android:name="com.google.android.videos"/>
+        <package android:name="com.google.ar.lens"/>
+        <package android:name="com.google.earth"/>
+        <package android:name="com.graymatrix.did"/>
+        <package android:name="com.grofers.customerapp"/>
+        <package android:name="com.hideitpro"/>
+        <package android:name="com.hp.android.printservice"/>
+        <package android:name="com.hungama.myplay.activity"/>
+        <package android:name="com.ideacellular.myidea"/>
+        <package android:name="com.idfcbank.mobileBanking"/>
+        <package android:name="com.iexceed.ANDHRABANK_ONLINE"/>
+        <package android:name="com.imangi.templerun2"/>
+        <package android:name="com.imo.android.imoim"/>
+        <package android:name="com.indeed.android.jobsearch"/>
+        <package android:name="com.india.foodpanda.android"/>
+        <package android:name="com.indigo.hdfcloans"/>
+        <package android:name="com.infrasofttech.indianBank"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.intsig.camscanner"/>
+        <package android:name="com.ionicframework.apsrtclivetrack555011"/>
+        <package android:name="com.irctc.air"/>
+        <package android:name="com.ixigo.train.ixitrain"/>
+        <package android:name="com.jetstartgames.chess"/>
+        <package android:name="com.jio.jioplay.tv"/>
+        <package android:name="com.jio.join"/>
+        <package android:name="com.jio.media.jiobeats"/>
+        <package android:name="com.jio.media.ondemand"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.jiochat.jiochatapp"/>
+        <package android:name="com.justdial.search"/>
+        <package android:name="com.kiloo.subwaysurf"/>
+        <package android:name="com.king.candycrushsaga"/>
+        <package android:name="com.king.candycrushsodasaga"/>
+        <package android:name="com.lazygeniouz.saveit"/>
+        <package android:name="com.lbe.parallel.intl"/>
+        <package android:name="com.lbe.parallel.intl.arm64"/>
+        <package android:name="com.lenovo.anyshare.cloneit"/>
+        <package android:name="com.lenovo.anyshare.gps"/>
+        <package android:name="com.lenskart.app"/>
+        <package android:name="com.lic.liccustomer"/>
+        <package android:name="com.linecorp.b612.android"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.linkedin.android.lite"/>
+        <package android:name="com.ludashi.dualspace"/>
+        <package android:name="com.ludo.king"/>
+        <package android:name="com.magicpin.local"/>
+        <package android:name="com.makemytrip"/>
+        <package android:name="com.manappuram.b2c"/>
+        <package android:name="com.meesho.supply"/>
+        <package android:name="com.mi.global.bbs"/>
+        <package android:name="com.mi.global.shop"/>
+        <package android:name="com.microsoft.office.excel"/>
+        <package android:name="com.microsoft.office.outlook"/>
+        <package android:name="com.microsoft.office.powerpoint"/>
+        <package android:name="com.microsoft.office.word"/>
+        <package android:name="com.microsoft.skydrive"/>
+        <package android:name="com.miniclip.carrom"/>
+        <package android:name="com.miniclip.eightballpool"/>
+        <package android:name="com.miui.android.fashiongallery"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.mobikwik_new.bajajfinserv"/>
+        <package android:name="com.mobond.mindicator"/>
+        <package android:name="com.moonactive.coinmaster"/>
+        <package android:name="com.msd.JTClient"/>
+        <package android:name="com.msf.kbank.mobile"/>
+        <package android:name="com.mventus.selfcare.activity"/>
+        <package android:name="com.mxtech.ffmpeg.v7_neon"/>
+        <package android:name="com.mxtech.videoplayer.ad"/>
+        <package android:name="com.mxtech.videoplayer.beta"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.mygalaxy"/>
+        <package android:name="com.myntra.android"/>
+        <package android:name="com.nautilus.RealCricket3D"/>
+        <package android:name="com.net.shine"/>
+        <package android:name="com.netflix.mediaclient"/>
+        <package android:name="com.netqin.ps"/>
+        <package android:name="com.nexstreaming.app.kinemasterfree"/>
+        <package android:name="com.nextwave.wcc2"/>
+        <package android:name="com.nic.mparivahan"/>
+        <package android:name="com.niksoftware.snapseed"/>
+        <package android:name="com.octro.teenpatti"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="com.olx.southasia"/>
+        <package android:name="com.opera.app.news"/>
+        <package android:name="com.opera.browser"/>
+        <package android:name="com.opera.mini.native"/>
+        <package android:name="com.opex.makemyvideostatus"/>
+        <package android:name="com.oxigen.futurepay"/>
+        <package android:name="com.oyo.consumer"/>
+        <package android:name="com.paypal.android.p2pmobile"/>
+        <package android:name="com.paytm.business"/>
+        <package android:name="com.paytmmall"/>
+        <package android:name="com.paytmmoney"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.picsart.studio"/>
+        <package android:name="com.pinterest"/>
+        <package android:name="com.quikr"/>
+        <package android:name="com.quora.android"/>
+        <package android:name="com.quvideo.xiaoying"/>
+        <package android:name="com.railyatri.in.mobile"/>
+        <package android:name="com.rapido.passenger"/>
+        <package android:name="com.rbl.rblmycard"/>
+        <package android:name="com.rediff.mail.and"/>
+        <package android:name="com.reliancejio.mobilesecurity"/>
+        <package android:name="com.ril.ajio"/>
+        <package android:name="com.roposo.android"/>
+        <package android:name="com.ryzmedia.tatasky"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="com.sbi.SBIFreedomPlus"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.sec.android.app.music"/>
+        <package android:name="com.sec.android.app.popupcalculator"/>
+        <package android:name="com.sec.android.app.sbrowser"/>
+        <package android:name="com.sec.android.app.shealth"/>
+        <package android:name="com.sec.android.app.voicenote"/>
+        <package android:name="com.sec.android.easyMover"/>
+        <package android:name="com.shazam.android"/>
+        <package android:name="com.shopclues"/>
+        <package android:name="com.shopping.limeroad"/>
+        <package android:name="com.skype.raider"/>
+        <package android:name="com.smartspends"/>
+        <package android:name="com.snapchat.android"/>
+        <package android:name="com.snapdeal.main"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.snapwork.hdfcbank"/>
+        <package android:name="com.snapwork.IDBI"/>
+        <package android:name="com.socialnmobile.dictapps.notepad.color.note"/>
+        <package android:name="com.sonyliv"/>
+        <package android:name="com.Splitwise.SplitwiseMobile"/>
+        <package android:name="com.springwalk.mediaconverter"/>
+        <package android:name="com.starmakerinteractive.starmaker"/>
+        <package android:name="com.suntv.sunnxt"/>
+        <package android:name="com.supercell.clashofclans"/>
+        <package android:name="com.teamlease.associate"/>
+        <package android:name="com.teamviewer.teamviewer.market.mobile"/>
+        <package android:name="com.teenpatti.hd.gold"/>
+        <package android:name="com.telangana.twallet"/>
+        <package android:name="com.tencent.ig"/>
+        <package android:name="com.tencent.mm"/>
+        <package android:name="com.thinkyeah.galleryvault"/>
+        <package android:name="com.threestar.gallery"/>
+        <package android:name="com.til.timesnews"/>
+        <package android:name="com.timesgroup.magicbricks"/>
+        <package android:name="com.tinder"/>
+        <package android:name="com.touchtype.swiftkey"/>
+        <package android:name="com.trivago"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.tul.tatacliq"/>
+        <package android:name="com.tv.v18.viola"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.ubercab"/>
+        <package android:name="com.ubercab.eats"/>
+        <package android:name="com.uc.browser.en"/>
+        <package android:name="com.UCMobile.intl"/>
+        <package android:name="com.urbanclap.urbanclap"/>
+        <package android:name="com.utorrent.client"/>
+        <package android:name="com.versionsystems.pfbalancecheck"/>
+        <package android:name="com.vivashow.share.video.chat"/>
+        <package android:name="com.vodafone.vodafoneplay"/>
+        <package android:name="com.vuclip.viu"/>
+        <package android:name="com.weather.Weather"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.whatsapp.wallpaper"/>
+        <package android:name="com.whereismytrain.android"/>
+        <package android:name="com.yahoo.mobile.client.android.mail"/>
+        <package android:name="com.youdao.hindict"/>
+        <package android:name="com.zhiliaoapp.musically"/>
+        <package android:name="com.zinghr.app"/>
+        <package android:name="com.zoomcar"/>
+        <package android:name="com.zzkko"/>
+        <package android:name="cris.icms.ntes"/>
+        <package android:name="cris.org.in.prs.ima"/>
+        <package android:name="fc.admin.fcexpressadmin"/>
+        <package android:name="free.vpn.unblock.proxy.turbovpn"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="in.dishtv.subscriber"/>
+        <package android:name="in.gov.uidai.mAadhaarPlus"/>
+        <package android:name="in.gov.umang.negd.g2c"/>
+        <package android:name="in.mohalla.sharechat"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="in.redbus.android"/>
+        <package android:name="in.startv.hotstar"/>
+        <package android:name="in.swiggy.android"/>
+        <package android:name="io.teslatech.callbreak"/>
+        <package android:name="mp3videoconverter.videotomp3converter.audioconverter"/>
+        <package android:name="naukriApp.appModules.login"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="net.zedge.android"/>
+        <package android:name="nps.nps"/>
+        <package android:name="org.mozilla.firefox"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="org.videolan.vlc"/>
+        <package android:name="org.zwanoo.android.speedtest"/>
+        <package android:name="sun.way2sms.hyd.com"/>
+        <package android:name="ticketnew.android.ui"/>
+        <package android:name="tsgovt.com.mywalet"/>
+        <package android:name="tv.accedo.airtel.wynk"/>
+        <package android:name="video.like"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="analytics.app.packages" android:scheme="upswing"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="in.gov.uidai.rdservice.fp.CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="in.gov.uidai.rdservice.iris.CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="mandate" android:scheme="upi"/>
+        </intent>
+        <package android:name="in.gov.uidai.facerd"/>
+        <package android:name="in.gov.uidai.facerd.nonprod"/>
+        <intent>
+            <action android:name="com.nsdl.egov.esign.rdservice.fp.CAPTURE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.whizdm.moneyview.loans.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.MICROPHONE"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.whizdm.moneyview.loans.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_mvl_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.whizdm.moneyview.loans.SimpleLoanApp" android:networkSecurityConfig="@xml/network_config" android:roundIcon="@mipmap/ic_mvl_launcher_round" android:supportsRtl="true" android:theme="@style/Theme.Simple.White" android:usesCleartextTraffic="true">
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="false"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <activity android:exported="true" android:name="com.whizdm.activities.DeeplinkHandlerActivity">
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="ct"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="cc"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="refer"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="tuco" android:scheme="mv"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="fd"/>
+                <data android:path="/dashboard"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="pl"/>
+                <data android:host="bnpl"/>
+                <data android:host="loc"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="com.whizdm.alarm.receivers.RegistrationNotificationAlarmReceiver"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.whizdm.moneyview.loans.launcher.LauncherActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="moneyviewloans"/>
+                <data android:host="open"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+                <data android:host="mvl.onelink.me"/>
+                <data android:host="moneyviewloans-alternate.app.link"/>
+                <data android:host="moneyviewloans.app.link"/>
+                <data android:host="moneyview.in" android:pathPattern="/personal-loan-app"/>
+                <data android:host="moneyview.in" android:pathPattern="/fd-select/fixed-deposit-app"/>
+                <data android:host="moneyview.in" android:pathPattern="/products/hdfc-cc-app"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.OnBoardingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.appauth.mvpin.MVPinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.FGPatchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.videokyc.videokycpwa.VideoKycPwaActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.whizdm.moneyview.loans.service.StartupService"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <provider android:authorities="com.whizdm.moneyview.loans.syncadapter" android:exported="false" android:name="com.whizdm.provider.BaseContentProvider"/>
+        <provider android:authorities="com.whizdm.moneyview.loans.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <provider android:authorities="com.whizdm.moneyview.loans.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <activity android:exported="true" android:name="com.whizdm.banking.BankingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Banking" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.whizdm.banking.DASHBOARD"/>
+                <action android:name="com.whizdm.banking.ONBOARD"/>
+                <action android:name="com.whizdm.banking.MONEYBOOSTER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:name="com.whizdm.upi.intentflow.UpiIntentProcessorActivity" android:taskAffinity="com.moneyview.upi.intent" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity-alias android:autoRemoveFromRecents="true" android:enabled="false" android:exported="true" android:name="com.whizdm.upi.AliasUpiIntentProcessorActivity" android:targetActivity="com.whizdm.upi.intentflow.UpiIntentProcessorActivity" android:taskAffinity="com.moneyview.upi.intent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="upi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="upiGlobal"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="upi" android:scheme="mv"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="true" android:name="com.whizdm.upi.UpiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Upi" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.whizdm.upi.HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.whizdm.activities.LoanEmiInformationLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <data android:host="moneyview.in" android:path="/pay_now" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.settings.PersonalDataControlsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.whizdm.lending.bnpl.onboard.BNPLActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.whizdm.bnpl.onboard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.nach.EMandatePayCorpActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.aadhaarvault.AadhaarVaultActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.UploadNachFormActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.composableui.foreclosurecooloff.ForeClosureLoanCoolOffActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ForeclosureInformationActivityV2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.LoanAgreementDoneWithBanking" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.LoanAgreementDoneActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.AddBankOnBoardingDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ConfirmCurrentAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.nach.ManualNachTutorialActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.RepeatUserApplicationActivity" android:parentActivityName="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.whizdm.lending.LendingApplicationActivity" android:parentActivityName="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <data android:host="la" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.whizdm.lending.PERSONAL_DETAILS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LendReviewLoanAgreementActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ReferenceContactActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LoanAgreementInitialActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.whizdm.lending.agreement.initial.LoanAgreementInitialActivityV2" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="agreement" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.whizdm.lending.LoanEmiInformationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.whizdm.lending.postdisbursal.loanemiinformation.ui.presentation.LoanEmiInformationActivityV2" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ForeclosureInformationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.UserPaymentsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.postdisbursal.userpayment.ui.UserPaymentActivityV2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.RejectLoanMsgActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.EmiPaymentReviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ClosurePaymentReviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.postdisbursal.closurepaymentreview.ui.ClosurePaymentReviewActivityV2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LoanEmiPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.BankSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.PaymentResultActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.postdisbursal.paymentresult.ui.PaymentResultActivityV2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LendVideoViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.OcrCaptureActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Translucent"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.LendRequiredDataMissingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.incomeverification.bankstatementupload.ui.BsUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.topup.topupbsupload.ui.presentation.TopUpBsUploadActivityV2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.PerfiosBankSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.incomeverification.bankselection.ui.PerfiosBankSelectionActivityV2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.LendingAboutActivityV2" android:parentActivityName="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.whizdm.activities.LendingAboutActivity" android:parentActivityName="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.lending.about"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.settings.SettingsActivity" android:parentActivityName="com.whizdm.lending.LendingStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Preferences.White"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.PerfiosNetbankingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.ConnectEmailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.SearchCompanyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.search.company.SearchCompanyActivityV2" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White"/>
+        <activity android:exported="true" android:name="com.whizdm.lending.LoanTopUpActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="topup" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.CreditGraduationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.OkycVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.whizdm.lending.START_KYC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.nach.RzpEMandateActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.whizdm.lending.NachOptionsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="nach" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.nach.nachV2.presenter.view.NachOptionsActivityV2" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentTheme"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.OsvAppointmentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.TopUpBSUploadActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.ApiPartnerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.ApplicationRejectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.applicationrejection.ui.ApplicationRejectionActivityV2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.usercancelled.LoanUserCancelledActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.whizdm.lending.InsuranceListActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.insurance.list"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.whizdm.lending.LanguageSelectionActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.language.select"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.PdfViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LoanApplicationErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LocOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.CreditCardDashboardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LocDashboardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.CCSelfTransferActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.TransparentTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.ScanAndPayActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.scanandpay.home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.LocTransactionsListingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.LocOrderCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Simple.White.Transparent"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.LocSetPhysicalCardPinActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.LocPaymentOptionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.LocPaymentModeChooserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.LocTransactionDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.loc.delivery.LocDeliveryAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.whizdm.lending.loanhistory.LoanHistoryActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.loanhistory.dashboard"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="loanhistory" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.loc.block.LocBlockCardActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.cashfree.CashFreeEmiPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.whizdm.settings.SettingsNewActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.settings.home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.whizdm.lending.superhome.presentation.SuperHomeActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.whizdm.lending.superhome"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.whizdm.lending.CREDIT_TRACKER_CALLBACK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="in.digio.sdk.kyc.DigioMainActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.lending.nach.nachV2.presenter.view.composables.sideeffects.vendor.EmanateDigioActivity" android:theme="@style/AppTheme.TransparentTheme"/>
+        <activity android:exported="true" android:name="com.whizdm.lending.profileupdate.ProfileUpdateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="com.whizdm.profile.update"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.composableui.LendingWelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.whizdm.lending.ReferAndEarnActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="mv"/>
+                <data android:host="referral_imps"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.whizdm.refer.home"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.lending.accountaggregator.AALearnMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.composableui.namemismatch.NameMismatchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.whizdm.lending.loc.securedCard.deposit.SecuredDepositPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.VideoKycLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.views.BankLearnMoreActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.BankOnBoardingTncActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.BankOnBoardingChargesActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.uploadselfie.UploadSelfieActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.renach.ReNACHFlowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.reference.ReferenceContactActivityV2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.agreement.done.LoanAgreementDoneActivityV2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.composableui.submitApp.SubmitAppActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.lending.lendingRedirection.LendingRedirectionActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.whizdm.lending.services.UpdateLoanDataService"/>
+        <service android:exported="false" android:name="com.whizdm.lending.services.RefreshLoanDataService"/>
+        <service android:exported="false" android:name="com.whizdm.lending.services.SubmitTopUpOfferIntentService"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.whizdm.fd.FdMarketPlaceActivity" android:theme="@style/Theme.Simpleloan">
+            <intent-filter>
+                <action android:name="com.whizdm.fdmarketplace.DASHBOARD"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTask" android:name="one.upswing.sdk.ui.UpswingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="analytics.app.packages" android:scheme="upswing"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ybl.ypp.sdk.DeRegisterUserActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.ybl.ypp.sdk.GetTokenActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.ybl.ypp.sdk.SendOutwardSMSActivity" android:resizeableActivity="false" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.whizdm.superhome.presentation.sdui.SuperHomeActivityV2" android:theme="@style/Theme.Simple.White.Transparent">
+            <intent-filter>
+                <action android:name="com.whizdm.superhome"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.whizdm.rewards.presentation.RewardsActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:host="rewards" android:scheme="mv"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.whizdm.support.chat.presentation.ui.AttachmentViewerActivity"/>
+        <activity android:name="com.whizdm.support.chat.presentation.attachmentviewer.AttachmentViewerActivityV2"/>
+        <activity android:name="com.whizdm.support.chat.presentation.ui.SupportChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.whizdm.support.main.SupportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.whizdm.support.loc.dispute.LocDisputeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.whizdm.credittracker.ContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.creditcard.CreditCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.whizdm.cross_sell.presentation.activity.CrossSellContainerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="com.whizdm.cross.sell.launch"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.whizdm.activities.FirebaseUpstreamActivity"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/true_caller_partner_key"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.FAQActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.utils.AndroidDatabaseManager" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="" android:name="com.whizdm.activities.PhoneNumberVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.NmdEvaluationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.activities.RemoteConfigTestActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.RejectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.RejectionActivityV2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.findifsc.FindIFSCActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.NotificationHandlerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.activities.PothosConfigActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.whizdm.pnf.PwaContainerActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.whizdm.services.WhizlibMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.whizdm.services.InstallTrackerService"/>
+        <service android:exported="false" android:name="com.whizdm.services.MoveFilesService"/>
+        <service android:exported="true" android:name="com.whizdm.jobdispatcher.WhizDMSyncService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.whizdm.services.NotificationSwipeService"/>
+        <service android:exported="false" android:name="com.whizdm.services.TransliterateService"/>
+        <service android:exported="false" android:name="com.whizdm.services.InlineActionNotificationService"/>
+        <service android:exported="false" android:name="com.whizdm.services.ImportTransliteratedWordsService"/>
+        <receiver android:exported="false" android:name="com.whizdm.receivers.PushAlarmBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.whizdm.receivers.DailyAlarmBroadcastReceiver"/>
+        <receiver android:exported="false" android:name="com.whizdm.receivers.NotificationAutoDismissReceiver"/>
+        <receiver android:exported="true" android:name="com.whizdm.receivers.IncomingSmsBroadcastReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="30000">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.whizdm.receivers.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.whizdm.receivers.StartupBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.whizdm.receivers.SmsRetrieverBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorAccent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.whizdm.activities.MvSafeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.whizdm.activities.BrowserActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.whizdm.mvcamera.CameraActivity" android:screenOrientation="portrait" android:theme="@style/CameraFullScreenTheme"/>
+        <activity android:exported="false" android:name="com.whizdm.mvcamera.RuntimePermissionActivity" android:theme="@style/CameraFullScreenTheme.NoUI"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="false" android:exported="@bool/enable_gcm_scheduler_default" android:name="androidx.work.impl.background.gcm.WorkManagerGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.whizdm.moneyview.loans" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.whizdm.moneyview.loans.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.whizdm.moneyview.loans" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.juspay.hypernfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="ai.haptik.android.wrapper.sdk.HaptikWebView" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <provider android:authorities="com.whizdm.moneyview.loans.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.whizdm.moneyview.loans.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.whizdm.moneyview.loans.smartlook-installer" android:enabled="true" android:exported="false" android:name="com.smartlook.android.SmartlookInstaller"/>
+        <service android:name="com.smartlook.android.job.worker.record.UploadRecordJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.android.job.worker.session.UploadSessionJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.android.job.worker.record.ProcessVideoDataJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.android.job.worker.internallog.UploadInternalLogJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="in.digio.sdk.gateway.DigioActivity" android:screenOrientation="portrait" android:theme="@style/DigioSDKTheme"/>
+        <activity android:exported="false" android:name="in.digio.sdk.kyc.cropper.DigioCropImageActivity" android:theme="@style/DigioKycSDKTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.easebuzz.payment.kit.PWECheckoutActivity" android:screenOrientation="portrait" android:theme="@style/PWENoABar"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

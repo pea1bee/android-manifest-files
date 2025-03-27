@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.nextbillion.groww" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.fisglobal.bandhanupi.app"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.canarabank.mobility"/>
+        <package android:name="com.citiuat"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.olive.dcb.upi"/>
+        <package android:name="com.finopaytech.bpayfino"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.mgs.hsbcupi"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.icicibank.pockets"/>
+        <package android:name="com.euronet.iobupi"/>
+        <package android:name="com.mgs.induspsp"/>
+        <package android:name="com.fss.jnkpsp"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.mycompany.kvb"/>
+        <package android:name="com.kvb.mobilebanking"/>
+        <package android:name="com.lcode.smartz"/>
+        <package android:name="com.msf.kbank.mobile"/>
+        <package android:name="com.upi.federalbank.org.lotza"/>
+        <package android:name="com.infrasofttech.mahaupi"/>
+        <package android:name="com.mipay.in.wallet"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.onymy.paybee.prod"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.Version1"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.SIBMobile"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.infrasoft.uboi"/>
+        <package android:name="com.lcode.ucoupi"/>
+        <package android:name="com.YesBank"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="money.bullet"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="androidx.test.orchestrator"/>
+        <package android:name="androidx.test.services"/>
+        <package android:name="com.google.android.apps.common.testing.services"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.icicibank.pockets"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.enstage.wibmo.hdfc"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.samsung.android.spaymini"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.fss.pnbpsp"/>
+        <package android:name="com.fss.unbipsp"/>
+        <package android:name="com.mycompany.kvb"/>
+        <package android:name="com.fss.vijayapsp"/>
+        <package android:name="com.dena.upi.gui"/>
+        <package android:name="com.fss.jnkpsp"/>
+        <package android:name="com.olive.kotak.upi"/>
+        <package android:name="com.bsb.hike"/>
+        <package android:name="com.fss.idfcpsp"/>
+        <package android:name="com.YesBank"/>
+        <package android:name="com.abipbl.upi"/>
+        <package android:name="com.microsoft.mobile.polymer"/>
+        <package android:name="com.finopaytech.bpayfino"/>
+        <package android:name="com.mgs.obcbank"/>
+        <package android:name="com.upi.federalbank.org.lotza"/>
+        <package android:name="com.mgs.induspsp"/>
+        <package android:name="ai.wizely.android"/>
+        <package android:name="com.olive.dcb.upi"/>
+        <package android:name="com.mgs.yesmerchantnative.prod"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.rblbank.mobank"/>
+        <package android:name="in.chillr"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.SIBMobile"/>
+        <package android:name="com.mipay.wallet.in"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="com.gbwhatsapp"/>
+        <package android:name="com.msf.angelmobile"/>
+        <package android:name="com.fundsindia"/>
+        <package android:name="com.muthootfinance.imuthoot"/>
+        <package android:name="com.angelbroking.angelwealth"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="in.bajajfinservmarkets.app"/>
+        <package android:name="com.android.phone"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="upi"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.usb.host" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <permission android:name="com.nextbillion.groww.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.nextbillion.groww.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-permission android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ"/>
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE"/>
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT"/>
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE"/>
+    <uses-permission android:name="com.sonymobile.home.permission.PROVIDER_INSERT_BADGE"/>
+    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT"/>
+    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.huawei.android.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_APP_BADGE"/>
+    <uses-permission android:name="com.oppo.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="com.oppo.launcher.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_READ"/>
+    <uses-permission android:name="me.everything.badger.permission.BADGE_COUNT_WRITE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.AppComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="@xml/backup_descriptor" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/APP_NAME" android:largeHeap="true" android:name="com.nextbillion.groww.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:supportsRtl="true" android:taskAffinity="@string/taskaffinity" android:theme="@style/Theme.Mint.Legacy" android:usesCleartextTraffic="false">
+        <profileable android:shell="true"/>
+        <provider android:authorities="com.nextbillion.groww.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.groww.skynet.internal.initializer.SkynetInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.payu.crashlogger.CrashProviderInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.nextbillion.groww.genesys.invest.stocks.advancecharts.AdvanceChartActivity" android:theme="@style/MainActivityTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.nextbillion.groww.genesys.common.activities.YoutubePlayerActivity" android:screenOrientation="landscape" android:theme="@style/MainActivityTheme"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_groww_notification_icon"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notif_green"/>
+        <service android:enabled="true" android:exported="false" android:name="com.nextbillion.groww.NativeFCMMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:name="android.speech.RecognitionService" android:process=":remote"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:label="@string/APP_NAME" android:launchMode="singleTask" android:name="com.nextbillion.groww.MainActivity" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:label="@string/APP_NAME" android:launchMode="singleTask" android:name="com.nextbillion.groww.BaselineActivity" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.nextbillion.groww.genesys.stocks.activities.StocksActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.nextbillion.groww.genesys.invest.stocks.sip.activity.StocksSipActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.nextbillion.groww.genesys.invest.stocks.screener.activity.StocksScreenerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.pledge.activities.PledgeActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.nextbillion.groww.genesys.common.activities.WebActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.mutualfunds.activities.MutualFundsActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.mutualfunds.activities.AllMutualFundsActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.stocks.activities.AllStocksActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.stocks.activities.AllStocksDataListActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.mutualfunds.activities.NFOActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.onboardingV2.accReset.ui.activities.AccountResetActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.watchlist.WatchlistActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="false" android:name="com.nextbillion.groww.genesys.customalerts.activities.CustomAlertsActivity" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="true" android:name="com.nextbillion.groww.genesys.loginsignup.activities.LoginActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="groww.onelink.me" android:scheme="https"/>
+                <data android:host="app.groww.in" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="groww.in" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/onboarding" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/dormant-onboarding" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/explore" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/portfolios" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/portfolio-sharing" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/portfolio" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/quicklaunch" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/cdslauth" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/onboarding" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/elss" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/contactus" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/viewsip" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/dashboard" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/track" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/track" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/first-sip" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/cancelled-sips" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/holdings/pledge" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/generate-otm" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/generate_new_otm" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/groww-mandate" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/upload-groww-mandate" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/upload-otm" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/edit_otm_signature" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/verify_emandate" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/invite" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/referral-contacts" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/order" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/reports" android:scheme="https"/>
+                <data android:host="groww.in" android:path="/bank" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/assistant" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/help" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/user" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/profile" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/neft" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/family-account" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/xperts" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/addbiller" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/stocks/" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/etfs" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/indices" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/nfo" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/user/bank-autopay" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/ipo" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/pricing" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/news" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/user/notifications" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/user/help" android:scheme="https"/>
+                <data android:host="groww.in" android:path="/user/profile/active-devices" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/buy-back" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mtf/onboarding" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/wv" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/fno-blocking/" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/axis" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/kotak" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/reliance" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/hdfc" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/sbi" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/icici" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/aditya" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/birla" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/uti" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/franklin" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/idfc" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/dsp" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/tata" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/lt" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/dhfl" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/sundaram" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/invesco" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/lic" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/jm" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/baroda" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/canara" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/hsbc" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/idbi" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/indiabulls" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/motilal" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/bnp" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/mirae" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/principal" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/boi" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/union" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/taurus" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/edelweiss" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/essel" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/mahindra" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/quantum" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/ppfas" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/iifl" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/escorts" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/shriram" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/iti" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/pgim" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/quant" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/quantum" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/sahara" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/yes" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/groww" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/nippon" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/collection" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/collections" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/filter" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/buy" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/resume-order" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/resume-payment" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/step-up" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/compare" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/user/demat-opt-out" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/calculators/sip-calculator" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/charts" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/stories" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/feed" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/market-news" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/markets/top-gainers" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/markets/top-losers" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/markets/top-volume" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/markets/52-week-high" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/markets/52-week-low" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/options" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/futures/" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/sovereign-gold-bonds" android:scheme="https"/>
+                <data android:host="groww.in" android:path="/credit" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/credit/" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/consumer_durables" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/deposits" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/switch" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/otp" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/mandate" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/amc" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/start-sip" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/mutual-funds/redeem" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/p/traders-corner" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/insights" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/kra/verify" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/rekyc/re-activation" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/pages" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/kra-verification" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/etf-nfo" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/futures-and-options" android:scheme="https"/>
+                <data android:host="groww.in" android:pathPrefix="/search" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.nextbillion.groww.UpiIntent" android:targetActivity="com.nextbillion.groww.genesys.loginsignup.activities.LoginActivity">
+            <intent-filter>
+                <data android:host="pay" android:scheme="upi"/>
+                <data android:host="mandate" android:scheme="upi"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:launchMode="singleTask" android:name="com.nextbillion.groww.genesys.loginsignup.activities.TwoFactorActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.search.activities.SearchActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.search.activities.SearchActivityV2" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.growth.smartcollection.ui.activity.SmartCollectionActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.gold.activities.GoldActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.you.activities.YouActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.dashboard.activities.DashboardActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.home.activities.HomeActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTask" android:name="com.nextbillion.groww.genesys.explore.activities.MainNativeActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.invest.primaries.ipo.activities.IpoActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="965e0d9eb7c6474fd06256f3fc3c2b9d"/>
+        <meta-data android:name="com.bugsnag.android.ENABLED_RELEASE_STAGES" android:value="prod,next,uat"/>
+        <meta-data android:name="com.bugsnag.android.RELEASE_STAGE" android:value="prod"/>
+        <meta-data android:name="com.webengage.sdk.android.environment" android:value="in"/>
+        <provider android:authorities="com.nextbillion.groww.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <receiver android:exported="false" android:name="com.nextbillion.groww.genesys.common.listeners.NotificationDismissedReceiver"/>
+        <receiver android:exported="false" android:name="com.nextbillion.groww.genesys.common.listeners.NotificationActionClickReceiver"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.mutualfunds.activities.MFSwitchActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.stocks.activities.NewsActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.stocks.activities.FinancialsActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.nextbillion.groww.genesys.fno.activities.FnoActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.fno.activities.FnoExploreActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.sgb.activities.SgbActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.gb.ui.activity.GbActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.nextbillion.groww.genesys.invest.primaries.etfNfo.EtfNfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.invest.portfolio.ui.view.ReportsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.common.activities.GenericActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.onboardingV2.activities.OnBoardingActivityV2" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.fno.onboarding.presentation.FnoOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/MainActivityTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.fno.safepause.SafePauseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="standard" android:name="com.nextbillion.groww.genesys.invest.blockingService.ui.activity.TradingBlockedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.genesys.invest.mutualfunds.orders.activity.MfOrdersActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <receiver android:enabled="false" android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.nextbillion.groww.SmsBroadcastReceiver">
+            <intent-filter android:priority="10">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.nextbillion.groww.genesys.growth.localpn.utils.AlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.nextbillion.groww.genesys.common.listeners.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="com.nextbillion.groww.upe.commons.activities.UpePaymentsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:exported="false" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="com.nextbillion.groww.upe.commons.activities.UpeAutopayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:exported="false" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="com.nextbillion.groww.upe.asba.UpeASBAActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:exported="false" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.payments.scan.QRScanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.accountManagement.UpiAccMgmtActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.onboarding.UpiOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.onboarding.UpiPermissionActivity" android:theme="@style/Transparent"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.payments.PaymentsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.payments.GenericUpiTransparentActivity" android:screenOrientation="portrait" android:theme="@style/Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.autopay.AutoPayHandlerActivity" android:screenOrientation="portrait" android:theme="@style/Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.lite.UpiLiteActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.transactionHistory.ui.UpiTxnHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.nextbillion.groww.upi.contactSearch.ContactSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.feature_bills.ui.BillsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.fnoOnboarding.core.ui.activity.FnOOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.onboarding.core.ui.activity.OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.nextbillion.groww.fnocommodities.FnoCommoditiesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Mint.Legacy"/>
+        <receiver android:name="com.nextbillion.groww.commons.logger.LogNotificationReceiver"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode"/>
+        <provider android:authorities="com.nextbillion.groww.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <provider android:authorities="com.nextbillion.groww.appStartProvider" android:exported="false" android:initOrder="2147483647" android:name="com.groww.applens.internal.common.appstartup.AppStartContentProvider"/>
+        <activity android:label="@string/chucker_name" android:launchMode="singleTask" android:name="com.chuckerteam.chucker.internal.ui.MainActivity" android:taskAffinity="com.chuckerteam.chucker.task" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <service android:exported="false" android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"/>
+        <provider android:authorities="com.nextbillion.groww.com.chuckerteam.chucker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/chucker_provider_paths"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.payu.custombrowser.CBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.payu.custombrowser.services.SnoozeService"/>
+        <activity android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="google_analytics_adid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_ssaid_collection_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_analytics_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_storage" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_user_data" android:value="true"/>
+        <meta-data android:name="google_analytics_default_allow_ad_personalization_signals" android:value="true"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="false"/>
+        <provider android:authorities="com.nextbillion.groww.reactnativefirebasecrashlyticsinitprovider" android:exported="false" android:initOrder="98" android:name="io.invertase.firebase.crashlytics.ReactNativeFirebaseCrashlyticsInitProvider"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingHeadlessService"/>
+        <service android:exported="false" android:name="io.invertase.firebase.messaging.ReactNativeFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="true"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value=""/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="false"/>
+        <meta-data android:name="app_data_collection_default_enabled" android:value="true"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.invertase.firebase.app.ReactNativeFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.nextbillion.groww.reactnativefirebaseappinitprovider" android:exported="false" android:initOrder="99" android:name="io.invertase.firebase.app.ReactNativeFirebaseAppInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.nextbillion.groww.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.razorpay.rn.RazorpayPaymentActivity"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.ChannelListActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:name="com.freshchat.consumer.sdk.activity.ConversationDetailActivity" android:theme="@style/Theme.Freshchat.SelectedTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.DeeplinkInterstitialActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.PictureAttachmentActivity" android:theme="@style/Theme.Freshchat.SelectedTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.CategoryListActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.ArticleListActivity" android:theme="@style/Theme.Freshchat.SelectedTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.ArticleDetailActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.InterstitialActivity" android:theme="@style/Freshchat.Theme.Transparent"/>
+        <activity android:name="com.freshchat.consumer.sdk.activity.BotFaqDetailsActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <service android:name="com.freshchat.consumer.sdk.service.FreshchatService"/>
+        <receiver android:exported="false" android:name="com.freshchat.consumer.sdk.receiver.FreshchatReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCALE_CHANGED"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.freshchat.consumer.sdk.receiver.FreshchatNetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.nextbillion.groww.freshchat.initprovider" android:enabled="true" android:exported="false" android:multiprocess="true" android:name="com.freshchat.consumer.sdk.provider.FreshchatInitProvider"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.FAQCategoriesActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.FAQListActivity" android:theme="@style/Theme.Freshchat.SelectedTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.FAQDetailsActivity" android:theme="@style/Theme.Freshchat.SelectedTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.freshchat.consumer.sdk.activity.FAQSearchActivity" android:theme="@style/Theme.Freshchat.SelectedTheme" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.nextbillion.groww.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.nextbillion.groww.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.ReactNativeBlobUtil.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.nextbillion.groww.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ivpusic_imagepicker_provider_paths"/>
+        </provider>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.nextbillion.groww.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.nextbillion.groww.rnshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="cl.json.RNShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_download_paths"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.nextbillion.groww.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="com.nextbillion.groww.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.nextbillion.groww.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <provider android:authorities="com.nextbillion.groww.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <service android:name="com.webengage.sdk.android.ExecutorService"/>
+        <service android:name="com.webengage.sdk.android.EventLogService"/>
+        <service android:exported="false" android:name="com.webengage.sdk.android.NotificationClickHandlerService">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.ACTION"/>
+                <category android:name="com.nextbillion.groww"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:name="com.webengage.sdk.android.actions.render.WebEngageActivity" android:theme="@android:style/Theme.Translucent"/>
+        <receiver android:exported="false" android:name="com.webengage.sdk.android.WebEngageReceiver">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.ACTION"/>
+                <category android:name="com.nextbillion.groww"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.webengage.sdk.android.WebEngageJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:name="com.webengage.sdk.android.WETransparentActivity" android:theme="@style/Theme.Transparent"/>
+        <service android:exported="false" android:name="com.webengage.sdk.android.actions.render.TimerService">
+            <intent-filter>
+                <action android:name="com.webengage.sdk.android.intent.PROGRESS_BAR"/>
+                <category android:name="com.nextbillion.groww"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

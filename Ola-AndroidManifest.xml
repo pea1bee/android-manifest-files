@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.olacabs.customer" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.olacabs.customer.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="com.olacabs.customer.permission.MIPUSH_RECEIVE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <queries>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.mShop.kuber.service.PREFETCH_SERVICE"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+    </queries>
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <permission android:name="com.olacabs.customer.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.olacabs.customer.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <supports-screens android:largeScreens="true" android:xlargeScreens="true"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.permission.AUDIO_CAPTURE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <permission android:name="com.olacabs.customer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.olacabs.customer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.olacabs.customer.app.OlaApp" android:resizeableActivity="false" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppCompatTheme">
+        <provider android:authorities="com.olacabs.customer" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.olacabs.customer.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="payu_merchant_id" android:value="@string/payu_merchant_key"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="@string/google_maps_business_prod_key"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="b1569b24c28131b606b16d112b94d821a1fc3f3a"/>
+        <meta-data android:name="com.google.android.actions" android:resource="@xml/actions"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_live_key"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.wallet.api.enabled" android:value="true"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/fb_client_token"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.olacabs.customer.ui.NewSplashActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Starting" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.olacabs.customer.ui.DeeplinkActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.olacabs.com" android:pathPrefix="/app/launch" android:scheme="http"/>
+                <data android:host="www.olacabs.com" android:scheme="http"/>
+                <data android:host="www.olacabs.com" android:scheme="https"/>
+                <data android:host="www.olacabs.com" android:pathPrefix="/app/launch" android:scheme="https"/>
+                <data android:host="www.olacabs.com" android:scheme="https"/>
+                <data android:host="olacabs.com" android:pathPrefix="/app/launch" android:scheme="http"/>
+                <data android:host="olacabs.com" android:scheme="http"/>
+                <data android:host="olacabs.com" android:pathPrefix="/app/launch" android:scheme="https"/>
+                <data android:host="olacabs.com" android:scheme="https"/>
+                <data android:host="hello.ola.app" android:scheme="https"/>
+                <data android:host="hello.ola.app" android:scheme="http"/>
+                <data android:host="book.olacabs.com" android:pathPrefix="/app/launch" android:scheme="http"/>
+                <data android:host="book.olacabs.com" android:scheme="http"/>
+                <data android:host="book.olacabs.com" android:pathPrefix="/app/launch" android:scheme="https"/>
+                <data android:host="book.olacabs.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="webapps.olacabs.com" android:scheme="https"/>
+                <data android:host="webapps.olacabs.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app" android:pathPrefix="/launch" android:scheme="olacabs"/>
+                <data android:host="app" android:scheme="olacabs"/>
+                <data android:host="app" android:pathPrefix="/launch" android:scheme="Olacabs"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app" android:scheme="Olacabs"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.android.gms.actions.SEARCH_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="geo"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_mobile_verification" android:name="com.olacabs.customer.ui.MobileVerificationActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullScreen_No_Actionbar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/corp_ride_reason_title" android:name="com.olacabs.customer.corporate.ui.CorporateRideReasonActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullScreen_No_Actionbar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/corp_ride_reason_title" android:name="com.olacabs.customer.corporate.ui.CorporateExpenseCodeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullScreen_No_Actionbar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.ChangePasswordActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.FullScreen_No_Actionbar"/>
+        <receiver android:exported="false" android:name="com.olacabs.customer.app.OlaReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.olacabs.customer.app.OlaService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.olacabs.customer.gcm.OlaInstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.olacabs.customer.ui.SelfServeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.ui.OlaWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.app.RestartActivity" android:process=":restart" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.olacabs.customer.select.ui.CommonWebViewActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.olacabs.customer.connect.push.ConnectNotificationActionReceiver"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.olacabs.customer.ui.BaseLoginSignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.VerifyMobileNoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.ValidateOTPActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.LoginWithPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.VerifyAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.ui.SetPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.CreateOlaAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.VerifyEmailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.ui.ChangeEmailNewLoginActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.customer.payments.ui.cards.ChooseYourBankActivity" android:screenOrientation="portrait"/>
+        <activity android:name="yoda.sos.ui.SosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="yoda.sos.ui.SosCountdownActivity" android:screenOrientation="portrait" android:theme="@style/FullScreenTranslucentStatusBar"/>
+        <activity android:name="yoda.sos.ui.SosAlertActivity" android:screenOrientation="portrait" android:theme="@style/FullScreenTranslucentStatusBar"/>
+        <activity android:name="yoda.sos.ui.AddEmergencyContactActivity" android:screenOrientation="portrait"/>
+        <activity android:name="yoda.ui.profile.VerifyPasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="yoda.ui.profile.TwoStepVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="yoda.ui.login.IvrActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.ui.AccountBlockedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.ui.AccountReactivateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.olacabs.customer.ui.EmailVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="yoda.rearch.payment.sidemenu.AddInstrumentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="yoda.rearch.core.NewMainActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/AppTheme.MainActivity" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="yoda.rearch.upgrade.ForceUpgradeActivity"/>
+        <activity android:name="yoda.ui.referral.ApplyReferralCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="yoda.rearch.marketingconsent.MarketingConsentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="yoda.rearch.olaelectric.OlaElectricWebActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/rich_landing" android:name="com.moe.pushlibrary.activities.MoEActivity" android:parentActivityName="yoda.rearch.core.NewMainActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:exported="false" android:name="yoda.ui.ThirdPartyIntentActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.olacabs.customer.insurance.ui.activities.AddOnProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.moengage.push.amp.plus.MiPushReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.olaelectric.ola_finance.views.FinanceActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.PaymentActivity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <receiver android:exported="true" android:name="com.olacabs.olamoneyrest.utils.SmsSentBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.olacabs.olamoneyrest.utils.Constants.SMS_SENT_ACTION"/>
+                <action android:name="android.intent.action.SMS_SENT"/>
+                <action android:name="android.intent.action.SMS_DELIVERED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.TemperoryTransactionActivity"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.PLPitchPageActivity"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.PersonalLoanActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:label="@string/title_activity_balance" android:launchMode="singleTop" android:name="com.olacabs.olamoneyrest.core.inapp.PayActivity" android:theme="@style/OlaMoneyTheme.TransparentStatus.TransparentBg" android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="com.olacabs.olamoney.pay"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.olacabs.olamoneyrest.core.activities.TransactionComplaintActivity" android:screenOrientation="portrait" android:theme="@style/LoadTheme"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.CreditProtecttileScreen" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.olacabs.olamoneyrest.core.activities.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/LoadTheme"/>
+        <activity android:exported="true" android:hardwareAccelerated="true" android:name="com.olacabs.olamoneyrest.core.activities.KYCActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.inapp.LoadActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.UPIActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.OMTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.OMTransactionDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.kyc.CameraActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.kyc.CropActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.kyc.ReviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.OlaMoneyCarouselActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.RechargePayUActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.P2PActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.CircleUtilityActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="true" android:name="com.olacabs.olamoneyrest.core.activities.OlaMoneyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.AutoRechargeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.RechargeOfferScreenActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.SiScreenActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.DiscoverableCouponsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.SendPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.MerchantPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.OMPostpaidActivity" android:theme="@style/OlaMoneyTheme.TransparentStatus.TransparentBg" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.PostpaidActivatedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.PermissionActivity" android:screenOrientation="portrait" android:theme="@style/OlaMoneyAppTheme"/>
+        <activity android:exported="true" android:name="com.olacabs.olamoney.activities.RazorpayPaymentActivity" android:screenOrientation="portrait" android:theme="@style/OlaMoneyAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.olacabs.olamoneyrest.core.activities.BBPSActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.olacabs.olamoneyrest.core.activities.TwoFactorFromCabsActivity" android:screenOrientation="portrait" android:theme="@style/OlaMoneyAppTheme"/>
+        <receiver android:exported="false" android:name="com.olacabs.olamoneyrest.core.ShortcutBroadcastReceiver"/>
+        <activity android:name="com.olacabs.qrcode_reader.QrCodeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.olacabs.qrcode_reader.QrCodeAutoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:label="@string/chucker_name" android:launchMode="singleTask" android:name="com.chuckerteam.chucker.internal.ui.MainActivity" android:taskAffinity="com.chuckerteam.chucker.task" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <service android:exported="false" android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"/>
+        <provider android:authorities="com.olacabs.customer.com.chuckerteam.chucker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/chucker_provider_paths"/>
+        </provider>
+        <activity android:name="com.ola.mapsorchestrator.showcase.ShowCaseActivity"/>
+        <service android:exported="false" android:name="com.olacabs.connect.push.ConnectGcmListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.olacabs.connect.push.TTLBroadcastReceiver"/>
+        <meta-data android:name="com.phonepe.android.sdk.isUAT" android:value="false"/>
+        <meta-data android:name="com.phonepe.android.sdk.Debuggable" android:value="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.olacabs.paymentsreact.ui.PaymentReactActivity" android:theme="@style/AppTheme.NoActionBar.Transparent" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.olacabs.upi.core.AddVPAActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.olacabs.upi.core.ReAuthActivity" android:theme="@style/AppTheme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.olacabs.upi.core.VpaDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <provider android:authorities="com.olacabs.customer.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:label="Juspay Payment Page Activity" android:launchMode="singleTop" android:name="in.juspay.hypersdkreact.ProcessActivity" android:theme="@style/Theme.AppCompat.Juspay.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.olacabs.tracker.ShareLiveLocationService"/>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.CaptchaDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.InternalBlockedDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <service android:enabled="true" android:isolatedProcess="true" android:name="com.shield.android.service.ShieldIsolatedService" android:process=":shieldservice"/>
+        <activity android:exported="false" android:name="com.shield.android.ShieldInitializeActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.olacabs.customer" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize|uiMode" android:exported="false" android:name="com.amazon.identity.auth.apay.activity.AuthActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Translucent"/>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.olacabs.customer" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.olacabs.customer" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.juspay.hypernfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20202"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.olacabs.customer.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.olacabs.customer.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="androidx.work.multiprocess.RemoteWorkManagerService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.razorpay.upi.turbo_view.RewardSuccessActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="true" android:name="com.razorpay.upi.turbo_view.LinkedAccountsActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.razorpay.upi.turbo_view.ManageAccountActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.razorpay.upi.turbo_view.SuccessActivity"/>
+        <activity android:exported="true" android:name="com.razorpay.upi.turbo_view.BottomSheetTransparentActivity" android:theme="@style/Theme.AppCompat.Transparent"/>
+        <activity android:exported="false" android:name="com.razorpay.upi.turbo_view.CardDetailsActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.razorpay.upi.turbo_view.BankSelectionActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/rzp_turbo_preloaded_fonts"/>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <meta-data android:name="com.razorpay.plugin.upi_turbo" android:value="com.razorpay.RazorpayTurbo"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="location" android:name="com.ola.maps.navigation.v5.navigation.NavigationService" android:permission="android.permission.FOREGROUND_SERVICE"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+        <service android:exported="false" android:name="com.moengage.rtt.internal.RttIntentService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.moengage.rtt.internal.RttReceiver"/>
+        <service android:name="com.moengage.rtt.internal.RttSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50011"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_1_1-G"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <provider android:authorities="com.olacabs.customer.mipush.sdk.data" android:exported="false" android:name="com.xiaomi.channel.commonutils.android.MIPushProvider" android:permission="com.olacabs.customer.permission.MIPUSH_RECEIVE"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:name="com.moengage.core.internal.data.reports.DataSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.incognia.core.AlarmHelperReceiver">
+            <intent-filter>
+                <action android:name="com.incognia.core.AlarmTriggeredEvent"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.incognia.core.JobTriggeredService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.incognia.core.IncogniaCommonReceiver"/>
+        <service android:name="com.incognia.core.CommonReceiverJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.incognia.core.LocationService"/>
+        <service android:name="com.incognia.core.LocationJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.incognia.core.LocationReceiverJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.incognia.core.LocationReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.AIRPLANE_MODE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenSize|uiMode" android:exported="false" android:name="com.amazon.android.apay.commonlibrary.browsinglib.activity.BrowsingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.Translucent"/>
+        <activity android:exported="true" android:name="com.amazon.android.apay.commonlibrary.browsinglib.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.olacabs.customer" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

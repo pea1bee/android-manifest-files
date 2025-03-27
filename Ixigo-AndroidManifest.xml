@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.ixigo" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.AUDIO_CAPTURE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <permission android:name="com.ixigo.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.ixigo.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.ixigo.permission.MIPUSH_RECEIVE"/>
+    <queries>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <provider android:authorities="com.facebook.katana.provider.PlatformProvider"/>
+        <provider android:authorities="com.facebook.orca.provider.PlatformProvider"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="us.zoom.videomeetings"/>
+        <package android:name="com.google.android.apps.tachyon"/>
+        <package android:name="com.cisco.webex.meetings"/>
+        <package android:name="com.microsoft.teams"/>
+        <package android:name="com.teamviewer.blizz.market"/>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.microsoft.rdc.androidx"/>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <package android:name="de.robv.android.xposed"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.phonepe.app.preprod"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.otpless.app"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.michatapp.im"/>
+        <package android:name="com.discord"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.viber.voip"/>
+        <package android:name="org.thoughtcrime.securesms"/>
+        <package android:name="im.thebot.messenger"/>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.appnext.core"/>
+    </queries>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_SIGNATURES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.ixigo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.ixigo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.ixigo.IxigoApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="false" android:theme="@style/IxigoTheme" android:vmSafeMode="false">
+        <meta-data android:name="com.ixigo.auth.social.google.clientId" android:value="609822318055-7gifp26me07tnaphkgu3ilf51hjusat6.apps.googleusercontent.com"/>
+        <profileable android:shell="true"/>
+        <provider android:authorities="com.ixigo.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_geo_api_key"/>
+        <activity android:name="com.ixigo.home.SplashScreenActivity" android:screenOrientation="portrait" android:theme="@style/IxigoSplashScreenTheme"/>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.ixigo.DefaultSplashScreenActivity" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="com.ixigo.home.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity-alias>
+        <activity android:name="com.ixigo.referral.RefereeWelcomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.home.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.ixigo.tripplanner.ReelsSharingActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter android:label="Convert to Trip Itinerary">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="youtube.com"/>
+                <data android:host="www.youtube.com"/>
+                <data android:host="m.youtube.com"/>
+                <data android:host="youtu.be"/>
+                <data android:pathPattern="/shorts/.*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.ixigo.controller.DeepLinkingActivity" android:theme="@style/IxigoTheme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ixigo"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.ixigo.com" android:path="/" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/hotels" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/flights" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/trains" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/buses" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/launchCTBottomSheet" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/launchCTToolTip" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/launchCTCoachMark" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/buses/booking" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/search/result/bus" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/ixigoer" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/search/result/flight.*" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/h.*o.*t.*e.*l.*s.*-.*l.*p.*-.*" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/.*-.*h.*i.*d.*-.*" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/send-enquiry" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/ixigomoney" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/explore" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/webTab" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/explore/destination/.*" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPattern="/flights/.*-.*-flights" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/flight-status-tracked" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/signup" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/tara" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/fareAlerts" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/login" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:path="/fareAlerts" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/help-center" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/launchVideo" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/showRatingWidget" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/launchForceUpdate" android:scheme="https"/>
+                <data android:host="www.ixigo.com" android:pathPrefix="/flight/booking/confirmation" android:scheme="https"/>
+                <data android:scheme="ixigo"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="Fare Alerts" android:name="com.ixigo.farealert.activity.FareAlertListActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Fare Alerts" android:name="com.ixigo.farealert.activity.FareAlertDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.home.UserPreferencesActivity" android:screenOrientation="portrait" android:theme="@style/IxigoTheme.Preferences"/>
+        <activity android:label="Invite Friends" android:name="com.ixigo.home.InviteFriendsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.ixigo.lib.common.activity.GenericWebViewActivity" android:parentActivityName="com.ixigo.home.HomeActivity">
+            <intent-filter android:label="ixigo">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="www.booking.com"/>
+                <data android:host="sp.booking.com"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:name="com.ixigo.lib.common.activity.ThirdPartyWebViewActivity" android:parentActivityName="com.ixigo.home.HomeActivity"/>
+        <activity android:name="com.ixigo.ctbottomsheet.CTBottomSheetActivity" android:screenOrientation="portrait" android:theme="@style/IxigoTheme.Transparent"/>
+        <receiver android:exported="true" android:name="com.ixigo.analytics.broadcastreceiver.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <activity android:name="com.ixigo.lib.flights.common.webcheckin.activity.WebCheckInWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.flights.checkout.FlightCheckoutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="Payment" android:name="com.ixigo.flights.booking.FlightBookingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.flights.payment.FlightBookingPaymentPwaWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Booking Cancellation" android:name="com.ixigo.trips.cancellation.FlightBookingCancellationWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="Booking Cancellation" android:name="com.ixigo.trips.cancellation.FlightBookingCancellationPwaWebViewAcitivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.flights.searchresults.FlightResultActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:name="com.ixigo.flights.detail.FlightDetailActivity" android:parentActivityName="com.ixigo.flights.searchresults.FlightResultActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.ixigo.mypnrlib.cab.CabNotificationPressReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.mypnrlib.ACTION_CAB_NOTIFICATION_PRESS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="@string/crashlytics_api_key"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertap_account_id"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertap_token"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value="SplashScreenActivity,DeepLinkingActivity,SignInActivity,VerifyActivity,SignUpActivity,RefereeWelcomeActivity,FederatedSignUpActivity,ForgotPasswordActivity,PhoneVerificationActivity,ResetPasswordActivity,UpdateProfileActivity,DexterActivity,LoginOtpVerificationActivity"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="pw_notification"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="in1"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@style/IxigoTheme.Transparent"/>
+        <service android:exported="false" android:name="com.ixigo.FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.ixigo.lib.components.environment.ChangeEnvironmentRequestReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.CHANGE_ENVIRONMENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.mypnrlib.helper.TripSyncHelper$AuthStateChangeReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_IN"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_OUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.lib.common.pwa.AuthStateChangeReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_IN"/>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_OUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.lib.components.helper.TokenSyncHelper$AuthStateChangeReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_IN"/>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_OUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.lib.auth.receiver.EnvironmentChangeReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.ENVIRONMENT_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="@string/ixigo_app_branch_key_test"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/truecallerClientId"/>
+        <activity android:name="com.ixigo.feedback.FeedbackActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.ixigo.home.HomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:exported="false" android:name="com.ixigo.home.PipActivity$PipReceiver"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTask" android:name="com.ixigo.home.PipActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/profile" android:name="com.ixigo.mypage.EditProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.ixigo.lib.common.pwa.IxigoSdkActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.stories.ImageViewerActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/label_page_refer_n_earn" android:name="com.ixigo.lib.common.referral.ui.ReferAndEarnActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.buses.search.ui.BusAutoCompleterActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/bus_calendar_title" android:name="com.ixigo.buses.search.ui.BusCalendarActivity" android:parentActivityName="com.ixigo.home.HomeActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.ixigo.lib.flights.common.insurance.InsuranceClaimPwaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.trips.TripListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.flights.checkout.activity.SelectTravellersActivity" android:screenOrientation="portrait" android:theme="@style/IxigoTheme"/>
+        <meta-data android:name="xiaomi-push-app-id" android:value="@string/xiaomi_push_app_id"/>
+        <meta-data android:name="xiaomi-push-app-key" android:value="@string/xiaomi_push_app_key"/>
+        <meta-data android:name="adjust-app-token" android:value="@string/adjust_app_token"/>
+        <meta-data android:name="adjust-secret-id" android:value="@string/adjust_secret_id"/>
+        <meta-data android:name="adjust-info1" android:value="@string/adjust_info1"/>
+        <meta-data android:name="adjust-info2" android:value="@string/adjust_info2"/>
+        <meta-data android:name="adjust-info3" android:value="@string/adjust_info3"/>
+        <meta-data android:name="adjust-info4" android:value="@string/adjust_info4"/>
+        <provider android:authorities="com.ixigo.androidx-startup" android:enabled="true" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.ixigo.startup.FacebookSdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.ixigo.lib.common.startup.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.russhwolf.settings.SettingsInitializer" android:value="androidx.startup"/>
+        </provider>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <meta-data android:name="juspay-client-id" android:value="@string/juspay_client_id"/>
+        <meta-data android:name="com.razorpay.ApiKey" android:value="rzp_live_uXaHSrJyw60pd2"/>
+        <meta-data android:name="com.ixigo.auth.otpless.appId" android:value="9g25l8q9skaxn8nbdxqq"/>
+        <activity android:exported="false" android:name="com.ixigo.bucketlist.BucketListActivity"/>
+        <activity android:exported="false" android:name="com.ixigo.tripplanner.TripDetailsActivity" android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+        <activity android:name="com.ixigo.lib.flights.searchform.AirportAutoCompleterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.ixigo.lib.flights.checkout.activity.CountryAutoCompleterActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/gst_details" android:name="com.ixigo.lib.flights.detail.activity.GstDetailsFormActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/refund_policy" android:name="com.ixigo.lib.flights.detail.activity.FareRulesDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/frequent_flyer_title" android:name="com.ixigo.lib.flights.detail.activity.FrequentFlyerProgramsDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/traveller_n_class" android:name="com.ixigo.lib.flights.searchform.TravellerAndClassSelectionActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="Calendar" android:name="com.ixigo.lib.flights.common.FlightCalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.flights.checkout.activity.AddFlightTravellerActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_pamHFldgfXYhEJItXRKcsnflrweX8YLL"/>
+        <activity android:name="com.ixigo.lib.flights.auth.login.ui.FlightSignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:exported="true" android:name="com.ixigo.mypnrlib.trip.TripDataSyncService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:label="@string/label_page_referral_earnings" android:name="com.ixigo.lib.common.referral.ui.ReferralEarningsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.common.pwa.BookingFunnelPwaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.common.login.ui.SignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="Sign up" android:name="com.ixigo.lib.common.login.ui.SignUpOtpVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.ixigo.lib.common.login.ui.FederatedSignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/activity_verification_title" android:name="com.ixigo.lib.common.login.ui.PhoneVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.common.login.ui.LoginOtpVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ixigo.lib.components.activity.BaseAppCompatActivity" android:theme="@style/Theme.AppCompat"/>
+        <activity android:name="com.ixigo.lib.auth.signup.IsdDetailPickerActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustPreinstallReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.attribution.SYSTEM_INSTALLER_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.lib.components.broadcastreceiver.UserLogoutReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_OUT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ixigo.lib.components.network.auth.SessionExpiryDialogFragment$AuthStateChangeReceiver">
+            <intent-filter>
+                <action android:name="com.ixigo.lib.auth.ACTION_USER_LOGGED_IN"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.ixigo.lib.components.activity.TestAppCompatActivity" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.ixigo.auth.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Ixigo.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="otpless" android:scheme="otpless.9g25l8q9skaxn8nbdxqq"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.ixigo" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ixigo.sdk.webview.WebActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Ixigo.Transparent.WindowTranslucent"/>
+        <activity android:exported="false" android:name="in.juspay.hyperapay.CompletionActivity"/>
+        <activity android:exported="false" android:name="com.amazon.apay.hardened.activity.APayBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name="com.amazon.apay.hardened.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.ixigo" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.ixigo" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.otpless.main.OtplessZeroTapReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.minkasu.android.twofa.sdk.MinkasuSDKActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.ixigo" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.ixigo"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"/>
+        <receiver android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.evernote.android.job.JobBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="true" android:name="com.evernote.android.job.gcm.PlatformGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.evernote.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+        <service android:multiprocess="true" android:name="com.appnext.core.AdsService"/>
+        <activity android:name="com.appnext.banners.BannerActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.pushsdk.registerForContextMenu" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.appnext.core.ResultActivity"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.appnext.core.result.ResultPageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.mixpanel.android.mpmetrics.MixpanelNotificationRouteActivity"/>
+        <receiver android:name="com.mixpanel.android.mpmetrics.MixpanelPushNotificationDismissedReceiver"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

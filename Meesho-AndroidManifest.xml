@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.meesho.supply" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" android:requiredFeature="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.otpless.app"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.michatapp.im"/>
+        <package android:name="com.discord"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.viber.voip"/>
+        <package android:name="org.thoughtcrime.securesms"/>
+        <package android:name="im.thebot.messenger"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.truecaller.debug"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+    </queries>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:minSdkVersion="34" android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_FOREGROUND_SERVICE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.GET_SIGNATURES"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <permission android:name="com.meesho.supply.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.meesho.supply.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/meesho_app_name" android:name="com.meesho.supply.main.SupplyApplication" android:networkSecurityConfig="@xml/otpless_network_security_config" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:supportsRtl="false" android:theme="@style/Theme.Meesho">
+        <profileable android:enabled="true" android:shell="true"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.meesho.supply.main.deeplinkresolver.DeeplinkResolverActivity"/>
+        <activity android:exported="true" android:label="@string/find_products" android:launchMode="singleInstance" android:name="com.meesho.supply.main.deeplinkresolver.SharedTextRedirectionActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="firebase_analytics_collection_deactivated" android:value="false"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.EnableDebugLogging" android:value="@bool/debug"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/truecaller_client_id"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.AutoShowMixpanelUpdates" android:value="false"/>
+        <meta-data android:name="com.mixpanel.android.MPConfig.DisableExceptionHandler" android:value="true"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="google_analytics_deferred_deep_link_enabled" android:value="true"/>
+        <provider android:authorities="@string/facebook_app_authority" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <provider android:authorities="com.meesho.supply.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.meesho.supply.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/meesho_app_name" android:name="com.facebook.FacebookActivity" android:screenOrientation="nosensor" android:theme="@style/com_facebook_activity_theme"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.meesho.supply.main.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.meesho.supply.main.MainActivity" android:theme="@style/Theme.Meesho.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_mar_sale" android:name="com.meesho.supply.saleMar25" android:targetActivity="com.meesho.supply.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_sept_sale" android:name="com.meesho.supply.saleOct24" android:targetActivity="com.meesho.supply.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_sept_sale" android:name="com.meesho.supply.sale01Sept24" android:targetActivity="com.meesho.supply.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:name="com.meesho.supply.default" android:targetActivity="com.meesho.supply.main.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.meesho.supply.main.HomeActivity" android:windowSoftInputMode="adjustNothing"/>
+        <activity-alias android:exported="true" android:label="@string/image_search" android:name="com.meesho.supply.catalog.ExternalVisualSearchActivity" android:targetActivity="com.meesho.supply.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.meesho.supply.product.webviewActivity.SingleProductWebViewActivity"/>
+        <activity android:name="com.meesho.supply.product.webviewActivity.SingleProductWebViewPoolActivity"/>
+        <activity android:name="com.meesho.supply.collection.CollectionsActivity"/>
+        <activity android:name="com.meesho.supply.container.ContainerActivity"/>
+        <activity android:exported="true" android:name="com.meesho.supply.main.TrampolineActivity" android:theme="@style/Theme.Meesho.Splash">
+            <intent-filter android:autoVerify="true">
+                <data android:host="@string/app_links_host_supplier" android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:pathPattern="/panel/v3/new/..*/supplier"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="@string/uri_host" android:scheme="@string/app_uri_scheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/app_links_host" android:scheme="https"/>
+                <data android:pathPattern="/..*/p/..*"/>
+                <data android:pathPattern="/..*/facet_collection/..*"/>
+                <data android:pathPattern="/search"/>
+                <data android:pathPattern="/..*/pl/..*"/>
+                <data android:path="/checkout/cart"/>
+                <data android:path="/checkout/wa/cart"/>
+                <data android:path="/"/>
+                <data android:path=""/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="@string/app_links_host_superstore" android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.meesho.supply.coldstart" android:exported="false" android:initOrder="2147483647" android:name="com.meesho.supply.main.coldstart.ColdStartPerfInitializer"/>
+        <activity android:name="com.meesho.supply.product.landing.ProductLandingActivity"/>
+        <activity android:name="com.meesho.profile.impl.CompleteProfileActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.meesho.profile.impl.ProfileAddEditActivity"/>
+        <activity android:name="com.meesho.profile.impl.ProfileCompletionPercentActivity"/>
+        <activity android:name="com.meesho.account.impl.mybank.IfscLookupActivity"/>
+        <activity android:name="com.meesho.account.impl.mybank.UpiPayoutActivity"/>
+        <activity android:name="com.meesho.account.impl.mybank.UPIEducationActivity"/>
+        <activity android:name="com.meesho.account.impl.mybank.PayoutDetailsActivity"/>
+        <activity android:exported="true" android:name="com.meesho.account.impl.mybank.MyBankActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="my_bank_details" android:scheme="@string/app_uri_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.meesho.account.impl.payments.PaymentMessagesActivity"/>
+        <activity android:name="com.meesho.account.impl.settings.SettingsActivity"/>
+        <activity android:name="com.meesho.account.impl.AccountActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.meesho.sellerapp.impl.SupplierHubActivity"/>
+        <activity android:name="com.meesho.sellerapp.impl.SupplierHubTransitionActivity"/>
+        <activity android:name="com.meesho.sellerapp.impl.StartSellingActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:label="@string/search" android:launchMode="singleTop" android:name="com.meesho.search.impl.SearchActivity" android:parentActivityName="com.meesho.supply.main.HomeActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:name="com.meesho.search.impl.SearchResultsActivity" android:parentActivityName="com.meesho.supply.main.HomeActivity"/>
+        <activity android:exported="false" android:name="com.meesho.web.impl.external.ui.ThirdPartyWebViewActivity"/>
+        <activity android:name="com.meesho.web.impl.WebViewActivity"/>
+        <activity android:name="com.meesho.web.impl.external.ui.BNPLWebViewActivity"/>
+        <activity android:name="com.meesho.mediaupload.MediaViewEditActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.meesho.checkout.cart.impl.MultiCartActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.meesho.checkout.cart.impl.multicartweb.MultiCartWebActivity"/>
+        <activity android:name="com.meesho.checkout.address.impl.list_address.CheckOutAddressesActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.checkout.address.impl.addeditaddress.CustomerAddressAddEditActivity" android:parentActivityName="com.meesho.checkout.address.impl.list_address.CheckOutAddressesActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.checkout.summary.impl.CheckOutSummaryActivity"/>
+        <activity android:name="com.meesho.checkout.payment.impl.bnpl.wallet.BnplWalletActivity" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.meesho.checkout.payment.impl.CheckoutJuspayPaymentActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.meesho.checkout.payment.impl.paymentcollection.CollectPaymentOnlineActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.meesho.login.impl.phone.PhoneAuthActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.login.impl.loginmodal.LoginDialogActivity" android:theme="@style/Theme.Meesho.Transparent.LoginDialog" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.login.impl.LoginActivity" android:theme="@style/Theme.Meesho.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.login.impl.WelcomeActivity"/>
+        <receiver android:exported="true" android:name="com.meesho.login.impl.otp.OtpReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.meesho.meeshobalance.impl.MeeshoBalanceLandingActivity"/>
+        <activity android:name="com.meesho.farmiso.impl.share.FarmisoWhatsappShareActivity" android:screenOrientation="nosensor"/>
+        <activity android:exported="false" android:name="com.meesho.farmiso.impl.FarmisoWebViewActivity"/>
+        <activity android:name="com.meesho.fulfilment.impl.orderdetails.revamp.OrderTimeline2Activity"/>
+        <activity android:name="com.meesho.fulfilment.impl.orderdetails.revamp.SiblingSubOrderActivity"/>
+        <activity android:name="com.meesho.fulfilment.impl.orderdetails.revamp.OrderDetailsActivityV2"/>
+        <activity android:name="com.meesho.fulfilment.impl.orderdetails.OrderDetailsActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.meesho.discovery.catalog.impl.list.CatalogListActivity"/>
+        <activity android:name="com.meesho.share.impl.ProductsSelectionActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.meesho.share.impl.ManageWaBatchShareActivity" android:theme="@style/Theme.Meesho.Transparent"/>
+        <activity android:name="com.meesho.share.impl.FbPageShareActivity"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.meesho.share.impl.FbPageShareService"/>
+        <activity android:name="com.meesho.inappsupport.impl.CallMeBackActivity"/>
+        <activity android:name="com.meesho.inappsupport.impl.InAppSupportActivity"/>
+        <activity android:name="com.meesho.widget.impl.LandingPageActivity"/>
+        <activity android:name="com.meesho.discovery.pdp.impl.productpreview.FullScreenViewPagerActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.meesho.discovery.pdp.impl.SingleProductActivity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.CallMeBackSuccessActivity"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.FullScreenImageActivity" android:theme="@style/Theme.Meesho.Transparent"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.RefundModeSuccessActivity"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.ReturnExchangeSuccessActivity" android:parentActivityName="com.meesho.returnexchange.impl.ui.ReturnExchangeActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.ReturnExchangeCancelActivity" android:parentActivityName="com.meesho.returnexchange.impl.ui.ReturnExchangeSummaryActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.ReturnExchangeSummaryActivity" android:parentActivityName="com.meesho.fulfilment.impl.orderdetails.OrderDetailsActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.meesho.returnexchange.impl.ui.ReturnExchangeActivity" android:parentActivityName="com.meesho.fulfilment.impl.orderdetails.OrderDetailsActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.returnexchange.impl.ui.RefundPayoutActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:exported="false" android:name="com.meesho.returnexchange.impl.ui.AddPhotosActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.discovery.reviewmedia.impl.AllReviewMediaActivity"/>
+        <activity android:name="com.meesho.discovery.reviewmedia.impl.ReviewCarouselActivity"/>
+        <activity android:name="com.meesho.supplierstore.impl.SupplierStoreActivity"/>
+        <activity android:name="com.meesho.supplierstore.impl.SupplierAllReviewMediaActivity"/>
+        <activity android:name="com.meesho.mycatalogs.impl.MyCatalogsActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_reels" android:name="com.meesho.reel.impl.ui.ReelsActivity"/>
+        <receiver android:exported="true" android:name="com.meesho.download.DownloadCompletionListener">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.meesho.order.place.impl.OrderPlaceActivity"/>
+        <activity android:name="com.meesho.order.place.impl.paymentcompletion.PaymentCompletionActivity"/>
+        <service android:exported="true" android:name="com.meesho.pushnotify.MyFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.meesho.pushnotify.services.RealNotificationForegroundService" android:permission="android.permission.FOREGROUND_SERVICE"/>
+        <receiver android:exported="true" android:name="com.meesho.pushnotify.pullnotifications.br.PNPullAlarmReceiver"/>
+        <receiver android:exported="true" android:name="com.meesho.pushnotify.pullnotifications.br.PNAlarmReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.meesho.pushnotify.pullnotifications.br.RebootBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.meesho.permissions.PermissionRationaleActivity" android:theme="@style/Theme.Meesho.Transparent"/>
+        <activity android:name="com.meesho.notifystore.NotificationStoreActivity"/>
+        <activity android:name="com.meesho.notifystore.NotificationStoreAllActivity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleInstance" android:name="com.meesho.pip.impl.WebViewPipActivity" android:supportsPictureInPicture="true" android:theme="@style/Theme.Meesho.Transparent"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleInstance" android:name="com.meesho.pip.impl.MultiMediaPipActivity" android:supportsPictureInPicture="true" android:theme="@style/Theme.Meesho.Transparent"/>
+        <activity android:name="com.meesho.loyalty.impl.CoinsLandingActivity"/>
+        <activity android:name="com.meesho.socialprofile.connections.impl.FollowersFollowingActivity"/>
+        <activity android:name="com.meesho.fulfilment.cancelorder.impl.OrderCancelActivity" android:parentActivityName="com.meesho.fulfilment.cancelorder.impl.v2.OrderCancelActivityV2" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.meesho.fulfilment.cancelorder.impl.v2.OrderCancelActivityV2" android:parentActivityName="com.meesho.fulfilment.cancelorder.impl.OrderCancelActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.meesho.language.impl.LanguageSelectionActivity"/>
+        <activity android:name="com.meesho.explore.impl.ExploreActivity"/>
+        <activity android:name="com.meesho.app_shortcuts.AppShortcutLauncherActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.meesho.inapppopup.impl.InAppPopupActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize" android:launchMode="singleTop" android:name="com.meesho.order_reviews.impl.view.ReviewAdditionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.meesho.reviewcompletion.impl.ReviewCompletionActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.meesho.discovery.productsupplier.impl.SupplierListActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.service.failureexperience.appfailure.AppFailureActivity"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.meesho.supply" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:theme="@style/Theme.MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity" android:theme="@style/Theme.MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.erikagtierrez.multiple_media_picker.Gallery"/>
+        <activity android:name="com.erikagtierrez.multiple_media_picker.OpenGallery"/>
+        <provider android:authorities="@string/font_provider_authority" android:enabled="true" android:exported="false" android:label="FontProvider" android:name="com.meesho.mesh.android.localization.MeshFontsProvider"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.otpless.main.OtplessZeroTapReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:alwaysRetainTaskState="true" android:exported="true" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="io.verloop.sdk.ui.VerloopActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.meesho.supply" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="true" android:name="com.otpless.tesseract.sim.OtplessSimStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SIM_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.CaptchaDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.InternalBlockedDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <service android:enabled="true" android:isolatedProcess="true" android:name="com.shield.android.service.ShieldIsolatedService" android:process=":shieldservice"/>
+        <activity android:exported="false" android:name="com.shield.android.ShieldInitializeActivity"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <provider android:authorities="com.meesho.supply.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.meesho.supply.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

@@ -1,0 +1,1738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.astrotalk" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.hardware.camera" android:required="false"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.astrotalk.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.DIALER"/>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="rzp.device_token.share"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <package android:name="com.otpless.app"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.samsung.android.mapsagent"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.GET_SIGNATURES"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.astrotalk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <permission android:name="com.astrotalk.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="com.samsung.android.mapsagent.permission.READ_APP_INFO"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/appsflyer_data_extraction_rules" android:enableOnBackInvokedCallback="true" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@null" android:label="@string/app_name" android:largeHeap="true" android:name="com.astrotalk.controller.AppController" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.astrotalk.videoChildCall.VideoChildActivity"/>
+        <activity android:exported="false" android:name="com.astrotalk.randomConnect.RandomConnectActivity" android:resizeableActivity="true" android:theme="@style/BlackColorTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_manage_my_privacy_compose" android:name="com.astrotalk.newSupportChat.ui.activities.ManageMyPrivacyComposeActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_support_chat_ticket_list" android:name="com.astrotalk.newSupportChat.ui.activities.SupportChatTicketListActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_my_orders_compose" android:name="com.astrotalk.newSupportChat.ui.activities.MyOrdersComposeActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_my_remedies_compose" android:name="com.astrotalk.newSupportChat.ui.activities.MyRemediesComposeActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_customer_support_compose" android:name="com.astrotalk.newSupportChat.ui.activities.CustomerSupportComposeActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:label="@string/title_activity_support_chat_revamp" android:name="com.astrotalk.newSupportChat.ui.activities.SupportRevampActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:name="com.astrotalk.activities.SplashActivity" android:resizeableActivity="true" android:theme="@style/LaunchTheme">
+            <meta-data android:name="android.supports_size_changes" android:value="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="https"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="https"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/Home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/3LHk" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/6H62" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_new_christmas" android:name="com.astrotalk.ChristmasIconAlias" android:roundIcon="@mipmap/ic_new_christmas" android:targetActivity="com.astrotalk.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_new_year_logo" android:name="com.astrotalk.NewYearIconAlias" android:roundIcon="@mipmap/ic_new_year_logo" android:targetActivity="com.astrotalk.activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:label="@string/title_activity_vip_membership" android:name="com.astrotalk.featureVip.ui.activity.VipMembershipActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.astrotalk.gemstone.GemstoneTagsActivity"/>
+        <activity android:exported="false" android:name="com.astrotalk.gemstone.GemstoneSubcategoryActivity" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.gemstone.GemstoneActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/landing-gemstone" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/landing-gemstone" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.RedeemGiftCardActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/giftcard" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/giftcard" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/NoA9" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/NoA9" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.gemstone.details.GemstoneDetailsActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/gemstone" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/gemstone" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.astromall.AstromallActivity" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astroremedy" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astroremedy" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.astrotalk.poCallKit.AcceptChatCallAfterPo"/>
+        <activity android:exported="false" android:name="com.astrotalk.activities.kundli.UpdateKundliActivity"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.intake.PoScreenActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/6MNM" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/6MNM" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AstromallPaymentDeepLinkActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/prescription" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/prescription" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.astrotalk.activities.CartActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.intake.IntakePoActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.intake.IntakePaidActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.astrotalk.activities.PoScreenActivity2" android:resizeableActivity="true"/>
+        <activity android:exported="false" android:name="com.astrotalk.activities.ShowImageHistoryActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.AgoraUser.activity.WaitlistActivity"/>
+        <activity android:exported="false" android:name="com.astrotalk.activities.intake.EditIntakeActivity"/>
+        <activity android:name="com.astrotalk.activities.intake.IntakeActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.mvvm.view.activities.match_making.MatchMakingNewActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.UserProflleActivityNew" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AstrolgoerSdOffActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.OrderHistoryTransactionActvity" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens"/>
+        <activity android:name="com.astrotalk.activities.EnterUserNameNewActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.home.kundli.activity.EditKundliActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.home.kundli.activity.KundliListActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.AllAstrologyVideosActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.KundliWebView" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.PayuWebViewActivity" android:resizeableActivity="true"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="true" android:hardwareAccelerated="true" android:name="com.astrotalk.AgoraUser.activity.LiveActivitySwipe" android:resizeableActivity="true" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/live" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/live" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/live" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/live" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.AgoraUser.activity.AcceptAstroTvCallKitActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.TestimonialYoutubePlayer"/>
+        <activity android:name="com.astrotalk.AgoraUser.activity.EventSearchActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.kundli.activity.SearchLocation"/>
+        <activity android:name="com.astrotalk.kundli.activity.KundliTabLayout"/>
+        <activity android:exported="true" android:name="com.astrotalk.home.kundli.activity.KundliNewActivity" android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/freekundli" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/freekundli" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/freekundli" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/freekundli" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.home.horoscope.activity.HoroscopeNewActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/horoscope/daily-horoscope" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/horoscope/daily-horoscope" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/VP8t" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AstrologerProfileWebViewActivity" android:resizeableActivity="true" android:theme="@style/AppTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/best-astrologer" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/best-astrologer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/BnlV" android:scheme="http"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/BnlV" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.PoojaEventsActivity" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens2">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AstroTV" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AstroTV" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AstroTV" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AstroTV" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.VerifyPhoneNumberEnterOTPActivity"/>
+        <activity android:name="com.astrotalk.activities.FreePromotionalActivity"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:name="com.astrotalk.cart.ProductAstrologerListActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.cart.ProductListSearchActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.BlockedAstrologersActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.FreeForYouActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.assistant_chat.AssistantChatWindow" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.membership.actvity.MembershipActivity" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens2">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.EnterYourConcernScreenActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.mvvm.view.activities.panchang.PanchangActivity" android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/today-panchang" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/today-panchang" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/today-panchang" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/today-panchang" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/app_name"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value=".activities.SplashActivity,.activities.NewPhoneNumberLogin"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/FACEBOOK_APP_ID"/>
+        <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/clientId"/>
+        <meta-data android:name="com.appsflyer.FacebookApplicationId" android:value="@string/FACEBOOK_APP_ID"/>
+        <receiver android:exported="true" android:name="com.astrotalk.utils.MySMSBroadCastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.adjust.sdk.AdjustReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="@string/com_accountkit_button_log_in" android:launchMode="singleTop" android:name="com.facebook.accountkit.ui.AccountKitActivity" android:theme="@style/Theme.AccountKit" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity" android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/ak_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.astrotalk.controller.FCMMessageHandler" android:permission="">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.appsflyer.FirebaseMessagingServiceListener">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.astrotalk.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.facebook.sdk.CodelessDebugLogEnabled" android:value="true"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="R99-W85-8R6Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="5b0-cc2"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="astrotalk_notification"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="1"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.astrotalk.activities.MainActivity" android:theme="@style/custom_Theme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.astrotalk.activities.CallIntakeFormActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.UserRegistrationSourceActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.OrderHistoryActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/history" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/history" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.BlogWebviewActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.controller.TubeBaseActivity" android:resizeableActivity="true" android:theme="@style/AppTheme"/>
+        <activity android:name="com.astrotalk.chatModule.UserChatWindowActivity" android:parentActivityName="com.astrotalk.activities.MainActivity" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.ReferAndEarnActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/refer" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/refer" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.ChatImageViwerActvity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.QuestionHistoryDetails" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.UserSignupActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.UserManualLoginActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AstrologerListForCallingActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.NotificationScreenActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/notification" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/notification" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.report.ReportListActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.report.ReportIntakeForm" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.report.ReportDetailsActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.report.ReportAstrologerList">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/report" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/report" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AddMoneyActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AddMoney" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/AddMoney" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/AddMoney" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/AddMoney" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.NewWalletDetails">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/my-wallet" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/my-wallet" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.astrotalk.activities.CallHistroyDetailsActivty" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.chatModule.ChatIntakeFormActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.epooja.EpoojaProductList2" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/epooja" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/epooja" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/d5kn" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/d5kn" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/e-pooja" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.epooja.EpoojaProductList" android:resizeableActivity="true" android:theme="@style/AppThemeForOtherNavigationScreens">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/e-pooja" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/e-pooja" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.chatModule.ChatAstrologerlistActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/chat-with-astrologer" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/chat-with-astrologer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/chat-with-astrologer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/yA6r/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/yA6r/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:hardwareAccelerated="true" android:name="com.astrotalk.chatModule.UserAstrologerChatWindowActivity2" android:resizeableActivity="true"/>
+        <activity android:hardwareAccelerated="true" android:name="com.astrotalk.dummychat.UserAstrologerDummyChatWindowActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatModule.CompleteChatDetails" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.astrologerSearch.ReportAsrologerSearch" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.astrologerSearch.CallingAstrologerSerach" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/call-search" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/call-search" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:hardwareAccelerated="true" android:name="com.astrotalk.cart.ProductCategoriesActvity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/shop" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/shop" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/shop" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.cart.ProductDetailsActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/cart" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/cart" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/cart" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.cart.ProductListActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/productList" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/productList" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.cart.ProductIntakeForm" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.cart.AddonsListActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.cart.AddressListActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.cart.AddressAddActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.cart.EditAddressActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AppFlowActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.ReferDescriptionActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.GenericWebviewActuivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.TutorialVideo" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.cart.CartOrderDetailsActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/order" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/order" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.SettingActivity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/settings" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/settings" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.astrotalk.chatModule.AcceptChatInterfaceActvity" android:resizeableActivity="true" android:showOnLockScreen="true"/>
+        <activity android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.astrotalk.chatModule.DummyCallbackAcceptChatInterfaceActivity" android:resizeableActivity="true" android:showOnLockScreen="true"/>
+        <activity android:excludeFromRecents="true" android:name="com.astrotalk.activities.FreeContentActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatModule.ChatOrderSearchMessagesDetailsActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatModule.ChatOrderSearchMessagesActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.UnderMaintainActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.PromotionalIntakeForm" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.PromotionalWatingscreenActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.ButtomBaseActvity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.LanguageListActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.report.ReportDetailsNewActviity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.NewRechargePaymnetPage" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/recharge" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/recharge" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/0Bdo" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.onelink.me" android:pathPrefix="/0Bdo" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.NewRechargePaymentPageV2" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.NewOrderPaymentPage" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.cart.NewCartPaymentActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.report.EditReportActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.NotificationWebUrlActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.report.SecondOpinionReportAstrologerList" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.report.SecondoPinionsearchAstrologerListActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AutoDebitInfoActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AddImageActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.ShowImagesAstrologer" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.cart.ProductRatingActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.groupchat.MallGroupChatActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.ticket.ChatTicketListActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/customer-support" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/customer-support" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.CustomerTestimonial" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/customer-testimonials" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/customer-testimonials" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.AutmatedMessageActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AstrologerPrescriptionActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.cart.ProductAstrologerSerachActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AstrologerFeedbackActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.UserProfileActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.intake.PoDummyScreenActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.intake.IntakePOWithoutLogin" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AstrolgoerTimeTableActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.home.matchmaking.activity.MatchMakingActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/matchmaking" android:scheme="http"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/matchmaking" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.NewAstrotalkSearchActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AstrologerBlogActvity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrology_blog/category" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrology_blog/category" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AstrologerBlogWebView" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrology-blog/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrology-blog/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.AstrolgoerBlogSearch" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.VoiceChatViewActivity"/>
+        <activity android:name="com.astrotalk.cart.CartImageVIew" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.voipCall.AcceptVoipCallIntefaceActivity" android:screenOrientation="sensorPortrait" android:showOnLockScreen="true"/>
+        <activity android:name="com.astrotalk.customViews.ImagePickerActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:resizeableActivity="true" android:theme="@style/uCropStyle"/>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:name="com.astrotalk.paylater.PaymentHelperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.TransparentActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.astrotalk.AgoraUser.activity.VideoPlayerLive" android:resizeableActivity="true" android:windowSoftInputMode="adjustNothing|stateAlwaysHidden"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.LoginEmailScreenActvity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/loginemail/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/loginemail/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.NewPhoneEmailLoginActvity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/login/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/login/" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.astrotalk.activities.NewPhoneNumberLogin" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/login/" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/login/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="otpless" android:scheme="com.astrotalk.otpless"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.astrotalk.com" android:pathPrefix="/YbLv/login" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.NewOTPVerficationActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.astrotalk.activities.EnterUserNameActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.FollowingAstrologerListActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.astrotalk.activities.AstrotalkGoldActvity" android:resizeableActivity="true">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrogold" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/astrogold" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.activities.CashBackActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="locale" android:name="com.astrotalk.home.kundli.activity.KundliDetailNewActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.ClaimCashbackAstrolgoerFeeback" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.AdressAddNew" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.NewsActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.activities.GlobalSearchActvity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.voipCall.VoipCallViewActivity" android:resizeableActivity="true"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.videoCall.AcceptVideoCallIntefaceActivity" android:resizeableActivity="true" android:showOnLockScreen="true"/>
+        <activity android:name="com.astrotalk.videoCall.VideoViewActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.videoAstromall.AcceptAstroMallInternetCall" android:resizeableActivity="true" android:showOnLockScreen="true"/>
+        <activity android:name="com.astrotalk.videoAstromall.VideoAstromallViewActivity" android:resizeableActivity="true"/>
+        <activity android:exported="true" android:name="com.astrotalk.numerology.NumerologyActivity" android:resizeableActivity="true" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustNothing">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/numerology" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/numerology" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.activities.kundli.PlanetaryTransitActivity" android:resizeableActivity="true" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustNothing">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/planetary" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/planetary" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.chatModule.FreeChatAstrologerlistActivity" android:resizeableActivity="true" android:windowSoftInputMode="adjustNothing">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/chat-with-astrologer/free" android:scheme="http"/>
+                <data android:scheme="astrotalk"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/chat-with-astrologer/free" android:scheme="https"/>
+                <data android:scheme="astrotalk"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.astrotalk.membership.actvity.MembershipAstrologerActivity" android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership_list" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership_list" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership_list" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/membership_list" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.membership.actvity.MembershipAstrologerSearchActivity"/>
+        <activity android:name="com.astrotalk.epooja.EpoojaProductSearch2"/>
+        <activity android:name="com.astrotalk.epooja.EpoojaProductSearch"/>
+        <activity android:exported="true" android:name="com.astrotalk.epooja.PoojaProductDetailsActivity" android:resizeableActivity="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/poojae" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/poojae" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/oBWz" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/oBWz" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/poojae" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="astrotalk.com" android:pathPrefix="/poojae" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.epooja.AstrologerProductList" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.orderHistory.activity.OrderHistoryNewActvity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.orderHistory.activity.OrderHistoryDetails" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.astrotalk.orderHistory.activity.OrderHistoryAstrologerSearch" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.orderHistory.activity.ChatOrderSearchMessagesActivityNew" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.PayoneerWebViewActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.suggestEpooja.SuggestEpoojaProductList" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.activities.VideoAstromallPlayer"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.voipCall.RejectVoipActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.videoCall.RejectVideoActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.videoAstromall.RejectAstromallActivity"/>
+        <activity android:launchMode="singleTop" android:name="com.astrotalk.videoAstromall.RejectChatActivity"/>
+        <activity android:name="com.astrotalk.activities.SimplWebViewActivity"/>
+        <activity android:name="com.astrotalk.chatChildCall.ChatChildActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatChildCall.AcceptChatChildCallActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.epooja.ProductIntakeActvity" android:resizeableActivity="true" android:windowSoftInputMode="adjustResize"/>
+        <activity android:enabled="true" android:exported="true" android:launchMode="standard" android:name="com.astrotalk.oneTapLogin.ReceiveCodeActivity">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.astrotalk.AgoraUser.activity.RejectLiveCallActivity"/>
+        <activity android:name="com.astrotalk.activities.UserWaitlistActivity" android:resizeableActivity="true" android:theme="@style/AppTheme.WhiteStatusBar"/>
+        <activity android:name="com.astrotalk.videoChildCall.AcceptChildVideoCallActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatModule.AutoUnholdDummyInterfaceActivity" android:resizeableActivity="true"/>
+        <activity android:name="com.astrotalk.chatModule.AutoUnholdRejectActivity"/>
+        <service android:exported="false" android:foregroundServiceType="microphone|phoneCall" android:name="com.astrotalk.voipCall.VoipService"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.astrotalk.audio_player.PlayAudioService"/>
+        <service android:exported="false" android:foregroundServiceType="microphone|phoneCall" android:name="com.astrotalk.videoCall.VideoService"/>
+        <service android:exported="false" android:foregroundServiceType="microphone|phoneCall" android:name="com.astrotalk.videoAstromall.VideoAstromallService"/>
+        <receiver android:name="com.astrotalk.audio_player.PlayerNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.astrotalk.utils.loginBroadcastReceiver.WhatsappOtpBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.AgoraUser.activity.LiveNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.voipCall.CallNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.videoCall.VideoNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.videoAstromall.AstromallNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.videoAstromall.ChatNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.chatModule.ChatNotificationServiceDummyCallback"/>
+        <service android:exported="false" android:foregroundServiceType="microphone|phoneCall" android:name="com.astrotalk.chatChildCall.ChatChildVoipService"/>
+        <service android:exported="false" android:foregroundServiceType="microphone|phoneCall" android:name="com.astrotalk.videoChildCall.VideoChildService"/>
+        <service android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.astrotalk.chatModule.AutoUnholdService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.astrotalk.oneTapLogin.OtpCodeReceiver">
+            <intent-filter>
+                <action android:name="com.whatsapp.otp.OTP_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.paypal.pyplcheckout.ui.feature.home.activities.PYPLHomeActivity" android:screenOrientation="portrait" android:taskAffinity="com.pyplcheckout.task" android:theme="@style/PYPLAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.paypal.pyplcheckout.ui.feature.home.activities.PYPLInitiateCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/PYPLAppFullScreenTheme">
+            <intent-filter android:autoVerify="true">
+                <data android:host="paypalxo" android:scheme="com.astrotalk"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:name="com.paypal.openid.RedirectUriReceiverActivity" android:screenOrientation="portrait" android:theme="@style/PYPLAppTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="paypalpay" android:scheme="com.astrotalk"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.paypal.pyplcheckout.ui.feature.threeds.ThreeDS20Activity" android:screenOrientation="portrait" android:taskAffinity="com.pyplcheckout.threeds" android:theme="@style/PYPLAppTheme"/>
+        <activity android:name="com.paypal.authcore.authentication.TokenActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.paypal.openid.AuthorizationManagementActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:name="com.paytm.pgsdk.AioMatchUserActivity" android:theme="@style/TransparentActivityTheme"/>
+        <service android:exported="false" android:name="easypay.appinvoke.utils.EasyPayConfigDownloader" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="easypay.appinvoke.utils.AnalyticsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity"/>
+        <provider android:authorities="com.astrotalk.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.PaymentSheetActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.customersheet.CustomerSheetActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.paymentsheet.ExternalPaymentMethodProxyActivity" android:theme="@style/StripePayLauncherDefaultTheme"/>
+        <activity android:name="com.stripe.android.paymentsheet.paymentdatacollection.cvcrecollection.CvcRecollectionActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.stripe.android.link.LinkActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.stripe.android.link.LinkForegroundActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.stripe.android.link.LinkRedirectHandlerActivity" android:theme="@style/StripeTransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="complete" android:path="/com.astrotalk" android:scheme="link-popup"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.stripe.android.ui.core.cardscan.CardScanActivity" android:theme="@style/StripePaymentSheetDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.AddPaymentMethodActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentMethodsActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentFlowActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentAuthWebViewActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.view.PaymentRelayActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.stripe.android.payments.StripeBrowserLauncherActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity" android:theme="@style/StripeTransparentTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="payment_return_url" android:path="/com.astrotalk" android:scheme="stripesdk"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity" android:theme="@style/StripeDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity" android:theme="@style/StripeGooglePayDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity" android:theme="@style/StripeGooglePayDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity" android:theme="@style/StripePayLauncherDefaultTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity" android:theme="@style/StripeTransparentTheme"/>
+        <activity android:exported="false" android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity" android:theme="@style/Stripe3DS2Theme"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.KickoffActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.idp.SingleSignInActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.credentials.CredentialSaveActivity" android:theme="@style/FirebaseUI.Transparent"/>
+        <activity android:exported="false" android:label="@string/fui_title_recover_password_activity" android:name="com.firebase.ui.auth.ui.email.RecoverPasswordActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_default" android:name="com.firebase.ui.auth.ui.email.EmailActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_with_phone_number" android:name="com.firebase.ui.auth.ui.phone.PhoneActivity" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_idp_prompt" android:name="com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_title_welcome_back_password_prompt" android:name="com.firebase.ui.auth.ui.email.WelcomeBackEmailLinkPrompt" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="" android:name="com.firebase.ui.auth.ui.email.EmailLinkCatcherActivity" android:theme="@style/FirebaseUI.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_sign_in_default" android:name="com.firebase.ui.auth.ui.email.EmailLinkErrorRecoveryActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/fui_default_toolbar_title" android:name="com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/facebook_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.astrotalk" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.astrotalk.authuiinitprovider" android:exported="false" android:initOrder="90" android:name="com.firebase.ui.auth.data.client.AuthUiInitProvider"/>
+        <provider android:authorities="com.astrotalk.AccountKitInitialization" android:exported="false" android:name="com.facebook.accountkit.internal.AccountKitInitProvider"/>
+        <provider android:authorities="com.astrotalk.materialcalendarviewinitprovider" android:enabled="true" android:exported="false" android:name="com.prolificinteractive.materialcalendarview.MaterialCalendarViewInitProvider"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <receiver android:exported="true" android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.astrotalk" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.juspay.hypernfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.astrotalk"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.astrotalk.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.astrotalk.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.sdk.growthbook.AppContextProvider" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.astrotalk.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <provider android:authorities="com.astrotalk.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.astrotalk.CCInitProvider" android:enabled="true" android:exported="true" android:name="com.cardinalcommerce.a.setShadowLayer"/>
+        <activity android:exported="false" android:name="com.cardinalcommerce.a.setTextLocale" android:theme="@style/CardinalSDKTheme.ActionBar"/>
+        <activity android:exported="false" android:name="com.cardinalcommerce.a.setTextLocales" android:theme="@style/CardinalSDKTheme.ActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="aia-compat-api-min-version" android:value="1"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

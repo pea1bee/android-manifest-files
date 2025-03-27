@@ -1,0 +1,951 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="org.altruist.BajajExperia" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="com.android.vending"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="com.boi.mpay"/>
+        <package android:name="com.application.zomato"/>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="org.altruist.BajajExperia.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES"/>
+    <uses-permission android:name="android.permission.ACCESS_ALL_DOWNLOADS"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission-sdk-23 android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.webkit.PermissionRequest"/>
+    <uses-permission android:name="android.permission.RESOURCE_VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.clevertap.starter.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.fingerprint" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.location"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <queries>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.teamviewer.quicksupport.market"/>
+        <package android:name="com.teamviewer.teamviewer.market.mobile"/>
+        <package android:name="com.incorporateapps.fakegps.fre"/>
+        <package android:name="com.awiserk.kundalias.rootboot"/>
+        <package android:name="com.rootify"/>
+        <package android:name="com.lexa.fakegps"/>
+        <package android:name="org.hola.gpslocation"/>
+        <package android:name="com.ram.memory.booster.cpu.saver"/>
+        <package android:name="phone.spoofer.id"/>
+        <package android:name="com.arok.fakecaller"/>
+        <package android:name="com.esim.numero"/>
+        <package android:name="com.appybuilder.abdulsajid6491.SpoofSMSSenderFake"/>
+        <package android:name="com.dns.fredaloader"/>
+        <package android:name="asvid.github.io.fridaapp"/>
+        <package android:name="com.dns.fridaloader"/>
+        <package android:name="com.mwr.dz"/>
+        <package android:name="com.topjohnwu.magisk"/>
+        <package android:name="com.kh.proxyagent"/>
+        <package android:name="dev.robv.android.xposed.installer"/>
+        <package android:name="com.ttxapps.wifiadb"/>
+        <package android:name="org.proxydroid"/>
+        <package android:name="com.boi.mpay"/>
+        <package android:name="com.application.zomato"/>
+        <package android:name="com.airdroid.remoteaccess"/>
+        <package android:name="com.anydesk.anydeskremotecontrol"/>
+        <package android:name="com.teamviewer.quicksupport.host"/>
+        <package android:name="com.koushion.vysor"/>
+        <package android:name="com.apowersoft.mobile.mirroring"/>
+        <package android:name="us.zoom.videomeetings"/>
+        <package android:name="com.skype.raider"/>
+        <package android:name="com.google.chromeremotedesktop"/>
+        <package android:name="com.realvnc.viewer.android"/>
+        <package android:name="com.discord"/>
+        <package android:name="com.splashtop.remote.pad"/>
+        <package android:name="com.gotomeeting"/>
+        <package android:name="com.logmein.joinme"/>
+        <package android:name="com.mikogo.android"/>
+        <package android:name="com.prosoftnet.rdp"/>
+        <package android:name="com.topjohnwu.magisk"/>
+        <package android:name="com.xda.forum"/>
+        <package android:name="com.github.android"/>
+        <package android:name="com.vip4android.viper4androidfx"/>
+        <package android:name="org.bitbucket.franco.hidebar"/>
+        <package android:name="com.magisk.appsystemizer"/>
+        <package android:name="com.openrdw.openwebview"/>
+        <package android:name="com.android.monkeyrunner"/>
+        <package android:name="com.google.android.uiautomator.viewer"/>
+        <package android:name="com.android.ddms"/>
+        <package android:name="com.android.tools.idea"/>
+        <package android:name="com.android.sdktools.adb"/>
+        <package android:name="com.android.sdktools.adb.shell"/>
+        <package android:name="com.android.sdktools.monitor"/>
+        <package android:name="com.android.sdktools.logcat"/>
+        <package android:name="com.android.sdktools"/>
+        <package android:name="com.android.sdktools.emulator"/>
+        <package android:name="com.android.tools.idea.profiler"/>
+        <package android:name="com.android.tools.idea.monitor"/>
+    </queries>
+    <uses-permission android:name="android.permission.BIND_APPWIDGET"/>
+    <uses-permission android:name="android.permission.HIDE_OVERLAY_WINDOWS"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="org.altruist.BajajExperia.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="org.altruist.BajajExperia.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="density|orientation|screenSize|uiMode" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.bfl.superapp.application.BaseApplication" android:networkSecurityConfig="@xml/network_security_config_" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:taskAffinity="com.bfl.superapp.application.BaseApplication" android:theme="@style/AppTheme" android:usesCleartextTraffic="false" android:windowSoftInputMode="adjustPan">
+        <activity android:name="com.bfl.superapp.ui.activity.dashboard.HeaderFooterWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MPINAuthenticationActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.ETBSecurityQuesSetUpMpinActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.ETBMpinSetUpMpinActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.ResetMpinXAOPActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.ResetSecurityQuestionActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.SetUpMpinXAOPActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.onboarding.revamp.activity.SecurityQuesSetUpMpinActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MPINSetUpMpinActivity" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <receiver android:exported="true" android:name="com.bfl.superapp.widgets.MyAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/my_app_widget_info"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.bfl.superapp.widgets.MyAppWidgetSmallProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/my_app_widget_small_info"/>
+        </receiver>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.AccessDeniedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.WebViewActivity" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <property android:name="REQUIRE_SECURE_ENV" android:value="1"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.podActivity.PodActivityV2" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.nsdl.FormBasedNSDL" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.WebDeeplinkActivity" android:permission="" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bharat-bill-payment-system"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=electricity"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=lpg-gas"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=water"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=mobile-postpaid"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=dth"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=broadband-postpaid"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=insurance"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=fastag"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=loan"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=subscription"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=credit-card"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=education"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=housing-society"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:path="/bbps-bills-and-payments-bill-category/category=muncipal-taxes"/>
+                <data android:scheme="https"/>
+                <data android:host="www.bajajfinserv.in"/>
+                <data android:pathPrefix="/insights/bajaj-experia-login"/>
+                <data android:path="/upi-payment"/>
+                <data android:path="/electricity-bill-payment"/>
+                <data android:path="/gas-booking"/>
+                <data android:path="/water-bill-payment"/>
+                <data android:path="/mobile-postpaid-bill-payment"/>
+                <data android:path="/broadband-bill-payment"/>
+                <data android:path="/insurance-premium-payment"/>
+                <data android:path="/fastag-recharge"/>
+                <data android:path="/subscription-bill-payment"/>
+                <data android:path="/credit-card-payment"/>
+                <data android:path="/education-fee-payment"/>
+                <data android:path="/housing-bill-payment"/>
+                <data android:path="/municipal-tax-payment"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.ChatbotActivity" android:permission="" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.CampaignDLRActivity" android:permission="" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="bajajsuperapp"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:label="@string/bajaj_pay" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.UPIIntentActivity" android:permission="" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="upi"/>
+                <data android:host="pay"/>
+                <data android:scheme="upi"/>
+                <data android:host="mandate"/>
+                <data android:scheme="intent"/>
+                <data android:host="bfl_mandate"/>
+                <data android:host="collect"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="androidx.browser.trusted.TrustedWebActivityService" android:permission="">
+            <meta-data android:name="android.support.customtabs.trusted.SMALL_ICON" android:resource="@drawable/ic_launcher_foreground"/>
+            <intent-filter>
+                <action android:name="android.support.customtabs.trusted.TRUSTED_WEB_ACTIVITY_SERVICE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.videoPackage.ReelsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.webviewutils.TrustedWebActivity" android:permission="" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.bajajmall.in" android:scheme="https"/>
+                <data android:host="www.cars24.com" android:scheme="https"/>
+                <data android:host="www.bajajmall.in" android:scheme="http"/>
+                <data android:host="www.cars24.com" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.webviewutils.TrustedWebActivityMonetisation" android:permission="" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.SimSelectionActivity" android:theme="@style/DialogActivityTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:immersive="true" android:label="" android:name="com.bfl.superapp.ui.activity.video.KpointVideoActivity" android:screenOrientation="sensor" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.video.VideoListActivity" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.ondc.OndcActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.arvr.ArvrGamesActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.etb.RateOfInterestWebviewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.inapp.InAppHealthRXWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.las.LasWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.openPostUrlActivity.OpenIrctcWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.rewards.SSORewardsLoginActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.nsdl.NSDLWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.InAppGamesWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.search.HealthRXSearchWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.CategoryInAppPartnersActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:name="com.bfl.superapp.onboarding.UpdateAppActivity" android:permission=""/>
+        <activity android:exported="false" android:name="com.bfl.superapp.dynamic_module.NewModuleProgress" android:theme="@style/DialogActivityTheme"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.PushNotificationServices.PushPermissionActivity" android:theme="@style/DialogActivityTheme"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.dynamic_module.RestartActvity" android:theme="@style/DialogActivityTheme"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.mycart.CartLandingActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBarMaterial"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.PdfviewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBarMaterial"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.deeplink_webview.OpenWebviewFromDeeplink"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.DLRActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.b2c.B2CActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.InAppNewWebViewActivtiy" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.InAppPodWebViewActivtiy" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.creditcard.CreditCardEntryActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.passbook.PassbookActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.insurance.ViewPolicyPdfInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.MutualFundsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.OverdueActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.LanguageSelectionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.RequestSubmitedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.ConsumerDurableLoanActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.InAppWebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.ExclusiveOfferActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.ExclusiveOfferAppDetailsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.ExclusiveOfferDynamicDetailsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.DeeplinkExclusiveOfferDynamicDetailsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.InAppActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.MenuInAppFaqs" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.DeepLinkMenuInAppFaqs" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="colorMode|fontScale|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.CommonFaqActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.hybrid.HybridFaqActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.MenuInAppProgramsActivity" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.inapp.DeeplinkMenuInAppProgramsActivity" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.MyRealtionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.Filter" android:screenOrientation="portrait" android:theme="@style/NoActionbarTheme"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.editprofile.dobactivies.EditDobActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.editprofile.EditProfileActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.calculator.DocWebviewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.liLoan.LoanLiActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="R9K-97K-8Z6Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="3ac-3c2"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="1"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.ResetMpinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.calculator.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.calculator.PGActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.location.ServiceNotAvailableforLocationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.SetUpMPinActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.utils.GrantPermission" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.permission.GrantPermissionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.customeBrowser.BrowserActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.customeBrowser.ChildWebview" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.EDLRActivity" android:permission="" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/NoActionBar">
+            <intent-filter>
+                <data android:host="open" android:scheme="BajajServiceAppUAT"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="c2gx.app.link" android:scheme="https"/>
+                <data android:host="c2gx-alternate.app.link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bfl.onelink.me" android:pathPrefix="/857331112" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bajajfinserv" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:exported="true" android:name="com.bfl.superapp.onboarding.revamp.activity.SplashActivity" android:resizeableActivity="true" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_mdAx6ZZr4YgYiVCQCuYPQkdmsvi3uXxT"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_hhFwYW4qY0bYeRuKwy0LNojixFa8uYBs"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.dashboard.DashboardActivity" android:permission="" android:resizeableActivity="true" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.OnboardingRARWebViewActivity" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.BackgroundActivity" android:theme="@style/NoActionBar"/>
+        <service android:exported="true" android:foregroundServiceType="dataSync" android:name="com.bfl.superapp.services.ForegroundService"/>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.PrePayEMIForeclosureActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.DrawdownLoanActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.PrePayEMIForeclosureNextActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.TryCalculatorActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.RequestLoanActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.RequestLoanSubmittedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.WalletKYCActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.WalletMinKYCActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.common_activity.CommonErrorPageActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <provider android:authorities="org.altruist.BajajExperia.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.bfl.superapp.utils.CameraFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/all_file_path"/>
+        </provider>
+        <provider android:authorities="in.bajajfinservmarkets.insmall.sdk.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/all_file_path"/>
+        </provider>
+        <provider android:authorities="in.bajajfinservmarkets.insmall.sdk.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/all_file_path"/>
+        </provider>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.MandateMgntActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.PhysicalMandateStatusActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.ConsentRegisterActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.ConsentRejectActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.ConsentAcceptActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.onboarding.SecuritySettingsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.ResetSecQueActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.DrawdownTrackActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/ic_stat_bajaj"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorPrimary"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
+        <meta-data android:name="firebase_messaging_auto_init_enabled" android:value="false"/>
+        <meta-data android:name="firebase_analytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="FCM_SENDER_ID" android:value="id:690783525134"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_stat_bajaj"/>
+        <service android:exported="true" android:name="com.bfl.superapp.PushNotificationServices.FcmMessageListenerService" android:permission="">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="keyboardHidden" android:exported="false" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value=".onboarding.revamp.activity.EnterNumberActivity, .onboarding.revamp.activity.SplashActivity, .onboarding.revamp.activity.WelcomeScreenActivity, .onboarding.revamp.activity.LoginActivity, .onboarding.revamp.activity.EnterMpinActivity, .onboarding.revamp.activity.RootAccessRestrictedActivity, .onboarding.revamp.activity.MobileNumberAccessRestrictedActivity, .onboarding.revamp.activity.MobileNumberSuspiciousActivity, .onboarding.revamp.activity.MaliciousApplicationActivity"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.emicard.EmiCardMandateActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.customeBrowser.CommonPwaWebActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.CommonWebActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.utils.SetLogout" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.SessionLogoutActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <receiver android:exported="false" android:name="com.bfl.superapp.services.rar.RarRequestReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.CommonNewWebActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <provider android:authorities="org.altruist.BajajExperia.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="in.bajajfinservmarkets.insmall.sdk.startup.LoggerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.bfl.superapp.sdkinitializer.SharedPrefInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="org.altruist.BajajExperia.FacebookInitProvider" android:enabled="false" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.dashboard.hamburger_menu.CommonWebActivityMultiUser" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.deeplinkhelper.PWARoute" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:name="com.bfl.superapp.ui.activity.AppInboxWebActivity" android:permission="" android:screenOrientation="portrait" android:theme="@style/NoActionBar1">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bajajfinserv.in" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.ui.activity.ShortcutHandler" android:screenOrientation="portrait" android:theme="@style/DialogActivityTheme"/>
+        <activity android:exported="false" android:name="com.ashield.sap.ConActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilSuccesActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilScoreNotFoundActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilCongratsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilPaymentPendingActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilPersonalDetailsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilScoreShowActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilOtpActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilFreshActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilPreGeneratedScore" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.UpdateDrawDownBankActivity"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.TwfTrackingActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.RequestRaisedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.MyRelation.DrawdownChangeMobileActivity"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.ResetMPINAuthenticationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.HamburgerSetUpMPinActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.cibilscore.CibilNegativeActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.helper.DebuggingEnabledWarningActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="colorMode|fontScale|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.CommonSingleFaqActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="colorMode|uiMode" android:exported="false" android:name="com.bfl.superapp.onboarding.NTBEnterOtpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.PushNotificationServices.PaymentFCMPush"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.las.LasCsdlWebViewActivity" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.ForceAppUpdateActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MaliciousApplicationActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.WelcomeScreenActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.lockunlock.SlowInternetConnectionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.EnterNumberActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.EnterOtpActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.onboarding.revamp.activity.LoginActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.OnboardingConcurrentLoginStatusActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.OnboardingConcurrentLoginActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.OnboardingConsentActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bfl.superapp.onboarding.revamp.activity.EnterMpinActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.UsbDebuggingEnabledActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MobileNumberAccessRestrictedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.TechnicalErrorAccessRestrictedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MobileNumberSuspiciousActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.RootAccessRestrictedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.onboarding.revamp.activity.MulticastIdFoundActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.bfl.superapp.prewarming.CLPPWAActivity" android:permission="" android:resizeableActivity="false" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.ui.activity.NetworkActivity" android:theme="@style/DialogActivityTheme"/>
+        <service android:enabled="true" android:name="ai.protectt.app.security.common.helper.LoggingService"/>
+        <service android:enabled="true" android:exported="false" android:isolatedProcess="false" android:name="ai.protectt.app.security.common.helper.IsolatedService"/>
+        <provider android:authorities="org.altruist.BajajExperia.loggerController" android:exported="false" android:name="ai.protectt.app.security.main.LoggerController"/>
+        <activity android:name="com.ashield.fido.FidoMainActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <activity android:name="com.payu.custombrowser.CBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.custombrowser" android:value="7f6998a6-c6ed-4888-bb2c-9e8975a8a85a"/>
+        <activity android:launchMode="singleTask" android:name="com.payu.otpassist.PayUOtpAssistActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <provider android:authorities="org.altruist.BajajExperia.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.org.altruist.BajajExperia" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:name="com.payu.upisdk.upiintent.PaymentResponseUpiSdkActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="org.altruist.BajajExperia.AppContextProvider" android:exported="false" android:name="com.medallia.dxa.common.internal.logic.providers.AppContextProvider"/>
+        <provider android:authorities="org.altruist.BajajExperia.LastActivityProvider" android:exported="false" android:name="com.medallia.dxa.common.internal.logic.providers.LastActivityProvider"/>
+        <provider android:authorities="org.altruist.BajajExperia.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="org.altruist.BajajExperia.UEContentProvider" android:exported="false" android:initOrder="999999" android:name="com.userexperior.provider.UEContentProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.userexperior.ui.UEConsentActivity" android:theme="@android:style/Theme.Holo.Light.Dialog.NoActionBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEEventSession"/>
+        <service android:enabled="true" android:exported="false" android:name="com.userexperior.services.UEScreenshotService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="org.altruist.BajajExperia.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.india" android:value="78ccded7-5418-47f8-9f9c-8c44db84ecaf"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:launchMode="singleTop" android:name="com.vanniktech.rxpermission.ShadowActivity" android:theme="@style/RxPermissionShadowActivityTheme"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:enabled="false" android:exported="false" android:name="com.bfl.socketlibrary.events.SocketSDKReceiver">
+            <intent-filter>
+                <action android:name="com.bfl.socketlibrary.SESSION_EXPIRE"/>
+                <action android:name="com.bfl.socketlibrary.LOG_IN_OTHER_DEVICE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.paymentparamhelper" android:value="38ef613a-9ce9-4312-9ce0-942982f9fbfe"/>
+        <activity android:name="com.bfl.superapp.nps.NPSLauncher"/>
+        <activity android:exported="false" android:name="com.bfl.nps.hamburger.RecyclerViewCheck" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:exported="true" android:name="com.bfl.nps.NPSFeedback" android:theme="@2114715695" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.bfl.nps.hamburger.hamburgerFeedback" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@2097283075"/>
+        <activity android:name="com.bfl.superapp.insMall.InsuranceSDKLauncher" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.policiesmembership.ui.activity.InsuranceViewAllDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="in.bajajfinservmarkets.insmall.sdk.deeplink.DeepLinkNavigationActivity" android:theme="@2097938527"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.pocketcategory.ui.PocketCategoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"/>
+        <activity android:configChanges="layoutDirection|orientation|screenSize" android:name="in.bajajfinservmarkets.insmall.sdk.video.ui.activity.VideoPlayerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.allcategories.ui.activity.AllCategoriesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.customerjourney.activity.JourneyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="in.bajajfinservmarkets.insmall.sdk.home.ui.activities.HomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.stories.ui.activity.StoriesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.home.ui.activities.WhatsNewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.sis.ui.activity.SISActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.categorylandingpages.ui.activity.CLPActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.home.ui.activities.FAQActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.insmall.sdk.comingsoon.ui.ComingSoonActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+        <activity android:name="com.bfl.superapp.installtime.AppInboxActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.bfl.superapp.storelocator.StoreLocatorLauncher" android:screenOrientation="portrait" android:theme="@style/NewTheme"/>
+        <activity android:configChanges="orientation" android:exported="true" android:name="com.superapp.storelocator.SL_MainActivity" android:permission="" android:screenOrientation="portrait" android:theme="@style/Theme.StoreLocator"/>
+        <activity android:launchMode="singleTask" android:name="com.bfl.superapp.payment.BFLPaymentActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.utils.B3BaseActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.transaction.B3TransactionActivityB3" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.payment.B3ViewReceiptActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3ManageBillerDetailsActivityB3" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3ManageBillerActivityB3" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.payment.B3OrderPollActivityB3" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3FAQsActivityB3" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3AboutActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3NewQueryActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3NewBBPSQueryActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3RequestRaisedActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.category.B3CategoriesActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller.B3BillerActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_all.B3BillerDetailsActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_mobile.B3SelectOperatorActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_all.B3FetchBillActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller.B3ReviewBillActivity2B3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.payment.B3PaymentStatusActivityB3" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3SetUpWalletSuccessActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.wallet.activities.W3NewQueryActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.W3MinKYCLandingActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3AddMoneyToWalletActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3FAQActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3SubWalletActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3WalletTransferActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.W3RaisedComplaintsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3DeregisterRefundActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3WebClientActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3BankTransferDetailActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3AddBankAccountActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3BankTransferActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.ExpenseManagerActivity" android:screenOrientation="portrait" android:theme="@style/I3_AppTheme_paytech"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3OrderPollActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.W3DownloadReceiptActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3DeregisterBalanceActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3RARSummary" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.W3PaymentSuccessFailActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3SetUpFailedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.W3DashboardActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3LandingActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3P2PActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3BindingProccesActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3DigiSuccessActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3DigiAddMoneyActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3ProfileUpdateActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3PartialDataSetupActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3BindingBenefitsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3PageUnderMaintenanceActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3LanguageChange" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.passbook.ui.T3PassbookActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.passbook.ui.T3PassbookFilter" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.bfl.superapp.payment.PaymentSDKLauncher" android:theme="@style/DialogActivityTheme"/>
+        <activity android:exported="false" android:label="@2047869825" android:name="com.bfl.upilib.ui.UpiSdkLaunchActivity" android:screenOrientation="portrait" android:theme="@style/UPI_NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller.B3PageUnderMaintenanceActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.P3LauncherActivity" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3MakePaymentBase" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.B3PageUnderMaintenanceActivity" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3BaseActivity" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3DrawDown" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3DrawDownResponse" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:launchMode="singleTask" android:name="com.bfl.superapp.payment.payment_services.activities.P3Hamburger2" android:screenOrientation="portrait" android:theme="@2047934493"/>
+        <activity android:launchMode="singleTask" android:name="com.bfl.superapp.payment.payment_services.activities.P3MakeLoanPayment" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3OrderPollActivityB3" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3PaymentStatusActivityB3" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:name="com.bfl.superapp.payment.payment_services.activities.P3PaywithCash" android:screenOrientation="portrait" android:theme="@2047934500"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.CLPMainActivity" android:screenOrientation="portrait" android:theme="@style/I3_AppTheme_paytech"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.PaymentSettingsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.PSViewAllActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.rar.B3PermissionActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3MyBillsCategoriesActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3ManageBillerActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3MyBillSelectOperatorActivity" android:theme="@style/NoActionBar1" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3AllMyBillActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.bbps.ui_b3.biller_manage.B3AllDueBillActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3ManageAutoLoadActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3CommingSoonActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3IntroInfoActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3FullDetailsSetUpActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3RecentPPIReqActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3UDIRaiseCompliantActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3SpamActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3PPIMoneyRequest" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3MyQR" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3ManageBeneficiaryActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3ManageActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3CameraActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3GalleryActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3KycInProgressActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3UPIRegistrationSuccessActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3ManageLimit" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3SetLimitActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3DeregisterSuccessFailActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3GetSimDetails" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.integratedpayment.wallet.activities.walletupi.W3MoneyTransferActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3PartialDeatilsSetUpActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3OnBardingFullDetailsUpdate" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3DigLockerKYCForm" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.digilocker.W3BenefitsKYC" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.paymentservice.activities.P3WebView" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.paymentservice.activities.P3ChoosePaymentOptionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.merchant.scan.S3PaymentStatusActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.merchant.scan.S3ViewReceiptActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.merchant.scan.S3PaymentSuccessFailActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.referearnlib.ui.ReMainActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.referearnlib.ui.ReFAQsActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.referearnlib.ui.ReAboutActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.FastagMainActivity" android:screenOrientation="portrait" android:theme="@style/I3_AppTheme_paytech"/>
+        <activity android:exported="false" android:name="com.snapwork.bbpspwa.ui.PW3HybridFeatureActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.bbpspwa.ui.MainActivityPW3" android:screenOrientation="portrait" android:theme="@style/NoActionBar1">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="org.altruist.bajajexperia"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.common.sdk.ChatBotRedirectionActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.passbook.ui.T3ChatbotPassbookActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.GiftCardMainActivity" android:screenOrientation="portrait" android:theme="@style/I3_AppTheme_paytech"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3TransactionReceiptActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.wallet.activities.W3TransactionSummaryActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.rarfaqpwa.ui.RarFaqBaseActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.rarfaqpwa.ui.RarFaqActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.common.sdk.PWABannerRedirectionActivity" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.merchant.scan.S3TransactionSummaryActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:exported="false" android:name="com.snapwork.integratedpayment.merchant.scan.S3TransactionReceiptActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.S3OtpActivity" android:screenOrientation="portrait" android:theme="@2047934477" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.FaqActivity" android:screenOrientation="portrait" android:theme="@2047934477"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.S3EnterAmountActivity" android:screenOrientation="portrait" android:theme="@2047934477" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.ManageBflUpiActivity" android:screenOrientation="portrait" android:theme="@2047934477"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.ManageBhimUpiActivity" android:screenOrientation="portrait" android:theme="@2047934477"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.snapwork.bajajcheckout.sdk.reciver.SMSBroadcastReceiver" android:permission="android.permission.SEND_SMS" android:priority="999">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.snapwork.bajajcheckout.sdk.reciver.SMSConsentBroadcastReceiver" android:permission="android.permission.SEND_SMS" android:priority="999">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.PaymentActivity" android:screenOrientation="portrait" android:theme="@2047934477" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.snapwork.bajajcheckout.ui.activity.ManageMethodsActivity" android:screenOrientation="portrait" android:theme="@2047934477"/>
+        <activity android:exported="false" android:name="com.bfl.clp.ui.EmbeddedFinanceActivity" android:screenOrientation="portrait" android:theme="@2047934499"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.bfl.clp.ui.utils.NativeCameraActivity" android:screenOrientation="portrait" android:theme="@2047934499"/>
+        <activity android:exported="false" android:name="com.bfl.upilib.UpiUnderMaintenanceActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.bfl.externallibs.cropper.I3CropImageActivity" android:screenOrientation="portrait" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.snapwork.bbpspwa.ui.AuthenticationActivityPW3" android:screenOrientation="portrait" android:theme="@2047934514"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@2047934530" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.bfl.superapp.expensemanager.ExpenseManagerLauncher" android:screenOrientation="portrait" android:theme="@style/NoActionBar1"/>
+        <activity android:name="com.bfl.superapp.faqrar.RARmodule.webview.RarWebView"/>
+        <activity android:name="com.bfl.superapp.faqrar.RARmodule.PaymentTwoActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.faqrar.RARmodule.HelpAndSupportActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.faqrar.RARmodule.ExpandablList.HelpSupportFAQ.HelpAndSupportFaqs" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.faqrar.RARmodule.HelpAndSupportExpandableListActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.TrackOrderActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.LoanTermSheetSuccess" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.MyOrderActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.RequestPodDocumentSubmittedActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.docpod.B2BPodMandateActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.bfl.superapp.b2b.LoanDocumentActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="false" android:name="com.bfl.superapp.documentcenter.PdfViewer" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.bfl.superapp.documentcenter.LocalPDFActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.bfl.superapp.documentcenter.LoanPdfViewer" android:screenOrientation="portrait"/>
+        <activity android:name="com.bfl.superapp.documentcenter.FdPdfViewerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bfl.superapp.mutualfund.MFSDKLauncher" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.servicerequest.sdk.home.ui.activity.SRHomeActivity" android:screenOrientation="portrait" android:theme="@style/srBaseAppThemeNew" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="in.bajajfinservmarkets.servicerequest.sdk.sdkinit.ui.SRInitializationActivity" android:screenOrientation="portrait" android:theme="@style/srBaseAppThemeNew"/>
+        <activity android:exported="false" android:name="in.bajajfinservmarkets.mfp.sdk.webview.MFPWAActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.externalswitch.ui.activity.MFExternalSwitchActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.mflearn.ui.activities.MFLearnActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.sip_stp_swp.ui.activity.MfSipStpSwpActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.cartandwatchlist.ui.activity.MFWatchlistActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.riskprofiler.ui.activity.MFRiskProfilerActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.webview.MFWebViewActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:launchMode="singleInstance" android:name="in.bajajfinservmarkets.mfp.sdk.webview.MFCustomTabActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.sdkinit.ui.activity.MFInitializationActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.cartandwatchlist.ui.activity.MFCartActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.transactions.ui.activity.MFTransactionActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:launchMode="singleTop" android:name="in.bajajfinservmarkets.mfp.sdk.account.ui.activity.MFAccountActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:launchMode="singleTop" android:name="in.bajajfinservmarkets.mfp.sdk.portfolio.ui.activity.MFYourPortfolioActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.nfo.ui.activity.MFNfoActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:configChanges="orientation" android:name="in.bajajfinservmarkets.mfp.sdk.documentscanner.ui.activities.MFSignatureCaptureActivity" android:screenOrientation="landscape" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.documentscanner.ui.activities.MFDocumentOperationActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.onboarding.ui.activities.MFOnBoardingActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.payment.ui.activities.MFPaymentActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:launchMode="singleTask" android:name="in.bajajfinservmarkets.mfp.sdk.home.ui.activities.MFHomeActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.funddetail.ui.activities.MFFundDetailActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.withdrawfunds.ui.activity.MFWithdrawJourneyActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.bankaccountandautopay.ui.activities.MFAutoPayActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.importcas.ui.activity.MFImportCASActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.faqs.ui.activity.MFFAQActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.home.ui.activities.MFFundListActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.home.ui.activities.MFConsentLoaderActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.onboarding.ui.activities.MFNomineeOtpVerificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.onboarding.ui.activities.MFEmailVerificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.home.ui.activities.MFInvestmentIdeasActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.home.ui.activities.MFExternalInvestmentActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.onboarding.ui.activities.MFDigilockerProgressActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.funddetail.ui.activities.MFKycHoldRejectActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.sdkinit.ui.activity.MFUnderMaintenanceActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="in.bajajfinservmarkets.mfp.sdk.onboarding.ui.activities.MFAMLActivity" android:screenOrientation="portrait" android:theme="@style/MFBaseAppTheme"/>
+        <activity android:name="com.bfl.superapp.offers.OffersLauncherActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:name="com.global.Offer2MainActivity" android:screenOrientation="portrait" android:theme="@style/NoActionBar"/>
+        <activity android:exported="true" android:name="com.global.activity.Webviewscreen_activity"/>
+        <meta-data android:name="com.android.dynamic.apk.fused.modules" android:value="B2B,InstallTime,InsuranceMall,NPS,Payment,base"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

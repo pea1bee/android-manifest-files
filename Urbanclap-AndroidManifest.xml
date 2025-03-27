@@ -1,0 +1,789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.urbanclap.urbanclap" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" android:required="true"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CAMERA"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <permission android:name="com.urbanclap.urbanclap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.urbanclap.urbanclap.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@null" android:label="@string/app_name" android:largeHeap="true" android:name="com.urbanclap.urbanclap.core.UCApplication" android:networkSecurityConfig="@xml/network_security_config" android:screenOrientation="portrait" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <provider android:authorities="com.urbanclap.urbanclap.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+        <activity android:exported="false" android:name="com.urbanclap.urbanclap.core.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.urbanclap.urbanclap.core.DevSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.urbanclap.urbanclap.core.StacTraceActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="false" android:name="tinkle.NotificationCTAActionReceiver"/>
+        <activity android:name="com.urbanclap.urbanclap.core.bottomnavigation.InstallFromPlaystore"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="@string/branch_key"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="APP_ID" android:value="@string/mo_app_id"/>
+        <meta-data android:name="GCM_SENDER_ID" android:value="@string/google_project_app_id"/>
+        <meta-data android:name="SENDER_ID" android:value="@string/google_project_app_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="lW27F0f9236446e4b4d8faad277bdbe846ac7"/>
+        <meta-data android:name="NOTIFICATION_ICON" android:value="@drawable/icon_notify"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="com.urbanclap.urbanclap.ONE"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="icon_notify"/>
+        <meta-data android:name="NOTIFICATION_LARGE_ICON" android:value="@mipmap/ic_launcher"/>
+        <meta-data android:name="SKIP_GCM_REGISTRATION" android:value="true"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value="SplashActivity"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/primary"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="utility.GoogleAnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="tinkle.NotificationDismissedReceiver"/>
+        <receiver android:name="com.urbanclap.urbanclap.ucshared.ApplicationSelectorReceiver"/>
+        <provider android:authorities="com.urbanclap.urbanclap.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.urbanclap.urbanclap.FacebookContentProvider1566066270342195" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:name="com.asterinet.react.bgactions.RNBackgroundActionsTask"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <service android:exported="false" android:name="tinkleClient.FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.urbanclap.urbanclap.core.common.util.PlaceFetcher" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.urbanclap.urbanclap.core.AboutUsActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.urbanclap.urbanclap.core.ProfilePreferenceSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.luminosity.PageDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.urbanclap.urbanclap.core.TOCActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.urbanclap.urbanclap.core.search_v2.SearchV2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:name="com.urbanclap.urbanclap.payments.PaymentsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.payments.paymentsnew.PaymentOptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.payments.manage_payment_options.ManagePaymentOptionsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="youtube.YoutubeActivity"/>
+        <activity android:label="@string/title_activity_on_toc_click" android:name="com.urbanclap.urbanclap.core.OnTocClickActivity"/>
+        <activity android:name="com.urbanclap.urbanclap.core.nb_flow.listing.LocationScreenActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.urbanclap.urbanclap.payments.paymentsnew.DelayedPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.urbanclap.urbanclap.core.bottomnavigation.BottomNavigationBaseActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="open" android:scheme="urbanclap"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="invite.urbanclap.com" android:scheme="https"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:name="com.urbanclap.urbanclap.core.app_icon.NormalUser" android:targetActivity="com.urbanclap.urbanclap.core.bottomnavigation.BottomNavigationBaseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_plus_launcher" android:name="com.urbanclap.urbanclap.core.app_icon.SubscribedUser" android:targetActivity="com.urbanclap.urbanclap.core.bottomnavigation.BottomNavigationBaseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.urbanclap.urbanclap.core.referral.invite_referral.InviteReferralActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name="com.urbanclap.urbanclap.core.post_request.booking.rescheduler_v2.ReschedulerV2Activity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.urbanclap.urbanclap.core.view_all.ViewAllCategoriesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.urbanclap.urbanclap.core.ArticleActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.urbanclap.urbanclap.payments.cards.add_new_card.AddNewCardActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <activity android:name="com.urbanclap.urbanclap.core.subscription.subscription_profile_section.MySubscriptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="tinkleClient.NotificationIntentReceiverActivity" android:parentActivityName="com.urbanclap.urbanclap.core.bottomnavigation.BottomNavigationBaseActivity"/>
+        <activity android:name="com.urbanclap.urbanclap.core.provider_profile.album_screen.ProviderAlbumActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <activity android:name="com.urbanclap.urbanclap.core.provider_profile.image_gallery_screen.ProviderImageGalleryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.urbanclap.urbanclap.core.provider_profile.screens.overview.ProviderProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <activity android:name="com.urbanclap.urbanclap.core.provider_profile.screens.detail.ProviderProfileDetailsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <activity android:name="com.urbanclap.urbanclap.core.imageGalleryScreen.ImageGalleryActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.urbanclap.urbanclap.core.post_request.booking.location_udpate.UpdateLocationActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <activity android:name="com.urbanclap.urbanclap.core.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.compassclient.locationOnboarding.LocationOnboardingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.referral.invite_referral.contact_share.ReferralContactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:name="com.urbanclap.urbanclap.core.common.widgets.uc_webview.activity.UcWebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.urbanclap.urbanclap.core.edit_profile.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.wallet_new.UcWalletActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.post_request.booking.cancellation.RequestCancellationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="true" android:name="com.urbanclap.urbanclap.core.DeeplinkActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/home" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/wallet" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/refer" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/track" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/provider_response" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/test" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/journey" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/p" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/app" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/gifts" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/facialAnalysis" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/skinAnalysisReport" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/list" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/getDeviceDetails" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/locks/deviceDetails" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/locks/onboardingJourney" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/locks/alerts" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/locks/settings" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/ro/settings" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/ro/deviceDetails" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/smartAppliances/locks/userManagement" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/localityScreen" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/discovery" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/helpcenter" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/bookings" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/planDetails" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/chat" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/productBPR" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="home" android:scheme="urbanclap"/>
+                <data android:host="subscription-v2" android:scheme="urbanclap"/>
+                <data android:host="category" android:scheme="urbanclap"/>
+                <data android:host="clusters" android:scheme="urbanclap"/>
+                <data android:host="luminosity" android:scheme="urbanclap"/>
+                <data android:host="journey" android:scheme="urbanclap"/>
+                <data android:host="questions" android:scheme="urbanclap"/>
+                <data android:host="invite" android:scheme="urbanclap"/>
+                <data android:host="referral" android:scheme="urbanclap"/>
+                <data android:host="profile" android:scheme="urbanclap"/>
+                <data android:host="wallet" android:scheme="urbanclap"/>
+                <data android:host="pro" android:scheme="urbanclap"/>
+                <data android:host="nbprofile" android:scheme="urbanclap"/>
+                <data android:host="rewards" android:scheme="urbanclap"/>
+                <data android:host="gethelp" android:scheme="urbanclap"/>
+                <data android:host="provider_response" android:scheme="urbanclap"/>
+                <data android:host="invoice" android:scheme="urbanclap"/>
+                <data android:host="receipts" android:scheme="urbanclap"/>
+                <data android:host="referralsuccess" android:scheme="urbanclap"/>
+                <data android:host="privacy-policy" android:scheme="urbanclap"/>
+                <data android:host="terms-page.html" android:scheme="urbanclap"/>
+                <data android:host="nbprofessional_response" android:scheme="urbanclap"/>
+                <data android:host="nbresponses" android:scheme="urbanclap"/>
+                <data android:host="listing" android:scheme="urbanclap"/>
+                <data android:host="article" android:scheme="urbanclap"/>
+                <data android:host="paybygateway" android:scheme="urbanclap"/>
+                <data android:host="paybygateway" android:scheme="urbanclap"/>
+                <data android:host="reminders" android:scheme="urbanclap"/>
+                <data android:host="pitch-credits" android:scheme="urbanclap"/>
+                <data android:host="my-giftcards" android:scheme="urbanclap"/>
+                <data android:host="purchase-giftcards" android:scheme="urbanclap"/>
+                <data android:host="myreminders" android:scheme="urbanclap"/>
+                <data android:host="login" android:scheme="urbanclap"/>
+                <data android:host="refer" android:scheme="urbanclap"/>
+                <data android:host="profile-preferences" android:scheme="urbanclap"/>
+                <data android:host="hometab" android:scheme="urbanclap"/>
+                <data android:host="*" android:scheme="urbanclap"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="chat.urbancompany.com" android:scheme="https"/>
+                <data android:host="dev-chat.urbancompany.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/home" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/home" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/open" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/open" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/category" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/category" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/clusters" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/clusters" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/luminosity" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/luminosity" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/journey" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/journey" android:scheme="http"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/journey" android:scheme="https"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/journey" android:scheme="http"/>
+                <data android:host="urbancompany.com" android:pathPrefix="/journey" android:scheme="https"/>
+                <data android:host="urbancompany.com" android:pathPrefix="/journey" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/questions" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/questions" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/invite" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/invite" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/referral" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/referral" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/profile" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/profile" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/wallet" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/wallet" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/pro" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/pro" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbprofile" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbprofile" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/rewards" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/rewards" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/gethelp" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/gethelp" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/helpcenter" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/helpcenter" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/provider_response" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/provider_response" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/invoice" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/invoice" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/receipts" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/receipts" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/referralsuccess" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/referralsuccess" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/privacy-policy" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/privacy-policy" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/terms-page.html" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/terms-page.html" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbprofessional_response" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbprofessional_response" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbresponses" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/nbresponses" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/listing" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/listing" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/article" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/article" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/paybygateway" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/paybygateway" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/paybygateway" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/paybygateway" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/track" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/reminders" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/reminders" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/pitchCredits" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/pitchCredits" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/my-giftcards" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/my-giftcards" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/purchase-giftcards" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/purchase-giftcards" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/myreminders" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/myreminders" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/login" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/login" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/refer" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/refer" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/subscription-v2" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/subscription-v2" android:scheme="https"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/subscription-v2" android:scheme="http"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/subscription-v2" android:scheme="https"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/rn_page" android:scheme="http"/>
+                <data android:host="www.urbanclap.com" android:pathPrefix="/rn_page" android:scheme="https"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/rn_page" android:scheme="http"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/rn_page" android:scheme="https"/>
+                <data android:host="rn_page" android:scheme="urbanclap"/>
+                <data android:host="www.urbancompany.com" android:pathPrefix="/profile-preferences" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bnc.lt" android:pathPrefix="/EPtb" android:scheme="https"/>
+                <data android:host="bnc.lt" android:pathPrefix="/Sg7c" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:name="com.urbanclap.reactnative.core.deeplink.DeeplinkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="home_v2" android:scheme="urbancompany"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.urbanclap.urbanclap.core.referral.accept_invite.AcceptInviteActivity" android:noHistory="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.scheduled_bookings.SingleSelectOptionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.core.svg_icons.SvgIconsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:name="com.urbanclap.urbanclap.core.TransparentActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:name="com.urbanclap.urbanclap.core.bottomnavigation.ProfileActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.urbanclap.urbanclap.payments.ThirdPartyEventsReceiver"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.godel.core.CustomtabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.urbanclap.urbanclap" android:scheme="juspay"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="api.juspay.in" android:path="/pay/sdk-response/apps/com.urbanclap.urbanclap" android:scheme="http"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="api.juspay.in" android:path="/pay/sdk-response/apps/com.urbanclap.urbanclap" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="sandbox.juspay.in" android:path="/pay/sdk-response/apps/com.urbanclap.urbanclap" android:scheme="http"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sandbox.juspay.in" android:path="/pay/sdk-response/apps/com.urbanclap.urbanclap" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.urbanclap.urbanclap.service_selection.CreateRequestActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePeace"/>
+        <service android:exported="false" android:name="com.urbanclap.urbanclap.compass.AddressFetcher" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.urbanclap.urbanclap.ucshared.subscription.SubscriptionWebviewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.urbanclap.urbanclap.ucshared.video.VideoPlayerActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.urbanclap.urbanclap.ucshared.ucwarrenty.TermsAndConditionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.urbancompany.authentication.bottomsheet.BottomsheetTransparentActivity" android:theme="@style/AppTheme.Transparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.urbancompany.authentication.AuthActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.IncomingCallActivity" android:noHistory="true"/>
+        <activity android:exported="false" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.VoipPermissionActivity" android:noHistory="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.CallNotificationActionsReceiver">
+            <intent-filter>
+                <action android:name="ACTION_CALL_DECLINED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="shortService" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.HeadsupCallNotificationService"/>
+        <service android:exported="false" android:foregroundServiceType="camera|microphone" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.OngoingCallService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.urbancompany.orion.plugins.impl.CallReceiverPluginImpl.VoipCallActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:windowSoftInputMode="adjustResize"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="false" android:name="com.instacart.library.truetime.BootCompletedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.urbanclap.urbanclap.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:clearTaskOnLaunch="true" android:exported="true" android:launchMode="singleTask" android:name="com.urbancompany.tabLayout.views.TabLayoutActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.urbanclap.reactnative.views.UcReactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.urbanclap.reactnative.views.NotificationUcReactActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|layoutDirection|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.urbanclap.reactnative.views.TransparentUCReactActivity" android:screenOrientation="portrait" android:theme="@style/TransparentCompat" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.urbanclap.reactnative.modules.impl.uCrop.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="com.auth0.android.provider.AuthenticationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.auth0.android.provider.RedirectActivity">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="identity.majidalfuttaim.com" android:pathPrefix="/android/com.urbanclap.urbanclap/callback" android:scheme="urbanclapshare"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.urbanclap.urbanclap" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="in.juspay.hyperapay.CompletionActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="in.juspay.hypernfc.NfcActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.TECH_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.amazon.apay.hardened.activity.APayBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name="com.amazon.apay.hardened.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.urbanclap.urbanclap" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.urbancompany.ucpaymentmodule.WebviewActivity"/>
+        <activity android:name="com.urbancompany.ucpaymentmodule.TransactionActivityJuspay" android:screenOrientation="portrait"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.urbanclap.urbanclap" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.urbanclap.urbanclap.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <provider android:authorities="com.urbanclap.urbanclap.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.urbanclap.urbanclap.MarketingInitProvider" android:exported="false" android:name="com.facebook.marketing.internal.MarketingInitProvider"/>
+        <provider android:authorities="com.urbanclap.urbanclap.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="in.juspay.godel.core.ConnectivityReceiver"/>
+        <activity android:name="in.juspay.godel.core.CompletionActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="in.juspay.godel.PaymentActivity" android:theme="@style/Theme.AppCompat.Juspay.Translucent"/>
+        <activity android:name="in.juspay.juspaysafe.LegacyPaymentActivity" android:theme="@style/Theme.AppCompat.Juspay.Translucent"/>
+        <activity android:name="org.btbp.btbplibrary.CameraActivity" android:screenOrientation="portrait"/>
+        <activity android:name="org.btbp.btbplibrary.PhotoPreivewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.myairtelapp" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.INTERACT_ACROSS_USERS" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="22" android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.MANAGE_OWN_CALLS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <permission android:name="com.myairtelapp.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <queries>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.teamviewer.teamviewer.market.mobile"/>
+        <package android:name="com.sand.airdroid"/>
+        <package android:name="nfo.oneassist"/>
+        <package android:name="com.teamviewer.quicksupport.market"/>
+        <package android:name="com.sand.airmirror"/>
+        <package android:name="de.im.RemoDroid"/>
+        <package android:name="com.realvnc.viewer.android"/>
+        <package android:name="com.teamviewer.host.market"/>
+        <package android:name="com.screenconnect.androidclient"/>
+        <package android:name="com.goto.resolve.customer"/>
+        <package android:name="com.zoho.assist.agent"/>
+        <package android:name="com.zoho.assist"/>
+        <package android:name="com.prosoftnet.rpcnew"/>
+        <package android:name="com.remotepc.host"/>
+        <package android:name="com.bomgar.thinclient.android"/>
+        <package android:name="com.logmein.rescuemobile"/>
+        <package android:name="com.microsoft.rdc.androidx"/>
+        <package android:name="com.logmein.joinme"/>
+        <package android:name="com.joshsera"/>
+        <package android:name="com.goto.resolve.expert"/>
+        <package android:name="com.koushikdutta.inkwire"/>
+        <package android:name="com.screenleap.android.Screenleap"/>
+        <package android:name="com.tvisha.troopmessenger"/>
+        <package android:name="appear.in.app"/>
+        <package android:name="com.freeconferencecall.fccmeetingclient"/>
+        <package android:name="com.mikogo.android"/>
+        <package android:name="com.splashtop.remote.business"/>
+        <package android:name="com.uberconference"/>
+        <package android:name="com.embarcadero.LiteManager"/>
+        <package android:name="air.MingleViewMobile"/>
+        <package android:name="com.showmypc"/>
+        <package android:name="org.jitsi.meet"/>
+        <package android:name="com.remoteutilities.mviewer"/>
+        <package android:name="profinapp.profinapp"/>
+        <package android:name="net.intermedia.newmeeting"/>
+        <package android:name="com.dhruv.smsrecevier"/>
+        <package android:name="com.googlesmstesting_app.one.enix.smsforward.play_serivess.demo_apk"/>
+        <package android:name="in.gov.uidai.mAadhaarPlus"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="analytics.app.packages" android:scheme="upswing"/>
+        </intent>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.phonepe.app.preprod"/>
+        <package android:name="com.phonepe.simulator"/>
+        <package android:name="com.phonepe.simulator.debug"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="upi" android:scheme="mandate"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.myairtelapp.permission.MIPUSH_RECEIVE"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.extra.KEEP_ALIVE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.google.android.gm"/>
+        <package android:name="com.android.chrome"/>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.AD_SERVICES_CONFIG"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.Camera"/>
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@mipmap/launcher_icon" android:label="@string/appName" android:largeHeap="true" android:name="com.myairtelapp.global.App" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/launcher_icon_round" android:supportsRtl="true" android:testOnly="false" android:theme="@style/AppTheme">
+        <meta-data android:name="io.sentry.proguard-uuid" android:value="eab3e7fd-4d72-41c3-8543-94996049b885"/>
+        <activity android:exported="false" android:name="com.myairtelapp.payments.v3.OpenValidateMPINActivity"/>
+        <activity android:exported="false" android:name="com.myairtelapp.payments.v3.OpenSetExternalPinActivity"/>
+        <activity android:exported="false" android:name="com.myairtelapp.payments.v3.AskPermissionActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.reactnative.RnSDKActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1"/>
+        <activity android:exported="false" android:name="com.reactnative.RNMCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1"/>
+        <activity android:exported="false" android:name="com.reactnative.Rewards123OtpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1"/>
+        <activity android:exported="false" android:name="com.reactnative.WalletRevampOtpActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1" windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.reactnative.voiceAssistantModule.VoiceAssistantActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.reactnative.RnSDKActivityNoAuth" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.transactionhistory.v2.view.TransactionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.onlineRecharge.payment.ui.orpayment.PayBillRedirectActivity" android:theme="@style/Theme.Transparent"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.ThankYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.LanguageListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.payments.ui.activity.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.bank.module.nps.NpsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.home.views.activities.HomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.HomeScreen" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.BaseActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.BaseAnalyticsActivity" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.home.views.activities.NewHomeActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/NewHomeTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.navigator.external.UpiDeepLinkActivity" android:screenOrientation="portrait"/>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.myairtelapp.navigator.external.IntentRegistrationActivity" android:screenOrientation="portrait" android:supportsRtl="true" android:targetActivity="com.myairtelapp.navigator.external.UpiDeepLinkActivity" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="upi" android:scheme="myairtel"/>
+                <data android:host="pay" android:scheme="upi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="mandate" android:scheme="upi"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:name="com.myairtelapp.fs.fd.ui.LoaderActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.PaymentHubActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.WebviewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.WalletActionsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.ChangeMPinLaunchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.AdsSSOActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.RechargeBillersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.RechargeBillFetchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.PayAmountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.MyAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.AddAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.TransactionHistoryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.AppSettingsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.BrowsePlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/myplan" android:name="com.myairtelapp.myplan.MyPlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.WebviewWithDoneActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.ServiceRequestActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.activity.DTreeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/saved_cards" android:name="com.myairtelapp.activity.DeleteCardsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/open_network" android:name="com.myairtelapp.activity.LeapActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_home" android:name="com.myairtelapp.activity.MyHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="In App" android:name="com.moe.pushlibrary.activities.MoEActivity" android:parentActivityName="com.myairtelapp.home.views.activities.NewHomeActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value=".home.views.activities.NewHomeActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bank.module.validateMpin.ValidateMpinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/online_debit_card" android:name="com.myairtelapp.activity.AMOnlineCardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/upgrade" android:name="com.myairtelapp.activity.UpgradeSavingAcountActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.NearYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.SelectOptionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.InsuranceDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.LogoutActivity" android:theme="@style/Theme.Transparent.DimEnabled" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.BankDialogActivity" android:theme="@style/Theme.Transparent.DimEnabled" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.PayBillsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.UPIWelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.UPIHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.GstUpdatePinCodeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.DbtDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.gcm.NotificationTracker" android:noHistory="true"/>
+        <activity android:exported="false" android:label="@string/airtel_secure" android:name="com.myairtelapp.chocolate.ChocolateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.myplanfamily.activities.MyPlanFamilyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.myplanfamily.activities.MyPlanFamilyManageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.EBillEnableActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/enable_ebill_autopay" android:launchMode="singleTask" android:name="com.myairtelapp.plan345.Plan345Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/telemediacp" android:name="com.myairtelapp.activity.TelemediaChangePlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.westernUnion.activity.WesterUnionHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.upionboarding.UpiAllBankActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/claim_free_data" android:name="com.myairtelapp.myhome.HomesBorrowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.walletregistration.activity.WalletOnboardingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.walletregistration.newOnboarding.WalletOnboardingNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bank.module.offers.BankOffersActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="Manage Accounts" android:name="com.myairtelapp.activity.NewManageAccountsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.giftcard.activity.GCLandingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.couponengine.CouponActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.bank.module.reminder.view.BankReminderActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:exported="false" android:name="com.myairtelapp.dynamicVariant.DyanmicBuildActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.dslcombochangeplan.activities.ChangePlanBaseActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.utils.tripleDES.EncryptionDecryptionActivity"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="815c7cb0d76151017c62bdfa184e2471759553dc"/>
+        <meta-data android:name="com.phonepe.android.sdk.Debuggable" android:value="false"/>
+        <meta-data android:name="com.phonepe.android.sdk.AppId" android:value="fcbc10f4fe774450ac3413cd6b25f509"/>
+        <meta-data android:name="com.phonepe.android.sdk.MerchantId" android:value="airtel"/>
+        <meta-data android:name="APP_ID" android:value="OT7PC695G4G7D6O94DWFHZI9"/>
+        <meta-data android:name="MI_APP_ID" android:value="@string/moengage_app_id"/>
+        <meta-data android:name="MI_APP_KEY" android:value="@string/moengage_app_key"/>
+        <meta-data android:name="SENDER_ID" android:value="id:939989166644"/>
+        <meta-data android:name="NOTIFICATION_ICON" android:value="@drawable/notification_bar_icon_lollipop"/>
+        <meta-data android:name="NOTIFICATION_LARGE_ICON" android:value="@drawable/notification_bar_icon"/>
+        <meta-data android:name="APP_ICON" android:value="@mipmap/launcher_icon"/>
+        <meta-data android:name="search-engine" android:resource="@xml/noindex"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyCTukZ_DNKtE53LXzcc55M2QK-U05hc4po"/>
+        <meta-data android:name="com.bugsnag.android.API_KEY" android:value="fffb94a4af3dc522652c603a088f47d6"/>
+        <meta-data android:name="com.bugsnag.android.DETECT_ANRS" android:value="true"/>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="phoneCall" android:name="com.myairtelapp.receiver.CallOverlayService"/>
+        <service android:name="com.myairtelapp.services.BackgroundRequestIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.myairtelapp.googlenow.HttpPostService"/>
+        <service android:exported="false" android:name="com.myairtelapp.googlenow.GetAuthCodeService"/>
+        <service android:name="com.myairtelapp.services.FetchAddressFromLocation"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.myairtelapp.services.SocketsForegroundService" android:stopWithTask="false"/>
+        <service android:name="com.myairtelapp.services.AppDownloadService"/>
+        <service android:exported="false" android:name="com.myairtelapp.push.MAFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.network.interceptor.customEncryption.responseApiHandling.LocalBroadcastListener">
+            <intent-filter>
+                <action android:name="com.network.interceptor.customEncryption.responseApiHandling.LocalBroadcastListener"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.myairtelapp.utils.shortcuts.ShortcutPinReceiver">
+            <intent-filter>
+                <action android:name="com.myairtel.SHORTCUT_PIN"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.myairtelapp.receiver.CallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.myairtelapp.receiver.IncomingCallScreeningService" android:permission="android.permission.BIND_SCREENING_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService"/>
+            </intent-filter>
+        </service>
+        <service android:label="Check Spam service" android:name="com.myairtelapp.receiver.CheckSpmJobBuilder$CheckSpamJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:label="Report Spam service" android:name="com.myairtelapp.receiver.ReportSpamJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.ads.conversiontracking.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.myairtelapp.receiver.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.myairtelapp.analytics.MoEngage.MiPushReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.myairtelapp.receiver.UpiSmsSendReceiver">
+            <intent-filter>
+                <action android:name="com.myairtelapp.sent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.bank.module.simbinding.receivers.SBSmsDeliveryReceiver">
+            <intent-filter>
+                <action android:name="com.myairtelapp.sent"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.bank.module.simbinding.receivers.SBSmsSendReceiver">
+            <intent-filter>
+                <action android:name="com.myairtelapp.receive"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/scan_pay_widget_desc" android:name="com.myairtelapp.ScanAndPayWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/scan_and_pay_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/pay_utilities_widget_desc" android:name="com.myairtelapp.UtilitiesWidgetOnHome">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/utilities_widget_info"/>
+        </receiver>
+        <provider android:authorities="com.myairtelapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.myairtelapp.kotlinfileexplorer" android:exported="false" android:grantUriPermissions="true" android:name="com.myairtelapp.GenericFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:label="@string/change_wifi_password" android:name="com.myairtelapp.activity.TelemediaChangePasswordActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/add_bene" android:name="com.myairtelapp.activity.ViewBeneficiaryActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/add_bene" android:name="com.myairtelapp.activity.AddBeneficiaryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/imt" android:name="com.myairtelapp.activity.imt.ImtHomeScreenActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.myairtelapp.wallet.activity.WalletLinkActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.imt.ImtTransactionCompleteActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/airtel_home" android:name="com.myairtelapp.homesnew.activity.HomesNewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/airtel_homes_manage" android:name="com.myairtelapp.activity.AMHManageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/edit_bill" android:name="com.myairtelapp.utilities.activities.ManagePoliciesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/book_ticket" android:name="com.myairtelapp.irctc.view.activity.IrctcHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/search_station" android:name="com.myairtelapp.irctc.view.activity.SearchStationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/select_train" android:name="com.myairtelapp.irctc.view.activity.TrainsBetweenStationsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/add_details" android:name="com.myairtelapp.irctc.view.activity.AddDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/confirm_booking" android:name="com.myairtelapp.irctc.view.activity.TicketDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/register_now" android:name="com.myairtelapp.irctc.view.activity.RegisterNowActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/cancel_ticket" android:name="com.myairtelapp.irctc.view.activity.CancelTicketActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bank.module.resetMpin.ForgotResetMpinActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.notifications.NotificationCentreActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.apbpayments.PurposeThankyouActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.BarcodeScanActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.myairtelapp.contactsync.AuthenticationService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/authenticator"/>
+        </service>
+        <service android:exported="false" android:name="com.myairtelapp.contactsync.SyncService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/syncadapter"/>
+            <meta-data android:name="android.provider.CONTACTS_STRUCTURE" android:resource="@xml/contacts"/>
+        </service>
+        <activity android:exported="false" android:name="com.myairtelapp.contactsync.ContactDialogActivity" android:theme="@style/Theme.Transparent.DimEnabled"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.ARPRenewPlanActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bank.module.pension.activity.ApyFirstActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/title_all_packs" android:name="com.myairtelapp.onlineRecharge.browseplan.BrowsePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/mobile_recharge" android:name="com.myairtelapp.onlineRecharge.enteramount.PayAmountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.fragment.myaccount.prepaid.UpcomingPackActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.acquisition.view.AcqPlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.myairtelapp.acquisition.view.AcqTrackOrderDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bank.module.home.react.activity.BankProfileReactActivity" android:theme="@style/Base.Theme.AppCompat.Dialog" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.myairtelapp.utils.userConsent.activity.CheckRestrictedAppActivity" android:screenOrientation="portrait" android:theme="@style/NewHomeTheme"/>
+        <activity android:name="com.bank.module.home.react.activity.MpinOperationReactActivity" android:theme="@style/MpinDialogTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.bank.module.home.react.activity.SecureReactActivity" android:theme="@style/NewHomeTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.bank.module.viewProfileDialog.BankProfileV2Activity" android:theme="@style/NewHomeTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.pay.UPIBottomSheetBackgroundActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.bank.module.simbinding.activity.SBOperationReactActivity" android:theme="@style/BaseBottomSheetDialog" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bank.module.home.BankHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.ScanPayActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.sweepin.views.activity.SweepInActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.myairtelapp.balancedetails.view.BalanceDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.myairtelapp.balancedetails.view.BharosaAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.myairtelapp.userprofile.view.UserProfileEditActivity" android:screenOrientation="portrait" android:theme="@style/HomePagePrefTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:label="@string/myprofile_remove_photo" android:name="com.myairtelapp.userprofile.view.DeleteUserProfilePicActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:exported="false" android:name="com.myairtelapp.voicenavigation.VoiceSearchActivity" android:screenOrientation="portrait" android:theme="@style/HomePagePrefTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.lco.view.BroadbandRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.utilities.activities.AirtelDTHRechargeActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.fragment.wallet.mastercard.MasterCardSetPinActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.myairtelapp.home.views.activities.SplashScreenActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/SplashScreenTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="i.airtel.in" android:scheme="https"/>
+                <data android:host="i.test.airtel.in" android:scheme="https"/>
+                <data android:host="www.bharatbillpay.com" android:scheme="http"/>
+                <data android:host="www.bharatbillpay.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="bbps"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/launcher_icon_2" android:launchMode="singleTask" android:name="com.myairtelapp.home.views.activities.SplashScreenActivityAlias" android:noHistory="true" android:roundIcon="@mipmap/launcher_icon_round_2" android:screenOrientation="portrait" android:targetActivity="com.myairtelapp.home.views.activities.SplashScreenActivity" android:theme="@style/SplashScreenTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="i.airtel.in" android:scheme="https"/>
+                <data android:host="i.test.airtel.in" android:scheme="https"/>
+                <data android:host="www.bharatbillpay.com" android:scheme="http"/>
+                <data android:host="www.bharatbillpay.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="bbps"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="false" android:name="com.myairtelapp.home.views.activities.SplashScreenNotificationActivity" android:screenOrientation="portrait" android:theme="@style/SplashScreenTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.myairtelapp.home.views.activities.SplashDeeplinkActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/SplashScreenTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.airtel.in" android:scheme="http"/>
+                <data android:host="www.airtel.in" android:scheme="https"/>
+                <data android:host="gh0hi.app.link" android:scheme="https"/>
+                <data android:host="gh0hi-alternate.app.link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="myairtel"/>
+                <data android:host="app" android:scheme="myairtel"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/auto_pay" android:name="com.myairtelapp.autopay.v2.AutoPayV2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.payments.v2.ui.PaymentV2Activity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.payments.thankyou.ThankYouActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.myairtelapp.payments.paymentsdkcheckout.ui.CheckoutSdkActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.ORRechargeBillerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.onlineRecharge.payment.ORPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.payments.oap.OAPPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.fragment.settings.securepay.SecurePaySettingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.navigator.external.DownDynamicModuleActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.upimandate.CreateMandateActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="com.myairtelapp.upimandate.MandatesTransactionsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.upimandate.MandateReviewActionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.myairtelapp.home.views.activities.BetaForQaActivity"/>
+        <activity android:exported="false" android:name="com.myairtelapp.activity.ChromeCustomTabsActivity"/>
+        <activity android:exported="false" android:label="@string/my_airtel" android:name="com.myairtelapp.ckyc.activity.CKYCActivity" android:screenOrientation="portrait"/>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.myairtelapp" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="amazonpay.silentpay.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.myairtelapp" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bank.module.mutualfunds.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.myairtelapp.activity.DialogPDFDownloadActivity" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:name="com.myairtelapp.activity.PdfViewerActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:launchMode="singleTask" android:name="com.bank.module.oncall.activity.OnCallReactActivity" android:theme="@style/BaseBottomSheetDialog" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.bank.module.ncmc.activity.NcmcNfcReactActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent1" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-4619126500955769~4241909444"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_nm1czL3I0Yb9CqKay7KJShhdzAipVf94"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_bm8kFT9O17pWBENgyWIONmjhBugpUEio"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="SMT_APP_ID" android:value="647fef02b745cec8d8736752618b102d"/>
+        <meta-data android:name="HANSEL_APP_ID" android:value="DS5FR8Z9UXPO30E56M1G5Q4P4"/>
+        <meta-data android:name="HANSEL_APP_KEY" android:value="P1GT5XZAQ8HLLUZEFN79873L1XX76DW69O2J43AHM2WG9KSET5"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <meta-data android:name="io.sentry.dsn" android:value=""/>
+        <meta-data android:name="io.sentry.traces.user-interaction.enable" android:value="true"/>
+        <meta-data android:name="io.sentry.attach-screenshot" android:value="false"/>
+        <meta-data android:name="io.sentry.attach-view-hierarchy" android:value="false"/>
+        <meta-data android:name="io.sentry.traces.sample-rate" android:value="1.0"/>
+        <meta-data android:name="io.sentry.traces.profiling.sample-rate" android:value="1.0"/>
+        <provider android:authorities="com.myairtelapp.LaunchTimeContentProvider" android:exported="false" android:initOrder="101" android:name="com.myairtelapp.home.utils.LaunchTimeContentProvider"/>
+        <service android:exported="false" android:name="com.airtel.analytics.AnalyticsAsyncJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.myairtelapp.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <provider android:authorities="com.myairtelapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.airtel.pay.init.PaySdkInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:launchMode="singleTask" android:name="com.airtel.ads.InterstitialActivity" android:theme="@style/Theme.AppCompat.Translucent.Child"/>
+        <activity android:exported="false" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:theme="@style/Theme.AppCompat.NoActionBar.Translucent"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="com.myairtelapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.myairtelapp" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:name="com.airtel.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:name="amazonpay.silentpay.APayActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name="servify.consumer.plancreationsdk.common.webview.WebViewActivity" android:screenOrientation="portrait" android:taskAffinity="@string/serv_affinity" android:theme="@style/ServifyAppTheme"/>
+        <activity android:name="servify.consumer.plancreationsdk.main.MainActivity" android:screenOrientation="portrait" android:taskAffinity="@string/serv_affinity" android:theme="@style/ServifyAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="servify.consumer.plancreationsdk.crackscreensdk.crackd.CrackScreenDetectionActivity" android:screenOrientation="portrait" android:taskAffinity="@string/serv_affinity" android:theme="@style/ServifyAppTheme"/>
+        <activity android:exported="false" android:name="one.upswing.sdk.yesbank.lite.SendOutwardSMSActivity"/>
+        <activity android:exported="false" android:name="one.upswing.sdk.yesbank.lite.GetTokenActivity"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTask" android:name="one.upswing.sdk.ui.UpswingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="analytics.app.packages" android:scheme="upswing"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.airtel.pay.ui.landing.PaymentCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/paysdk__PaymentTransparent" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.airtel.pay.ui.payment.PaymentActivity" android:screenOrientation="portrait" android:theme="@style/paysdk__PaymentAppTheme"/>
+        <activity android:exported="false" android:name="com.airtel.pay.ui.payment.UPISitBackAndRelaxActivity" android:screenOrientation="portrait" android:theme="@style/paysdk__PaymentAppTheme"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.functionapps.mview_sdk2.receiver.GpsBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50011"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_1_1-G"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <provider android:authorities="com.myairtelapp.mipush.sdk.data" android:exported="false" android:name="com.xiaomi.channel.commonutils.android.MIPushProvider" android:permission="com.myairtelapp.permission.MIPUSH_RECEIVE"/>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:exported="false" android:name="com.phonepe.intent.sdk.ui.b2bPg.B2bPgActivity" android:theme="@style/phonepeThemeInvisibleCompat"/>
+        <provider android:authorities="com.myairtelapp.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.myairtelapp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.myairtelapp.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.myairtelapp.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.myairtelapp.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.moengage.pushamp.internal.PushAmpSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:name="com.moengage.core.internal.data.reports.DataSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:name="com.myairtelapp.dynamic.ir.iRNewJourney.search_and_packs.activity.IRSearchCountrySelectPackActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.myairtelapp.dynamic.ir.iRNewJourney.landing.activity.IRLandingPageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.myairtelapp.dynamic.ir.iRNewJourney.otp.activity.IROtpActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_international_roaming_ir" android:name="com.myairtelapp.dynamic.ir.IRActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.myairtelapp.dynamic.ir.iRNewJourney.usagedetails.views.IRUsageDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|layoutDirection|orientation|screenLayout|screenSize" android:launchMode="standard" android:name="com.airtel.googleml.GoogleMlActivity" android:theme="@style/Theme.Transparent1"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:name="com.isg.taptopay.secure.ui.activity.DeviceConfigHelper" android:screenOrientation="portrait"/>
+        <activity android:name="com.isg.taptopay.secure.ui.activity.TriggerCardTransaction" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:name="com.isg.taptopay.secure.ui.activity.NfcCardTxnActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:name="com.isg.taptopay.secure.ui.activity.NFCCardReaderActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:name="com.isg.taptopay.secure.security.HookDetectionService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.isg.taptopay.secure.ui.activity.HookingDetectedEmptyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <service android:enabled="true" android:name="com.isg.taptopay.log.LogSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.bugsnag.android.BUILD_UUID" android:value="53e5bd43-8dff-470d-88db-53070e4e0cc2"/>
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+        <provider android:authorities="com.myairtelapp.com.pairip.licensecheck.LicenseContentProvider" android:exported="false" android:name="com.pairip.licensecheck.LicenseContentProvider"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+</manifest>

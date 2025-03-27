@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.kreditbee.android" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/vnd.android.package-archive"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.noshufou.android.su"/>
+        <package android:name="com.noshufou.android.su.elite"/>
+        <package android:name="eu.chainfire.supersu"/>
+        <package android:name="com.koushikdutta.superuser"/>
+        <package android:name="com.thirdparty.superuser"/>
+        <package android:name="me.phh.superuser"/>
+        <package android:name="eu.chainfire.supersu.pro"/>
+        <package android:name="com.kingouser.com"/>
+        <package android:name="com.yellowes.su"/>
+        <package android:name="com.topjohnwu.magisk"/>
+        <package android:name="com.koushikdutta.rommanager"/>
+        <package android:name="com.koushikdutta.rommanager.license"/>
+        <package android:name="com.dimonvideo.luckypatcher"/>
+        <package android:name="com.chelpus.lackypatch"/>
+        <package android:name="com.ramdroid.appquarantine"/>
+        <package android:name="com.ramdroid.appquarantinepro"/>
+        <package android:name="com.android.vending.billing.InAppBillingService.COIN"/>
+        <package android:name="com.chelpus.luckypatcher"/>
+        <package android:name="com.devadvance.rootcloak"/>
+        <package android:name="com.devadvance.rootcloak0"/>
+        <package android:name="com.devadvance.rootcloak1"/>
+        <package android:name="com.devadvance.rootcloak2"/>
+        <package android:name="com.devadvance.rootcloak3"/>
+        <package android:name="com.devadvance.rootcloak4"/>
+        <package android:name="com.devadvance.rootcloak5"/>
+        <package android:name="com.devadvance.rootcloak6"/>
+        <package android:name="com.devadvance.rootcloak7"/>
+        <package android:name="com.devadvance.rootcloak8"/>
+        <package android:name="com.devadvance.rootcloak9"/>
+        <package android:name="com.devadvance.rootcloakplus"/>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <package android:name="com.zachspong.temprootremovejb"/>
+        <package android:name="com.amphoras.hidemyroot"/>
+        <package android:name="com.amphoras.hidemyrootadfree"/>
+        <package android:name="com.formyhm.hiderootPremium"/>
+        <package android:name="com.formyhm.hideroot"/>
+        <package android:name="com.facebook.katana"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="wallet"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND_MULTIPLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="us.zoom.videomeetings"/>
+        <package android:name="com.google.android.apps.meetings"/>
+        <package android:name="com.apnatime"/>
+        <package android:name="com.indiaBulls"/>
+        <package android:name="com.phonepe.app.business"/>
+        <package android:name="com.adobe.scan.android"/>
+        <package android:name="com.microsoft.teams"/>
+        <package android:name="com.area120.kormo.seeker"/>
+        <package android:name="com.vaibhavkalpe.android.khatabook"/>
+        <package android:name="qr.code.reader.barcode.scanner.qrcodeScanner"/>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="com.localqueen"/>
+        <package android:name="com.cisco.webex.meetings"/>
+        <package android:name="naukriApp.appModules.login"/>
+        <package android:name="farmstock.agriculture.plants.kisan.krishi"/>
+        <package android:name="in.workindia.nileshdungarwal.workindiaandroid"/>
+        <package android:name="pdf.tap.scanner"/>
+        <package android:name="com.flipkart.seller"/>
+        <package android:name="com.amazon.in.payments.merchant.app.android"/>
+        <package android:name="com.scannerapp.pdfscanner.documentscaner.docscannerappforandroid"/>
+        <package android:name="com.digitaldukaan"/>
+        <package android:name="com.bikayi.android"/>
+        <package android:name="com.indiamart.m"/>
+        <package android:name="com.o1"/>
+        <package android:name="com.azure.authenticator"/>
+        <package android:name="com.valorem.flobooks"/>
+        <package android:name="icv.resume.curriculumvitae"/>
+        <package android:name="com.indeed.android.jobsearch"/>
+        <package android:name="com.amazon.sellermobile.android"/>
+        <package android:name="com.olacabs.oladriver"/>
+        <package android:name="com.mantra.rdservice"/>
+        <package android:name="com.vestigeshopping"/>
+        <package android:name="com.microsoft.windowsintune.companyportal"/>
+        <package android:name="com.yaari"/>
+        <package android:name="in.okcredit.merchant"/>
+        <package android:name="com.indymobileapp.document.scanner"/>
+        <package android:name="com.ril.b2bfnl.ajioBusiness"/>
+        <package android:name="com.flipkart.wholesale"/>
+        <package android:name="in.animall.android"/>
+        <package android:name="com.anydesk.adcontrol.ad1"/>
+        <package android:name="com.airtel.agilelabs.retailerapp"/>
+        <package android:name="com.ubercab.driver"/>
+        <package android:name="in.hirect"/>
+        <package android:name="com.delivery.india.client"/>
+        <package android:name="com.drivetrackplusrefuel"/>
+        <package android:name="com.khatabook.pagarkhata"/>
+        <package android:name="com.mgbrothers.whatsappstatusvideo"/>
+        <package android:name="com.nnacres.app"/>
+        <package android:name="com.logmein.gotowebinar"/>
+        <package android:name="cx.indianoil.in"/>
+        <package android:name="in.android.vyapar"/>
+        <package android:name="in.shadowfax.gandalf"/>
+        <package android:name="com.freeconferencecall.fccmeetingclient"/>
+        <package android:name="com.scl.rdservice"/>
+        <package android:name="com.jio.poslite"/>
+        <package android:name="com.khatabook.cashbook"/>
+        <package android:name="org.contentarcade.apps.logomaker"/>
+        <package android:name="com.money91"/>
+        <package android:name="com.dailymobapps.resume"/>
+        <package android:name="co.openbook"/>
+        <package android:name="com.cgt.bharatgas"/>
+        <package android:name="com.workruit.instantresume"/>
+        <package android:name="pdf.pdfreader.pdfviewer.pdfeditor"/>
+        <package android:name="nps.nps"/>
+        <package android:name="com.harbour.hire"/>
+        <package android:name="com.languagetranslator.translatorapp.smartscanner.dictionary.translation.voicetranslator"/>
+        <package android:name="search.find.lorries.invite.transporter.add.lorries.deliveries.codenicely.search.vahak"/>
+        <package android:name="com.mantra.clientmanagement"/>
+        <package android:name="nsdl.npslite"/>
+        <package android:name="com.udaan.android"/>
+        <package android:name="com.acpl.registersdk"/>
+        <package android:name="com.sundirect.sundth"/>
+        <package android:name="com.dynamixsoftware.printershare"/>
+        <package android:name="com.google.android.apps.dynamite"/>
+        <package android:name="com.duosecurity.duomobile"/>
+        <package android:name="com.cutewallpaperstudio.thumbnail.creater.banner.maker"/>
+        <package android:name="com.documentscan.simplescan.scanpdf"/>
+        <package android:name="com.mmadapps.modicare"/>
+        <package android:name="camscanner.documentscanner.pdfreader"/>
+        <package android:name="com.net.shine"/>
+        <package android:name="com.moo"/>
+        <package android:name="com.suncrypto.in"/>
+        <package android:name="com.ideacellular.smartret"/>
+        <package android:name="com.google.android.apps.adwords"/>
+        <package android:name="com.freelancer.android.messenger"/>
+        <package android:name="com.google.android.apps.vega"/>
+        <package android:name="com.gotomeeting"/>
+        <package android:name="com.nokoprint"/>
+        <package android:name="com.marutisuzuki.rewards"/>
+        <package android:name="in.dishtv.subscriber"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.simplescan.scanner"/>
+        <package android:name="com.shiprocket.shiprocket"/>
+        <package android:name="co.indiagold.gold.buy.loan"/>
+        <package android:name="com.myvestige.vestigedeal"/>
+        <package android:name="com.urbanclap.provider"/>
+        <package android:name="com.msedcl.app"/>
+        <package android:name="in.product.salary"/>
+        <package android:name="com.vestige.ui.webandroidpos"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="in.upstox.pro"/>
+        <package android:name="com.bajajfinance.liteapp"/>
+        <package android:name="com.nextbillion.groww"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.google.android.apps.nbu.paisa.merchant"/>
+        <package android:name="com.msf.kbank.mobile"/>
+        <package android:name="com.msf.angelmobile"/>
+        <package android:name="cc.cashfish.app.loan.credit.money"/>
+        <package android:name="com.coinswitch.kuber"/>
+        <package android:name="com.kreditbee.android"/>
+        <package android:name="com.marketly.trading"/>
+        <package android:name="com.bankofbaroda.mconnect"/>
+        <package android:name="com.loans.cash.cal"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.fastbanking"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.naviapp"/>
+        <package android:name="com.iexceed.appzillon.ippbMB"/>
+        <package android:name="com.ticno.olymptrade"/>
+        <package android:name="com.canarabank.mobility"/>
+        <package android:name="com.coindcx.btc"/>
+        <package android:name="com.sbi.SBIFreedomPlus"/>
+        <package android:name="com.zerodha.kite3"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.loan.cash.credit.easy.dhan.quick.udhaar.lend.game.jaldi.paisa.borrow.rupee.play.kredit"/>
+        <package android:name="com.octafx"/>
+        <package android:name="com.bharatoption.packet"/>
+        <package android:name="com.paytmmoney"/>
+        <package android:name="com.paytm.business"/>
+        <package android:name="com.infrasoft.uboi"/>
+        <package android:name="com.Version1"/>
+        <package android:name="in.pnbindia.mpassbook"/>
+        <package android:name="com.breadwallet"/>
+        <package android:name="com.gurutrade7.app"/>
+        <package android:name="com.wrx.wazirx"/>
+        <package android:name="com.bharatpe.app"/>
+        <package android:name="com.mobile.canaraepassbook"/>
+        <package android:name="com.micredit.in.gp"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.fampay.in"/>
+        <package android:name="com.mobikwik_new.bajajfinserv"/>
+        <package android:name="com.rs.wintrade"/>
+        <package android:name="com.IndianBank.IndOASIS"/>
+        <package android:name="com.gzbl.brightloan"/>
+        <package android:name="com.mosl.mobile"/>
+        <package android:name="com.trade.rubik"/>
+        <package android:name="in.zestmoney.android.zestlife"/>
+        <package android:name="com.portal.hcin"/>
+        <package android:name="com.dgr.yuansheng"/>
+        <package android:name="com.balancehero.truebalance"/>
+        <package android:name="com.paypal.android.p2pmobile"/>
+        <package android:name="com.ge.capital.konysbiapp"/>
+        <package android:name="com.hr.hellorupee"/>
+        <package android:name="com.iqoption"/>
+        <package android:name="com.stashfin.android"/>
+        <package android:name="com.mpokket.app"/>
+        <package android:name="com.cash.dhan.credit.quick.money.rupee.smart"/>
+        <package android:name="com.expertoption"/>
+        <package android:name="tech.fplabs.score"/>
+        <package android:name="com.branch_international.branch.branch_demo_android"/>
+        <package android:name="com.divum.MoneyControl"/>
+        <package android:name="com.niyo.equitassavingsaccount"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.lic.liccustomer"/>
+        <package android:name="in.bajajfinservmarkets.app"/>
+        <package android:name="indwin.c3.shareapp"/>
+        <package android:name="com.whizdm.moneyview.loans"/>
+        <package android:name="com.boi.mpay"/>
+        <package android:name="com.shenjariya.allbankbalanceinquiry"/>
+        <package android:name="com.paisabazaar"/>
+        <package android:name="com.capitalfirst"/>
+        <package android:name="com.qinueq.cashpal"/>
+        <package android:name="com.avail.easyloans.android"/>
+        <package android:name="com.fivepaisa.trade"/>
+        <package android:name="com.binance.dev"/>
+        <package android:name="in.tickertape"/>
+        <package android:name="com.cash.go.tough"/>
+        <package android:name="com.snapmint.customerapp"/>
+        <package android:name="com.mycash.moneytap.app"/>
+        <package android:name="com.org.app2wintrade"/>
+        <package android:name="com.bnb.paynearby"/>
+        <package android:name="com.gp.indi.cash"/>
+        <package android:name="com.kotakcherry.app"/>
+        <package android:name="com.in.hoo"/>
+        <package android:name="com.chamo.voption"/>
+        <package android:name="com.kotak.kst"/>
+        <package android:name="com.buddyloan.vls"/>
+        <package android:name="com.india.simpleloan"/>
+        <package android:name="com.gxsr.silverrupee"/>
+        <package android:name="ng.com.fairmoney.fairmoney"/>
+        <package android:name="com.policybazaar"/>
+        <package android:name="com.flexsalary"/>
+        <package android:name="com.ttcoin.tc"/>
+        <package android:name="in.indwealth"/>
+        <package android:name="money.bullet"/>
+        <package android:name="in.india.upi.flexpay"/>
+        <package android:name="com.daamitt.walnut.app"/>
+        <package android:name="com.idfcfirstbank.optimus"/>
+        <package android:name="com.earnmoneyloan.easyrupeee"/>
+        <package android:name="com.shineloan.android"/>
+        <package android:name="com.acko.android"/>
+        <package android:name="in.rebase.app"/>
+        <package android:name="com.sbi.sbiquick"/>
+        <package android:name="com.smallcase.android"/>
+        <package android:name="com.fundeasy.bankbalancecheck"/>
+        <package android:name="com.huaqian.ttrade"/>
+        <package android:name="com.bstatement.minipassbook.banktransaction"/>
+        <package android:name="com.indiainfoline"/>
+        <package android:name="com.navi.insurance"/>
+        <package android:name="com.rufilo.user"/>
+        <package android:name="com.ellison.paycash"/>
+        <package android:name="com.epfportala2zsolutions"/>
+        <package android:name="com.innofinsolutions.instamoney"/>
+        <package android:name="com.infrasofttech.CentralBank"/>
+        <package android:name="com.bankapp.hi.banklist"/>
+        <package android:name="com.tradingview.tradingviewapp"/>
+        <package android:name="com.fusionmedia.investing"/>
+        <package android:name="com.banking.balancecheck"/>
+        <package android:name="com.fss.indus"/>
+        <package android:name="com.tatacapital.moneyfy"/>
+        <package android:name="com.local.library.link"/>
+        <package android:name="in.eko.connect"/>
+        <package android:name="com.earlysalary.android"/>
+        <package android:name="ai.wizely.android"/>
+        <package android:name="com.simpl.android"/>
+        <package android:name="com.xu.pineapple.free"/>
+        <package android:name="com.versionsystems.pfbalancecheck"/>
+        <package android:name="com.icicisecurity"/>
+        <package android:name="com.winloans.winloancomwin"/>
+        <package android:name="com.indigo.hdfcloans"/>
+        <package android:name="com.creditt"/>
+        <package android:name="com.drcash.android"/>
+        <package android:name="com.id.rupiyabus"/>
+        <package android:name="com.adityabirlacapital.abconeapp"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="in.spicemudra"/>
+        <package android:name="com.bankbazaar.app"/>
+        <package android:name="com.iqbroker"/>
+        <package android:name="com.infrasofttech.MahaBank"/>
+        <package android:name="com.whizdm.moneyview"/>
+        <package android:name="co.tslc.cashe.android"/>
+        <package android:name="com.fss.iob"/>
+        <package android:name="com.smartspends"/>
+        <package android:name="com.wallet.crypto.trustapp"/>
+        <package android:name="zebpay.Application"/>
+        <package android:name="com.finance.loan.emicalculator"/>
+        <package android:name="com.app.winsikka"/>
+        <package android:name="com.astropaycard.android"/>
+        <package android:name="com.enstage.wibmo.hdfc"/>
+        <package android:name="co.afg.rupie"/>
+        <package android:name="com.shyx.cashant"/>
+        <package android:name="com.customer.herofincorp"/>
+        <package android:name="com.currycash.android.app"/>
+        <package android:name="com.rblbank.mobank"/>
+        <package android:name="com.jjtax.app"/>
+        <package android:name="com.fss.JK6"/>
+        <package android:name="com.nirafinance.customer"/>
+        <package android:name="com.nucleus.finnone.mobile.mserve.hdb.eng"/>
+        <package android:name="com.fnoplay"/>
+        <package android:name="com.rupeeredee.app"/>
+        <package android:name="src.com.dop"/>
+        <package android:name="com.mykredit.android"/>
+        <package android:name="com.fedmobile"/>
+        <package android:name="com.herofincorp.simplycash"/>
+        <package android:name="com.win.option"/>
+        <package android:name="com.zerodha.coin"/>
+        <package android:name="com.icicibank.fastag"/>
+        <package android:name="com.lcode.ucomobilebanking"/>
+        <package android:name="com.diamond.freefire.freediamond"/>
+        <package android:name="com.atomyes"/>
+        <package android:name="com.mobilelone.fastrupe.fastcas"/>
+        <package android:name="com.tvscs.tvscreditapp"/>
+        <package android:name="com.mr.mobile.rupee"/>
+        <package android:name="com.espresso.espressomobile"/>
+        <package android:name="com.shyx.rupeestarpro"/>
+        <package android:name="in.mintpro"/>
+        <package android:name="com.lcode.ucombook"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.aadharcard.loans"/>
+        <package android:name="com.GotoCash"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="com.rbl.rblmycard"/>
+        <package android:name="com.octafx.copytrade"/>
+        <package android:name="com.finopaytech.bpayfino"/>
+        <package android:name="com.KCamsApp"/>
+        <package android:name="com.sharekhan.androidsharemobile"/>
+        <package android:name="com.muthootfinance.imuthoot"/>
+        <package android:name="com.shyx.loanhouse"/>
+        <package android:name="com.et.market"/>
+        <package android:name="com.snapwork.IDBI"/>
+        <package android:name="com.bob.creditcard"/>
+        <package android:name="com.india.myloanmall"/>
+        <package android:name="com.mangoloan.indiaonlinecashloan"/>
+        <package android:name="com.dhani.dgc.doctor"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.game.moneywoods"/>
+        <package android:name="com.cashbus.loan"/>
+        <package android:name="com.handyloan.loanhandhwinload"/>
+        <package android:name="com.jar.app"/>
+        <package android:name="com.lvcash.lvcashcomshoz"/>
+        <package android:name="com.momocash.app"/>
+        <package android:name="com.smailloan.loansmailloanwx"/>
+        <package android:name="com.gz.loanbaba"/>
+        <package android:name="com.onlineeasycash.ezcash.instascan"/>
+        <package android:name="loanguide.aadharloan.instantloan.personalloan.aadharguide"/>
+        <package android:name="aepsapp.paisanikal.com.aepsandroid"/>
+        <package android:name="com.whereismytrain.android"/>
+        <package android:name="com.vehicle.rto.vahan.status.information.register"/>
+        <package android:name="com.ixigo.train.ixitrain"/>
+        <package android:name="com.confirmtkt.lite"/>
+        <package android:name="cris.org.in.prs.ima"/>
+        <package android:name="com.google.earth"/>
+        <package android:name="com.oyo.consumer"/>
+        <package android:name="com.railyatri.in.mobile"/>
+        <package android:name="in.redbus.android"/>
+        <package android:name="com.goibibo"/>
+        <package android:name="com.makemytrip"/>
+        <package android:name="com.hs.rtovehicledetail.vahan.vehicleregistrationdetails.rtoapp"/>
+        <package android:name="com.grand.robot.fight.grand.airjet.robot.epic.transform.car.us.police.army.shooting.battle.games"/>
+        <package android:name="com.booking"/>
+        <package android:name="com.cris.utsmobile"/>
+        <package android:name="com.jkfantasy.gpsmapcamera"/>
+        <package android:name="com.sasyabook.runningtrainstatus"/>
+        <package android:name="com.derekr.NoteCam"/>
+        <package android:name="com.google.android.street"/>
+        <package android:name="com.ixigo"/>
+        <package android:name="com.zoomcar"/>
+        <package android:name="com.justdial.search"/>
+        <package android:name="com.mobond.mindicator"/>
+        <package android:name="com.google.android.apps.mapslite"/>
+        <package android:name="com.firing.squad.free.unknown.battle.royale.fire"/>
+        <package android:name="com.gts.Offroad.US.Army.Bus.Transport.Driver.Sim"/>
+        <package android:name="in.goindigo.android"/>
+        <package android:name="com.phonenumbertracker.location.mobile.call.locator.callerid"/>
+        <package android:name="com.crapps.vahanregistrationdetails"/>
+        <package android:name="com.mapzonestudio.gps.navigation.live.map.voice.translator"/>
+        <package android:name="com.agoda.mobile.consumer"/>
+        <package android:name="com.irctc.air"/>
+        <package android:name="cris.icms.ntes"/>
+        <package android:name="com.rs.real.offroad.tractor.pulling.simulator"/>
+        <package android:name="com.comuto"/>
+        <package android:name="com.trivago"/>
+        <package android:name="app.yulu.bike"/>
+        <package android:name="com.easemytrip.android"/>
+        <package android:name="production.rydekolkata.customer"/>
+        <package android:name="in.trainman.trainmanandroidapp"/>
+        <package android:name="com.app.abhibus"/>
+        <package android:name="com.airbnb.android"/>
+        <package android:name="com.gsrtc.mobileweb"/>
+        <package android:name="com.google.android.apps.navlite"/>
+        <package android:name="production.smartbikemobility.customer"/>
+        <package android:name="com.indian.railways.pnr"/>
+        <package android:name="com.flightradar24free"/>
+        <package android:name="com.sygic.familywhere.android"/>
+        <package android:name="com.wpl.offroadtuktukautorickshaw"/>
+        <package android:name="com.entertaininglogixapps.gps.navigation.currency.converter.weather.map"/>
+        <package android:name="com.webnewsapp.indianrailways"/>
+        <package android:name="com.avenueinfotech.locationmaps"/>
+        <package android:name="com.interbolt.flying.deer.transform.robot.cargames"/>
+        <package android:name="com.travelunion.app"/>
+        <package android:name="com.apsrtc.online"/>
+        <package android:name="com.ttdapp"/>
+        <package android:name="com.intermiles.app"/>
+        <package android:name="com.door.offroad.modern.drive.rickshaw"/>
+        <package android:name="com.indian.railway.live.train.running.pnr.status.enquiry"/>
+        <package android:name="com.gameneststudios.citymafia.revenge"/>
+        <package android:name="com.bets.airindia.ui"/>
+        <package android:name="com.dsg.TerzoMillineo.extreme.cardriving.simulator"/>
+        <package android:name="com.windbreakxr.citytraintracks.construction.builder.newgames"/>
+        <package android:name="product.peindia.customer"/>
+        <package android:name="com.gf.projectrunway.cityairport.constructionbuilder"/>
+        <package android:name="com.rtoappking.rtovehicledetails.ownerdetails"/>
+        <package android:name="com.yatra.base"/>
+        <package android:name="com.extrastudios.challaninfo"/>
+        <package android:name="com.live.earthview.maps.gpsfinder.globalsatellite.apps"/>
+        <package android:name="com.voice.gps.navigation.driving.route.planner"/>
+        <package android:name="com.navigator.delhimetroapp"/>
+        <package android:name="com.selfdrive"/>
+        <package android:name="com.atv.delivery.pizza.boy"/>
+        <package android:name="com.binoymathew.taxicab"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.entertaininglogixapps.gps.navigation.direction.find.route.map.guide.pro"/>
+        <package android:name="com.rtovehicleinformationapp.vehicleregistrationdetails.vehicleinfo.rtovehicledetail.doublerun"/>
+        <package android:name="com.ig.carparkinggames.advancecar.parkingmania"/>
+        <package android:name="com.offroad.formula.car.simulator"/>
+        <package android:name="com.beatravelbuddy.travelbuddy"/>
+        <package android:name="com.ogf.real.offroad.oiltanker.cargo.transport.truck3d"/>
+        <package android:name="com.gamesworld.shark.hunting.sniper"/>
+        <package android:name="com.grand.robot.fight.car.transform.robot.helicopter.shooting.mech.war.flying.helicopter.games"/>
+        <package android:name="com.huiva.app"/>
+        <package android:name="com.compassfree.digitalcompass.forandroid.app"/>
+        <package android:name="com.heavy.cargo.tractor.trolley.farming.simulation.offroad.game"/>
+        <package android:name="com.gv.real.heavy.snow.excavator.sim"/>
+        <package android:name="com.cleartrip.android"/>
+        <package android:name="com.rox.tractor.trolley.game.simulator"/>
+        <package android:name="com.racing.tractor.trolley"/>
+        <package android:name="com.indianrail.thinkapps.irctc"/>
+        <package android:name="com.infiniumsolutionzgsrtc.myapplication"/>
+        <package android:name="com.sreesaiprakash.hservices.ttdinfo"/>
+        <package android:name="com.emergency.ambulance.simulator"/>
+        <package android:name="com.tatadigital.airasia"/>
+        <package android:name="com.familylocator.familytracker.gps.locationtracker.forandroid"/>
+        <package android:name="com.fly.gps"/>
+        <package android:name="com.gonext.gpsphotolocation"/>
+        <package android:name="bus.tickets.intrcity"/>
+        <package android:name="com.yatrirailways.yatri"/>
+        <package android:name="cards.uni.app.credit"/>
+        <package android:name="com.creditcard.onecard"/>
+        <package android:name="money.jupiter"/>
+        <package android:name="com.epifi.paisa"/>
+        <package android:name="com.emakn.eszhn"/>
+        <package android:name="com.prospect.erupeeplus"/>
+        <package android:name="in.loanfront.android"/>
+        <package android:name="com.gopaysense.android.boost"/>
+        <package android:name="com.datasignstech.lam"/>
+        <package android:name="com.india.ddloan"/>
+        <package android:name="in.cashmama.app"/>
+        <package android:name="com.flipkart.android"/>
+        <package android:name="com.snapdeal.main"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.myntra.android"/>
+        <package android:name="com.infibeam.infibeamapp"/>
+        <package android:name="com.fsn.nykaa"/>
+        <package android:name="com.shopping.limeroad"/>
+        <package android:name="com.shopclues"/>
+        <package android:name="com.naaptol.NaaptolMobileApp"/>
+        <package android:name="com.tul.tatacliq"/>
+        <package android:name="com.travelyaari"/>
+        <package android:name="com.healthkart.healthkart"/>
+        <package android:name="com.aranoah.healthkart.plus"/>
+        <package android:name="com.phonegap.rxpal"/>
+        <package android:name="com.NetmedsMarketplace.Netmeds"/>
+        <package android:name="com.carwale"/>
+        <package android:name="com.cartrade.car"/>
+        <package android:name="com.cars24.seller"/>
+        <package android:name="com.quikr"/>
+        <package android:name="com.bt.bms"/>
+        <package android:name="fc.admin.fcexpressadmin"/>
+        <package android:name="com.freshmenu"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="com.ubercab"/>
+        <package android:name="in.swiggy.android"/>
+        <package android:name="com.bigbasket.mobileapp"/>
+        <package android:name="com.milkbasket.app"/>
+        <package android:name="com.lenskart.app"/>
+        <package android:name="com.healthvista.clinicianapp"/>
+        <package android:name="com.timesgroup.magicbricks"/>
+        <package android:name="com.chaipoint.chaipointblack"/>
+        <package android:name="com.app.pepperfry"/>
+        <package android:name="com.urbanladder.catalog"/>
+        <package android:name="com.urbanclap.urbanclap"/>
+        <package android:name="com.byjus.thelearningapp"/>
+        <package android:name="com.upgrad.student"/>
+        <package android:name="in.justride"/>
+        <package android:name="com.grofers.customerapp"/>
+        <package android:name="com.zeptoconsumerapp"/>
+        <package android:name="com.application.zomato"/>
+        <package android:name="com.ril.ajio"/>
+        <package android:name="com.meesho.supply"/>
+        <package android:name="com.koovs.fashion"/>
+        <package android:name="com.dunzo.user"/>
+        <package android:name="com.furlenco.android"/>
+        <package android:name="com.rentomojo"/>
+        <package android:name="ace.iok.mk12.mcna.loka"/>
+        <package android:name="air.com.playtika.slotomania"/>
+        <package android:name="akcm.woak.vfda.low2.cas"/>
+        <package android:name="app.locker.fingerprint.applock.lockapps"/>
+        <package android:name="beatmaker.edm.musicgames.PianoGames"/>
+        <package android:name="biz.anar"/>
+        <package android:name="cleaner.fast.x.speed.boost.security"/>
+        <package android:name="cm.spin.ormerg.vurdm"/>
+        <package android:name="cn.xiaofengkj.fitpro"/>
+        <package android:name="com.Adsexchange"/>
+        <package android:name="com.aisle.app"/>
+        <package android:name="com.ak.ta.dainikbhaskar.activity"/>
+        <package android:name="com.alhiwar"/>
+        <package android:name="com.all.wishes.occasion"/>
+        <package android:name="com.amanotes.beathopper"/>
+        <package android:name="com.amazon.dee.app"/>
+        <package android:name="com.amazon.mp3"/>
+        <package android:name="com.androidapp.digikhata"/>
+        <package android:name="com.ant.dressup.game"/>
+        <package android:name="com.appml.kaleidoscope.mobileloans"/>
+        <package android:name="com.appstar.callrecorder"/>
+        <package android:name="com.artsol.bluetoothmicspeaker.mic.to.speaker.bluetooth.mobile.mictospeaker.bluetoothspeaker"/>
+        <package android:name="com.asineu33idnf3odi.zpdifnueebur"/>
+        <package android:name="com.asiu3unu2udof.zpifuew3iudybfyr"/>
+        <package android:name="com.astroid.yodha.pro"/>
+        <package android:name="com.astrosouls"/>
+        <package android:name="com.astrotalk"/>
+        <package android:name="com.auef2idn.eunfie89cn"/>
+        <package android:name="com.awesomeproxy.awp"/>
+        <package android:name="com.balaji.mykhata"/>
+        <package android:name="com.bettertec.ravo.app"/>
+        <package android:name="com.bilkon.easypiano"/>
+        <package android:name="com.bingo.livetalk"/>
+        <package android:name="com.blair.speed.leapproxy"/>
+        <package android:name="com.blissu.blisspro"/>
+        <package android:name="com.blockchainvault"/>
+        <package android:name="com.bloodpressure.bptrackerapp"/>
+        <package android:name="com.brave.browser"/>
+        <package android:name="com.bsbportal.music"/>
+        <package android:name="com.byte3d.teenpatti"/>
+        <package android:name="com.calculator.hideu"/>
+        <package android:name="com.calculator.lock.hide.photo.video"/>
+        <package android:name="com.callapp.contacts"/>
+        <package android:name="com.callbreak.hippo"/>
+        <package android:name="com.cardfeed.video_public"/>
+        <package android:name="com.cash.em.app"/>
+        <package android:name="com.cash.paisa.home"/>
+        <package android:name="com.cashbooknew"/>
+        <package android:name="com.champion.ludo"/>
+        <package android:name="com.cjmhrewxrhfknif.game3pattimoney"/>
+        <package android:name="com.cleanteam.oneboost"/>
+        <package android:name="com.coderays.tamilcalendar"/>
+        <package android:name="com.coralbellsjtqe.guidonianwfigy"/>
+        <package android:name="com.cupidabo.android"/>
+        <package android:name="com.cyber.free.proxy"/>
+        <package android:name="com.daily.clean.booster.super"/>
+        <package android:name="com.dashaspeaks.astrology.online.chat"/>
+        <package android:name="com.dating.for.all"/>
+        <package android:name="com.dealshare"/>
+        <package android:name="com.defianttech.diskdigger"/>
+        <package android:name="com.delhiveryConsigneeApp"/>
+        <package android:name="com.dianyun.chikii"/>
+        <package android:name="com.dingding.hottrans"/>
+        <package android:name="com.dolphin.safevpn"/>
+        <package android:name="com.Dominos"/>
+        <package android:name="com.domobile.applock.ind"/>
+        <package android:name="com.dubox.drive"/>
+        <package android:name="com.duffqiblafinder.muslim.compassapp21"/>
+        <package android:name="com.duolingo"/>
+        <package android:name="com.eco.applockfingerprint"/>
+        <package android:name="com.eloelo"/>
+        <package android:name="com.eterno"/>
+        <package android:name="com.eterno.shortvideos"/>
+        <package android:name="com.explurgerapp"/>
+        <package android:name="com.facebook.creatorstudio"/>
+        <package android:name="com.facebook.lite"/>
+        <package android:name="com.facebook.mlite"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.facheng.demo5"/>
+        <package android:name="com.facheng.demo6"/>
+        <package android:name="com.fast.free.unblock.secure.vpn"/>
+        <package android:name="com.fastnet.proxy"/>
+        <package android:name="com.fc.documentscanner"/>
+        <package android:name="com.financial.book.com.cc"/>
+        <package android:name="com.flipkart.shopsy"/>
+        <package android:name="com.foodmonk.rekordapp"/>
+        <package android:name="com.framy.placey"/>
+        <package android:name="com.free.neo.vpn"/>
+        <package android:name="com.free.turbo.unlimited.touch.vpn"/>
+        <package android:name="com.free.unblock.melon.vpn"/>
+        <package android:name="com.free.unlimited.lemon.vpn"/>
+        <package android:name="com.FreeRechargeApp"/>
+        <package android:name="com.fsn.nds"/>
+        <package android:name="com.ftw_and_co.happn"/>
+        <package android:name="com.gaana"/>
+        <package android:name="com.games24x7.rummycircle.rummy"/>
+        <package android:name="com.gamma.scan"/>
+        <package android:name="com.gcauiwjkehcom.ztrsksgmenhaat"/>
+        <package android:name="com.geeknethub.tool"/>
+        <package android:name="com.get.much.personal.product"/>
+        <package android:name="com.get.squidvpn"/>
+        <package android:name="com.gokids.transportbuilding"/>
+        <package android:name="com.good.goodtranslator"/>
+        <package android:name="com.google.android.apps.adm"/>
+        <package android:name="com.google.android.apps.chromecast.app"/>
+        <package android:name="com.google.android.apps.nbu.files"/>
+        <package android:name="com.google.android.apps.translate"/>
+        <package android:name="com.google.android.apps.youtube.music"/>
+        <package android:name="com.gootoo.online"/>
+        <package android:name="com.Gpelite.teen"/>
+        <package android:name="com.gspl.mrewards"/>
+        <package android:name="com.Gyan_Ganga.Hindi_panchang.Thakur_prasad"/>
+        <package android:name="com.gyantech.pagarbook"/>
+        <package android:name="com.halo.hallo"/>
+        <package android:name="com.halo.lite"/>
+        <package android:name="com.hatunnel.plus"/>
+        <package android:name="com.heat.ludo"/>
+        <package android:name="com.hidephoto.hidevideo.applock"/>
+        <package android:name="com.hkfuliao.chamet"/>
+        <package android:name="com.hm.goe"/>
+        <package android:name="com.hmg.fashion.girls.dressup.stylist"/>
+        <package android:name="com.homeloan.Insurance.loans.mortgage.loancredit"/>
+        <package android:name="com.hynsdsuweior.ayiofd.jdhfs"/>
+        <package android:name="com.ideopay.user"/>
+        <package android:name="com.ieni3igpnr.xpidfnr0ub7r"/>
+        <package android:name="com.imo.android.imoim"/>
+        <package android:name="com.ingmwgames.winner.crazy"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.instagram.lite"/>
+        <package android:name="com.internistsxkumc.pillowbergxvrzy"/>
+        <package android:name="com.ipragmatech.clovia.shop"/>
+        <package android:name="com.ironmeta.one"/>
+        <package android:name="com.itamazons.whatstracker"/>
+        <package android:name="com.jakijeemxncckzp.game3pattiking"/>
+        <package android:name="com.jio.media.jiobeats"/>
+        <package android:name="com.jobhai.jobs"/>
+        <package android:name="com.jpl.jiomart"/>
+        <package android:name="com.jungleerummy.playcashgameonline"/>
+        <package android:name="com.kashcard.game"/>
+        <package android:name="com.keynote.free.android"/>
+        <package android:name="com.khatabook.bizmart"/>
+        <package android:name="com.khatabook.udharbook.digitalkhata.khata.cashrecord"/>
+        <package android:name="com.kid58.lianyong.princessIII"/>
+        <package android:name="com.king.hello"/>
+        <package android:name="com.knight217fu.wnxifnew"/>
+        <package android:name="com.kredit.credit.loan.party.cash.now.buddy"/>
+        <package android:name="com.KTConnect.KHappyNewYearEn25"/>
+        <package android:name="com.kutumb.android"/>
+        <package android:name="com.kwkutzkwtfcom.dohamibrdwzl"/>
+        <package android:name="com.launcher.ios11.iphonex"/>
+        <package android:name="com.letsxchat.chat"/>
+        <package android:name="com.lightqr.code"/>
+        <package android:name="com.lipisoft.quickvpn"/>
+        <package android:name="com.lite.shield.wifi"/>
+        <package android:name="com.locon.housing"/>
+        <package android:name="com.luckyspin.winner.indiagame"/>
+        <package android:name="com.ludo.emperorgame"/>
+        <package android:name="com.ludo.gameplay"/>
+        <package android:name="com.ludo.highness"/>
+        <package android:name="com.magic.vstyle"/>
+        <package android:name="com.magicpin.local"/>
+        <package android:name="com.manash.purplle"/>
+        <package android:name="com.mandir"/>
+        <package android:name="com.mastertool.super.cleanapp"/>
+        <package android:name="com.mate.vpn"/>
+        <package android:name="com.meetlive.chat"/>
+        <package android:name="com.mhbl.sastasundar"/>
+        <package android:name="com.milky.app"/>
+        <package android:name="com.minidev.vpn"/>
+        <package android:name="com.moonvideo.android.resso"/>
+        <package android:name="com.musicplayer.music.app"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.mycashbook"/>
+        <package android:name="com.myv3ads"/>
+        <package android:name="com.netbooster.proxy"/>
+        <package android:name="com.netway.phone.advice"/>
+        <package android:name="com.new_new_year.Quotes.ranjantech.App"/>
+        <package android:name="com.newcasino.playstore.card"/>
+        <package android:name="com.newversion.gbstatus"/>
+        <package android:name="com.next.innovation.takatak"/>
+        <package android:name="com.nglreactnative"/>
+        <package android:name="com.nobroker.app"/>
+        <package android:name="com.noisefit"/>
+        <package android:name="com.normalproxy.app"/>
+        <package android:name="com.odia_calendar.panjika"/>
+        <package android:name="com.ogottlnorbertbaspenc.kk887"/>
+        <package android:name="com.ojassoft.astrosage"/>
+        <package android:name="com.olknf.happy"/>
+        <package android:name="com.olx.southasia"/>
+        <package android:name="com.onlinebankaccount.zerobalanceaccount"/>
+        <package android:name="com.opera.mini.native"/>
+        <package android:name="com.orange.kidspiano.music.songs"/>
+        <package android:name="com.peach.live"/>
+        <package android:name="com.peat.GartenBank"/>
+        <package android:name="com.peiuwbb3fg.rpudbur08ung"/>
+        <package android:name="com.phdv.universal"/>
+        <package android:name="com.photo.vault.calculator"/>
+        <package android:name="com.photoandvideoapps.recoveryphotovideocontactsnew"/>
+        <package android:name="com.piano.tiles.music.game.circles.dancing.beat.magictiles"/>
+        <package android:name="com.pilav.kismet"/>
+        <package android:name="com.pinterest"/>
+        <package android:name="com.playpopo.lomvpn.lite"/>
+        <package android:name="com.pluto.news"/>
+        <package android:name="com.proxymaster.vpn"/>
+        <package android:name="com.pudnfw2djnr.xuiengr90xcn"/>
+        <package android:name="com.puzzlenomnom.firecoin"/>
+        <package android:name="com.pwdzs.mzs"/>
+        <package android:name="com.qiblacompass.finddirection.prayertime.hijricalendar"/>
+        <package android:name="com.quackquack"/>
+        <package android:name="com.quick.booster.tool"/>
+        <package android:name="com.radio.pocketfm"/>
+        <package android:name="com.rdtunnel.pro"/>
+        <package android:name="com.realme.link"/>
+        <package android:name="com.reglobe.cashify"/>
+        <package android:name="com.remotecontroller.simplevideoplayer.screenmirror.casttotv"/>
+        <package android:name="com.rjotqtoozicom.ihulxsljkpvxit"/>
+        <package android:name="com.rs.mirae"/>
+        <package android:name="com.rvappstudios.baby.toddler.kids.games.learning.activity"/>
+        <package android:name="com.rvappstudios.kids.coloring.book.color.painting"/>
+        <package android:name="com.sau3udo.win1e9cvne"/>
+        <package android:name="com.scanittech.tool"/>
+        <package android:name="com.secure.wifi.bioo"/>
+        <package android:name="com.sharekaro.app"/>
+        <package android:name="com.simply.stepusmaster"/>
+        <package android:name="com.sinyee.babybus.princessII"/>
+        <package android:name="com.sinyee.babybus.shopping"/>
+        <package android:name="com.small.loan.buddy.credit.one.advance"/>
+        <package android:name="com.smart.nord.global.vpn"/>
+        <package android:name="com.snapchat.android"/>
+        <package android:name="com.snmq.vias.cwxc.go.saw"/>
+        <package android:name="com.softdew.buku"/>
+        <package android:name="com.speedfiypro.app"/>
+        <package android:name="com.splendapps.voicerec"/>
+        <package android:name="com.spotify.music"/>
+        <package android:name="com.stomtrylife.free.rpgvpn"/>
+        <package android:name="com.sunw25md3.xpiqnfunre"/>
+        <package android:name="com.swift.cash.loan.money.rupee"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <package android:name="com.taurus.app.android"/>
+        <package android:name="com.tech.bazaar.easykhata"/>
+        <package android:name="com.techvedanta.mobile_khaata"/>
+        <package android:name="com.teenpatti.hd.gold"/>
+        <package android:name="com.testbook.tbapp"/>
+        <package android:name="com.thakur_prasad_calendar_panchang"/>
+        <package android:name="com.thakurprasadcalendar"/>
+        <package android:name="com.thankyo.hwgame"/>
+        <package android:name="com.theporter.android.customerapp"/>
+        <package android:name="com.thwart.four.global.vaicevidcall"/>
+        <package android:name="com.touchtalent.bobbleapp"/>
+        <package android:name="com.tradgo"/>
+        <package android:name="com.tradingleagues.app"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truedevelopersstudio.automatictap.autoclicker"/>
+        <package android:name="com.trulymadly.android.app"/>
+        <package android:name="com.tsua.my.secret.diary.lock.photo"/>
+        <package android:name="com.twelve.club"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.unacademyapp"/>
+        <package android:name="com.urbanic"/>
+        <package android:name="com.vidmix.music.maker"/>
+        <package android:name="com.vido.particle.ly.lyrical.status.maker"/>
+        <package android:name="com.vivashow.share.video.chat"/>
+        <package android:name="com.vivo.easyshare"/>
+        <package android:name="com.vlab.creditlog.book"/>
+        <package android:name="com.vlv.aravali"/>
+        <package android:name="com.voldspeed.fast"/>
+        <package android:name="com.vpncapa.vpnmaster.free.unblock.vpn"/>
+        <package android:name="com.vpnmasterx.fast"/>
+        <package android:name="com.vpnmasterx.free"/>
+        <package android:name="com.vpnmasterx.pro"/>
+        <package android:name="com.vuvrecharge"/>
+        <package android:name="com.walkingjoy.fitness"/>
+        <package android:name="com.wapp.status.saver"/>
+        <package android:name="com.wealthdoctor"/>
+        <package android:name="com.weheal.weheal"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.whizkidzmedia.youhuu"/>
+        <package android:name="com.woek.gamekk.coroaslots"/>
+        <package android:name="com.woome.blisslive"/>
+        <package android:name="com.woome.blissu"/>
+        <package android:name="com.worldteenpatti.worldtp"/>
+        <package android:name="com.xiaomi.midrop"/>
+        <package android:name="com.yewou2un.rin73und"/>
+        <package android:name="com.youmusic.magictiles"/>
+        <package android:name="com.yy.biu"/>
+        <package android:name="com.yy.biugo.lite"/>
+        <package android:name="com.zee5.hipi"/>
+        <package android:name="com.zeeplive.app"/>
+        <package android:name="com.zesto.ltoz.slos"/>
+        <package android:name="com.zhgkqxcom.ivuiggogukvltntl"/>
+        <package android:name="com.zoho.daybook"/>
+        <package android:name="com.zqgame.tp"/>
+        <package android:name="com.zuan20fne6dine.dingtalks"/>
+        <package android:name="creditdebit.creditdebit"/>
+        <package android:name="dev.smsoft.tmlitevpn"/>
+        <package android:name="ensowt.khataforbusiness"/>
+        <package android:name="ensowt.khatahome"/>
+        <package android:name="filerecovery.photosrecovery.allrecovery"/>
+        <package android:name="fingerprint.scanner.tarot"/>
+        <package android:name="free.cash.dozer.master.pusher.reward.real.money"/>
+        <package android:name="free.cash.dozer.pusher.reward.real.money"/>
+        <package android:name="free.video.downloader.statussaver"/>
+        <package android:name="free.vpn.unblock.proxy.turbovpn"/>
+        <package android:name="get.lokal.localnews"/>
+        <package android:name="gov.mea.psp"/>
+        <package android:name="im.thebot.messenger"/>
+        <package android:name="in.a23.rummy"/>
+        <package android:name="in.AajTak.headlines"/>
+        <package android:name="in.android.vcredit"/>
+        <package android:name="in.goodworker.jobsearch.app"/>
+        <package android:name="in.gov.uidai.mAadhaarPlus"/>
+        <package android:name="in.mohalla.sharechat"/>
+        <package android:name="in.mohalla.sharechatlite"/>
+        <package android:name="in.mohalla.video"/>
+        <package android:name="in.mohalla.video.lite"/>
+        <package android:name="instagram.video.downloader.story.saver"/>
+        <package android:name="io.chingari.app"/>
+        <package android:name="istark.vpn.starkreloaded"/>
+        <package android:name="jodii.app"/>
+        <package android:name="kaagaz.scanner.docs.pdf"/>
+        <package android:name="live.video.shopping.simsim"/>
+        <package android:name="madmax.media.downloader"/>
+        <package android:name="momo.gaga.tete.babe"/>
+        <package android:name="music.video.photo.slideshow.maker"/>
+        <package android:name="musicplayer.musicapps.music.mp3player"/>
+        <package android:name="mydiary.journal.diary.diarywithlock.diaryjournal.secretdiary"/>
+        <package android:name="net.diflib.recorderx"/>
+        <package android:name="net.hub.x"/>
+        <package android:name="net.single.singleg"/>
+        <package android:name="net.sugarliv.dateme"/>
+        <package android:name="net.sugarliv.lovehub"/>
+        <package android:name="net.sweety.xchat"/>
+        <package android:name="nithra.tamilcalender"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="oses.moveme.ntofthe"/>
+        <package android:name="personal.expense.budget.pocket.moneytracker"/>
+        <package android:name="phonecleaner.androidmaster.cleanupspace.phone.booster"/>
+        <package android:name="proxy.browser.unblock.sites.proxybrowser.unblocksites"/>
+        <package android:name="ramswaroop.ramnarayan.hindicalendar"/>
+        <package android:name="realpattiwmo.online"/>
+        <package android:name="recover.deleted.messages.messagesrestore"/>
+        <package android:name="rpd.rapidcleaner.app"/>
+        <package android:name="ru.zdevs.zarchiver"/>
+        <package android:name="savestatus.videodownloader.storysaver.statuskeeper"/>
+        <package android:name="share.filetransfer.app"/>
+        <package android:name="sharefiles.sharemusic.shareapps.filetransfer"/>
+        <package android:name="sia.netttsengine.ttslexx"/>
+        <package android:name="sun.way2sms.hyd.com"/>
+        <package android:name="uk.co.highapp.qiblafinder.prayertimes"/>
+        <package android:name="video.tiki"/>
+        <package android:name="videoplayer.videodownloader.downloader"/>
+        <package android:name="vpn.free.best.bypass.restrictions.app"/>
+        <package android:name="vpn.video.downloader"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.kreditbee.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.kreditbee.android.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher_bee" android:label="@string/app_name" android:name="com.kreditbee.android.KBApplication" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_bee_round" android:supportsRtl="true" android:theme="@style/AppTheme.NoActionBar">
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertap_acc_id"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertap_token"/>
+        <activity android:configChanges="orientation" android:exported="true" android:name="com.kreditbee.android.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.SplashScreen" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/host" android:pathPrefix="/dl" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_deeplink_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:hardwareAccelerated="true" android:label="KreditBee" android:launchMode="singleTask" android:name="com.kreditbee.android.webview.WebViewActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.kreditbee.android.permissions.PermissionsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.kreditbee.android" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.kreditbee.android.helper.browserhelper.KbBrowserActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.kreditbee.android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider"/>
+        </provider>
+        <provider android:authorities="com.kreditbee.android.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.kreditbee.android.receiver.SmsRetreivalReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:name="com.kreditbee.android.helper.vkyc.VKYCBGTerminationService" android:stopWithTask="false"/>
+        <service android:enabled="true" android:foregroundServiceType="specialUse" android:name="com.kreditbee.android.helper.vkyc.VKYCFGTerminationService" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="@string/vkyc_fgs_use_case"/>
+        </service>
+        <service android:enabled="true" android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.kreditbee.android.firebase.YpFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:name="com.kreditbee.android.eaadhaar.EaadhaarActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.kreditbee.android.language.LanguageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.kreditbee.android.helper.handlers.RazorpayHelper" android:screenOrientation="portrait"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <activity android:name="ai.digitap.faceclient.ui.DTFaceActivity" android:screenOrientation="portrait" android:theme="@style/DTFLFullScreen"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.kreditbee.android.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.kreditbee.android.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <provider android:authorities="com.kreditbee.android.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.kreditbee.android.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="1"/>
+    </application>
+</manifest>

@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:dist="http://schemas.android.com/apk/distribution" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:installLocation="auto" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.jio.myjio" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.jio.jiopay.upi"/>
+        <package android:name="com.meesho.supply"/>
+        <package android:name="com.ak.ta.dainikbhaskar.activity"/>
+        <package android:name="com.myntra.android"/>
+        <package android:name="com.mventus.selfcare.activity"/>
+        <package android:name="in.startv.hotstar"/>
+        <package android:name="com.sonyliv"/>
+        <package android:name="com.graymatrix.did"/>
+        <package android:name="com.netflix.mediaclient"/>
+        <package android:name="com.radio.pocketfm"/>
+        <package android:name="com.bsbportal.music"/>
+        <package android:name="com.jio.media.ondemand"/>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.google.android.youtube"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:host="*" android:scheme="smsto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/jpeg"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CHOOSER"/>
+        </intent>
+        <package android:name="com.jio.jioplay.tv"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="*"/>
+        </intent>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.google.chromeremotedesktop"/>
+        <package android:name="com.microsoft.rdc.android"/>
+        <package android:name="com.microsoft.rdc.android.beta"/>
+        <package android:name="com.splashtop.remote.pad.v2"/>
+        <package android:name="com.teamviewer.teamviewer.market.mobile"/>
+        <package android:name="com.teamviewer.host.market"/>
+        <package android:name="com.sand.airdroid"/>
+        <package android:name="com.realvnc.viewer.android"/>
+        <package android:name="com.zoho.assist"/>
+        <package android:name="com.logmein.ignitionpro.android"/>
+        <package android:name="com.prosoftnet.rpcnew"/>
+        <package android:name="com.freerdp.afreerdp"/>
+        <package android:name="com.screenconnect.androidclient"/>
+        <package android:name="p.alpemixtest8"/>
+        <package android:name="com.deskroll.client1"/>
+        <package android:name="com.awesun.control"/>
+        <package android:name="com.terminalserviceplus.mobile"/>
+        <package android:name="com.Relmtech.Remote"/>
+        <package android:name="com.sand.airmirror"/>
+        <package android:name="com.tatvik.airmirror.airmirroandroidappdemo"/>
+        <package android:name="incendo.vectir.androidclient"/>
+        <package android:name="com.prosoftnet.rpcnew"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.dreamplug.cred"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="money.jupiter"/>
+        <package android:name="indwin.c3.shareapp"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.jio.enterprise.myJio"/>
+        <package android:name="com.jio.enterprise.jiopay"/>
+        <package android:name="in.jfs.jiofinance"/>
+        <package android:name="in.jfs.staging.jiofinance"/>
+        <package android:name="com.jpl.myjio.uat"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.jio.media.jiobeats"/>
+        <package android:name="com.jio.jiostreamminisdk"/>
+        <package android:name="com.jio.jiogames"/>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="androidx.test.orchestrator"/>
+        <package android:name="androidx.test.services"/>
+        <package android:name="com.google.android.apps.common.testing.services"/>
+    </queries>
+    <dist:module dist:instant="true"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_DATABASE"/>
+    <uses-permission android:name="android.permission.WRITE_DATABASE"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_MMS"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"/>
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="com.jiopay.CONTENT_PROVIDER_READ"/>
+    <permission android:description="@string/screenz_permission_desc" android:label="@string/screenz_permission_label" android:name="com.jio.myjio.MYJIO_PERMISSION" android:protectionLevel="signature"/>
+    <permission android:description="@string/service_permission_desc" android:label="@string/myjio_permission_label" android:name="com.jio.myjio.MYJIO_PERMISSION_SERVICE" android:protectionLevel="signature"/>
+    <permission android:description="@string/service_permission_desc" android:label="@string/myjio_permission_label" android:name="com.jio.myjio.MYJIO_PERMISSION_SERVICE_LTE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jio.myjio.MYJIO_PERMISSION_SERVICE_LTE"/>
+    <uses-permission android:name="com.jio.myjio.MYJIO_PERMISSION_SERVICE"/>
+    <uses-permission android:name="com.jio.myjio.MYJIO_PERMISSION"/>
+    <uses-permission android:name="android.permission.CAPTURE_VIDEO_OUTPUT"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.jio.myjio.READ_CONTENT"/>
+    <uses-permission android:name="com.jio.myjio.WRITE_CONTENT"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="com.jio.myjio.READ_DB"/>
+    <uses-permission android:name="android.permission-group.CALL_LOG"/>
+    <uses-permission android:name="android.permission-group.CONTACTS"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.ram.low" android:required="false"/>
+    <uses-permission android:name="com.inn.passivesdk.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION"/>
+    <uses-permission android:name="Manifest.permission.READ_CONTACTS"/>
+    <uses-permission android:name="Manifest.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="Manifest.permission.SEND_SMS"/>
+    <uses-permission android:name="Manifest.permission.READ_CALENDAR"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.sonyericsson.home.action.UPDATE_BADGE"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-permission android:name="com.jio.myjio.permission.C2D_MESSAGE"/>
+    <permission android:name="com.jio.myjio.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.BROADCAST_SMS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <permission android:label="Activity protection" android:name="com.jio.myjio.INTERNAL_CLASS_PROTECTION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jio.myjio.INTERNAL_CLASS_PROTECTION"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.jio.myjio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.jio.myjio.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:fullBackupContent="@xml/backup_descriptor" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/jio_app_container_name" android:largeHeap="true" android:name="com.jio.myjio.MyJioApplication" android:networkSecurityConfig="@xml/network_security" android:preserveLegacyExternalStorage="true" android:requestLegacyExternalStorage="true" android:resizeableActivity="true" android:screenOrientation="portrait" android:sharedUserId="com.jio.media.jiobeats.androidsdk" android:supportsRtl="true" android:theme="@style/DashBoardTheme" android:usesCleartextTraffic="true">
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-6426271931770148~1644045423"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="com.google.android.actions" android:resource="@xml/actions"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/m_android_places_value"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.jio.myjio.activities.MyJioRNActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/ReactTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="fontScale|layoutDirection|locale|orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.jio.myjio.dashboard.activities.SplashActivity" android:persistableMode="persistAcrossReboots" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.jio.myjio" android:scheme="jio"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="com.jio.myjio" android:pathPrefix="/dl" android:scheme="jio"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="pay" android:scheme="myjioupi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="mart" android:scheme="jiomart"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.jio.com" android:scheme="https"/>
+                <data android:host="www.jio.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="jioevents.com" android:pathPrefix="/attendee" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/pay" android:scheme="myjioupi"/>
+                <data android:host="www.jio.com" android:pathPrefix="/mart" android:scheme="jiomart"/>
+                <data android:host="www.jio.com" android:scheme="https"/>
+                <data android:host="www.jio.com" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="myjio.com" android:scheme="apply"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:configChanges="fontScale|layoutDirection|locale|orientation|screenSize" android:enabled="false" android:exported="true" android:icon="@null" android:label="@string/app_name" android:name="com.jio.myjio.dashboard.activities.SplashActivityAlias" android:persistableMode="persistAcrossReboots" android:screenOrientation="portrait" android:targetActivity="com.jio.myjio.dashboard.activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.jio.myjio" android:pathPrefix="/dl" android:scheme="jio"/>
+                <data android:host="pay" android:scheme="myjioupi"/>
+                <data android:host="mart" android:scheme="jiomart"/>
+                <data android:host="jioevents.com" android:pathPrefix="/attendee" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/pay" android:scheme="myjioupi"/>
+                <data android:host="www.jio.com" android:pathPrefix="/mart" android:scheme="jiomart"/>
+                <data android:host="www.jio.com" android:scheme="https"/>
+                <data android:host="www.jio.com" android:scheme="http"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="http"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:configChanges="fontScale|layoutDirection|locale|orientation|screenSize" android:enabled="false" android:exported="true" android:icon="@null" android:label="@string/app_name" android:name="com.jio.myjio.dashboard.activities.SplashActivityAlias1" android:persistableMode="persistAcrossReboots" android:screenOrientation="portrait" android:targetActivity="com.jio.myjio.dashboard.activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.jio.myjio" android:pathPrefix="/dl" android:scheme="jio"/>
+                <data android:host="pay" android:scheme="myjioupi"/>
+                <data android:host="mart" android:scheme="jiomart"/>
+                <data android:host="jioevents.com" android:pathPrefix="/attendee" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/pay" android:scheme="myjioupi"/>
+                <data android:host="www.jio.com" android:pathPrefix="/mart" android:scheme="jiomart"/>
+                <data android:host="www.jio.com" android:scheme="https"/>
+                <data android:host="www.jio.com" android:scheme="http"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="http"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:configChanges="fontScale|layoutDirection|locale|orientation|screenSize" android:enabled="false" android:exported="true" android:icon="@null" android:label="@string/app_name" android:name="com.jio.myjio.dashboard.activities.SplashActivityAlias2" android:persistableMode="persistAcrossReboots" android:screenOrientation="portrait" android:targetActivity="com.jio.myjio.dashboard.activities.SplashActivity" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.jio.myjio" android:pathPrefix="/dl" android:scheme="jio"/>
+                <data android:host="pay" android:scheme="myjioupi"/>
+                <data android:host="mart" android:scheme="jiomart"/>
+                <data android:host="jioevents.com" android:pathPrefix="/attendee" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/pay" android:scheme="myjioupi"/>
+                <data android:host="www.jio.com" android:pathPrefix="/mart" android:scheme="jiomart"/>
+                <data android:host="www.jio.com" android:scheme="https"/>
+                <data android:host="www.jio.com" android:scheme="http"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="https"/>
+                <data android:host="www.jio.com" android:pathPrefix="/dl" android:scheme="http"/>
+            </intent-filter>
+        </activity-alias>
+        <meta-data android:name="debug" android:value="0"/>
+        <meta-data android:name="lang" android:value=""/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="RK4-RWW-8R6Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="002-432"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="CLEVERTAP_XIAOMI_APP_KEY" android:value="@string/xi_value"/>
+        <meta-data android:name="CLEVERTAP_XIAOMI_APP_ID" android:value="@string/xi_id"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="launcher_silhousette"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="in1"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.0.2"/>
+        <activity android:configChanges="keyboardHidden" android:exported="true" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="false" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService"/>
+        <receiver android:exported="false" android:name="com.clevertap.android.sdk.InstallReferrerBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.jio.myjio.notifications.fcm.MyjioFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.fcm.FcmMessageListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="com.jio.myjio.broadcastreceiver.SmsBroadcastReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.jio.myjio.broadcastreceiver.RefreshBroadcastReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="com.jio.myjio.fragments.BROADCAST_REFRESH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.jio.myjio.notifications.models.NotificationActionReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:name="com.jio.myjio.service.SendSMSIntentService"/>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:exported="false" android:name="com.jio.myjio.ipl.PlayAlong.activity.RecordingActivity" android:persistableMode="persistAcrossReboots" android:screenOrientation="portrait" android:theme="@style/DashBoardTheme" android:windowSoftInputMode="stateHidden"/>
+        <provider android:authorities="com.jio.myjio" android:name="com.jio.myjio.contactinfomation.provider.JioContactsProvider"/>
+        <provider android:authorities="com.jio.myjio.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="hellojio_key" android:value="hellojio_android_configuration_v7.json"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTNotificationIntentService">
+            <intent-filter>
+                <action android:name="com.clevertap.PUSH_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.jio.myjio.JioDriveSettingsProvider" android:exported="true" android:grantUriPermissions="true" android:name="com.ril.jio.jiosdk.database.JioDriveSettingsProvider" android:protectionLevel="signature">
+            <intent-filter>
+                <action android:name="jio.cloud.drive.contentfilter"/>
+            </intent-filter>
+        </provider>
+        <provider android:authorities="com.jio.myjio.JioDriveStubSyncProvider" android:exported="false" android:label="@string/sync_label" android:name="com.ril.jio.jiosdk.sync.JioDriveStubSyncProvider" android:syncable="true">
+            <intent-filter>
+                <action android:name="jio.cloud.drive.contentfilter"/>
+            </intent-filter>
+        </provider>
+        <service android:exported="false" android:name="com.ril.jio.jiosdk.service.AuthenticatorService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator" android:resource="@xml/jioauthenticator"/>
+        </service>
+        <service android:exported="false" android:name="com.jio.myjio.utilities.SilentNotJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.jio.myjio.jioengage.service.ActiveMatchForegroundNotificationService" android:stopWithTask="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.jio.clickstream.tbn.TempleteReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.jio.myjio.ipl.matchupdates.receivers.NotificationActionReceiver"/>
+        <service android:exported="false" android:name="com.jio.myjio.jiohealth.records.ui.pdf.PDFUploader" android:permission="android.permission.BIND_JOB_SERVICE" android:stopWithTask="false"/>
+        <meta-data android:name="firebase_crashlytics_collection_enabled" android:value="true"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_launcher"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/color_palette_reliance_bold_background"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.jio.clickstream.tbn.PowerConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.jio.clickstream.tbn.PhoneStateReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jio.clickstream.tbn.TBNSettingsService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:label="BootReceiver" android:name="com.jio.clickstream.tbn.RebootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.jio.clickstream.tbn.MinuteAlarm" android:process=":remote"/>
+        <meta-data android:name="com.inn.passivesdk.version" android:value="3"/>
+        <service android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.service.GlobalService" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.inn.passivesdk.service.GlobalService"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.service.GlobalJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":remote"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.receiver.ServiceStarter">
+            <intent-filter android:priority="500">
+                <action android:name="android.intent.action.REBOOT"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.receiver.PackageReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.receiver.ServiceStarterOnUpgradedVersion" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.inn.GlobalService.Version.UpdatedVersionAvailable"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.receiver.ServiceStarterReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.activeProbeManager.PassiveSpeedTestStarterService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.inn.passivesdk.PassiveEventReceiver" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.inn.passivesdk.action.passive.data.capture"/>
+                <action android:name="com.inn.passivesdk.action.passive.data.sync"/>
+                <action android:name="com.inn.passivesdk.action.passive.data.capture.sync"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.inn.passivesdk.receiver.GlobalRemoteReceiver" android:process=":remote">
+            <intent-filter>
+                <action android:name="com.inn.passivesdk.receiver.stopPassive"/>
+                <action android:name="com.inn.passivesdk.receiver.uploadNonSyncData"/>
+                <action android:name="com.inn.passivesdk.receiver.startPassive"/>
+                <action android:name="com.inn.passivesdk.receiver.startPassiveForSilentNotificaiton"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.jio.jioml.hellojio.jds.activities.HelloJioActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.jio.jioml.hellojio.jds.activities.LoadingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="false" android:name="com.jio.jioml.hellojio.jds.activities.WebViewActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|layoutDirection|orientation|screenSize" android:exported="false" android:name="com.jio.jioml.hellojio.jds.activities.PlayVideoActivity"/>
+        <activity android:configChanges="fontScale|orientation|screenSize" android:name="com.jio.jioml.hellojio.jds.activities.TakeSelfieActivity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.jio.jioads.interstitial.InterstitialActivity" android:theme="@style/JIOTheme.AppCompat.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.jio.jioads.webviewhandler.InAppWebView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BPMeasurementActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BloodPressureMonitoringResultActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.ImportantNotesActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealth"/>
+        <activity android:exported="true" android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BPMonitorDescriptionActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BPIntroActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BloodPressureGuideActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BloodPressureMonitorGenerateResultActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeHealth"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BloodPressureMonitorAddDetails" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus"/>
+        <activity android:label="" android:name="com.jhh.bpmonitorlib.pnp.ui_bp.BloodPressureMonitorChooseForWhom" android:screenOrientation="portrait" android:theme="@style/AppThemeHealthPlus"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.Profile" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.ViewAllC7" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.ViewAllC8" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.HomeArena" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.Search" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.GameDetails" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.jio.jiogamessdk.activity.JGWebView" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.Fantasy" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.jio.jiogamessdk.activity.watch.HomeWatch" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.jio.jiogamessdk.activity.GamePlay" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|screenSize" android:name="com.jio.jiogamessdk.activity.arena.GPArena" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.ViewAllCategory" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.ViewAllSlider" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.Screenshots" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.TournamentStory" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.ViewAllT" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.MyTournament" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.LeaderBoardA" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.LeaderBoard" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.jio.jiogamessdk.activity.earnCrown.EarnCrowns" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.UserName" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.earnCrown.TransactionH" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.ugt.UGT" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.Template" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.arena.ugt.UGTDetails" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.jio.jiogamessdk.activity.MarketPlace" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.jio.jiogamessdk.activity.cloud.Subscription" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.jio.jiogamessdk.activity.cloud.MyPlans" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="true" android:name="com.jio.jiogamessdk.activity.cloud.BillingInfo" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.jio.jiogamessdk.activity.cloud.CloudGames" android:theme="@style/AppTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/title_activity_player_screen" android:launchMode="singleTop" android:name="com.jio.PlayerScreenActivity" android:screenOrientation="landscape" android:theme="@style/Theme.Androidtvepgmaster.Fullscreen"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.rjil.cloud.tej.client.receiver.UpgradeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.jiocloud.homeui.ui.activity.BackupStatusDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.jiocloud.homeui.ui.activity.PendingFileStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.jiocloud.homeui.ui.activity.BackupUnsuccessfulActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ril.jio.jiosdk.receiver.BackupIntentReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ril.jio.jiosdk.receiver.MigrationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ril.jio.jiosdk.receiver.JioNetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.ril.jio.jiosdk.receiver.JioDriveSettingChangeReceiver">
+            <intent-filter>
+                <action android:name="com.rjil.cloud.settingchanged"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.ril.jio.jiosdk.receiver.AMShutdownReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_SHUTDOWN"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWEROFF"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ril.jio.jiosdk.receiver.BackupHandlerReceiver">
+            <intent-filter>
+                <action android:name="com.rjil.cloud.tej.amiko.BACKUP_HANDLER_RECEIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.ril.jio.jiosdk.receiver.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="true" android:name="com.ril.jio.jiosdk.service.JioBackgroundService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+            <meta-data android:name="android.content.SyncAdapter" android:resource="@xml/jiosyncadapter"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.ril.jio.jiosdk.service.AMBackgroundService"/>
+        <service android:exported="false" android:name="com.ril.jio.jiosdk.service.AMContactPhotoUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.ril.jio.jiosdk.service.BackupHandlerReceiverService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.rjil.cloud.tej"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ril.jio.jiosdk.receiver.JioAlarmReceiver"/>
+        <receiver android:exported="false" android:name="com.ril.jio.jiosdk.receiver.JioBackupAlarmReceiver"/>
+        <service android:name="com.ril.jio.jiosdk.service.HandleAppKillService"/>
+        <activity android:exported="false" android:name="com.rjil.cloud.tej.semnaticsearch.presentation.SemanticSearchActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="locale" android:exported="false" android:name="com.rjil.cloud.tej.reactnative.ui.ReactNativeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.ReactNativeScreen"/>
+        <activity android:configChanges="locale" android:exported="false" android:launchMode="singleTop" android:name="com.rjil.cloud.tej.stickynotification.StickyNotificationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.JioStickyNotiScreen"/>
+        <activity android:exported="false" android:name="com.rjil.cloud.tej.onboarding.OnBoardingNavActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:configChanges="locale" android:exported="false" android:name="com.rjil.cloud.tej.onboarding.ui.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.twofa.ui.TwoFAActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme.TwoFA" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleInstance" android:name="com.rjil.cloud.tej.privatefolder.ui.PrivateFolderActivityOnboard" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme.TwoFA" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.privatefolder.ui.PrivateFolderActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme.TwoFA" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.rjil.cloud.tej.amiko.activity.JioWebViewCacheActivity"/>
+        <meta-data android:name="com.google.android.backup.api_key" android:value="AEdPqrEAAAAIjgiGwcJapXVzOuhNi-XAc1CaqQ_z7CC0LJFbJg"/>
+        <meta-data android:name="com.rjil.cloud.tej.common.AudioCoverModule" android:value="GlideModule"/>
+        <activity android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.FreeUpSpaceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.QRScanActivityForLogin" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/my_devices" android:name="com.rjil.cloud.tej.client.app.MyDevicesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.UnProvisionedActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.MainActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.rjil.cloud.tej.client.picker.PickerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="jio.cloud.drive.deduplication.ui.DeDuplicateActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.rjil.cloud.tej.board.create.FirstBoardCreatedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle.FullScreen"/>
+        <activity android:name="com.rjil.cloud.tej.board.search.BoardSearchActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvidercom.jio.myjio148600422142033" android:exported="true" android:name="com.facebook.FacebookContentProvider"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.amiko.contactdetail.ContactDetailActivity" android:screenOrientation="portrait">
+            <intent-filter android:label="@string/viewContactDescription">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/contacts_not_copied_string" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.amiko.activity.IgnoredListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.rjil.cloud.tej.amiko.activity.AmikoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_upload" android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.CreateBoardAndUploadFilesActivity" android:parentActivityName="com.rjil.cloud.tej.client.app.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle.Transparent">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.rjil.cloud.tej.client.app.MainActivity"/>
+        </activity>
+        <activity android:label="@string/title_activity_action_placeholder" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.ActionPlaceholderActivity" android:parentActivityName="com.rjil.cloud.tej.client.app.MainActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.rjil.cloud.tej.client.app.MainActivity"/>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_camera" android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.picker.CameraActivity" android:theme="@style/FullscreenTheme"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.client.app.FileMoveActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.client.app.ShareFileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.client.app.UploadToJioCloudActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.client.AddToAlbumActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_file_search" android:name="com.rjil.cloud.tej.client.app.FileSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_create_board" android:name="com.rjil.cloud.tej.client.app.HelpAndLegalActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_create_board" android:name="com.rjil.cloud.tej.client.app.TejWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_upload_file_from_tej_activity" android:name="com.rjil.cloud.tej.client.app.UploadFileFromTejActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.IntermediateLoadingActivity" android:theme="@style/Theme.Jiostyle.FullScreen"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.IntermediateActivity" android:theme="@style/Theme.Jiostyle.FullScreen"/>
+        <activity android:label="@string/title_activity_create_board" android:name="com.rjil.cloud.tej.client.app.CabSearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:name="com.rjil.cloud.tej.amiko.activity.AMBackupActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_app_setting" android:name="com.rjil.cloud.tej.amiko.activity.AppSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_app_setting" android:name="com.rjil.cloud.tej.amiko.activity.VerifyMobileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_app_setting" android:name="com.rjil.cloud.tej.amiko.activity.EditProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/edit_profile" android:name="com.rjil.cloud.tej.amiko.activity.EditEmailMobileVarifyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.amiko.activity.DeDupeActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_notif_detail" android:name="com.rjil.cloud.tej.client.app.NotificationDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.amiko.activity.MergeDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.ext.UploadFilesActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.rjil.cloud.tej.amiko.activity.StorageActivity" android:parentActivityName="com.rjil.cloud.tej.amiko.activity.AppSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.rjil.cloud.tej.amiko.activity.NewStorageActivity" android:parentActivityName="com.rjil.cloud.tej.amiko.activity.AppSettingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.stbpin.SetStbPinActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.rjil.cloud.tej.onboarding.OnBoardingFragmentContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.rjil.cloud.tej.amiko.fragment.advanceFeature.AFActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.rjil.cloud.tej.client.receiver.AlarmReciever"/>
+        <receiver android:exported="false" android:name="com.rjil.cloud.tej.amiko.receiver.BootCompleteReceiverApp">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.rjil.cloud.tej.client.receiver.DownloadReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.rjil.cloud.tej.client.receiver.TejSsoLoginReceiver">
+            <intent-filter>
+                <action android:name="com.rjil.cloud.tej.INTENT_TEJ_SSO_LOGIN"/>
+                <action android:name="com.rjil.cloud.tej.sso_login"/>
+                <action android:name="com.rjil.cloud.tej.intent_sso_logined_in"/>
+                <action android:name="com.rjil.cloud.tej.intent_tej_logged_in"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.rjil.cloud.tej.client.receiver.TejSsoNotificationReceiver">
+            <intent-filter>
+                <action android:name="com.rjil.cloud.tej.GENERATE_SSO_NOTIFICATION"/>
+                <action android:name="com.rjil.cloud.tej.LAUNCH_APP_START"/>
+                <action android:name="com.rjil.cloud.tej.START_AUTO_BACKUP"/>
+            </intent-filter>
+        </receiver>
+        <activity android:label="MigrationInfoActivity" android:name="com.rjil.cloud.tej.client.app.MigrationInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|layoutDirection|locale|mcc|mnc|orientation|screenLayout|screenSize|uiMode" android:name="com.rjil.cloud.tej.client.app.InputManagerLeakFixActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Jiostyle.Transparent.FullScreen"/>
+        <activity android:label="PDF Viewer" android:name="com.rjil.cloud.tej.client.app.PdfActivity" android:screenOrientation="sensorPortrait"/>
+        <service android:exported="false" android:name="com.rjil.cloud.tej.common.JioFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.rjil.cloud.tej.common.JioFirebaseMessageService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.rjil.cloud.tej.client.receiver.NotificationAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.rjil.cloud.tej.notification_alarm_intent"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.jio.myjio.JioDriveProviderCont" android:exported="true" android:grantUriPermissions="true" android:name="com.ril.jio.jiosdk.database.JioDriveContentProvider">
+            <intent-filter>
+                <action android:name="jio.cloud.drive.contentfilter"/>
+            </intent-filter>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.SharePickerActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT"/>
+                <category android:name="android.intent.category.OPENABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.rjil.cloud.tej.client.app.VersionInfoActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value=".client.app.AppStartActivity"/>
+        <service android:exported="false" android:name="com.rjil.cloud.tej.common.FetchAddressIntentService"/>
+        <activity android:name="com.rjil.cloud.tej.client.app.StorageUpgradeWebviewActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.board.detail.BoardDetailActivity" android:screenOrientation="portrait" android:theme="@style/BoardDetailTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.board.create.CreateBoardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.board.info.BoardInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.rjil.cloud.tej.board.addboard.AddToBoardActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.rjil.cloud.tej.board.picker.BoardCoverPickerActivity"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.board.invite.BoardInviteMemberActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.board.inter.BoardInterMediateActivity" android:screenOrientation="fullSensor" android:theme="@style/Theme.Jiostyle.FullScreen"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.board.comment.BoardCommentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.rjil.cloud.tej.board.suggestions.CreateSuggestedBoardActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/title_activity_messages_base" android:name="com.rjil.cloud.tej.messages.ui.MessageBaseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:name="com.rjil.cloud.tej.client.app.QRScanActivity"/>
+        <activity android:name="com.rjil.cloud.tej.board.createWithFiles.CreateBoardWithFilesActivity"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.ReferAndEarnBonusActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.WelcomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/title_activity_main_message" android:launchMode="singleTask" android:name="com.rjil.cloud.tej.messages.ui.MainMessageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.SharedLinkActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.FrsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Jiostyle"/>
+        <activity android:name="com.rjil.cloud.tej.client.app.task.ReferalActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.client.app.EmailVerifyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.amiko.activity.DeviceAccountListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:launchMode="singleTask" android:name="com.rjil.cloud.tej.amiko.activity.RecoverAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.card.sdk.common.AppCardActivity" android:screenOrientation="sensorPortrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="com.connectsdk.service.webos.lgcast.screenmirroring.service.MirroringService">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.media.VOLUME_CHANGED_ACTION"/>
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.connectsdk.service.webos.lgcast.remotecamera.service.CameraService">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.CONFIGURATION_CHANGED"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.jiocloud.facegrouping.ui.activity.PeopleScreenActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.jiocloud.facegrouping.ui.activity.PeopleRecommendationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.jio.filesdk.activity.ManageShareActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.jio.filesdk.activity.ComponentActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="" android:name="com.jio.filesdk.activity.ContainerActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="" android:name="com.jio.filesdk.activity.JioCloudFilePickerActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.jio.filesdk.activity.PdfActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.spotlightsdk.ui.SpotlightDetailActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActivityTheme"/>
+        <service android:exported="false" android:foregroundServiceType="mediaPlayback" android:name="com.jio.coresdk.service.JioAudioPlayerService">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.ril.jio.msgsdk.receiver.MsgBootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ril.jio.msgsdk.utils.sms.SMSBroadcastReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_DELIVER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.ril.jio.msgsdk.utils.sms.MMSBroadcastReceiver" android:permission="android.permission.BROADCAST_WAP_PUSH">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER"/>
+                <data android:mimeType="application/vnd.wap.mms-message"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="" android:name="com.ril.jio.msgsdk.utils.sms.ComposeSMSActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SENDTO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="true" android:name="com.ril.jio.msgsdk.utils.sms.HeadlessSmsSendService" android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE">
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="sms"/>
+                <data android:scheme="smsto"/>
+                <data android:scheme="mms"/>
+                <data android:scheme="mmsto"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.ril.jio.msgsdk.expose.MessageLocalSyncService" android:stopWithTask="false"/>
+        <service android:name="com.ril.jio.msgsdk.expose.MsgBackgroundService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.ril.jio.jioboardsdk.expose.BoardSyncService"/>
+        <service android:exported="false" android:name="com.ril.jio.jioboardsdk.expose.BoardOperationsService"/>
+        <service android:exported="false" android:name="com.ril.jio.jioboardsdk.expose.BoardMemberService"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:hardwareAccelerated="true" android:name="in.jfs.jiofinance.upi.presentation.activity.MainActivity" android:resizeableActivity="false" android:screenOrientation="portrait" android:theme="@style/Theme.JioFinance" android:windowSoftInputMode="adjustPan"/>
+        <activity android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:exported="true" android:extractNativeLibs="true" android:launchMode="singleInstance" android:name="in.jfs.jiofinance.upi.presentation.activity.HeroIntentActivity" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/Theme.JioFinance"/>
+        <activity-alias android:enabled="false" android:exported="true" android:launchMode="singleInstance" android:name="upi.Intent" android:screenOrientation="portrait" android:targetActivity="in.jfs.jiofinance.upi.presentation.activity.HeroIntentActivity" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="pay" android:scheme="upi"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="mandate" android:scheme="upi"/>
+            </intent-filter>
+        </activity-alias>
+        <service android:exported="false" android:name="in.jfs.jiofinance.upi.presentation.receivers.JioPayFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:enabled="true" android:exported="true" android:name="in.jfs.jiofinance.auth.presentation.receivers.SmsReceivedReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.ktx.FirebaseInappmessagingDisplayLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.display.FirebaseInAppMessagingDisplayRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.inappmessaging.FirebaseInAppMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.ktx.FirebaseDynamicLinksLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="ic_jfs_logo" android:resource="@drawable/ic_jfs_logo"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.jio.myjio.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <provider android:authorities="com.jio.myjio.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:launchMode="singleTop" android:name="com.jio.media.androidsdk.SDKActivity" android:permission="com.jio.myjio.INTERNAL_CLASS_PROTECTION" android:screenOrientation="portrait" android:theme="@style/JioSaavnLightTheme"/>
+        <activity android:name="com.jio.media.androidsdk.SaavnActivity" android:permission="com.jio.myjio.INTERNAL_CLASS_PROTECTION" android:screenOrientation="portrait" android:theme="@style/JioSaavnLightTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.jio.media.androidsdk.JioSaavnSDKLinkActivity" android:noHistory="true" android:permission="com.jio.myjio.INTERNAL_CLASS_PROTECTION" android:theme="@style/JioSaavnLightTheme">
+            <intent-filter>
+                <data android:scheme="jiosaavnsdk"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.jio.media.androidsdk.player.remoteControlClient.MusicIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="com.facebook.accountkit.ApplicationId" android:value="@string/com.facebook.accountkit.ApplicationId"/>
+        <meta-data android:name="com.facebook.accountkit.ClientToken" android:value="@string/accountsalpha_client_token"/>
+        <meta-data android:name="com.facebook.accountkit.ApplicationName" android:value="@string/app_name"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <activity android:launchMode="singleTop" android:name="com.jio.media.androidsdk.TransActivity" android:permission="com.jio.myjio.INTERNAL_CLASS_PROTECTION" android:theme="@style/JioSaavn.Theme.Transparent"/>
+        <activity android:name="com.jio.media.androidsdk.proPurchase.PaymentWebViewActivity" android:screenOrientation="portrait" android:theme="@style/JioSaavnLightTheme"/>
+        <activity android:exported="false" android:label="@string/app_name" android:name="com.todddavies.components.progressbar.Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:foregroundServiceType="mediaPlayback" android:name="com.jio.media.androidsdk.nplayer.SaavnMediaBrowserService">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService"/>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.jio.jiostreamminisdk.media3.VideoPlayerActivity" android:theme="@style/JioStreamMiniSDKTheme"/>
+        <activity android:exported="true" android:name="com.jio.jiostreamminisdk.listing.ui.ListingActivity" android:theme="@style/JioStreamMiniSDKTheme"/>
+        <activity android:name="com.karumi.dexter.DexterActivity" android:theme="@style/Dexter.Internal.Theme.Transparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <activity android:exported="false" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:theme="@style/Theme.AppCompat.NoActionBar.Translucent"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.jio.myjio.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <provider android:authorities="com.jio.myjio.rnshare.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="cl.json.RNShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/share_download_paths"/>
+        </provider>
+        <provider android:authorities="com.jio.myjio.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.jio.myjio" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.bumptech.glide.integration.volley.VolleyGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20202"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.bundled.internal.ThickLanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.nl.languageid.internal.LanguageIdRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.jio.myjio.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.jio.myjio.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.jio.myjio.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:exported="true" android:name="androidx.activity.ComponentActivity"/>
+        <provider android:authorities="com.jio.myjio.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

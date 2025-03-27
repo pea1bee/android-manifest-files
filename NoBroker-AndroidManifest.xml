@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="internalOnly" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.nobroker.app" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.mobikwik_new"/>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+    </queries>
+    <permission android:name="com.nobroker.CURRENT_USER_DATA"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACTION_MANAGE_OVERLAY_PERMISSION"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <permission android:name="com.nobroker.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.nobroker.app.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <permission android:name="com.nobroker.app.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.nobroker.app.permission.MIPUSH_RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.nobroker.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.nobroker.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:hardwareAccelerated="true" android:icon="@drawable/new_nobroker_svg" android:label="@string/app_name" android:largeHeap="true" android:name="com.nobroker.app.AppController" android:requestLegacyExternalStorage="true" android:roundIcon="@null" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <provider android:authorities="com.nobroker.app.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:exported="false" android:name="com.nobroker.app.features.propertycomparison.PropertyCompareActivity" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:exported="false" android:label="@string/title_activity_tenant_plan" android:name="com.nobroker.app.features.tenant_page.presentation.TenantPlanActivity" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.features.calling_card_compose.ComposeCallerActivity" android:taskAffinity="" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.ThirdPartyHybridActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.nobroker.app.activities.NewListingActivity" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:exported="false" android:label="@string/title_activity_main_compose" android:name="com.nobroker.app.rent_sell_clone_compose.RentSellCloneComposeActivity" android:theme="@style/AppTheme2" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.nobroker.app.activities.SearchAlongMetroActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearance3"/>
+        <activity android:exported="false" android:name="com.nobroker.app.activities.NewPlanActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:exported="false" android:name="com.nobroker.app.features.call_logs_list.activities.CallLogsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPremiumFilterForCommercialProperties" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.nobroker.app.plotlisting.NbPostPropertyPlotConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:exported="false" android:name="com.nobroker.app.plotlisting.NBPostPropertyActivityPlot" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.PlotInDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.PlotPostYourRequirementActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBFilterForPlotsActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearanceDialogTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.nobroker.app.activities.ResidentialPlotListingActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <service android:enabled="true" android:exported="false" android:name="com.nobroker.app.services.PypVideoProcessingService1"/>
+        <activity android:name="com.nobroker.app.activities.RecordVideoActivity" android:screenOrientation="portrait" android:theme="@style/SingleSignupLoginTheme"/>
+        <activity android:name="com.nobroker.app.activities.ReactivationPropertyActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.RecommendedPropertyListingActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBSingleSignUpFlowActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.features.signin.NewSignInActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.nobroker.app.activities.KnowYourRentActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="com.google.android.maps" android:required="false"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_search_api_key"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="search-engine" android:resource="@xml/noindex"/>
+        <meta-data android:name="LOCALYTICS_APP_KEY" android:value="8456275cf3d92f6546e9336-39236de0-1676-11e5-dc39-0011f98033c1"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <service android:name="com.nobroker.app.services.GeofenceTransitionsIntentService"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.ContactsDataSyncService"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/partnerKey"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/color_primary"/>
+        <provider android:authorities="com.nobroker.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="com.nobroker.app.activities.ShortCutShareReceiverActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="application/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+            <meta-data android:name="android.service.chooser.chooser_target_service" android:value="androidx.sharetarget.ChooserTargetServiceCompat"/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.nobroker.app.newnobroker.map_pkg.MapActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:name="com.google.android.gms.analytics.CampaignTrackingService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.nobroker.app.gem_pkg.ReceiveSMSBroadCastReceiver">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.nobroker.app.activities.NBSplashScreen" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nobroker.in" android:scheme="http"/>
+                <data android:host="nobroker.in" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.nobroker.in" android:scheme="http"/>
+                <data android:host="www.nobroker.in" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nobr.kr" android:pathPrefix="/" android:scheme="http"/>
+                <data android:host="nobr.kr" android:pathPrefix="/" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.nobroker.in" android:scheme="com.nobroker.app"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nobroker.in" android:scheme="com.nobroker.app"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="nobr.kr" android:scheme="com.nobroker.app"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts"/>
+        </activity>
+        <activity android:exported="false" android:name="com.nobroker.app.features.splash_screen_lottie.SplashScreenLottieActivity" android:theme="@style/MaterialAppTheme.SplashNoActionBar"/>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.GeofenceBroadcastReceiver"/>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.GpsLocationReceiver">
+            <intent-filter>
+                <action android:name="android.location.PROVIDERS_CHANGED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.nobroker.app.receivers.PollLocationReceiver"/>
+        <receiver android:exported="false" android:name="com.nobroker.app.receivers.SendNotificationReceiver"/>
+        <receiver android:exported="false" android:name="com.nobroker.app.receivers.OwnerGeofenceBroadcastReceiver"/>
+        <receiver android:exported="true" android:name="com.moengage.push.amp.plus.MiPushReceiver">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.nobroker.app.receivers.SentSmsBroadcastReceiver"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="uiMode" android:label="@string/app_name" android:launchMode="singleTask" android:name="com.nobroker.app.activities.NBLauncherActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBFilterForPropertiesActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearanceDialogTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPremiumFilterForProperties" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPremiumFilterForPropertiesResale" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBLoginSignupActivityNewFlow" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPropertiesPhotosActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBAmenitiesFullPage" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.UberDataActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBOwnerContactSignupNewFlow" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBLimitExceededActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.nobroker.app.activities.NBGetMobileNumberActivity" android:theme="@style/Theme.AppCompat.Light.Dialog"/>
+        <activity android:label="@string/app_name" android:launchMode="singleTop" android:name="com.nobroker.app.activities.ChangeMobileNumberActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.AmenitiesInDetailProperty" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBChoosePropertyOnMap" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBManagePropertyLanding" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBReportPropertyActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.StayEasyPropertyListing" android:screenOrientation="portrait" android:windowSoftInputMode="stateUnchanged"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBClickOwnerDetail" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Dialog" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBClickNEarnIntroActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBClickNEarnUploadPhotos" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBMyRewards" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.OwnerDetails" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBMapInFullActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPostPropertyPhotoActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:hardwareAccelerated="true" android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPostPropertyDetailActivity" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPostPropertyDetailActivityPG" android:screenOrientation="portrait" android:theme="@style/CustomActionBarTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbPostPropertyConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBMyProfileActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBPostPropertyDetailStep1" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBFeedbackContactOwnerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBSearchPropertyActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearance" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbMyPlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbPaymentInitiate" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbMyFreePlanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.fragments.NBTenantDashboardFragment" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.Payment" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.HybridPlansCheckoutActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBWebViewFragmentGeneralActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbMyPlanSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.PropertyListingActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.PropertyInDetailActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBApplyLoanInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme_Green"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBGetAlertsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.CallerIDActivity" android:taskAffinity="" android:theme="@style/Theme.MyDialog"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.CallerIDActivityRM" android:taskAffinity="" android:theme="@style/Theme.MyDialog"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.RentedOutFeedbackFromOwner" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/Theme.Design.Light.BottomSheetDialog"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.CallerIDFeedbackActivity" android:taskAffinity="" android:theme="@style/Theme.MyDialog"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.CreateScheduleActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.SchedulerSummaryOwnerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.SchedulerTenantActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.utilities.CustomZopimChatActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.MyListingsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.MyListingDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.MyAppointmentsActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.AssurePlanActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.CorporatePlanOfferActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NbMyOwnerPlanActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.FragmentContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.FAQsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.RelationshipManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.RMInterestedLeadsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.NBNRIFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme_Green" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.RMNewLeadsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.RMRejectedLeadsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.RMWishListedLeadsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.OwnerContactExceededForResale" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.viewstories.StoryPlayer" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.PropertySelectionSheetActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <service android:exported="false" android:name="com.nobroker.app.notifications.NBFirebaseMessagingService" android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.UnknownCallerIDDataSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.NotificationDataSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.UserInfoSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.SchedulerDataSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.GeoFencingDataSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.GeoFencingDataStoreService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.PropertyFeedbackDataSyncService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.PropertyFeedbackDataStoreService"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.nobroker.app.services.InstalledAppsDataSyncService"/>
+        <receiver android:exported="false" android:name="com.nobroker.app.notifications.NotificationActionReceiver">
+            <intent-filter>
+                <action android:name="OPEN_DIALER"/>
+                <action android:name="OPEN_CHAT"/>
+                <action android:name="REJECT_APPOINTMENT"/>
+                <action android:name="ACCEPT_APPOINTMENT"/>
+                <action android:name="PROPERTY_RENTED_OUT"/>
+                <action android:name="NO_FEEDBACK"/>
+                <action android:name="YES_FEEDBACK"/>
+                <action android:name="NB_CUSTOM1"/>
+                <action android:name="NB_CUSTOM2"/>
+                <action android:name="NB_CUSTOM3"/>
+                <action android:name="REMIND_LATER"/>
+                <action android:name="OPEN_DIALER_REMINDER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.CallerIDReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.SimpleNetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.NBAppInstallReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.nobroker.app.receivers.NBAppInstallRefrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.NBBootCompletedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.nobroker.app.notifications.NotificationDismissBroadcastReceiver">
+            <intent-filter>
+                <action android:name="notification_cancelled"/>
+            </intent-filter>
+        </receiver>
+        <activity android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.AskVoiceNoteActivity" android:taskAffinity="" android:theme="@style/Theme.MyDialog" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <service android:enabled="true" android:exported="true" android:name="com.nobroker.app.services.ChatHeadService"/>
+        <activity android:name="com.nobroker.app.activities.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/THEME"/>
+        <activity android:name="com.nobroker.app.activities.PostUrRequirementActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.OwnerRelationshipManagerActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.ORMLeadsActivity" android:theme="@style/AppTheme.ORMGreen"/>
+        <activity android:name="com.nobroker.app.activities.BuilderActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.BuyerPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.SellerPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.ChatActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.PackerAndMoverActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.PackerMoverFaqActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.PackerMoverTermsConditionsActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="true" android:label="Processing your payment" android:name="in.juspay.godel.PaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.nobroker.app.activities.NBCommercialPYPDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.CommercialPropertyListingActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.CommercialFilterActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearanceDialogTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.NBCommercialDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.NbCommercialPYPConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.PayRentActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.PayRentTenantActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.PayRentSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.CommercialPostUrRequirementActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.NewResidentPostYourRequirementActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.DisguiseActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.nobroker.app.activities.NewPackersMoversActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.PackersMoversThankYouActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.NewCommercialPostYourRequirementActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.CommercialSellerPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.CommercialBuyerPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.CommercialTenantPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.CommercialOwnerPlansActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:excludeFromRecents="true" android:label="@string/app_name" android:launchMode="singleInstance" android:name="com.nobroker.app.activities.MoEngageFeedbackActivity" android:taskAffinity="" android:theme="@style/Theme_Translucent"/>
+        <activity android:name="com.nobroker.app.activities.ContactOwnerSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.ProjectPageActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.MySMSBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle">
+            <intent-filter>
+                <category android:name="ANDROID.INTENT.CATEGORY.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nobroker.app.utilities.LocationHelper" android:theme="@style/Theme.Transparent"/>
+        <receiver android:exported="false" android:name="com.nobroker.app.receivers.ShareDialogChooserReceiver"/>
+        <activity android:name="com.nobroker.app.activities.UpdateOnMapActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.SuggestEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.ReportAbuseActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.nobroker.app.providers.SharedDataProvider" android:exported="true" android:name="com.nobroker.app.providers.SharedDataProvider" android:readPermission="com.nobroker.CURRENT_USER_DATA"/>
+        <service android:enabled="true" android:name="com.nobroker.app.services.RMChatHeadService"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HybridPackersMoversActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HybridPayRentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HybridSupportActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.NewPostYourPropertyActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.ScheduleSuccessActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.ScheduleVisitActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.utilities.RazorPayHelper" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HybridHomeServicesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HybridGenericActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="com.nobroker.app.activities.HomeServicesGenericActivity" android:screenOrientation="portrait"/>
+        <service android:enabled="true" android:name="com.nobroker.app.services.ORMChatHeadService"/>
+        <activity android:name="com.nobroker.app.activities.TRMCaptureRequirementActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation" android:name="com.nobroker.app.activities.VideoViewActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.nobroker.app.activities.HybridVideoCallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.activities.HybridGenericActivityV2" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:name="com.nobroker.app.activities.VideoCallActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.nobroker.app.utilities.LocationHelperV2" android:theme="@style/Theme.Transparent.NoDim"/>
+        <activity android:name="com.nobroker.app.activities.WalletGratificationDialogActivity" android:theme="@style/ActivityDialog"/>
+        <activity android:name="com.nobroker.app.activities.NBReviewFragmentActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.nobroker.app.activities.ToLetCameraActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.SubmitPhotoActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.PropertyCameraActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.SubmitPropertyImagesActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.nobroker.app.activities.HybridPrivacyPolicyTermAndConditionsActivity" android:theme="@style/AppThemeNoTitle"/>
+        <receiver android:exported="true" android:name="com.nobroker.app.receivers.SmsBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND"/>
+        <activity android:exported="true" android:label="@string/chat_activity_title" android:name="com.zopim.android.sdk.prechat.ZopimChatActivity" android:theme="@style/ZopimChatTheme" android:windowSoftInputMode="adjustResize|stateUnchanged">
+            <intent-filter android:priority="-1000">
+                <action android:name="zopim.action.RESUME_CHAT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.nobroker.app.activities.MetroSearchActivity" android:screenOrientation="portrait" android:theme="@style/ChipTextAppearance"/>
+        <activity android:exported="false" android:name="com.nobroker.app.shortlist_prop_new.PropertyShortListNewActivity" android:theme="@style/ShortListPropTheme"/>
+        <activity android:name="com.nobroker.app.viewnotes.ViewNotesActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:label="@string/app_name" android:name="com.nobroker.app.activities.ReactNativeActivity" android:theme="@style/AppThemeNoTitle"/>
+        <activity android:exported="false" android:name="com.nobroker.paymentsdk.cardPayments.KnowMoreActivity" android:theme="@style/Theme.NBPaySDK"/>
+        <activity android:exported="false" android:name="com.nobroker.paymentsdk.netBanking.ViewAllBankActivity" android:theme="@style/Theme.NBPaySDK"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.nobroker.paymentsdk.CheckOutActivity" android:screenOrientation="locked" android:theme="@style/Theme.NBPaySDK" android:windowSoftInputMode="adjustResize"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.nobroker.callingcard.ComposeCallerActivity" android:taskAffinity="" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_CODE" android:value="50011"/>
+        <meta-data android:name="MIPUSH_SDK_VERSION_NAME" android:value="5_1_1-G"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler" android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:enabled="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <meta-data android:name="supportStyle" android:value="scene|voip"/>
+        </activity>
+        <provider android:authorities="com.nobroker.app.mipush.sdk.data" android:exported="false" android:name="com.xiaomi.channel.commonutils.android.MIPushProvider" android:permission="com.nobroker.app.permission.MIPUSH_RECEIVE"/>
+        <provider android:authorities="com.nobroker.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.zopim.android.sdk.widget.ChatWidgetService" android:stopWithTask="true"/>
+        <activity android:label="@string/rate_this_chat_leave_a_comment_title" android:name="com.zopim.android.sdk.chatlog.ZopimCommentActivity" android:theme="@style/ZopimChatTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.ashokvarma.gander.internal.support.ClearTransactionsService"/>
+        <service android:exported="false" android:name="com.ashokvarma.gander.internal.support.DismissNotificationService"/>
+        <activity android:label="@string/gander_name" android:launchMode="singleTask" android:name="com.ashokvarma.gander.internal.ui.list.TransactionListActivity" android:taskAffinity="com.ashokvarma.gander.task" android:theme="@style/Gander.Theme"/>
+        <activity android:name="com.ashokvarma.gander.internal.ui.details.TransactionDetailsActivity" android:parentActivityName="com.ashokvarma.gander.internal.ui.list.TransactionListActivity" android:theme="@style/Gander.Theme"/>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:banner="@drawable/moengage_inapp_close" android:exported="false" android:name="com.moengage.inapp.internal.activity.MoEInAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.smartlook.consentsdk.ui.consent.activity.ConsentFormActivity"/>
+        <provider android:authorities="com.nobroker.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.ReactNativeBlobUtil.Utils.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.nobroker.app" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.zopim.android.sdk.api.ChatService"/>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.FirebaseDynamicLinksKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.nobroker.app.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <provider android:authorities="com.nobroker.app.belvedere.attachments" android:exported="false" android:grantUriPermissions="true" android:name="com.zendesk.belvedere.BelvedereFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/belvedere_attachment_storage"/>
+        </provider>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <data android:host="rzp.io" android:scheme="io.rzp"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="true" android:name="com.google.android.gms.nearby.exposurenotification.WakeUpService" android:permission="com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.tagmanager.TagManagerService"/>
+        <activity android:exported="true" android:name="com.google.android.gms.tagmanager.TagManagerPreviewActivity" android:noHistory="true">
+            <intent-filter>
+                <data android:scheme="tagmanager.c.com.nobroker.app"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.nobroker.app.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <provider android:authorities="com.nobroker.app.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:exported="true" android:name="com.smartlook.sdk.smartlook.core.referrer.ReferrerReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.smartlook.sdk.smartlook.job.worker.record.UploadRecordJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.sdk.smartlook.job.worker.session.UploadSessionJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.sdk.smartlook.job.worker.record.RecordRenderVideoJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.smartlook.sdk.smartlook.job.worker.internallog.UploadInternalLogJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.nobroker.app.adjust-lifecycle-provider" android:exported="false" android:name="com.adjust.sdk.SystemLifecycleContentProvider"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

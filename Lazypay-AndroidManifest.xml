@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.citrus.citruspay" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <permission android:label="Activity level security" android:name="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.otpless.app"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="jp.naver.line.android"/>
+        <package android:name="com.michatapp.im"/>
+        <package android:name="com.discord"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.viber.voip"/>
+        <package android:name="org.thoughtcrime.securesms"/>
+        <package android:name="im.thebot.messenger"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="rzp.device_token.share"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="in.digio.sdk.kyc"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="in.gov.uidai.rdservice.fp.CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="in.gov.uidai.rdservice.iris.CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="mandate" android:scheme="upi"/>
+        </intent>
+        <package android:name="in.gov.uidai.facerd"/>
+        <package android:name="in.gov.uidai.facerd.nonprod"/>
+        <intent>
+            <action android:name="com.nsdl.egov.esign.rdservice.fp.CAPTURE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-feature android:name="android.hardware.location" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-feature android:name="android.hardware.audio.low_latency" android:required="false"/>
+    <uses-feature android:name="android.hardware.audio.pro" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="true"/>
+    <uses-permission android:name="android.permission.GET_SIGNATURES"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <permission android:name="com.citrus.citruspay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.citrus.citruspay.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:exported="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/app_ic_launcher" android:label="LazyPay" android:largeHeap="true" android:name="com.citrus.citruspay.ClinkApp" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="false" android:name="com.citrus.citruspay.Onboarding.ui.TrialInfoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.Onboarding.view.activities.D30OnboardingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="com.citrus.citruspay.Onboarding.view.activities.SplashActivity" android:screenOrientation="portrait" android:theme="@style/NewSplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="lazypay.onelink.me" android:pathPrefix="/3294304461" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app.pyfn.in" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="lazypay"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.citrus.citruspay.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.citrus.citruspay.initializers.MusesInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.citrus.citruspay.initializers.TimberInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:exported="false" android:name="com.citrus.citruspay.trackUsage.views.ui.activity.TrackUsageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.marketplace.policydetail.ui.PolicyDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.auth.presentation.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.devicebinding.presentation.intro.DeviceBindingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.citrus.citruspay.Onboarding.view.activities.OnboardPermissionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.payufin.lazypay.kyc.presentation.documentscanner.KycDocumentScannerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.Onboarding.view.activities.PersonalInfoActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.TransactionHistoryActivity" android:parentActivityName="com.citrus.citruspay.dashboard.DashboardMain" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.TransactionDetailActivity" android:parentActivityName="com.citrus.citruspay.dashboard.DashboardMain" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.merchants.views.ui.ShowAllMerchantsActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.activity.CropActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.wallet.WalletStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <service android:exported="false" android:name="com.citrus.citruspay.service.ClinkFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@mipmap/ic_status_icon_white"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorPrimary"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.trackUsage.views.ui.LazyPayViewBillActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.citrus.citruspay.dashboard.DashboardMain" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:label="Profile Screen" android:name="com.citrus.citruspay.profile.ProfileActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.EMIKnowMoreActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.xsell.presentation.NachSetupActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.notification.NotificationRouterActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.AllEMILoanActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.AllCashLoanActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.RepaymentKnowMoreActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.revolveMITC.ui.ValuePropLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.revolveMITC.views.ui.MITCRevolveActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.revolveMITC.views.ui.ClearOutstandingMITCActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.revolveMITC.views.ui.MITCStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.utils.GenericNotificationActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.NeedHelpHome" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.NeedHelpCategoryActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.NeedHelpResolutionActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCQRScannerActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.MerchantEMIDetailsActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.PhysicalNachInitActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.PhysicalNachTutorialActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.NachCameraPreviewActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.activity.DeepLinksActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepaymentAmountSelectionActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepaymentCheckoutActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayCVVActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayUPIActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayCardPaymentActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayNBActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayNBSearchActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayTransactionDetailActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.repayment.views.ui.RepayTransactionDetailCLActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:hardwareAccelerated="true" android:name="com.citrus.citruspay.browser.LPBrowser" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.appLock.AppLockActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.appLock.ExitActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.offers.views.ui.OfferActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.offers.views.ui.OfferDetailsActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.offers.views.ui.OfferTnCActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCEducationActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCCameraActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCHyperVergeActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCDocumentConfirmationActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCDocumentRejectActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="in.digio.sdk.kyc.cropper.DigioCropImageActivity" android:theme="@style/DigioKycSDKTheme"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="in.digio.sdk.kyc.nativeflow.DigioIDAnalysisActivity" android:theme="@style/DigioKycSDKTheme"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.CKYCFormActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.citrus.citruspay.kyc.views.ui.CKYCFormActivityV2" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.IncomeVerificationWebViewActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.AgreementSigningActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.dashboard.DashBUtils.ActionHandlerActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/NoTitleAndFullScreen"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.CashLoanStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.citrus.citruspay.kyc.views.ui.LazyPlusLandingActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.landing.CardLandingActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.settings.CardTransactionLimitActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.settings.ManageYourCardActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.settings.FullScreenAlertActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.onboarding.LazyCardIntroActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardLanding"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.IssueCard.IssueANewCardActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.IssueCard.AutoCardOrderActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.IssueCard.IssueANewCardAfterBlockActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.address.SelectAddressActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.onboarding.LazyCardMITCActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.settings.ResetLazyCardPinActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.IssueCard.CardNameSelectionActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.NeedHelpAllCategoriesActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.NeedHelpRaiseTicketActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.XpressStepLandingActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.kycInfo.KYCInfoActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.address.AddAddressActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.KYCConfirmAddressActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kyc.views.ui.DigioErrorActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.rewardsV2.views.MyEarnedRewardsActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.rewardsV2.views.RewardRedemptionActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.rewardsV2.views.RewardDetailActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.rewardsV2.views.RewardInterstitialActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.onboarding.LazyCardIntroActivityV2" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.card.ui.onboarding.LazyCardActivationActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.RepaymentScheduleActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.emi.views.ui.activities.PreEmiScreenActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.emi.activities.EMIPlansActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.emi.activities.TransactionListActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.emi.activities.EMILandingActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.transaction.emi.activities.EMIStatusActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement"/>
+        <activity android:exported="false" android:name="com.payufin.lazypay.rblcard.presentation.OnboardingActivity" android:permission="com.citrus.citruspay.ACTIVITY_LEVEL_SECURITY" android:screenOrientation="portrait" android:theme="@style/AppThemeMaterial.CardManagement" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.kfs.presentation.KFSActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.marketplace.reviewdetail.ui.ReviewPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="so.plotline.insights.Activities.PlotlineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="connect" android:scheme="plotline-a1048"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.citrus.citruspay.settings.NotificationSettingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.citrus.citruspay.newdashboard.ui.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.newdashboard.paylater.ui.PayLaterActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.citrus.citruspay.autopay.ui.AutoPayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.autopay.ui.NachLandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.newdashboard.policies.ui.PolicyActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.marketplace.view.MarketPlaceUrlActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.newdashboard.pandingTransactions.ui.PendingTransactionsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.payufin.lazypay.rblcard.presentation.WebViewPage" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.needhelp.views.ui.BlockTxnSuccessPage" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.error.ErrorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.logout.ui.LogoutActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.fakedoor.FakeDoorActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="86K-668-Z55Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="b66-36b"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="in1"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <meta-data android:name="CLEVERTAP_INAPP_EXCLUDE" android:value="SplashActivity, AppLockActivity"/>
+        <activity android:exported="false" android:name="com.payufin.lazypay.ui.chatbot.ChatBotActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.payufin.lazypay.ui.router.ChatBotRouterActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.citrus.citruspay.billpay.presentation.BillPayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPay" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="otpless" android:scheme="com.citrus.citruspay.otpless"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.support.BillPayCreateTicketActivity"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.transaction.BillPayTransactionsActivity"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.support.BillPayTicketListActivity"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.support.BillPayTicketDetailsActivity"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.support.RouterActivity"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.billpay.presentation.faq.BillPayFaqActivity"/>
+        <activity android:exported="false" android:name="com.gopaysense.android.limit.education.ui.AccountUsageLimitsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.consent.PayUConsentActivity"/>
+        <activity android:exported="true" android:name="com.citrus.citruspay.paylater.PayLaterDuesActivity">
+            <intent-filter>
+                <data android:scheme="bottomsheet"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.refund.ui.GiftCardRefundActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.purchasehistory.ui.GiftCardPurchaseHistoryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.orderlisting.ui.GiftCardOrderListingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.citrus.citruspay.giftcard.homepage.ui.GiftCardHomepageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.categorylistingsection.ui.CategoryListingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.searchsection.ui.SearchPageActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.giftcard.payment.ui.GiftCardPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.citrus.citruspay.giftcard.brandinfopage.ui.BrandGiftCardDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayGiftCard" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.citrus.citruspay.motor.insurance.MotorInsuranceActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.payment.ui.CheckoutPaymentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.payment.ui.paymentsuccess.PaymentSuccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.payment.ui.paymentinprogress.TransactionInProgressActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.payment.ui.paymentsuccessanimation.PaymentSuccessAnimationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.citrus.citruspay.payment.ui.autopaysuccess.UpiAutopaySuccessActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="com.citrus.citruspay.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.confirmpan.ui.ConfirmPanActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.loandisbursal.ui.LoanDisbursalActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.stepup.ui.XpressStepUpActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.autopay.ui.EnachActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.loanreview.ui.LoanReviewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.bankaccount.ui.bankstatus.BankStatusActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.citrus.citruspay.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:exported="false" android:label="@string/title_activity_physical_nach_status" android:name="com.lazypay.android.feature.pnach.ui.PhysicalNachStatusActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:label="@string/title_activity_physical_nach" android:name="com.lazypay.android.feature.pnach.ui.PhysicalNachActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.autopay.ui.DigioSignActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.address.ui.XpressCurrentAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.pan.ui.XpressPanFormActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.employmentdetails.ui.EmploymentDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/title_activity_poll" android:name="com.lazypay.android.common.poll.ui.PollActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:label="@string/title_activity_add_contact" android:name="com.lazypay.android.feature.xpress.topcontact.addcontact.ui.AddTopContactActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:label="@string/title_activity_top_contact_landing" android:name="com.lazypay.android.feature.xpress.topcontact.landingscreen.ui.TopContactLandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.autopay.ui.AutoPaySetupActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.incomeverification.ui.IncomeVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.loaneligibility.ui.XpressEligibleActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.loaneligibility.ui.XpressDeclinedActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.loanplanselection.ui.XpressLpsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/title_activity_search" android:name="com.lazypay.android.common.search.ui.SearchActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/title_activity_add_bank_account" android:name="com.lazypay.android.feature.xpress.bankaccount.ui.addbankaccount.AddBankAccountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_activity_select_bank" android:name="com.lazypay.android.feature.xpress.bankaccount.ui.selectbankaccount.SelectBankAccountActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/title_activity_selfie" android:name="com.lazypay.android.feature.assessment.AssessmentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.splash.SplashActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.lazypay.android.feature.rekyc.ui.ReviewRekycActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.lazypay.android.common.ui.ErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.address.select.ui.ChooseAddressActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.lazypay.android.feature.axml.ui.DigioKycActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.kyc.review.ui.ReviewKycActivity" android:screenOrientation="portrait">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.axml.ui.AxmlLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.pan.ui.PanFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.pan.ui.ReKycPanFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.common.loading.LoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/title_activity_selfie" android:name="com.lazypay.android.feature.selfie.ui.SelfieActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_kyclanding" android:name="com.lazypay.android.feature.kyc.steps.ui.KYCLandingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_kyclanding" android:name="com.lazypay.android.feature.personaldetails.KYCPersonalDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/title_activity_genericerror" android:name="com.lazypay.android.common.ui.GenericInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.LazyPayAndroidOnboardingSDK">
+            <meta-data android:name="android.app.lib_name" android:value=""/>
+        </activity>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.address.add.ui.AddAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.tnc.ui.TncActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.xpresskfs.agreement.ui.KfsAgreementActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.xpresskfs.kfs.ui.XpressKFSActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.preapprovedlanding.PreApprovedLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.xpresskfs.agreement.ui.KfsAgreementPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.lazypay.android.feature.addressverification.landingscreen.activity.APVLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.addressverification.utilitybill.ui.activity.UtilityBillActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.addressverification.billprovider.ui.activity.UtilityBillProviderInfoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.addressverification.common.ui.activity.APVLoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.addressverification.common.ui.activity.APVSuccessFailureActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.addressverification.locationpermission.ui.activity.APVLocationPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.referenceverification.landingscreen.ui.ReferenceVerificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.referenceverification.successscreen.ui.ReferenceVerificationSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.referenceverification.otpscreen.ui.ReferenceVerificationOtpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.lazypay.android.feature.limit.ui.gratification.GratificationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.limit.ui.education.LimitEducationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.vkyc.ui.landing.VkycLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.vkyc.ui.steps.VkycStepsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.common.status.StatusActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.vkyc.ui.videocall.VkycVideoCallActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.common.loadingv1.LoadingActivityV1" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.locationpermission.XpressLocationPermissionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.autopay.ui.RazorpaySignInActivity" android:screenOrientation="portrait" android:theme="@style/theme_digio_activity"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.xpress.nachlanding.ui.NachLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.snailmailaddress.ui.SnailMailAddressActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.digilockerkyc.ui.landing.DigiLockerKycLandingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.digilockerkyc.ui.kycwebview.DigiLockerKycWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.lazypay.android.feature.digilockerkyc.ui.poll.DigiLockerPollActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="so.plotline.insights.PlotlineActivity"/>
+        <activity android:label="Flow Activity" android:launchMode="singleTop" android:name="so.plotline.insights.FlowViews.FullPageDialog.FlowActivity"/>
+        <service android:name="com.uxcam.service.HttpPostService"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <receiver android:exported="true" android:name="com.razorpay.RzpTokenReceiver">
+            <intent-filter>
+                <action android:name="rzp.device_token.share"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.razorpay.CheckoutActivity" android:theme="@style/CheckoutTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.citrus.citruspay" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.citrus.citruspay.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:alwaysRetainTaskState="true" android:exported="true" android:fitsSystemWindows="true" android:launchMode="singleTop" android:name="io.verloop.sdk.ui.VerloopActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.lazypay.android.watchman.WatchmanActivity" android:theme="@style/Theme.Watchman.Transparent"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <provider android:authorities="com.citrus.citruspay.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <provider android:authorities="com.citrus.citruspay.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.citrus.citruspay.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.citrus.citruspay.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.pushsdk.registerForContextMenu" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="in.digio.sdk.kyc.DigioMainActivity" android:theme="@style/DigioKycSDKTheme"/>
+        <activity android:exported="false" android:name="in.digio.sdk.kyc.OKYC.new_flow.DigioOKYCActivity" android:theme="@style/DigioKycSDKTheme"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="in.digio.sdk.gateway.DigioActivity" android:screenOrientation="portrait" android:theme="@style/DigioSDKTheme"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

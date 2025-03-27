@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__density" android:splitTypes="" package="com.fsn.nykaa" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.dreamplug.androidapp.dev"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:host="pay" android:mimeType="*/*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+    </queries>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:minSdkVersion="33" android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="29" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <permission android:name="com.fsn.nykaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.fsn.nykaa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <package android:name="com.fsn.nykaa"/>
+        <package android:name="com.fsn.nykaa.man"/>
+        <package android:name="com.fsn.nds"/>
+        <package android:name="com.fsn.nykaa.superstore"/>
+        <package android:name="com.fsn.nykaa.preprod"/>
+        <package android:name="com.fsn.nykaa.man.preprod"/>
+        <package android:name="com.fsn.nds.preprod"/>
+        <package android:name="com.fsn.nykaa.superstore.preprod"/>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.NFC" android:required="false"/>
+    <uses-feature android:name="android.hardware.nfc" android:required="false"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.android.vending.CHECK_LICENSE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="false" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="com.fsn.nykaa.NykaaApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/ThemeNykaa" android:usesCleartextTraffic="false">
+        <activity android:exported="false" android:label="@string/title_activity_web_view_jetpack_compose" android:name="com.fsn.nykaa.bottomnavigation.account.view.WebViewJetpackCompose" android:screenOrientation="portrait" android:theme="@style/ThemeNykaa"/>
+        <activity android:name="com.fsn.nykaa.product_listing_page.plp.presentation.PLPActivity"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.bottomnavigation.shopnew.view.activity.BrandListActivity" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.bottomnavigation.shopnew.view.activity.ShopCategoryNewActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.feedback.FeedBackActivity" android:screenOrientation="portrait" android:theme="@style/ThemeNykaaMaterial" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.vernacular.ActivityChangeLanguage" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fsn.nykaa.bottomnavigation.home.view.HomeActivity"/>
+        </activity>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <meta-data android:name="com.fsn.nykaa.FacebookProviderInitializer" android:value="androidx.startup"/>
+        <meta-data android:name="com.fsn.nykaa.FirestoreInitializer" android:value="androidx.startup"/>
+        <meta-data android:name="com.fsn.nykaa.MyWorkManagerInitializer" android:value="androidx.startup"/>
+        <meta-data android:name="cashfree_pg_core_encrypt_pref_enabled" android:value="@bool/cashfree_pg_core_encrypt_pref_enabled"/>
+        <meta-data android:name="cashfree_pg_core_reporting_enabled" android:value="@bool/cashfree_pg_core_reporting_enabled"/>
+        <meta-data android:name="cashfree_pg_core_auto_initialize_enabled" android:value="@bool/cashfree_pg_core_auto_initialize_enabled"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_api_key"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.quickCommerce.ui.QuickCommerceMapsActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.quickCommerce.ui.QuickCommerceSearchActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.fsn.nykaa.quickCommerce.ui.QuickCommerceTranslucentActivity" android:theme="@style/ThemeBottomSheetTranslucent" android:windowSoftInputMode="stateHidden"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_application_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="af_cid" android:value="@integer/affle_compaign_id"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertapAccountId"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertapToken"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="1"/>
+        <receiver android:exported="false" android:name="com.fsn.nykaa.pdp.ShareDestinationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.fsn.nykaa.timerNotification.NewTimerNotificationService" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="service is used to show timer notifications"/>
+        </service>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.fsn.nykaa.timerNotification.countDownTimerNotification.CountDownTimerNotificationService" android:stopWithTask="false">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="service is used to show count down timer notifications"/>
+        </service>
+        <receiver android:exported="false" android:name="com.fsn.nykaa.timerNotification.TimerNotificationDismissReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="true" android:label="@string/app_name" android:name="com.fsn.nykaa.SplashScreenActivityV2" android:screenOrientation="portrait" android:theme="@style/SplashStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa.onelink.me" android:pathPrefix="/GjoF"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.auth.activity.GDPRFailureActivity" android:screenOrientation="portrait" android:theme="@style/GdprFailStyle"/>
+        <service android:exported="true" android:name="com.fsn.nykaa.push.NykaaFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.fsn.nykaa.bottomnavigation.store.view.StoreTransitionActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="@string/title_login_register" android:launchMode="singleTop" android:name="com.fsn.nykaa.auth.activity.LoginActivity" android:parentActivityName="com.fsn.nykaa.authentication.activities.WelcomeLoginAcitivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.authentication.loginbylink.views.LoginByLinkActivity" android:screenOrientation="portrait" android:theme="@style/ThemeTranslucent"/>
+        <activity android:exported="false" android:label="@string/navigation_drawer_title_terms" android:name="com.fsn.nykaa.activities.TermsConditionsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.ProductDescriptionActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:label="@string/app_name" android:name="com.facebook.FacebookActivity" android:theme="@style/FullyTranslucent"/>
+        <service android:exported="false" android:foregroundServiceType="specialUse" android:name="com.fsn.nykaa.push.NotificationActionsHandlerService">
+            <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="service is used to handle notification actions"/>
+        </service>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.fsn.nykaa.push.DeeplinkNotificationActivity" android:theme="@style/ThemeTransparent" android:windowSoftInputMode="stateHidden">
+            <intent-filter android:autoVerify="true">
+                <data android:host="@string/host_url" android:pathPrefix="/"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="optly8501861212"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:scheme="nykaa"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/cart" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/product" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/brands" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/category" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/offers" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/homepage" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/explore" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="nykaa" android:pathPrefix="/offerpage" android:scheme="com.fsn.nykaa-android"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/app_name" android:launchMode="singleTask" android:logo="@null" android:name="com.fsn.nykaa.bottomnavigation.home.view.HomeActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.NativeLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/ThemeLightApp" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.fsn.nykaa.bottomnavigation.home.view.MultiStoreHomeActivity" android:screenOrientation="portrait" android:theme="@style/StatusBarTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="Order Details" android:name="com.fsn.nykaa.bottomnavigation.store.view.MultiStoreRegistationActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:label="@string/my_account" android:name="com.fsn.nykaa.activities.V2MyAccountActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:exported="false" android:label="@string/notifications" android:name="com.fsn.nykaa.activities.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.SupportCenterActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/title_nykaa_community" android:name="com.fsn.nykaa.activities.NykaaCommunityActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:label="@string/title_nykaa_community" android:launchMode="singleInstance" android:name="com.fsn.nykaa.nykaanetwork.lives.presentation.NykaaCommunityPIPActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="@string/product_review" android:name="com.fsn.nykaa.pdp.rateandreview.views.AddRatingReviewActivity" android:screenOrientation="portrait" android:taskAffinity="rating.container" android:theme="@style/NykaaPDPThemeNoPreview" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/product_review" android:name="com.fsn.nykaa.pdp.rateandreview.views.SubmitReviewActivity" android:screenOrientation="portrait" android:taskAffinity="rating.container" android:theme="@style/NykaaPDPThemeNoPreview" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/product_review" android:name="com.fsn.nykaa.pdp.rateandreview.views.ThankYouActivity" android:screenOrientation="portrait" android:taskAffinity="rating.container" android:theme="@style/NykaaPDPThemeNoPreview"/>
+        <activity android:exported="false" android:icon="@null" android:label="@string/title_activity_wish_list" android:name="com.fsn.nykaa.activities.WishListActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.wishlist.view.DynamicWishlistActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.fsn.nykaa.pdp.pdp_new_ui.views.activity.YouTubeIFramePlayerActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <receiver android:exported="true" android:name="com.fsn.nykaa.analytics.ManyInstallTrackersReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.fsn.nykaa.util.SMSReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.parse.push.notification_icon" android:resource="@null"/>
+        <receiver android:exported="true" android:name="com.fsn.nykaa.analytics.UpgradeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REPLACED"/>
+                <data android:path="com.fsn.nykaa" android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:label="@string/update_nykaa" android:launchMode="singleTask" android:name="com.fsn.nykaa.activities.VersionUpdateActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.fsn.nykaa.activities.VisitorPrioritizationActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="@string/search" android:name="com.fsn.nykaa.search.SearchListingActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="false" android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.appsflyer.InstanceIDListener">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.fsn.nykaa.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <provider android:authorities="com.fsn.nykaa.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.fsn.nykaa.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.fsn.nykaa.MixPanelInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.payu.crashlogger.CrashProviderInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <activity android:exported="false" android:label="@string/reorder" android:name="com.fsn.nykaa.activities.OutOfStock" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:label="Order Details" android:name="com.fsn.nykaa.activities.OrderTrackingWebview" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.plp.re_order.presentation.ReOrderActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.plp.filters.view.newdesign.DynamicFiltersActivityV2" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.activities.OfferLandingActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.activities.OffersActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.activities.MultiProductNotifyActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.productoption.views.activities.ProductOptionsActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.ViewProductsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="@string/product_detail" android:name="com.fsn.nykaa.pdp.views.activities.NykaaPDPActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/hybrid_pdp" android:name="com.fsn.nykaa.pdp.hybrid_pdp.presentation.activity.HybridPDPActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:label="@string/product_detail" android:name="com.fsn.nykaa.multistore.MultiStorePDPActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/nykaa_store" android:name="com.fsn.nykaa.activities.NykaaStoreActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.ChatScreenActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.wallet.views.activities.NykaaWalletActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.wallet.views.activities.NykaaWalletActivityNew" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.wallet.views.activities.WalletTransactionsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.MultipleFreeSamplePickerActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.V2CheckoutAddressActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.V2ShippingAddressActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.giftcardpurchase.views.activities.GiftCardActivity" android:screenOrientation="portrait" android:taskAffinity="@string/task_affinity_gift_card" android:theme="@style/Theme.GiftCardActivity"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.explore_integration.ExploreActivity" android:screenOrientation="portrait" android:taskAffinity="@string/task_affinity_gift_card"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.explore_integration.view.ExploreTransparentActivity" android:screenOrientation="portrait" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.giftcardpurchase.views.activities.GiftCardPurchaseConfirmationActivity" android:screenOrientation="portrait" android:taskAffinity="@string/task_affinity_gift_card" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.giftcardpurchase.views.activities.GiftCardMultiFormActivity" android:screenOrientation="portrait" android:taskAffinity="@string/task_affinity_gift_card" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.giftcardpurchase.views.activities.GiftCardMultiPreviewActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.activities.FeedbackDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.FeedbackDialog"/>
+        <activity android:exported="false" android:label="@string/order_details" android:name="com.fsn.nykaa.checkout_v2.views.activities.PaymentFailureActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.GiftWrapActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.help_center.views.activities.HelpCenterHomeActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.help_center.views.activities.HelpCenterWebViewActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.help_center.views.activities.HelpCenterAllTicketsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.help_center.views.activities.HelpCenterSubmitTicketActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.help_center.views.activities.HelpCenterCommentsActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.productdescription.views.NykaaPDPDescriptionActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.productdescription.views.NykaaPDPDescriptionV2Activity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.pdp.tryiton.view.TryItOnActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.views.activities.FullViewProductImageActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.plp.allproductsview.view.NykaaViewAllProductsActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.plp.offerlanding.views.NykaaOfferLandingActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.plp.view.NykaaPLPActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.plp.view.NykaaPLPActivityV2" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.multistore.MultiStoreNykaaPLPActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:logo="@null" android:name="com.fsn.nykaa.multistore.MultiStoreNykaaPLPActivityV2" android:screenOrientation="portrait" android:theme="@style/NykaaPLPTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:label="Order Details" android:name="com.fsn.nykaa.multistore.MultiStoreRegistarionActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.multistore.MultistoreBrandActivity" android:screenOrientation="portrait" android:taskAffinity="switch.Screen" android:theme="@style/ThemeAppCompatMultistoreTransparent"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.multistore.MultistoreSplashActivity" android:screenOrientation="portrait" android:taskAffinity="switch.Screen" android:theme="@style/ThemeAppCompatMultistoreTransparent"/>
+        <activity android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.multistore.MultiStoreOffersActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.multistore.MultiStoreProductOptionsActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:label="@string/app_name" android:logo="@null" android:name="com.fsn.nykaa.multistore.MultiStoresOfferLandingActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.multistore.MultiStoreDynamicFiltersActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.revamp_mvvm.infrastructure.intentnavigation.container.ToolbarFragmentContainerActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:label="@string/search" android:name="com.fsn.nykaa.search.personalisedsearch.PersonalisedSearchActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/search" android:name="com.fsn.nykaa.multistore.search.MultiStorePersonalisedSearchActivity" android:screenOrientation="portrait" android:theme="@style/NykaaPDPTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:label="@string/reset_password" android:name="com.fsn.nykaa.auth.resetPassword.view.ResetPasswordActivity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.fsn.nykaa.activities.V2MyAccountActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.fsn.nykaa.pdp.sizechart.SizechartActivity" android:screenOrientation="portrait" android:theme="@style/NykaaSizeChartTheme"/>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity" android:screenOrientation="portrait" android:theme="@style/cropThemeStyle"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.feedback_widget.NykaaFeedbackActivity" android:theme="@style/ThemeBottomSheetTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.bottomnavigation.account.view.ProfileSettingsComposeActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.cartv3.CartV3Activity" android:screenOrientation="portrait" android:theme="@style/CartSwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.nykaa.checkout_v2.views.activities.orderv3.OrderSummaryV3Activity" android:screenOrientation="portrait" android:theme="@style/SwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:exported="false" android:name="com.nykaa.ndn_sdk.impression_tracking.PostImpressionDataService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:name="com.nykaa.ndn_sdk.view.video_widget.VideoDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.nykaa.explore.view.LiveCalenderActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.nykaa.explore.view.InfluencerActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.nykaa.explore.view.SavedPostsActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.nykaa.explore.view.IntroductoryActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.nykaa.explore.view.PostDetailsActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.nykaa.explore.view.TagActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.nykaa.explore.view.TransparentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Transparent" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.nykaa.explore.view.SearchActivity" android:screenOrientation="portrait" android:theme="@style/ExploreNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.com.fsn.nykaa" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="RateAndReviewActivity" android:name="com.fsn.rateandreview.ui.RateAndReviewActivity" android:screenOrientation="portrait" android:theme="@style/RatingLibTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="RateAndReviewActivity" android:name="com.fsn.rateandreview.rateandreviewv2.view.activity.RNRV2Activity" android:screenOrientation="portrait" android:theme="@style/RatingLibTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="RateAndReviewActivity" android:name="com.fsn.rateandreview.rateandreviewv3.view.activity.RNRV3Activity" android:screenOrientation="portrait" android:theme="@style/RatingLibTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:label="Review" android:name="com.fsn.rateandreview.ui.RateAndReviewImageActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:label="Review Image Gallery" android:name="com.fsn.rateandreview.ui.review_gallery.ReviewImageGalleryActivity" android:screenOrientation="portrait" android:theme="@style/RatingLibTheme"/>
+        <activity android:label="Terms and Conditions" android:name="com.fsn.nykaa.viewcoupon.presentation.coupon_details.TermsAndConditionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.fsn.nykaa.viewcoupon.multiCoupon.MultiCouponActivity" android:screenOrientation="portrait" android:theme="@style/ThemeNykaaMaterialNoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.fsn.nykaa.android_authentication.welcome_screen.presentation.WelcomeActivity" android:screenOrientation="portrait" android:theme="@style/SwatchLightNoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.fsn.nykaa.android_authentication.guest_login.presentation.AuthTransparentLoginActivity" android:theme="@style/ThemeAppCompatTransparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <receiver android:exported="true" android:name="com.fsn.nykaa.android_authentication.util.AuthenticationSmsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.ui.hidden.checkout.CashfreeNativeCheckoutActivity"/>
+        <activity android:exported="false" android:name="com.fsn.payments.infrastructure.navigation.container.ToolbarFragmentContainerActivity" android:screenOrientation="portrait" android:theme="@style/PaymentThemeMaterialLightNoActionBarBridge" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.fsn.payments.payment.paytm.PayTmWebActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.payments.offers_revamp.presentation.activity.PaymentTermsAndConditionActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper.SwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.payments.main.activity.UpiPaymentRequestActivityV2" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper.SwatchLightNoActionBar"/>
+        <activity android:exported="false" android:name="com.fsn.payments.bnpl.view.SimplWebViewActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper.SwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.fsn.payments.web_checkout.WebCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper.SwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="in.tailoredtech.pgwrapper.presentation.CardOtpActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper.SwatchLightNoActionBar" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.nykaa.pg_facade.razorpay.RazorPayPaymentActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.nykaa.pg_facade.cashfree.CashFreePaymentActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.nykaa.pg_facade.payu.PayuPaymentsActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.nykaa.pg_facade.webview.WebViewPaymentActivity" android:screenOrientation="portrait" android:theme="@style/PaymentSwatchWrapper" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.fsn.nykaa.cashfreecorecontentprovider" android:exported="false" android:name="com.cashfree.pg.api.CashfreeCoreContentProvider"/>
+        <meta-data android:name="cashfree_pg_core_auto_initialization_enabled" android:value="@bool/cashfree_pg_core_auto_initialize_enabled"/>
+        <activity android:name="com.payu.custombrowser.CBActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.custombrowser" android:value="5adb54bc-7b88-4172-a9fc-247beae0df94"/>
+        <activity android:launchMode="singleTask" android:name="com.payu.otpassist.PayUOtpAssistActivity" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.ui.hidden.seamless.CFDropSeamlessActivity" android:theme="@style/CFSeamlessStyle"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreUPIPaymentActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreModalActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CashfreeCoreNativeVerificationActivity" android:screenOrientation="portrait" android:theme="@style/CFCoreTheme"/>
+        <meta-data android:name="cashfree_pg_logging_level" android:value="@integer/cashfree_pg_logging_level"/>
+        <receiver android:exported="true" android:name="com.cashfree.pg.core.api.ui.receiver.CFSMSBroadcastReceiver" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.fsn.nykaa.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@android:style/Theme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <provider android:authorities="com.fsn.nykaa.firebaseperfprovider" android:exported="false" android:initOrder="101" android:name="com.google.firebase.perf.provider.FirebasePerfProvider"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <meta-data android:name="cashfree_custom_analytics_subscriber_enabled" android:value="@bool/cashfree_custom_analytics_subscriber_enabled"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.razorpay.plugin.googlepay_all" android:value="com.razorpay.RzpGpayMerged"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="20100"/>
+        </service>
+        <service android:enabled="false" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.google.android.play.core.assetpacks.ExtractionForegroundService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.india" android:value="2862c050-9ee7-4ed6-8ee3-63185ead2b91"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:exported="true" android:name="com.firebase.jobdispatcher.GooglePlayReceiver" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="io.sentry.uuid.com.payu.paymentparamhelper" android:value="38ef613a-9ce9-4312-9ce0-942982f9fbfe"/>
+        <activity android:name="com.fsn.nykaa.virtualmirror.view.VirtualMirrorActivity" android:screenOrientation="portrait" android:theme="@style/NykaaVirtualMirrorTheme"/>
+        <activity android:exported="false" android:name="com.pairip.licensecheck.LicenseActivity"/>
+        <provider android:authorities="com.fsn.nykaa.com.pairip.licensecheck.LicenseContentProvider" android:exported="false" android:name="com.pairip.licensecheck.LicenseContentProvider"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

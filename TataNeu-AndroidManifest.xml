@@ -1,0 +1,1294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.tatadigital.tcp" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.permission.AUDIO_CAPTURE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <uses-permission android:maxSdkVersion="28" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <queries>
+        <package android:name="com.android.chrome"/>
+        <package android:name="org.mozilla.firefox"/>
+        <package android:name="com.opera.browser"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.accounts.AccountAuthenticator"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="com.android.contacts" android:mimeType="vnd.android.cursor.item/*" android:scheme="content"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tcp"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tcp"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="tcp"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CHOOSER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="*"/>
+        </intent>
+        <package android:name="com.bigbasket.saathi"/>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.VIDEO_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.QUICK_VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.EDIT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT_OR_EDIT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_REMINDER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SHOW_APP_INFO"/>
+        </intent>
+        <package android:name="com.google.android.apps.maps"/>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaSessionService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaLibraryService"/>
+        </intent>
+        <package android:name="com.sec.android.app.samsungapps"/>
+        <intent>
+            <action android:name="*"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true"/>
+    <permission android:name="com.tatadigital.tcp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.tatadigital.tcp.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <permission android:name="com.tatadigital.tcp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.tatadigital.tcp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
+    <uses-permission android:name="android.permission.READ"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="com.tatadigital.tcp.ProtectedAppComponentFactory" android:enableOnBackInvokedCallback="false" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher_tcp" android:label="@string/app_name" android:largeHeap="true" android:name=".ProtectedNeuApplication" android:networkSecurityConfig="@xml/prod_network_security_config" android:requestLegacyExternalStorage="true" android:roundIcon="@mipmap/ic_launcher_tcp_round" android:supportsRtl="true" android:theme="@style/BBThemeNoActionBar" android:usesCleartextTraffic="false">
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <profileable android:shell="true"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:hardwareAccelerated="true" android:launchMode="singleTask" android:name="com.tatadigital.tcp.MainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.App.Starting" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="tcp"/>
+            </intent-filter>
+            <meta-data android:name="io.flutter.embedding.android.NormalTheme" android:resource="@style/NormalTheme"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="FLUTTER_NOTIFICATION_CLICK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <meta-data android:name="flutter_deeplinking_enabled" android:value="false"/>
+            <intent-filter>
+                <data android:host="open" android:scheme="tcpscheme"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="link.tatadigital.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="open" android:scheme="tcpbranch"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="neu.in" android:scheme="https"/>
+                <data android:host="zyfzs-alternate.app.link" android:scheme="https"/>
+                <data android:host="zyfzs.app.link" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.tatadigital.com" android:scheme="https"/>
+                <data android:host="www.tataneupolicy.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.tataneu.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="tsss.tatadigital.com" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:name="alias.MainActivity" android:targetActivity="com.tatadigital.tcp.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="upi"/>
+                <data android:host="mandate" android:scheme="upi"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.tatadigital.tcp.swtwebview.view.SwtWebViewActivity" android:screenOrientation="portrait" android:theme="@style/SwtThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.tatadigital.tcp.ssowebview.view.DefaultWebViewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeNoActionBar"/>
+        <activity android:label="@string/title_activity_payments" android:name="com.tatadigital.tcp.payment.ui.activity.BBNativeChatBotViewActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="false" android:name="com.tatadigital.tcp.broadcastReceivers.DeviceConnectNotificationReceiver">
+            <intent-filter>
+                <action android:name="DEVICE_CONNECT_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_jgVWl5JScwaIjvQvh4bBppncsEosa1bE"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_khR2p2TMkuaUevNumXlmKaikxwawdWeg"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="branch_enable_log" android:value="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBwAK7XNKEJaAcQY3h3Tqu2F13rQOs1v7o"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushTracker" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.tatadigital.tcp.service.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.tatadigital.tcp.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <provider android:authorities="com.tatadigital.tcp.flutter_inappwebview_android.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/prod_provider_paths"/>
+        </provider>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.baseflow.geolocator.GeolocatorLocationService"/>
+        <provider android:authorities="com.tatadigital.tcp.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="io.branch.receivers.SharingBroadcastReceiver">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.tatadigital.tcp.flutter.image_provider" android:exported="false" android:grantUriPermissions="true" android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_image_picker_file_paths"/>
+        </provider>
+        <service android:enabled="false" android:exported="false" android:name="com.google.android.gms.metadata.ModuleDependencies">
+            <intent-filter>
+                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES"/>
+            </intent-filter>
+            <meta-data android:name="photopicker_activity:0:required" android:value=""/>
+        </service>
+        <service android:exported="false" android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.iid.Registrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.tatadigital.tcp.flutterfirebasemessaginginitprovider" android:exported="false" android:initOrder="99" android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"/>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <provider android:authorities="com.tatadigital.tcp.fileProvider.com.crazecoder.openfile" android:exported="false" android:grantUriPermissions="true" android:name="com.crazecoder.openfile.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.in_app_browser.InAppBrowserActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.TrustedWebActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview_android.chrome_custom_tabs.ActionBroadcastReceiver"/>
+        <meta-data android:name="io.flutter.embedded_views_preview" android:value="true"/>
+        <provider android:authorities="com.tatadigital.tcp.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="io.flutter.plugins.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <provider android:authorities="com.tatadigital.tcp.fileProvider.com.joutvhu.openfile" android:exported="false" android:grantUriPermissions="true" android:name="com.joutvhu.openfile.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:name="com.tatadigital.bigbasket_plugin.ui.activity.SwtWebViewActivity" android:screenOrientation="portrait" android:theme="@style/SwtThemeNoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.tatadigital.bigbasket_plugin.ui.activity.DefaultWebViewActivity" android:screenOrientation="portrait" android:theme="@style/ThemeNoActionBar"/>
+        <activity android:label="@string/title_activity_payments" android:name="com.tatadigital.bigbasket_plugin.ui.activity.BBNativeChatBotViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.smartBasket.activity.SmartBasketDyfRecommendedListActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.myorders.activity.OrderListActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.bigbasket.mobileapp.bb2mvvm.voucher.ui.VoucherListActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ForgetVoucherThankYouActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:name="bb2deliveryoption.ui.GiftMessageActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:name="bb2deliveryoption.ui.QCNewBasketActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:name="bb2deliveryoption.ui.CheckoutActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.product_reviews.activity.AllRnRReviewImageGallery" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.product_reviews.activity.RnRAllReviewsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.product_reviews.activity.RnrAllReviewsViewPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.product_reviews.activity.RnRSingleReviewViewPagerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.experiment.onboarding.SelectLocationExperimentActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.bigbasket.mobileapp.mvvm.app.adressform.activity.MemberAddressFormActivityV2" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible"/>
+        <activity android:name="com.bigbasket.mobileapp.activity.adressform.AutoPlaceSelectionActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.util.localnotification.LocalNotificationService"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="android.app.default_searchable" android:value="com.bigbasket.mobileapp.activity.product.ProductListActivity"/>
+        <meta-data android:name="com.simpl.android.sdk.merchant_id" android:value="@string/simpl_merchant_id"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.BBLocationContextActivity" android:theme="@style/TransparentThemeSplash" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.BBIntentLocationContextActivity" android:theme="@style/TransparentMaterialThemeSplash" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.BBUnAuthorizedHandlerActivity" android:theme="@style/TransparentMaterialThemeSplash" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="true" android:name="com.bigbasket.mobileapp.activity.SplashActivity" android:theme="@style/TransparentThemeSplash" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.service.SmartBasketApiCallJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.CustomerFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="true" android:name="com.bigbasket.mobileapp.activity.DeepLinkDispatcherActivity" android:theme="@style/TransparentThemeSplash" android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND.demo"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="navigation_menu_click" android:scheme="tcp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="bottom_bar_click" android:scheme="tcp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="section_item_click" android:scheme="tcp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="design_gift_card" android:scheme="tcp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="review_listing" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:host="redeem_gift_card" android:scheme="tcp"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="promo" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="feedback" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="order" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="wallet" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="product_list" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sfl_long_list" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="listing_page" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="product_group" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="education_flow" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flash_sale" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="category_landing" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="product_detail" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="smart-basket" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="order_items" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sl" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sl_summary" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="flat_page" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="promo_list" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="basket" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="dynamic_page" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="auth" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="offers_list" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="askus" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inbox" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="discount" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="home" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="store_list" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="recommendations" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="order_listing" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="order_confirmation" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="change_slot" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="return_exchange_item" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cancel_order" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="track_order" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="make_payment" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="track_order" android:scheme="bigbasket"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="forgot_voucher" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="self_service" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="auth" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="check_delivery_availability" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="my_profile" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="my_address" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="partner" android:path="/google/" android:pathPattern="/google/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/partner/google/" android:pathPattern="/partner/google/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/" android:pathPattern="/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/pc/" android:pathPattern="/pc/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/sp/" android:pathPattern="/sp/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/cl/" android:pathPattern="/cl/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/smart-basket/" android:pathPattern="/member/smart-basket/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/pd/" android:pathPattern="/pd/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/promo/" android:pathPattern="/promo/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/ps/" android:pathPattern="/ps/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/promo/promotions/" android:pathPattern="/promo/promotions/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/products/bundle-packs/" android:pathPattern="/products/bundle-packs/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/shopping-lists/" android:pathPattern="/shopping-lists/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/smart-basket/" android:pathPattern="/member/smart-basket/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="order_assistant" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/flavors/" android:pathPattern="/flavors/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/referral/" android:pathPattern="/member/-offers/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="referral" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="csr" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="referral" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="third_party_wallets" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/basket/" android:pathPattern="/basket/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/all-offers/" android:pathPattern="/all-offers/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/all-offers/c/" android:pathPattern="/all-offers/c/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/store/" android:pathPattern="/store/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/store/c/" android:pathPattern="/store/c/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/auth/login/" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/notifications/" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/credit/" android:pathPattern="/member/credit/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/product-reviews/" android:pathPattern="/product-reviews/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/review-form/" android:pathPattern="/review-form/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/payment/wallet/" android:pathPattern="/payment/wallet/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/payment/pay_now/" android:pathPattern="/payment/pay_now/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="bigbasket" android:path="/member/active-order/" android:pathPattern="/member/active-order/.*" android:scheme="tcp"/>
+                <data android:host="bigbasket" android:path="/member/active-orders/" android:pathPattern="/member/active-orders/.*" android:scheme="tcp"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="edit_profile" android:scheme="tcp"/>
+                <data android:host="add_address" android:scheme="tcp"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.SearchActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.DynamicPageActivityBB1" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+        </activity>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.bigbasket.mobileapp.activity.product.ProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="search-engine" android:resource="@xml/noindex"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.ChatActivity" android:screenOrientation="portrait" android:theme="@style/CommunicationHubTheme" android:windowSoftInputMode="adjustResize">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bigbasket.mobileapp.activity.SplashActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.Uiv4ShowCartActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.product.DiscountActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.CustomerSupportActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.ActiveOrderListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.OrderCancelConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.OrderCancellationErrorCallActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.ChangeDeliverySlotActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.ReturnExchangeItemsActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.HomeActivity" android:screenOrientation="portrait" android:theme="@style/HomeActivityTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bigbasket.homemodule.views.activity.HomeActivityBB2" android:screenOrientation="portrait" android:theme="@style/HomeActivityTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.SectionHelpActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.OrderDetailActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.myorderdetail.activity.OrderDetailActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.productgroup.ProductGroupActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.productgroup.ProductGroupRecoAndDyfActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.AvailableVoucherListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.MemberAddressFormActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.Uiv4MemberAddressFormActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.bigbasket.mobileapp.activity.product.PromoProductListActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.updateprofile.UpdateProfileActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.shoppinglist.ShoppingListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.shoppinglist.ShoppingListSummaryActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.PlacePickerActivity" android:screenOrientation="portrait" android:theme="@style/LightBBThemeNoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv4.PlacePickerActivityV4" android:screenOrientation="portrait" android:theme="@style/LightBBThemeNoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.PostOrderCreationActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.OrderThankyouActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.OrderThankYouActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.QCNewBasketActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.ThirdPartyWalletsActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.OtpValidationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/fb_app_id"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.OrderListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonWithSearchIconActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.CartBadgeToolBarIconActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonPromoActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonWithBasketButtonActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.MyAccountActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.DoWalletActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.PayNowActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.PayNowJusPayActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.WalletLinkActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.PayNowThankYouActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.FundWalletActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv3.WalletActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.product.PDImageZoomActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.gift.GiftCardActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.gift.GiftCardPaymentActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.gift.GiftCardThankYouActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.bigbasket.mobileapp.activity.specialityshops.BBSpecialityShopsActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <provider android:authorities="com.tatadigital.tcp.contentProvider.SearchSuggestionProvider" android:enabled="true" android:exported="false" android:multiprocess="true" android:name="com.bigbasket.mobileapp.contentProvider.SearchSuggestionProvider"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:exported="false" android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.GenericWalletWebViewActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.FlatPageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:label="@string/title_activity_notifications" android:name="com.bigbasket.mobileapp.activity.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.csr.DonationPaymentActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.csr.CampaignListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.csr.BundleItemsListActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.BottomCategoryActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.GiftCardJusPayActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.CheckOutJusPayActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.payment.VoucherListActivityForJusPay" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.checkout.v4.CheckoutActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv4.orderassistant.OrderAssistantActivity" android:screenOrientation="portrait" android:theme="@style/BBThemeNoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.service.GetAppDataDynamicJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.service.AddressMappingDataUploadJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.tatadigital.tcp.bbprovider" android:enabled="true" android:exported="false" android:name="com.bigbasket.mobileapp.adapter.db.DatabaseContentProvider"/>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.service.MainMenuSyncJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.cart.CartInfoSyncJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.mobileapp.service.AnalyticsJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.analytics.snowplow.ntp.NtpSyncService"/>
+        <receiver android:exported="true" android:name="com.bigbasket.mobileapp.receivers.AppUpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.gift.GiftCardDetailsActivity" android:parentActivityName="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonActivity" android:screenOrientation="portrait" android:theme="@style/BBThemeNoActionBar">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonActivity"/>
+        </activity>
+        <activity android:exported="false" android:label="@string/title_activity_my_gift_cards" android:name="com.bigbasket.mobileapp.activity.gift.MyGiftCardsActivity" android:parentActivityName="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonActivity" android:screenOrientation="portrait" android:theme="@style/BBThemeNoActionBar" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.bigbasket.mobileapp.activity.base.uiv3.BackButtonActivity"/>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.gift.GiftMessageActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|stateAlwaysVisible|adjustResize"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.checkout.paymentv4.WalletLinkActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.LoginSignUpActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv4.DeliveryRequestActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.ProductDetailActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.product.PDCosmeticProductsActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.cosmetic.PDCosmeticProductsActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.OrderCancellationActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.OrderCancellationActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv3.OrderCancellationActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.ChangeDeliverySlotActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ChangeDeliverySlotActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ChangeSlotThankYouActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.ReturnExchangeItemsActivityV4" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ReturnExchangeItemsActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.ReturnExchangeChangeDeliverySlotActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ReturnExchangeChangeDeliverySlotActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.base.uiv3.SelfServiceWebViewActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.order.uiv4.ReturnExchangeThankYouActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.ReturnExchangeThankYouActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.reviewsrating.imagegallery.activity.ImageGallery"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.reviewsrating.activity.RnRRatingActivity" android:screenOrientation="portrait" android:theme="@style/ShareViewAnimationTheme"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.product_reviews.activity.ColorShadeFilterActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.reviewsrating.activity.RnRThankYouPageActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.reviewsrating.activity.RnRReviewFormActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.reviewsrating.activity.rnr_listing.RnRListingActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.my_reviews.activity.MyReviewsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.my_reviews.activity.ProductRatingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.mvvm.app.ratingsandreviews.my_reviews.activity.EmptyReviewsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/truecaller_partnerkey"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.alcohol.AlcoholKycAgeVerificationActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.validateprofile.TcpMobileAndEmailVerificationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.DoorSelectionActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.ordertracker.OrderTrackerActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.bb2mvvm.selfservice.view.activity.OrderCancellationThankYouActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.mobileapp.activity.account.uiv4.PreferenceSettingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bigbasket.payment.wallet.activities.FundWalletActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.payment.juspay.activities.PayNowJusPayActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.payment.juspay.activities.PayNowThankYouActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.payment.wallet.activities.WalletActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.bigbasket.payment.wallet.activities.WalletJusPayActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.payment.wallet.activities.FundWalletThankYouActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="bb2deliveryoption.view.CheckOutCodPayActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="bb2deliveryoption.view.OrderThankYouActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden">
+            <meta-data android:name="showInApp" android:value="false"/>
+        </activity>
+        <activity android:exported="false" android:name="bb2deliveryoption.view.BBNowOrderThankYouActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.homemodule.views.activity.CustomerFeedbackActivityBB2" android:screenOrientation="portrait" android:theme="@style/TransparentTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.homemodule.views.activity.DynamicScreenActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.database.analytics.bannerimpression.service.AnalyticsJobIntentServiceBB2" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productlist.view.activity.ProductListActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productdetail.activity.PDImageZoomActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productdetail.activity.ProductDetailActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productdetail.activity.CartBadgeToolBarIconActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productdetail.activity.BackButtonWithSearchIconActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.shopfromorder.activity.ShopFromOrderActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.saveforlater.view.activity.SaveForLaterActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.gifting.view.activity.GiftingProductActivityBB2" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.cart.view.activity.ShowCartActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.productmodule.productdetail.activity.ProductSummaryActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.bigbasket.bb2coreModule.flutter.activities.StoryActivity"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.supersavernudge.SuperSaverNudgeJobIntentServiceBB2" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.appDataDynamic.GetAppDataDynamicJobIntentServiceBB2" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.growthabtesting.ABExperimentRegisterService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.bigbasket.bb2coreModule.database.analytics.productImpression.service.AnalyticsProductImpressionsJobIntentServiceBB2" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.bigbasket.bb2coreModule.view.searchModule.views.activity.SearchActivityBB2" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.bigbasket.bb2coreModule.ui.BottomCategoryActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.bb2coreModule.onboardingv2.activity.LocationLoaderAnimationActivity" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="false" android:name="com.bigbasket.bb2coreModule.ui.BackButtonActivityBB2" android:screenOrientation="portrait" android:theme="@style/BackButtonTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <receiver android:exported="true" android:name="com.bigbasket.bb2coreModule.common.moengage.CustomPushMessageListener$CancelNotification">
+            <intent-filter>
+                <action android:name="DISMISS_NOTIFICATION_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="false" android:exported="true" android:name="in.finbox.mobileriskmanager.sms.inbox.rt.capture.IncomingSmsReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.tatadigital.tcp.riskmanagerprovider" android:enabled="true" android:exported="false" android:name="in.finbox.mobileriskmanager.init.AutoInitProvider"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <service android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushIntentService"/>
+        <receiver android:exported="false" android:name="com.moengage.richnotification.internal.MoERichPushReceiver"/>
+        <activity android:banner="@drawable/moengage_inapp_close" android:exported="false" android:name="com.moengage.inapp.internal.activity.MoEInAppActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.tatadigital.tcp" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <service android:exported="false" android:name="com.adobe.marketing.mobile.ExtensionDiscoveryService">
+            <meta-data android:name="com.adobe.marketing.mobile.identity.IdentityExtension" android:value="Extension"/>
+            <meta-data android:name="com.adobe.marketing.mobile.lifecycle.LifecycleExtension" android:value="Extension"/>
+            <meta-data android:name="com.adobe.marketing.mobile.signal.internal.SignalExtension" android:value="Extension"/>
+            <meta-data android:name="com.adobe.marketing.mobile.userprofile.UserProfileExtension" android:value="Extension"/>
+            <meta-data android:name="com.adobe.marketing.mobile.internal.configuration.ConfigurationExtension" android:value="Extension"/>
+        </service>
+        <activity android:exported="true" android:label="@string/moe_debugger_activity_label" android:name="com.moengage.sdk.debugger.MoEDebuggerActivity" android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="debugger" android:scheme="moengage"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.moengage.pushbase.internal.activity.PermissionActivity" android:theme="@style/MoEPushPermissionTheme"/>
+        <receiver android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.moengage.pushbase.activities.PushClickDialogTracker" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <service android:exported="false" android:name="com.moengage.pushbase.internal.MoEPushWorker"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="com.tatadigital.tcp.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="com.tatadigital.tcp.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.tatadigital.tcp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.tatadigital.tcp.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.tatadigital.tcp.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <service android:exported="false" android:name="com.moengage.rtt.internal.RttIntentService"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.moengage.rtt.internal.RttReceiver"/>
+        <service android:name="com.moengage.rtt.internal.RttSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:name="com.moengage.pushamp.internal.PushAmpSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.moengage.geofence.internal.GeoFenceBroadcastReceiver"/>
+        <service android:name="com.moengage.geofence.internal.GeofenceJobIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.voltmoney.voltsdk.VoltWebViewActivity" android:theme="@style/Theme.VoltTheme"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.DownloadKycZipValidateOTPActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.DownloadKycZipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.EmailConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.MobileConfirmationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.UploadKycZipActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.ecs.offlinekyc.zip.api.DownloadKycZipAadhaarSiteActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:name="com.cyberfend.cyfsecurity.CCADialogActivity" android:theme="@style/DialogActivity"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <service android:name="com.moengage.core.internal.data.reports.DataSyncJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:label="@string/moe_core_rich_landing_title" android:name="com.moe.pushlibrary.activities.MoEActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <service android:name="com.moengage.trigger.evaluator.internal.CampaignEvaluationJob" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="io.sentry.gradle-plugin-integrations" android:value="AppStartInstrumentation,ComposeInstrumentation,DatabaseInstrumentation,FileIOInstrumentation,LogcatInstrumentation,OkHttpInstrumentation,SourceContext"/>
+        <android:activity android:exported="false" android:name="com.tatadigital.tcp.ProtectedNeuApplication$MainActivity" android:process=":p665b5109027d839bf6c2f46e"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>

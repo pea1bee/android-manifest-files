@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:n1="http://schemas.android.com/apk/distribution" android:compileSdkVersion="33" android:compileSdkVersionCodename="13" android:installLocation="auto" android:permission="android.permission.RECEIVE_BOOT_COMPLETED" n1:requiredSplitTypes="base__abi,base__density" n1:splitTypes="" package="com.byjus.thelearningapp" platformBuildVersionCode="33" platformBuildVersionName="13">
+    <permission android:name="com.byjus.thelearningapp.provider.ACCESS_DATA" android:protectionLevel="normal"/>
+    <queries>
+        <package android:name="com.byjus.thelearningapp.premium"/>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <category android:name="android.intent.category.OPENABLE"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <package android:name="com.byjus.launcher"/>
+        <package android:name="com.byjus.learnOSBridge"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.browse.MediaBrowserService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaSessionService"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.media2.session.MediaLibraryService"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="android.speech.RecognitionService"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-permission android:name="com.byjus.auth.provider.READ_WRITE_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_CALENDAR"/>
+    <uses-permission android:name="android.permission.WRITE_CALENDAR"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.permission.AUDIO_CAPTURE"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps"/>
+    <uses-feature android:name="android.hardware.location.network"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <queries>
+        <package android:name="com.byjus.auth"/>
+        <package android:name="com.google.android.youtube"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="*.youtube.com" android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="*.youtube.com" android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="*.byjus.com" android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="*.byjus.com" android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/pdf"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:host="*" android:scheme="smsto"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_MEDIA_LOCATION"/>
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.byjus.launcher.provider.READ_WRITE_PERMISSION"/>
+    <uses-permission android:name="android.permission.MICROPHONE"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <permission android:name="com.byjus.thelearningapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.byjus.thelearningapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:icon="@mipmap/ic_byjus" android:isSplitRequired="true" android:label="@string/app_name" android:largeHeap="true" android:name="com.byjus.app.BaseApplication" android:networkSecurityConfig="@xml/network_security_config" android:resizeableActivity="false" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="false">
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.byjus.app.broadcastreceivers.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.paytm.pgsdk.PaytmPGActivity" android:screenOrientation="locked"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.AnalyticsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.byjus.thelearningapp.provider" android:exported="true" android:name="com.byjus.app.provider.AppProvider" android:permission="com.byjus.thelearningapp.provider.ACCESS_DATA"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <receiver android:exported="true" android:name="com.byjus.app.broadcastreceivers.UninstallReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="io.flutter.network-policy" android:resource="@xml/network_security_config"/>
+        <profileable android:shell="true"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.app.v3.subjectChapter.ui.SubjectChapterActivity" android:screenOrientation="locked" android:theme="@style/SubjectChapterThemeV3"/>
+        <activity android:exported="false" android:name="com.byjus.app.v3.shorts.activity.SwipeVideoActivity"/>
+        <activity android:exported="false" android:name="com.byjus.app.v3.revision.acitivity.RevisionSolutionActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.video.singlevideoplayer.GradeNotPurchasedActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <meta-data android:name="com.samsung.android.icon_container.has_icon_container" android:value="true"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="867-65R-R56Z"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="256-a6b"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="in1"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="ic_notification_icon"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="barcode,custom_ica"/>
+        <activity android:name="com.byjus.app.v3.btc.activity.CentreListingActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.byjus.app.v3.btc.activity.BTCSlotBookingActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.helpcenter.activity.HelpCenterActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.experiment.ui.ABExperimentConfigurationActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="com.byjus.app.v3.splash.activity.FlutterSplashActivity" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:theme="@style/Theme.App.Starting">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="byjus"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="app.byjus.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="btla-androidk12.onelink.me" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="byjuspremium"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="premiumapp.byjus.com" android:scheme="https"/>
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/byjus_shortcuts"/>
+        </activity>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_byjus" android:label="@string/app_name" android:name="com.byjus.app.byjus" android:targetActivity="com.byjus.app.v3.splash.activity.FlutterSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_byjus_premium_launcher" android:label="@string/app_name" android:name="com.byjus.app.premiumbyjus" android:targetActivity="com.byjus.app.v3.splash.activity.FlutterSplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <service android:name="com.byjus.ChangeAppIconService" android:stopWithTask="false"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.app.onboarding.activity.OnBoardingActivity" android:screenOrientation="locked" android:theme="@style/ONBoardingTheme"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.byjus.app.deeplink.activity.DeeplinkLaunchActivity" android:permission="" android:screenOrientation="locked" android:theme="@style/Theme.App.Starting"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.byjus.app.v3.home.activity.HomeActivity" android:permission="" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="com.byjus.thelearningapp.ACTION_HOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.byjus.thelearningapp.home.activity.HomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:name="com.byjus.app.v3.quizassesment.QuizAssessmentActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.v3.nointernet.NoInternetActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.app.v3.btc.activity.BTCBookingSuccessActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.dailyactivity.guidedmode.GuidedModeDailyActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.app.v3.revision.acitivity.RevisionListActivity" android:screenOrientation="locked" android:theme="@style/SubjectChapterThemeV3"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.app.v3.revision.acitivity.ChapterRevisionActivity" android:screenOrientation="locked" android:theme="@style/SubjectChapterThemeV3"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.app.v3.revision.acitivity.AllQuickBitesRevisionActivity" android:screenOrientation="locked" android:theme="@style/SubjectChapterThemeV3"/>
+        <activity android:name="com.byjus.app.misc.activity.ParentalAccessActivity" android:screenOrientation="locked" android:theme="@style/ParentalAccessTheme"/>
+        <activity android:name="com.byjus.app.offlinesubscription.activity.OfflineSubscriptionActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.misc.activity.HelpAndFeedbackActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.app.compose.sample_activity.ComposeShowcaseActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:exported="true" android:name="com.byjus.app.test.activity.TestListActivity" android:permission="" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="com.byjus.app.test.activity.TestListActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTop" android:name="com.byjus.app.notification.activity.NotificationActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.product.activity.QuickPayActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:name="com.byjus.app.product.activity.AddCardActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:label="@string/title_activity_get_cvv" android:name="com.byjus.app.product.activity.GetCVVActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.byjus.app.product.activity.BankListActivity" android:screenOrientation="locked" android:theme="@style/BankListTheme"/>
+        <activity android:name="com.byjus.app.product.activity.ProductDetailActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:label="@string/title_product_list" android:name="com.byjus.app.product.activity.ProductActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:name="com.byjus.app.product.activity.DeliveryAddressActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.byjus.app.product.activity.PaymentResultActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:name="com.byjus.app.video.activity.VideoListActivity" android:permission="" android:resizeableActivity="true" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="@string/piptask">
+            <intent-filter>
+                <action android:name="com.byjus.recommendation_shortcut_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="false" android:label="@string/discover_title" android:name="com.byjus.app.discover.activity.DiscoverActivity" android:screenOrientation="locked"/>
+        <activity android:exported="false" android:label="@string/discover_title" android:name="com.byjus.app.discover.activity.DiscoverVideoActivity" android:screenOrientation="locked"/>
+        <activity android:exported="false" android:label="@string/discover_title" android:name="com.byjus.app.discover.activity.DiscoverArticleActivity" android:screenOrientation="locked"/>
+        <activity android:exported="false" android:label="@string/qod_title" android:name="com.byjus.app.discover.activity.QODActivity" android:screenOrientation="locked"/>
+        <activity android:exported="false" android:name="com.byjus.app.discover.activity.QODPrevActivity" android:screenOrientation="locked"/>
+        <activity android:label="@string/app_name" android:name="com.byjus.app.misc.activity.WebViewActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.forceupdate.ForceUpdateActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:exported="true" android:name="com.byjus.app.paywall.activity.PayWallActivity" android:permission="" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="com.byjus.paywall_shortcut_action"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name="com.byjus.statslib.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.byjus.app.v3.subject.library.activities.VideoQueuePlayerActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="@string/piptask" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.byjus.app.barcodereader.activity.BarcodeScannerActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:hardwareAccelerated="true" android:name="io.flutter.embedding.android.FlutterActivity" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:hardwareAccelerated="true" android:name="com.byjus.app.utils.flutter.ByjusFlutterActivity" android:supportsPictureInPicture="true" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <service android:exported="false" android:name="com.byjus.app.notification.gcm.FcmPushListenerService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="com.byjus.app.notification.gcm.GCMNotificationClickReceiver"/>
+        <receiver android:exported="true" android:name="com.byjus.app.broadcastreceivers.PackageReplacedReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:hardwareAccelerated="true" android:name="com.byjus.app.misc.activity.ChatActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme"/>
+        <activity android:label="@string/title_activity_sdcard_preparation" android:name="com.byjus.app.parity.activity.SDCardPreparationActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.offers.activity.DsslActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.bnat.activity.BnatActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.crosspromo.CrossPromoActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.offers.activity.HomeDemoActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.byjus.app.helpcenter.activity.NoDialerBottomSheet" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Transparent.NoActionBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.notification.activity.NotificationsDebugActivity" android:screenOrientation="locked" android:theme="@style/Theme.DebugTranslucent" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.byjus.app.practice.activity.PracticeHomeActivity" android:permission="" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="com.byjus.app.practice.activity.PracticeHomeActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_jhqkGBDvurWOb7RU6dYgbkcnsrjPHg7E"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_mkzlMvCAtDYOm9LLWg9f5gbhErjTPa1O"/>
+        <meta-data android:name="io.branch.sdk.auto_link_disable" android:value="false"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="@bool/branch_test_mode"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="@bool/perf_log_enabled"/>
+        <meta-data android:name="HANSEL_APP_ID" android:value="3IDHQBG7X1PKDH7LWFUIFRCVB"/>
+        <meta-data android:name="HANSEL_APP_KEY" android:value="OYIR4792HCY36VINRC0OPV9IB7WZIW2TQHQCRDVRG9ON37G1PF"/>
+        <meta-data android:name="SMT_APP_ID" android:value="c425114d7724a067f92b74d66f81fc73"/>
+        <meta-data android:name="com.google.firebase.ml.vision.DEPENDENCIES" android:value="ocr, barcode"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.content.activity.VideoTestActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.video.dialog.VideoDialogActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.video.dialog.YouTubeVideoDialogActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.video.dialog.SearchVideoDialogActivity" android:screenOrientation="locked" android:theme="@style/VideoDialogTranslucentTheme"/>
+        <activity android:name="com.byjus.app.onboarding.activity.LoginActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.app.onboardingv3.login.LoginActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.byjus.app.search.activity.SearchActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.app.v3.mybyjus.activity.NoticeBoardActivity" android:screenOrientation="locked" android:theme="@style/NoticeBoardTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.byjus.app.onboarding.activity.VerifyActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.app.onboardingv3.verify.VerifyActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.onboarding.activity.ParentStudentActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.app.onboarding.activity.ParentVideoActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.personalisation.activity.PersonalisationActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.app.practice.activity.PracticeLaunchActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.app.test.activity.TestLaunchActivity" android:screenOrientation="locked" android:theme="@style/TestLaunchActivityTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.bookmark.activity.BookmarkActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:name="com.byjus.app.video.singlevideoplayer.SingleVideoPlayerActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="@string/piptask" android:theme="@style/SingleVideoPlayerTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.bookmark.activity.BookmarkQuestionActivity" android:screenOrientation="locked" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.webinar.activity.WebinarActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.younggenius.activity.BYGActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.byjus.app.webinar.activity.WebinarVideoActivity" android:screenOrientation="landscape" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.byjus.app.xploregames.activity.XploreHomeActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.studyplan.activity.StudyPlanActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.v3.learnstationdemo.ui.LearnStationDemoActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.app.content.activity.ContentTestingActivity"/>
+        <activity android:name="com.byjus.app.v3.onboarding.verify.VerifyActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.v3.onboarding.passcode.setpasscode.activity.CreatePassCodeActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.app.v3.onboarding.passcode.passcodeverify.activity.PasscodeVerifyActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.app.v3.onboarding.passcode.troublelogin.TroubleLoginActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.byjus.app.v3.yearendGradeswitch.ui.activity.YearEndGradeSwitchActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.app.classes.home.NeoClassesHomeActivity" android:screenOrientation="locked"/>
+        <receiver android:exported="true" android:name="com.byjus.offline.offlineresourcehandler.recievers.SDCardStateReciever">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_REMOVED"/>
+                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
+                <action android:name="android.intent.action.MEDIA_EJECT"/>
+                <data android:scheme="file"/>
+                <category android:name="android.intent.category.HOME"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.byjus.widgetlib.provides.RecommendationWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_recommendation_info"/>
+        </receiver>
+        <receiver android:exported="true" android:name="com.byjus.widgetlib.provides.LaunchPointWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_launch_point_info"/>
+        </receiver>
+        <provider android:authorities="com.byjus.thelearningapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <provider android:authorities="com.byjus.thelearningapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.byjus.provider.BTLAFileProvider" android:screenOrientation="locked">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <service android:name="com.byjus.ChangeAppIconService" android:stopWithTask="false"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.session.detail.SessionDetailActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.homework.SubjectiveHomeworkActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.reportcard.ReportCardActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.session.detail.BookingSessionDetailActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.session.detail.ClassNotesPdfActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.byjus.tutorplus.onetomega.rating.RatingActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:screenOrientation="locked" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.livechat.activity.LiveChatActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <provider android:authorities="com.byjus.thelearningapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/paths_provider"/>
+        </provider>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.worksheet.WorksheetTestInstructionActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.onetomega.worksheet.activity.WorksheetTestModeActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation" android:name="com.byjus.tutorplus.onetomega.session.activity.PremiumSchoolSessionActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.tutorplus.onetomega.courseselect.activity.PremiumSchoolCourseActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.onetomega.subscriptionhandling.SubscriptionHandlingActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.onetomega.bookingsuccess.BookingSuccessActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.onetomega.PdfActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.tutorplus.neo.session.NeoSessionActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.byjus.tutorplus.neo.launcher.NeoSessionLaunchActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.tutorplus.neo.feedback.FeedbackActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.sessions.ui.MissedClassesReasonBottomSheetActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.calendarnotification.CalendarNotificationActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.feedback.ui.FeedbackScreenActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.booking.SessionBookingBottomSheetActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.booking.MlpRebookingActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.booking.SwapRebookActivity" android:screenOrientation="locked"/>
+        <service android:name="com.byjus.tutorplus.onetomega.home.worker.SessionNotificationAlarmService"/>
+        <receiver android:name="com.byjus.tutorplus.neo.commons.NeoNotifBroadcastReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.byjus.classes.app.home.ClassStartedReminderActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.classes.exitfeedback.ui.ExitFeedbackScreenActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.booking.ui.WhyByjusClassesActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.classes.assessment.subjective.SubjectiveAssessmentActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.onetomega.doubtsession.BookDoubtSessionActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.onetomega.StudentLeaveManagement.StudentLeaveManagementActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.onetomega.home.worker.BTCFullscreenNotificationActivity" android:screenOrientation="portrait" android:showOnLockScreen="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.onetomega.resultUpload.BlcStudentReportActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="true" android:name="com.byjus.learningcentre.onetomega.home.activity.BlcOneToMegaHomeActivity" android:permission="" android:screenOrientation="locked">
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="premium-school" android:scheme="com.byjus.thelearningapp.d4.premium"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:name="com.byjus.learningcentre.onetomega.rating.RatingActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.learningcentre.livechat.activity.BlcLiveChatActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.learningcentre.onetomega.worksheet.activity.BlcWorksheetTestInstructionActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.learningcentre.onetomega.worksheet.activity.BlcWorksheetTestModeActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.learningcentre.onetomega.BlcPdfActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.learningcentre.blc.session.OnlineSessionActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.learningcentre.blc.session.offline.OfflineSessionActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.blc.launcher.BlcSessionLaunchActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.learningcentre.blc.feedback.BlcFeedbackActivity" android:screenOrientation="locked" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.onetomega.applyStudentLeave.ApplyStudentLeaveActivity" android:screenOrientation="locked"/>
+        <service android:name="com.byjus.learningcentre.onetomega.home.worker.SessionNotificationAlarmService"/>
+        <receiver android:name="com.byjus.learningcentre.blc.commons.BlcNotifBroadcastReceiver"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.byjus.learningcentre.base.BLCWebViewActivity" android:screenOrientation="locked"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.byjus.doubts.ui.DoubtsSessionActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.byjus.askwiz.ui.activities.AskWizLandingActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.byjus.askwiz.ui.activities.SuggestionActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.byjus.askwiz.ui.activities.ImageSearchActivity" android:screenOrientation="locked">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.byjus.testengine.activities.TestStartActivity" android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="com.byjus.testengine.activities.TestStartActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.testengine.activities.TestModeActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.testengine.activities.HighlightsActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.testengine.activities.StatsActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/practice_performance_title" android:name="com.byjus.testengine.activities.PracticeModePerformanceActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.byjus.testengine.activities.PracticeModeActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.rewards.activity.UserRewardsActivity" android:screenOrientation="locked" android:theme="@style/UserRewardsTheme"/>
+        <activity android:name="com.byjus.rewards.activity.RewardsLevelStatusActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.rewards.activity.RewardsLevelUpActivity" android:screenOrientation="locked" android:theme="@style/NewAppTheme" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.byjus.rewards.activity.EarnedBadgeActivity" android:screenOrientation="locked" android:theme="@style/EarnedBadgeTheme"/>
+        <activity android:name="com.byjus.rewards.activity.ShowAllBadgesActivity" android:screenOrientation="locked" android:theme="@style/ShowAllBadgesTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.byjus.aakash_online.classes.view.activity.AakashClassesWebViewActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.byjus.aakash_online.classes.view.activity.OurProgramsActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.goggles.camera.GogglesCameraActivity" android:screenOrientation="locked" android:theme="@style/NewAppThemeCamera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.byjus.goggles.d4camera.GogglesD4CameraActivity" android:screenOrientation="sensorLandscape" android:theme="@style/NewAppThemeCamera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:name="com.byjus.goggles.videoplayer.GogglesVideoPlayerActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="@string/piptask" android:theme="@style/GogglesVideoPlayerTheme"/>
+        <activity android:autoRemoveFromRecents="true" android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.byjus.goggles.v3.videoplayer.GogglesVideoPlayerActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:supportsPictureInPicture="true" android:taskAffinity="@string/piptask" android:theme="@style/GogglesVideoPlayerTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="com.byjus.goggles.v3.camera.GogglesCameraActivity" android:screenOrientation="locked" android:theme="@style/NewAppThemeCamera" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.byjus.qnaSearch.features.textbook.activity.TextbookSolutionActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.byjus.qnaSearch.features.textbook.activity.BrowseTextbookActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.qnaSearch.features.textbook.activity.TextBookDetailActivity" android:screenOrientation="locked"/>
+        <activity android:name="com.byjus.qnaSearch.features.textbook.activity.TextbookExerciseActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.textbook.activity.ChapterDetailsActivity" android:resizeableActivity="true" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.postSearchInput.PostInputActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.crop.CropImageActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.solution.SolutionActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.videoplayer.VideoPlayerActivity" android:screenOrientation="locked" android:theme="@style/videoPlayerTheme"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.autosolver.AutoSolverActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.qnaHome.QnaHomeActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.universalSearch.activity.UniversalSearchActivity" android:screenOrientation="portrait" android:theme="@style/universalSearchActivityTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:launchMode="singleTask" android:name="com.byjus.qnaSearch.features.qnaHome.QnALaunchActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.studyHour.activity.StudyHourActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize|stateVisible"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.byjus.qnaSearch.features.studyHour.activity.StudentSelectionActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.byjus.eventregistration.ui.activity.EventRegistrationActivity" android:screenOrientation="locked" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:allowTaskReparenting="true" android:exported="false" android:name="com.byjus.offlinecenter.nearestofflinecenter.activity.NearestOfflineCenterActivity" android:screenOrientation="locked"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:name="com.byjus.btlavideoplayer.DrmVideoActivity" android:screenOrientation="locked" android:theme="@style/DRMVideoTheme"/>
+        <service android:name="com.byjus.thelearningapp.byjusdatalibrary.download.FileDownloadService"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.byjus.livequiz.ui.livequiz.LiveQuizActivity"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.byjus.livequiz.ui.landingPage.activity.LiveQuizLandingActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.byjus.livequiz.ui.wquiz.WQuizImplActivity" android:screenOrientation="locked"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.byjus.learnapputils.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.byjus.cropimage.ImageCroppingActivity" android:screenOrientation="locked"/>
+        <provider android:authorities="com.byjus.thelearningapp.cropper.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.canhub.cropper.CropFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/library_file_paths"/>
+        </provider>
+        <activity android:exported="true" android:name="com.canhub.cropper.CropImageActivity"/>
+        <activity android:label="@string/chucker_name" android:launchMode="singleTask" android:name="com.chuckerteam.chucker.internal.ui.MainActivity" android:taskAffinity="com.chuckerteam.chucker.task" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <service android:exported="false" android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"/>
+        <provider android:authorities="com.byjus.thelearningapp.com.chuckerteam.chucker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/chucker_provider_paths"/>
+        </provider>
+        <meta-data android:name="flutterProjectType" android:value="module"/>
+        <meta-data android:name="flutterEmbedding" android:value="2"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.crashlytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.performance.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.analytics.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.firebaseremoteconfig.FlutterFirebaseAppRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:exported="false" android:name="com.byjus.authlib.oauth.OAuthWebViewActivity" android:theme="@style/AppTheme.Transparent.NoActionBar"/>
+        <activity android:name="com.github.drjacky.imagepicker.ImagePickerActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.ImagePicker"/>
+        <activity android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <provider android:authorities="com.byjus.thelearningapp.imagepicker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.github.drjacky.imagepicker.ImagePickerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/image_picker_provider_paths"/>
+        </provider>
+        <receiver android:enabled="true" android:exported="true" android:name="io.hansel.diagnostics.DiagnosticsCommandReceiver">
+            <intent-filter>
+                <action android:enabled="true" android:name="io.hansel.diagnostics.request"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.byjus.videoplayer.downloader.VideoDownloaderService">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.google.android.exoplayer2.scheduler.PlatformScheduler$PlatformSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.label.custom.thin.CustomLabelRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:label="@string/title_activity_citrus" android:name="com.citrus.sdk.CitrusActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar" android:windowSoftInputMode="adjustPan"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="com.netcore.android.notification.SMTBootPNReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.netcore.android.geofence.GeoFenceBroadcastReceiver"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="location" android:name="com.baseflow.geolocator.GeolocatorLocationService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.byjus.thelearningapp.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="com.byjus.thelearningapp.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTask" android:name="ai.haptik.android.wrapper.sdk.HaptikWebView" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:configChanges="density|fontScale|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <activity android:exported="false" android:launchMode="singleInstance" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance" android:theme="@style/ThemeTransparent"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"/>
+        <meta-data android:name="io.flutter.embedded_views_preview" android:value="true"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:launchMode="singleTask" android:name="net.openid.appauth.AuthorizationManagementActivity" android:theme="@style/Theme.AppCompat.Translucent.NoTitleBar"/>
+        <activity android:exported="true" android:name="net.openid.appauth.RedirectUriReceiverActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="com.byjus.auth"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.byjus.thelearningapp.flutter.share_provider" android:exported="false" android:grantUriPermissions="true" android:name="dev.fluttercommunity.plus.share.ShareFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/flutter_share_file_paths"/>
+        </provider>
+        <receiver android:exported="false" android:name="dev.fluttercommunity.plus.share.SharePlusPendingIntent">
+            <intent-filter>
+                <action android:name="EXTRA_CHOSEN_COMPONENT"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="io.flutter.plugins.urllauncher.WebViewActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.nudges.activities.VideoNudgeActivityAsk" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.toppr.askexpert.ui.activities.DoubtActivityAsk" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.camera.activities.AskDoubtActivity"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.camera.activities.AskTypeDoubtActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.question_and_answer.activity.SearchActivityAsk"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.ask_doubt.activity.AskADoubtActivityAsk" android:theme="@style/TransparentThemeAsk"/>
+        <activity android:exported="false" android:name="com.toppr.askexpert.ui.dov.activites.AgoraActivityAsk" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.toppr.askexpert.ui.feedback.activities.FeedbackActivityAsk" android:theme="@style/TransparentThemeAsk"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.toppr.askexpert.ui.dov.activites.DovChatActivityAsk" android:screenOrientation="portrait" android:theme="@style/TransparentThemeAsk" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:name="com.playosmo.visionplatform.UnityActivity"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.agora.rtc.ss.impl.ScreenSharing$LocalScreenCaptureAssistantActivity" android:screenOrientation="fullUser" android:theme="@android:style/Theme.Translucent"/>
+        <service android:exported="false" android:foregroundServiceType="mediaProjection" android:name="io.agora.rtc.ss.impl.LocalScreenSharingService">
+            <intent-filter>
+                <action android:name="android.intent.action.screenshare"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.phonepe.app" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <queries>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.android.phone"/>
+        <package android:name="com.google.android.gms"/>
+        <package android:name="com.pincode.shop"/>
+        <package android:name="com.phonepe.stockbroking"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="*/*" android:scheme="*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.GET_CONTENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:host="*" android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:host="*" android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CLOSE_SYSTEM_DIALOGS"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.OPEN_DOCUMENT"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.indus.appstore"/>
+        <package android:name="com.phonepe.app.business"/>
+        <intent>
+            <action android:name="com.phonepe.accounts.sso.PP_ACCOUNT_DETAILS"/>
+        </intent>
+        <intent>
+            <action android:name="com.phonepe.login.sso.PP_SSO_EXECUTE"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CREATE_DOCUMENT"/>
+            <data android:mimeType="*/*"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <data android:host="mandate" android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:pathPattern=".*" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <data android:host="pay" android:pathPattern=".*" android:scheme="juspay"/>
+        </intent>
+        <intent>
+            <data android:host="checkout" android:pathPattern=".*" android:scheme="credpay"/>
+        </intent>
+        <package android:name="com.tatadigital.tcp.dev"/>
+        <package android:name="com.tatadigital.tcp"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:mimeType="application/uri"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:host="*" android:scheme="smsto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_PROFILE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.Manifest.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.Manifest.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.webkit.resource.VIDEO_CAPTURE"/>
+    <uses-permission android:name="android.webkit.resource.AUDIO_CAPTURE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <permission android:name="com.phonepe.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.phonepe.app.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <permission android:name="com.phonepe.app.permission.SYNC_COMPLETE" android:protectionLevel="normal"/>
+    <uses-permission android:name="com.phonepe.app.permission.SYNC_COMPLETE"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:minSdkVersion="30" android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="false"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <permission android:name="com.phonepe.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.phonepe.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.REORDER_TASKS"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="false" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.phonepe.app.PhonePeApplication" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/PhonePeTheme" android:usesCleartextTraffic="false">
+        <profileable android:shell="true"/>
+        <meta-data android:name="android.supports_size_changes" android:value="true"/>
+        <meta-data android:name="android.splashscreen.exception_opt_out" android:value="true"/>
+        <meta-data android:name="firebase_performance_collection_enabled" android:value="false"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_maps_key"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoLogAppEventsEnabled" android:value="false"/>
+        <meta-data android:name="com.facebook.sdk.AutoInitEnabled" android:value="false"/>
+        <meta-data android:name="firebase_performance_collection_deactivated" android:value="false"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-7497871399275516~6791896171"/>
+        <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        <meta-data android:name="com.phonepe.imageLoader.glideModule.CustomOkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="dashBuildTrack" android:value="RELEASE"/>
+        <meta-data android:name="dashTestingEnabled" android:value="false"/>
+        <meta-data android:name="legacyLaunchFlowEnabled" android:value="true"/>
+        <receiver android:exported="true" android:name="com.appsflyer.MultipleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.phonepe.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.phonepe.app.customflowPerf" android:exported="false" android:initOrder="100" android:name="com.phonepe.app.dg.CustomFlowContentProvider"/>
+        <provider android:authorities="com.phonepe.app.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.phonepe.app.boot.PhonePeStartupInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.phonepe.app.ui.activity.Navigator_OldMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.App" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.authv3.views.Navigator_OnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.login.pvsdk.LoginPVActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.phonepe.app.login.ui.Navigator_LoginNavigationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.ui.fragment.onboarding.annotated.Navigator_AnnotatedFeedbackActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.wevviewnew.feature1.ui.view.activity.Navigator_WebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.wevviewnew.feature1.ui.view.activity.Navigator_DialogWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.wallet.common.ui.view.activity.Navigator_WalletActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.transaction.search.txns.ui.Navigator_TxnSearchActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.phonepe.app.appBuildUpdate.ui.AppBuildExpiryActivity" android:theme="@style/Theme.Transparent.Base" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featurecorekyc.ui.view.activity.KYCDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featurecorekyc.ui.view.activity.Navigator_KYCDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.video.recording.ui.VideoRecordingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featurecorekyc.ui.customview.camera.ImageCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featurecorekyc.ui.view.activity.SignatureCaptureActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featureofflinekyc.ui.view.activity.KYCScheduleActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featureofflinekyc.ui.view.activity.OfflineKYCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featureofflinekyc.ui.view.activity.Navigator_OfflineKYCActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.horizontalkyc.featureofflinekyc.ui.view.activity.OfflineKycDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.kyc.minkyc.ui.view.activity.Navigator_KycActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.react.app.Navigator_PhonePeReactPopActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.insurance.ui.activity.Navigator_InsuranceWebViewActivity" android:screenOrientation="portrait" android:theme="@style/BaseShadowTheme.Theme.Transparent.Kyc" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.phonepe.app.v4.nativeapps.stores.storediscovery.ui.view.activity.Navigator_StoreDiscoveryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.stores.storediscovery.ui.view.activity.Navigator_StoreDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.phonepe.app.myprofile.Navigator_MyAccountsDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.yatra.activity.Navigator_YatraHostActivity" android:screenOrientation="portrait" android:theme="@style/Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.generalwebviewnew.feature1.ui.view.activity.Navigator_GenericWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.fragment.onboarding.upi.Navigator_UpiOnboardingActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.upi.onboarding.ui.Navigator_UPIOnboardingActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.fragment.onboarding.Navigator_AnnotatedAccountPinActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="com.phonepe.onboarding.sms.MobileVerificationService"/>
+        <service android:name="com.phonepe.onboarding.mobileverification.service.MobileVerificationServiceV2"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.transaction.detail.ui.Navigator_TransactionDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.transaction.downloads.ui.Navigator_TransactionDownloadsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.rechargeandbillpayment.ui.activity.Navigator_PlanPickerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_PaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_GeneralActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_GenericNoLockActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_SelectAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_CallMeBackActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.contacts.reminders.activity.Navigator_PaymentReminderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.gold.elss.ui.activity.Navigator_DigiGoldActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.phonepe.app.ui.activity.Navigator_LockActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboard|keyboardHidden|navigation|orientation" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.phonepe.app.crm.lockscreen.ui.Navigator_LockScreenNotificationActivity" android:screenOrientation="portrait" android:taskAffinity=""/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.GetCredential" android:screenOrientation="portrait" android:theme="@style/ActivityTheme" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.pinactivitycomponent.GetCredential"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.contacts.common.ui.view.activity.Navigator_ContactPaymentUseCaseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_ManageContactsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTop" android:name="com.phonepe.app.v4.nativeapps.wevviewnew.feature1.ui.view.activity.Navigator_SupportWebViewActivity" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.transaction.list.ui.Navigator_TransactionListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.giftcard.ui.view.activity.Navigator_GiftCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.discovery.ui.Navigator_CategoryDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.baap.openAccount.Navigator_OpenAccountActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.accountAggregator.Navigator_AccountAggregatorLauncherActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.baap.Navigator_SetUpiPinActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="com.phonepe.app.ui.activity.Navigator_DeepLinkHandlerActivity" android:relinquishTaskIdentity="true" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent.LightNavigation">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="phonepe"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="bbps"/>
+                <data android:host="pay" android:scheme="bharatconnect"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="ppe"/>
+                <data android:host="pay"/>
+                <data android:host="mandate"/>
+                <data android:host="linkinstruments"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.phonepe.com" android:pathPrefix="/applink" android:scheme="https"/>
+                <data android:host="www.phonepe.com" android:pathPrefix="/earn" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="ppe.onelink.me" android:pathPrefix="/rPjp" android:scheme="https"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.phonepe.app.ui.activity.IntentRegistrationActivity" android:targetActivity="com.phonepe.app.ui.activity.Navigator_DeepLinkHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="pay" android:scheme="upi"/>
+                <data android:host="pay" android:scheme="upiGlobal"/>
+                <data android:host="pay" android:scheme="upiglobal"/>
+                <data android:host="mandate" android:scheme="upi"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:name="com.phonepe.app.ui.activity.ActionSendIntentHandler" android:targetActivity="com.phonepe.app.ui.activity.Navigator_DeepLinkHandlerActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:name="com.phonepe.app.ui.activity.Navigator_InviteFriendActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:excludeFromRecents="true" android:name="com.phonepe.app.ui.activity.Navigator_TransparentActivity" android:theme="@style/AppCompatAlertDialog"/>
+        <activity android:name="com.phonepe.app.ui.activity.Navigator_TransparentNonDialogActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.inappupdate.common.view.Navigator_AppUpdateActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.sherlock.ui.view.activity.Navigator_SherlockActivity" android:theme="@style/Theme.Transparent.App"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.transaction.statement.ui.activities.Navigator_TransactionStatementActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:exported="false" android:label="@string/phonepe_string" android:name="com.phonepe.app.appLaunchPad.widgets.ui.multiChoice.MultiChoicePaymentHomeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/multi_choice_payment_home_widget_info"/>
+        </receiver>
+        <receiver android:exported="false" android:label="@string/scan_any_qr" android:name="com.phonepe.app.appLaunchPad.widgets.ui.scanAndPay.ScanAndPayHomeWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/scan_and_pay_home_widget_info"/>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.phonepe.app.pushnotifications.sync.notification.SyncCompleteReceiver">
+            <intent-filter android:priority="-999">
+                <action android:name="com.phonepe.app.sync_complete"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.phonepe.app.pushnotifications.NotificationsSettingsChangeReceiver">
+            <intent-filter>
+                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED"/>
+                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.phonepe.app.v4.nativeapps.microapps.react.ui.services.MicroAppService"/>
+        <service android:exported="false" android:name="com.phonepe.app.pushnotifications.sync.notification.TransactionNotificationService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.phonepe.app.pushnotifications.sync.notification.DeclineMoneyRequestService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.google.android.gms.analytics.CampaignTrackingReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@null"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/colorBrandPrimary"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.microapps.react.ui.activities.Navigator_MicroAppActivity" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.microapps.react.ui.activities.Navigator_MicroAppResolverActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.microapps.react.ui.activities.Navigator_WebMicroAppActivity" android:theme="@style/Theme.TransparentDark" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.microapps.react.ui.activities.Navigator_SingleSignOnMicroAppActivity" android:screenOrientation="portrait" android:theme="@style/Theme.TransparentDark" android:windowSoftInputMode="adjustResize"/>
+        <activity android:excludeFromRecents="true" android:name="com.phonepe.app.ui.activity.ProfilePicViewerActivity" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:name="com.phonepe.app.ui.fragment.service.TransactionRedirectionWebView" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.basephonepemodule.view.video.play.ui.VideoPlayerActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.mutualfund.elss.ui.view.activity.Navigator_MutualFundsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.ui.fragment.onboarding.multipsp_migration.Navigator_MigrationActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.mutualfund.liquidfunds.ui.view.activity.Navigator_BaseLFActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.v4.nativeapps.reminders.preference.ui.view.activity.Navigator_ReminderPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.ScratchCardActivity" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.external.sdksupport.ui.Navigator_PaymentLiteActivity" android:theme="@style/Theme.AppCompat.TranslucentDark"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.external.sdksupport.revamp.ui.Navigator_OnlineMerchantActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.TranslucentDark"/>
+        <activity android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardSendGiftActivity" android:theme="@style/AppTheme.Dialog" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_SwitchHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="uiMode" android:name="com.phonepe.app.ui.activity.Navigator_FinancialServicesActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="uiMode" android:name="com.phonepe.app.ui.activity.Navigator_SampleWidgetXLoaderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.offers.categorydetail.Navigator_OfferCategoryDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.offers.home.Navigator_OffersHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.phonepe.app.ui.activity.Navigator_PhonePeVideoDetailsActivity" android:theme="@style/Theme.TransparentDialog"/>
+        <activity android:name="com.phonepe.app.ui.activity.Navigator_FullScreenVideoDialogActivity" android:screenOrientation="portrait" android:theme="@style/Theme.TransparentDialog"/>
+        <activity android:name="com.phonepe.app.ui.activity.Navigator_FullScreenVideoDialogActivityLandscape" android:screenOrientation="landscape" android:theme="@style/Theme.TransparentDialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.phonepe.app.v4.nativeapps.upi.checkbalance.ui.view.activity.Navigator_CheckBalanceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.stores.storediscoveryia.ui.view.activity.Navigator_StoresActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.stores.storediscoveryia.ui.view.activity.Navigator_StoreDetailActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardSwapActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardChoiceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardPreferenceActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.phonepe.app.pushnotifications.core.NotificationDismissBroadcastReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.phonepe.app.ui.activity.AppSelectorBroadcastReceiver"/>
+        <activity android:name="com.phonepe.app.pushnotifications.core.activity.NotificationClickActivity" android:noHistory="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_RewardArchiveActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.mutualfund.questionnaire.ui.view.activity.Navigator_QuestionnaireActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.phonepe.app.ui.activity.Navigator_FeatureNotSupportedActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Kyc" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.phonepe.app.legacyModule.earn.Navigator_EarnConsumerAppActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.phonepe.app.v4.nativeapps.userProfile.dataPreferences.views.pv.Navigator_FPPANCollectionPVActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.billpay.common.ui.activity.Navigator_BillProviderActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.giftcard.ui.view.activity.Navigator_GiftCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.account.transfer.common.ui.view.activity.Navigator_AccountTransferActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.account.transfer.phonepeverified.ui.view.activity.AccountTransferPhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.nexus.mybills.view.ui.Navigator_AccountWizardTransparentActivity" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.mybills.view.ui.Navigator_MyBillsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.phonepe.nexus.edge.Navigator_NexusEdgeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.recharge.ui.view.activity.Navigator_RechargeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.nexus.base.ui.view.activity.Navigator_NexusCoreActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.payment.checkoutPage.ui.view.activity.Navigator_CheckoutPaymentActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.payment.checkoutPage.ui.view.activity.Navigator_NonTransparentCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.autopay.ui.activity.Navigator_AutoPaySetupActivity" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.autopay.ui.activity.Navigator_AutoPayActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.upilite.ui.Navigator_UPILiteActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.devicetokenization.ui.activity.Navigator_DeviceTokenizationActivity" android:theme="@style/Theme.Transparent.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.confirmationscreen.ui.Navigator_PaymentConfirmationActivity" android:theme="@style/Theme.Transparent.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.paymentrequestconfirmation.ui.Navigator_PaymentRequestConfirmationActivity" android:theme="@style/Theme.Transparent.Activity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.payment.international.ui.view.activity.Navigator_ManageInternationalActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.myqr.v2.ui.view.Navigator_MyQRActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.payment.profileInstrument.ui.activity.Navigator_PaymentProfileInstrumentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.phonepe.app.payment.account.accountDetail.ui.activity.Navigator_BankAccountDetailsActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.upiCentralMapper.ui.activity.Navigator_CentralUpiNumberMapperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.paymentsHome.ui.Navigator_PaymentsHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.phonepe.app.upicircle.management.ui.management.Navigator_UpiCircleManagementActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:name="com.phonepe.app.upicircle.management.ui.tracking.Navigator_UpiCircleTrackingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.upiAddressSettings.ui.activity.Navigator_VpaPspListActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.phonepe.app.creditemi.ui.activity.Navigator_CreditEmiActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity.Checkout" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:label="test micro app" android:name="com.phonepe.transaction.confirmation.ui.view.activity.TxnConfirmationHostActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.App"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:launchMode="singleTask" android:name="com.phonepe.app.chat.chatframework.ui.view.activity.Navigator_ChatActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:launchMode="singleTask" android:name="com.phonepe.app.chat.chatframework.ui.view.activity.TxnBackgroundZoomInActivity" android:screenOrientation="unspecified" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.chat.chatframework.ui.view.activity.Navigator_P2PMainActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.chat.groups.ui.view.activity.Navigator_GroupActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.chat.groups.ui.view.activity.Navigator_SelectGroupsActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.app.chat.chatcomponent.memberprofile.Navigator_ChatProfileActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.chat.featureonboarding.ui.activity.Navigator_FeatureOnboardingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:name="com.phonepe.app.chat.share.ui.view.activity.Navigator_P2PShareActivity" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.phonepe.app.chat.broadcastreceiver.P2PChatBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.phonepe.app.chat.P2P_CHAT_MARK_AS_READ_ACTION"/>
+                <action android:name="com.phonepe.app.chat.P2P_CHAT_QUICK_REPLY_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.ledger.presentation.view.activity.Navigator_LedgerAppActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.prepayment.instrument.externalwallet.activity.Navigator_WalletActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.prepayment.instrument.wallet.activity.Navigator_PhonePeWalletActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.prepayment.instrument.wallet.walletPvKYC.WalletPhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="true" android:name="com.phonepe.projectearn.home.Navigator_EarnHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.ScratchCardV3Activity" android:theme="@style/AppTheme.Dialog"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.rewards.offers.rewards.ui.view.activity.Navigator_OffersGrantActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.developmentTools.ui.DevelopmentToolsActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.developmentTools.search.ui.SearchActivity" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.developmentTools.ui.activity.NexusEdgeTestScreen" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.developmentTools.ui.activity.LiquidUIDevModeActivity" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.developmentTools.ui.activity.InappWidgetTestScreen" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.phonepe.developmentTools.receiver.UPICircleReceiver">
+            <intent-filter>
+                <action android:name="com.phonepe.app.crm.action.UPI_CIRCLE_PAYMENTS_ACTION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:launchMode="singleTop" android:name="com.phonepe.app.launch.core.main.ui.MainActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:host="zm7fs.app.goo.gl"/>
+            </intent-filter>
+        </activity>
+        <activity-alias android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:label="@string/app_name" android:name="com.phonepe.app.ui.activity.Navigator_MainActivity" android:targetActivity="com.phonepe.app.launch.core.main.ui.MainActivity"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.globalsearch.presentation.view.Navigator_GlobalSearchActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity.Search" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.contact.picker.ui.view.activity.Navigator_P2PContactPickerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.contact.picker.ui.view.activity.Navigator_P2PContactPaymentUseCaseActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.contact.picker.ui.view.activity.Navigator_ContactAddVpaActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.contact.picker.ui.view.activity.Navigator_AddBeneficiaryBankActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.ccd.Navigator_CreditDistributionActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.ccd.inlineCards.ui.Navigator_InlineCardActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.ccd.pv.ui.CCDPhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PvActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="true" android:name="com.phonepe.onlinemerchants.ui.mIntent.MIntentPaymentActivity" android:theme="@style/Theme.AppCompat.TranslucentDark">
+            <intent-filter android:label="@string/phone_pe_text">
+                <action android:name="org.chromium.intent.action.PAY"/>
+            </intent-filter>
+            <meta-data android:name="org.chromium.default_payment_method_name" android:value="https://mercury.phonepe.com/transact/pay"/>
+            <meta-data android:name="org.chromium.payment_method_names" android:resource="@array/method_names"/>
+        </activity>
+        <service android:description="@string/phone_pe_text" android:enabled="true" android:exported="true" android:name="com.phonepe.onlinemerchants.webpayment.MIntentIsReadyToPayServiceImpl">
+            <intent-filter>
+                <action android:name="org.chromium.intent.action.IS_READY_TO_PAY"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.phonepe.app.external.sdksupport.MerchantService">
+            <intent-filter>
+                <action android:name="com.phonepe.app.remote.service.MERCHANTSERVICE"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.phonepe.onlinemerchants.ui.Navigator_OnlineMerchantActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.TranslucentDark"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:name="com.phonepe.upionboarding.view.activity.Navigator_MPSPHandlerActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.upionboarding.view.activity.Navigator_UpiOnboardingActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.AppCompat.Translucent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.kyc.activity.InsurancePhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.ui.activity.Navigator_BaseInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.internationaltravel.activity.Navigator_InternationalTravelInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.domestic.activity.Navigator_DomesticInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.sachet.activity.Navigator_SachetInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.motor.activity.Navigator_MotorInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.motor.activity.Navigator_SelfInspectionCameraActivity" android:screenOrientation="landscape" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.life.activity.Navigator_LifeInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.termLife.activity.Navigator_TermLifeInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.health.activity.Navigator_HealthInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.cancellation.Navigator_InsuranceCancellationConfirmationActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.insurance.shop.Navigator_ShopInsuranceActivity" android:screenOrientation="portrait" android:theme="@style/InsuranceActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.offlinepayments.ui.activity.Navigator_QrCodeScannerWrapperActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.lending.view.activity.Navigator_LendingHomeActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.lending.quickloan.activity.Navigator_QuickLoanActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.lending.view.activity.LendingKycPhonepeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/LendingKycPvActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.lending.view.activity.LendingBasicDetailsPhonepeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PvActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.d2c.views.activities.Navigator_DirectToCreditActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.d2c.pv.activity.DirectToCreditPhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/DirectToCreditPVActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.secured.lending.views.activity.Navigator_SecuredLendingActivity" android:screenOrientation="portrait" android:theme="@style/Theme.SecureLending" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.secured.lending.pv.activity.SLPhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/SecuredLendingPVActivityTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.pv.app.activity.PhonePeVerifiedActivity" android:screenOrientation="portrait" android:theme="@style/PVBaseTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.discovery.ui.view.activity.Navigator_SwitchHomeActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.app.v4.nativeapps.discovery.ui.view.activity.Navigator_CategoryDetailsActivity" android:screenOrientation="unspecified" android:theme="@style/Theme.Transparent.Activity" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:autoRemoveFromRecents="true" android:excludeFromRecents="true" android:launchMode="singleInstance" android:name="com.phonepe.screenlock.ui.activity.PhonePeLockActivity" android:theme="@style/Theme.LockScreen" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.phonepe.screenlock.ui.activity.PhonePeLollipopLockActivity" android:taskAffinity="com.phonepe.app.task" android:theme="@style/TransparentAlertDialog"/>
+        <service android:exported="false" android:name="com.phonepe.screenlock.PhonePeLockService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:name="com.phonepe.pv.core.ui.activity.SignatureCaptureActivity" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:name="com.phonepe.pv.core.ui.activity.MediaViewerActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.pv.core.ui.activity.RedirectionWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.pv.core.ui.activity.PVWebViewActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:name="com.phonepe.pv.core.ui.activity.ImageCaptureActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.feedback.ui.view.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.feedback.ui.view.FeedbackDiscoveryActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustPan"/>
+        <activity android:excludeFromRecents="true" android:name="com.phonepe.uiframework.core.activity.ImageViewerActivity" android:theme="@style/AppTheme.Dialog"/>
+        <receiver android:enabled="false" android:exported="true" android:name="com.phonepe.usecases.edge.receiver.SMSBroadcastReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="2147483647">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phonepe.hurdleui.view.BaseHurdleActivity" android:theme="@style/Theme.Transparent.Base" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="housekeeping.HurdleHouseKeepingActivity" android:theme="@style/AppTheme"/>
+        <activity android:exported="false" android:name="com.phonepe.v3.intro.feature.intro.ui.PhonePeV3IntroActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:name="com.phonepe.payment.checkout.pg.PgPaymentService"/>
+        <activity android:name="com.phonepe.payment.justpay.ui.PaymentWebView" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.phonepe.payment.justpay.ui.RedirectionWebView" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:hardwareAccelerated="true" android:label="Processing your payment" android:name="com.phonepe.payment.justpay.ui.JuspayOtpPaymentActivity" android:theme="@style/Theme.AppCompat.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.phonepe.ncore.syncmanager.source.broadcastreceiver.SyncSignalReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.phonepe.ncore.syncmanager.source.alarmmanager.SyncAlarmReceiver"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="com.phonepe.gravity.upload.service.FileUploadService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.phonepe.app.core.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.phonepe.phonepecore.provider.PhonePeContentProvider"/>
+        <activity android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.UserAuthInfoActivity" android:theme="@style/ActivityTheme"/>
+        <service android:enabled="true" android:exported="false" android:name="org.npci.upi.security.pinactivitycomponent.CLRemoteServiceImpl">
+            <intent-filter>
+                <action android:name="org.npci.upi.security.services.CLRemoteService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <activity android:name="com.phonepe.eazyotp.ui.view.activity.EazyOtpPaymentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.NoFullScreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.phonepe.loginprovider.loginorchestrator.LoginOrchestratorActivity" android:theme="@style/Theme.LoginOrchestrator" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="com.phonepe.login.internal.ui.views.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Login" android:windowSoftInputMode="adjustResize"/>
+        <service android:enabled="true" android:exported="true" android:name="com.phonepe.login.internal.sso.execute.PPSsoExecuteService">
+            <intent-filter>
+                <action android:name="com.phonepe.login.sso.PP_SSO_EXECUTE"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="true" android:name="com.phonepe.account.internal.sso.execute.PPSsoAccountDetailsService">
+            <intent-filter>
+                <action android:name="com.phonepe.accounts.sso.PP_ACCOUNT_DETAILS"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.phonepe.appandroid.eventbrowser.library.ui.EventBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Design.Light.NoActionBar"/>
+        <service android:exported="false" android:name="com.phonepe.crm.core.datasource.fcm.PhonePeFirebaseMessagingServiceV1">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.phonepe.app.pre-req-provider" android:exported="false" android:initOrder="101" android:name="com.phonepe.appandroid.prereq.PreReqProvider"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="com.phonepe.search.data.sync.DataSyncService"/>
+        <provider android:authorities="com.phonepe.app.dash-provider" android:exported="false" android:initOrder="101" android:name="com.phonepe.perf.provider.DashProvider"/>
+        <activity android:label="@string/chucker_name" android:launchMode="singleTask" android:name="com.chuckerteam.chucker.internal.ui.MainActivity" android:taskAffinity="com.chuckerteam.chucker.task" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.transaction.TransactionActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <activity android:name="com.chuckerteam.chucker.internal.ui.throwable.ThrowableActivity" android:parentActivityName="com.chuckerteam.chucker.internal.ui.MainActivity" android:theme="@style/Chucker.Theme"/>
+        <service android:exported="false" android:name="com.chuckerteam.chucker.internal.support.ClearDatabaseService"/>
+        <provider android:authorities="com.phonepe.app.com.chuckerteam.chucker.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.chuckerteam.chucker.internal.support.ChuckerFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/chucker_provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.phonepe.ads.nativevideobanner.pages.AdsVideoFullScreenActivity" android:theme="@style/PhonePeVideoActivityTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.phonepe.ads.nativevideobanner.pages.AdsVideoPopupActivity" android:theme="@style/PhonePeVideoActivityTheme"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabActivity"/>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="in.juspay.hypersdk.core.CustomtabResult">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.phonepe.app" android:scheme="juspay"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.mapbox.android.telemetry.TelemetryService"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.analytics.AnalyticsJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="true" android:name="com.google.android.gms.appinvite.PreviewActivity" android:theme="@style/Theme.AppInvite.Preview">
+            <intent-filter>
+                <action android:name="com.google.android.gms.appinvite.ACTION_PREVIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <provider android:authorities="com.phonepe.app.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.dynamiclinks.internal.FirebaseDynamicLinkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="com.phonepe.app.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="com.phonepe.app.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity" android:theme="@style/WhiteBackgroundTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity" android:theme="@style/WhiteBackgroundDialogTheme">
+            <intent-filter android:priority="-100">
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <provider android:authorities="com.phonepe.app.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

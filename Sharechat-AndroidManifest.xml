@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi" android:splitTypes="" package="in.mohalla.sharechat" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <queries>
+        <intent>
+            <action android:name="com.instagram.share.ADD_TO_FEED"/>
+            <data android:mimeType="video/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="youtube.com" android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.CHOOSER"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="com.android.vending.billing.InAppBillingService.BIND"/>
+        </intent>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.truecaller.debug"/>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.INSERT"/>
+            <data android:mimeType="vnd.android.cursor.dir/event"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="sms"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL"/>
+            <data android:path="tel:"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="http"/>
+        </intent>
+        <package android:name="com.google.android.apps.tv.launcherx"/>
+        <package android:name="com.google.android.tvlauncher"/>
+        <package android:name="com.google.android.tvrecommendations"/>
+        <intent>
+            <action android:name="androidx.browser.customtabs.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="http"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="market"/>
+        </intent>
+    </queries>
+    <queries>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="com.paytmmall"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.csam.icici.bank.imobile"/>
+        <package android:name="com.sbi.upi"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.icicibank.pockets"/>
+        <package android:name="com.snapwork.hdfc"/>
+        <package android:name="com.enstage.wibmo.hdfc"/>
+        <package android:name="com.mobikwik_new"/>
+        <package android:name="com.upi.axispay"/>
+        <package android:name="com.axis.mobile"/>
+        <package android:name="com.freecharge.android"/>
+        <package android:name="com.samsung.android.spaymini"/>
+        <package android:name="com.samsung.android.spay"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.bankofbaroda.upi"/>
+        <package android:name="com.whatsapp.w4b"/>
+        <package android:name="com.fss.pnbpsp"/>
+        <package android:name="com.fss.unbipsp"/>
+        <package android:name="com.mycompany.kvb"/>
+        <package android:name="com.fss.vijayapsp"/>
+        <package android:name="com.dena.upi.gui"/>
+        <package android:name="com.fss.jnkpsp"/>
+        <package android:name="com.olive.kotak.upi"/>
+        <package android:name="com.bsb.hike"/>
+        <package android:name="com.fss.idfcpsp"/>
+        <package android:name="com.YesBank"/>
+        <package android:name="com.abipbl.upi"/>
+        <package android:name="com.microsoft.mobile.polymer"/>
+        <package android:name="com.finopaytech.bpayfino"/>
+        <package android:name="com.mgs.obcbank"/>
+        <package android:name="com.upi.federalbank.org.lotza"/>
+        <package android:name="com.mgs.induspsp"/>
+        <package android:name="ai.wizely.android"/>
+        <package android:name="com.olive.dcb.upi"/>
+        <package android:name="com.mgs.yesmerchantnative.prod"/>
+        <package android:name="com.dbs.in.digitalbank"/>
+        <package android:name="com.rblbank.mobank"/>
+        <package android:name="in.chillr"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.SIBMobile"/>
+        <package android:name="com.mipay.wallet.in"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.truecaller"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="com.gbwhatsapp"/>
+        <package android:name="com.msf.angelmobile"/>
+        <package android:name="com.fundsindia"/>
+        <package android:name="com.muthootfinance.imuthoot"/>
+        <package android:name="com.angelbroking.angelwealth"/>
+        <package android:name="org.altruist.BajajExperia"/>
+        <package android:name="in.bajajfinservmarkets.app"/>
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.truecaller.permission.sdk.internal.read_account_state"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.microphone" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS"/>
+    <permission android:name="in.mohalla.sharechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="in.mohalla.sharechat.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION"/>
+    <uses-permission android:name="android.permission.AD_SERVICES_CONFIG"/>
+    <uses-feature android:name="android.software.leanback" android:required="false"/>
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_sharechat_logo" android:label="@string/app_name" android:largeHeap="true" android:name="in.mohalla.sharechat.MyApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:resizeableActivity="false" android:roundIcon="@mipmap/ic_sharechat_logo" android:supportsRtl="true" android:taskAffinity="in.mohalla.sharechat" android:theme="@style/AppTheme">
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.create_event.ChatRoomEventActivity" android:screenOrientation="portrait"/>
+        <uses-library android:name="android.test.runner" android:required="false"/>
+        <meta-data android:name="com.truecaller.android.sdk.PartnerKey" android:value="@string/partnerKey"/>
+        <meta-data android:name="com.truecaller.android.sdk.ClientId" android:value="@string/truecallerClientID"/>
+        <meta-data android:name="com.sharechat.reactNative" android:value="@string/CODE_PUSH_APK_BUILD_TIME"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|uiMode" android:name="in.mohalla.sharechat.videoplayerV2.VideoPlayerV2Activity"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|uiMode" android:name="in.mohalla.sharechat.mediaplayer.MediaPlayerActivity"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.selfGroupList.main.SelfGroupListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.groupRule.main.GroupRuleActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="in.mohalla.ads.adsdk.manager.gamappopenroadblock.ui.GamAoRbActivity"/>
+        <meta-data android:name="asset_statements" android:resource="@string/asset_statements"/>
+        <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_mdD0tLsAMsJUmtZ9x3s3Ypabwyg5lZsx"/>
+        <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_bcF9vHuyJFUIoE47q6ISFddlqBc1kYAM"/>
+        <meta-data android:name="io.branch.sdk.TestMode" android:value="false"/>
+        <meta-data android:name="com.google.android.gms.ads.AD_MANAGER_APP" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-9738289674741718~5300485228"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_INITIALIZATION" android:value="true"/>
+        <meta-data android:name="com.google.android.gms.ads.flag.OPTIMIZE_AD_LOADING" android:value="true"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/gma_ad_services_config"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <meta-data android:name="firebase_performance_logcat_enabled" android:value="true"/>
+        <provider android:authorities="in.mohalla.sharechat.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_path"/>
+        </provider>
+        <receiver android:exported="false" android:name="sharechat.feature.notification.receiver.NotificationActionsReceiver">
+            <intent-filter>
+                <action android:name="remove_sticky"/>
+                <action android:name="update_sticky"/>
+                <action android:name="follow_user"/>
+                <action android:name="clear_notification"/>
+                <action android:name="quick_action_click"/>
+                <action android:name="quick_action_dismiss_notif"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.groupTagCreation.main.GroupTagCreationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="in.mohalla.ads.adsdk.ui.gamads.ui.adswebview.AdsWebViewActivity"/>
+        <activity android:configChanges="uiMode" android:label="ShareChat" android:launchMode="singleTask" android:name="in.mohalla.sharechat.login.language.LanguageSelectActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="uiMode" android:name="com.theartofdev.edmodo.cropper.CropImageActivity" android:theme="@style/Base.Theme.AppCompat"/>
+        <activity android:alwaysRetainTaskState="true" android:configChanges="uiMode" android:exported="true" android:launchMode="singleTop" android:name="in.mohalla.sharechat.home.main.HomeActivity" android:screenOrientation="portrait" android:theme="@style/SplashApiTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_sharechat_logo" android:name="in.mohalla.sharechat.EvaActivityDiwali" android:targetActivity="in.mohalla.sharechat.home.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_sharechat_logo" android:name="in.mohalla.sharechat.EvaActivityNavratri" android:targetActivity="in.mohalla.sharechat.home.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_sharechat_logo" android:name="in.mohalla.sharechat.EvaActivityInactive" android:targetActivity="in.mohalla.sharechat.home.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_sharechat_logo" android:name="in.mohalla.sharechat.EvaActivityDefault" android:targetActivity="in.mohalla.sharechat.home.main.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="sharechat.feature.home.main.DeeplinkHandlerActivity" android:theme="@style/SplashApiTheme">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.onelink.me" android:pathPrefix="/3i9Y" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <data android:host="open" android:scheme="sharechat"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="b.sharechat.com" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:pathPrefix="/action"/>
+                <data android:pathPrefix="/profile"/>
+                <data android:pathPrefix="/tag"/>
+                <data android:pathPrefix="/post"/>
+                <data android:pathPrefix="/creator-hub"/>
+                <data android:pathPrefix="/classified"/>
+                <data android:pathPrefix="/chatroom"/>
+                <data android:pathPrefix="/friends"/>
+                <data android:pathPrefix="/family"/>
+                <data android:pathPrefix="/host-creator-hub"/>
+                <data android:pathPrefix="/hall-of-fame"/>
+                <data android:pathPrefix="/vg-wallet"/>
+                <data android:pathPrefix="/leaderboard"/>
+                <data android:pathPrefix="/livestream"/>
+                <data android:pathPrefix="/live/"/>
+                <data android:pathPrefix="/tournament"/>
+                <data android:pathPrefix="/compTournament"/>
+                <data android:pathPrefix="/userAchievements"/>
+                <data android:pathPrefix="/daily-weekly"/>
+                <data android:pathPrefix="/treasure-box"/>
+                <data android:pathPrefix="/previous-rewards"/>
+                <data android:scheme="https"/>
+                <data android:scheme="http"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/action"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/classified"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/profile"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/tag"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/post"/>
+                <data android:pathPrefix="/creator-hub"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/chatroom"/>
+                <data android:pathPrefix="/sub-tab"/>
+                <data android:pathPrefix="/vip-subscription"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/family"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/vg-wallet"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/leaderboard"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/host-creator-hub"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/hall-of-fame"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/games-room"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true" android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/livestream"/>
+                <data android:pathPrefix="/live/"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter android:label="@string/sharechat_recommended_label">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="sharechat.com"/>
+                <data android:host="sharechat.co"/>
+                <data android:pathPrefix="/music"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="sharechat"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="video/*"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="audio/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="in.mohalla.sharechat.splash.SplashActivityV2" android:screenOrientation="portrait" android:theme="@style/MySplashTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.accounts.AccountSettingActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.setting.accounts.request.ProfileEditRequestActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.contacts.ContactActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.contacts.contactScreenV2.ContactActivityV2" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.notification.setting.NotificationSettingActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.privacy.PrivacySettingActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.common.base.fragmentLauncher.FragmentLauncherActivity" android:theme="@style/MySwipeTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.main.MainSettingActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="in.mohalla.sharechat.post.PostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.help.helpsetting.HelpSettingActivity" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.help.feedback.FeedbackActivity" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.help.helptopic.HelpTopicActivity" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.help.questionanswer.QAActivity" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="screenSize|uiMode" android:name="sharechat.feature.chat.dm.DmActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="screenSize|uiMode" android:name="sharechat.feature.chat.dm.DMActivityV2" android:screenOrientation="portrait" android:theme="@style/MyNewTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.archieve.ArchiveChatActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.receipient.RecipientActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.shakechat.ShakeChatActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.friendzone.FriendZoneLaunchActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.sharepost.SharePostChatActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize|uiMode" android:enableOnBackInvokedCallback="true" android:name="sharechat.feature.web.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/FinestWebViewTheme.Light"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.compose.camera.CameraActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.login.LoginActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.notification.main.NotificationActivity" android:screenOrientation="portrait" android:windowActivityTransitions="true"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.home.languageChange.LanguageChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.post.standalone.news.NativeWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="in.mohalla.sharechat.videoplayer.VideoPlayerActivity" android:screenOrientation="portrait" android:supportsPictureInPicture="true" android:theme="@style/ImmersiveTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="in.mohalla.sharechat.feed.moremedia.MoreFeedActivity" android:screenOrientation="portrait" android:theme="@style/ImmersiveTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.search2.followCelebrityNotif.CelebritySuggestionActivity" android:screenOrientation="portrait" android:theme="@style/MyNewTheme"/>
+        <meta-data android:name="android.splashscreen.exception_opt_out" android:value="true"/>
+        <service android:exported="false" android:name="in.mohalla.sharechat.common.firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="in.mohalla.sharechat.common.utils.download.DownloadNotificationService"/>
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="sharechat.feature.compose.service.PostUploadService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="dataSync" android:name="sharechat.feature.profile.service.ProfileImageUpdateService"/>
+        <service android:enabled="true" android:exported="false" android:name="sharechat.feature.composeTools.transcoding.TranscodingService"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.compose.main.ban.ComposeBanActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.compose.main.ComposeActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.post.imageViewer.ImageViewerActivity" android:theme="@style/MySwipeTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.settings.accounts.PictureChangeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.notification.stickyNotification.StickyNotificationActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.post.comment.commentLikeList.CommentLikeListActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="in.mohalla.sharechat.settings.preloadedapkattribution.PreloadedAPKAttributionActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.compose.uploadsaveddraft.UploadSavedDraftActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.compose.camera.preview.CameraPreviewActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.post.youtubepost.activity.YoutubePostActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.post.youtubepost.activity.YoutubeWebViewActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.compose.musicselection.MusicSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.groupMiniProfile.main.GroupMemberMiniProfileActivity" android:screenOrientation="portrait"/>
+        <receiver android:exported="true" android:name="androidx.media.session.MediaButtonReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.groupDetail.GroupTagDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.textpost.TextCreationActivity" android:screenOrientation="portrait" android:theme="@style/TextCreationTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.motionvideo.MotionVideoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.AdActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.groupTag.pendingPost.PendingPostActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.motionvideo.template.MvTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.textpost.template.TextPostTemplateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="in.mohalla.sharechat.contacts.declaration.AskContactPermissionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.imageview.ImagePreviewActivity" android:theme="@style/MySwipeTheme"/>
+        <service android:exported="false" android:name="sharechat.manager.videoplayer.cache.VideoCachingService">
+            <intent-filter>
+                <action android:name="com.google.android.exoplayer.downloadService.action.RESTART"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="false" android:name="sharechat.repository.post.watchlater.DownloadCancelReceiver">
+            <intent-filter>
+                <action android:name="action.encryptedDownloadCancel"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.private_consultation.HostDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.entry_effect.EntryEffectPreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chat.game.view.GameBrowserActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.invite.ChatRoomInviteActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.user_listing.ChatRoomUserListingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.user_listing_with_compose.UserListingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="screenSize|uiMode" android:hardwareAccelerated="true" android:name="sharechat.feature.chatroom.chatRoomV3.ChatRoomActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.family.FamilyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.family.EditFamilyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.family.ui.TopFamilyActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatfeed.seeall.ChatFeedSeeAllActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.chatroom_listing.CreateNewChatRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.rename.ui.RenameChatRoomActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.chatroom.referral_program.ReferralProgramActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.creation.ConsultationCreationActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.onboarding.FriendZoneOnboardingActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.private_consultation.BirthDetailsActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.private_consultation.PrivateConsultationNotificationActionActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.listing.SeeAllConsultationListingActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.consultation.discovery.available_astrologers.AvailableAstrologersActivity" android:theme="@style/Theme.ExplicitTransparent"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.dailyHoroscope.DailyHoroscopeActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleInstance" android:name="sharechat.feature.chatroom.consultation.discovery.PrivateCallLockScreenNotificationActivity" android:screenOrientation="portrait" android:showOnLockScreen="true"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.audio_player.ChatRoomAudioPlayerActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.leaderboard.ChatRoomLeaderBoardActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.levels.ChatRoomLevelsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.TagChatActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.battleTournament.ui.BattleTournamentActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <service android:name="sharechat.feature.chatroom.AudioChatActionService"/>
+        <service android:enabled="true" android:exported="false" android:foregroundServiceType="mediaPlayback|microphone" android:name="sharechat.feature.chatroom.AudioChatService"/>
+        <service android:enabled="true" android:exported="false" android:name="sharechat.feature.chatroom.AudioChatOverlayService"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.chatroom_performance.ChatRoomPerformanceActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.ugc.ui.UgcToAgencyActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <provider android:authorities="in.mohalla.sharechat.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="in.mohalla.sharechat.initializer.ColdStartupInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="in.mohalla.sharechat.initializer.PlutoInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:configChanges="uiMode" android:exported="true" android:label="@string/title_activity_add_label" android:name="sharechat.feature.profile.labels.AddLabelActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="sharechat.feature.profile.moodsV2.ui.AddMoodActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="sharechat.feature.profile.moodsV2.ui.PreviewMoodsActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatroom.chatroom_listing.family_battle.FamilyBattlesActivity" android:screenOrientation="portrait"/>
+        <service android:exported="false" android:foregroundServiceType="dataSync" android:name="sharechat.feature.chatroom.consultation.discovery.service.PrivateConsultationForegroundService"/>
+        <service android:name="sharechat.feature.chatroom.consultation.discovery.service.PrivateConsultationNotificationActionService"/>
+        <service android:exported="false" android:foregroundServiceType="shortService" android:name="sharechat.feature.chatroom.consultation.discovery.service.PCCallingNotificationService"/>
+        <service android:enabled="false" android:exported="true" android:name="com.google.android.play.core.assetpacks.AssetPackExtractionService">
+            <meta-data android:name="com.google.android.play.core.assetpacks.versionCode" android:value="11003"/>
+        </service>
+        <activity android:exported="true" android:name="so.plotline.insights.Activities.PlotlineActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="connect" android:scheme="plotline-a1048"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.secretmenu.SecretMenuActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.compose.defaultComposenav.DefaultComposeNavActivity" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.chatfeed.d2c.ui.D2CActivity" android:screenOrientation="portrait" android:theme="@style/BaseAppTheme"/>
+        <activity android:name="sharechat.feature.chatfeed.settings.DmSettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true" android:name="sharechat.feature.user.followRequest.FollowRequestActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleInstance" android:name="sharechat.feature.chatroom.consultation.private_consultation.PrivateConsultationCallingActivity" android:noHistory="true" android:screenOrientation="portrait" android:showOnLockScreen="true" android:showWhenLocked="true" android:taskAffinity=".consultation.private_consultation.PrivateConsultationCallingActivity" android:turnScreenOn="true"/>
+        <activity android:exported="false" android:name="sharechat.feature.chatroom.friendZone.faq.FriendZoneFaqActivity"/>
+        <activity android:excludeFromRecents="true" android:name="sharechat.feature.notification.main.NotificationTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="sharechat.feature.creatorhub.CreatorHubActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.creatorhub.seeall.CreatorHubSeeAllActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.creatorhub.home.spotlight.SpotlightRegistrationActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="sharechat.feature.friendzone.callHistory.ui.CallHistoryActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="true" android:name="sharechat.feature.login.utils.OtpBroadcastReciever" android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:exported="false" android:name="sharechat.library.imageedit.ImageEditActivity" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:name="sharechat.feature.composeTools.gallery.ImageCropProxyActivity"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.composeTools.gallery.GalleryContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.report.acknowledgement.ReportAcknowledgementActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="sharechat.feature.albums.NewAlbumActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:exported="false" android:name="sharechat.feature.albums.AlbumActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:exported="false" android:name="sharechat.feature.albums.AlbumCoverPictureSelectionActivity" android:screenOrientation="portrait" android:theme="@style/MyTheme"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.sharebottomsheet.personalisedshare.templateEdit.PersonalizedShareTemplateEditActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:name="sharechat.feature.sharebottomsheet.personalisedshare.subscription.ScPlusPaymentListingActivity" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="sharechat.feature.payment.paymentlist.PaymentListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.payment.cardinput.CardInputActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.payment.bank_wallet_list.BankWalletListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.music.MusicFeedActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.PostBoostTransparentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.Transparent"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTask" android:name="sharechat.feature.postselection.BoostPostSelectionActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:label="@string/draft" android:name="sharechat.feature.draft.DraftActivity"/>
+        <activity android:exported="true" android:name="sharechat.feature.privacy.PrivacyActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="sharechat.library.pdf_viewer.ui.PdfViewerActivity"/>
+        <activity android:exported="false" android:label="@string/title_activity_preview_widgets" android:name="sharechat.feature.widgetsPreview.PreviewWidgetsActivity"/>
+        <activity android:exported="false" android:name="in.mohalla.androidcommon.sharechatbrowser.activity.InAppBrowserActivity" android:theme="@style/InAppBrowserBottomSheet"/>
+        <activity android:exported="false" android:name="in.mohalla.adsdk.manager.common.activity.GamAoRbActivity"/>
+        <activity android:exported="false" android:name="in.mohalla.ads.adsdk.testeroptions.activity.ui.AdDebugActivity"/>
+        <receiver android:exported="true" android:name="in.mohalla.androidcommon.truetime.BootCompletedBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="io.intercom.android.sdk.fcm.IntercomFcmMessengerService">
+            <intent-filter android:priority="-400">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomMessengerActivity" android:theme="@style/Intercom_PanelTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="io.intercom.android.sdk.lightbox.LightBoxActivity" android:theme="@style/Intercom_LightBoxTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.activities.IntercomPostActivity" android:theme="@style/Intercom_PostTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.post.PostActivityV2" android:theme="@style/Intercom_PostTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.activities.IntercomNoteActivity" android:theme="@style/Intercom_NoteTheme" android:windowSoftInputMode="adjustResize|stateUnchanged"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomSheetActivity" android:theme="@style/Intercom_ModalActivityTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:launchMode="singleTop" android:name="io.intercom.android.sdk.activities.IntercomVideoActivity" android:theme="@style/Intercom_PanelTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="io.intercom.android.sdk.activities.IntercomCarouselActivity" android:screenOrientation="portrait" android:theme="@style/Intercom_CarouselTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="io.intercom.android.sdk.helpcenter.collections.IntercomHelpCenterActivity" android:theme="@style/Intercom.BaseMaterial"/>
+        <activity android:exported="false" android:name="io.intercom.android.sdk.helpcenter.articles.ArticleActivity" android:theme="@style/Intercom.BaseMaterial" android:windowSoftInputMode="stateHidden"/>
+        <activity android:exported="false" android:name="io.intercom.android.sdk.survey.ui.IntercomSurveyActivity" android:theme="@style/Intercom.BaseMaterial.Compose" android:windowSoftInputMode="adjustResize"/>
+        <activity android:exported="false" android:name="io.intercom.android.sdk.helpcenter.search.IntercomArticleSearchActivity" android:theme="@style/Intercom.BaseMaterial"/>
+        <activity android:exported="false" android:name="io.intercom.android.sdk.push.IntercomPushTrampolineActivity" android:theme="@style/Intercom.BaseMaterial.Transparent"/>
+        <receiver android:exported="false" android:name="io.intercom.android.sdk.push.IntercomPushBroadcastReceiver">
+            <intent-filter>
+                <action android:name="io.intercom.android.sdk.INTERCOM_PUSH_DISMISSED"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="in.mohalla.sharechat.IntercomInitializeContentProvider" android:exported="false" android:name="io.intercom.android.sdk.IntercomInitializeContentProvider"/>
+        <activity android:exported="false" android:name="so.plotline.insights.PlotlineActivity"/>
+        <activity android:name="com.intercom.input.gallery.GalleryInputFullScreenActivity" android:theme="@style/intercom_composer_full_screen_theme" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <activity android:configChanges="density|orientation|screenLayout|screenSize" android:name="com.intercom.input.gallery.GalleryLightBoxActivity" android:theme="@style/intercom_composer_full_screen_theme"/>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v21.PlatformJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmServiceExact"/>
+        <receiver android:exported="false" android:name="com.evernote.android.job.v14.PlatformAlarmReceiver">
+            <intent-filter>
+                <action android:name="com.evernote.android.job.v14.RUN_JOB"/>
+                <action android:name="net.vrallev.android.job.v14.RUN_JOB"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.evernote.android.job.JobBootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON"/>
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="false" android:exported="true" android:name="com.evernote.android.job.gcm.PlatformGcmService" android:permission="com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.android.gms.gcm.ACTION_TASK_READY"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.evernote.android.job.JobRescheduleService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.ktx.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.ktx.FirebaseFirestoreKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <activity android:exported="true" android:name="com.facebook.CustomTabActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="cct.in.mohalla.sharechat" android:scheme="fbconnect"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.google.android.play.billingclient.version" android:value="7.0.0"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:exported="false" android:name="com.android.billingclient.api.ProxyBillingActivityV2" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <provider android:authorities="in.mohalla.sharechat.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="in.mohalla.sharechat.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <provider android:authorities="in.mohalla.sharechat.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <receiver android:exported="false" android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="androidx.activity.ComponentActivity"/>
+        <activity android:exported="true" android:name="androidx.compose.ui.tooling.PreviewActivity"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.liulishuo.filedownloader.services.FileDownloadService$SharedMainProcessService"/>
+        <service android:foregroundServiceType="dataSync" android:name="com.liulishuo.filedownloader.services.FileDownloadService$SeparateProcessService" android:process=":filedownloader"/>
+        <provider android:authorities="in.mohalla.sharechat.mobileadsinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.android.gms.ads.MobileAdsInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.ads.AdService"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="false" android:name="com.google.android.gms.ads.OutOfContextTestingActivity"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:launchMode="singleTask" android:name="com.google.android.gms.ads.NotificationHandlerActivity" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="false"/>
+        <activity android:name="sharechat.feature.camera.CameraSourceActivity" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme"/>
+        <activity android:name="sharechat.feature.videoedit.drafts.VideoDraftActivity" android:screenOrientation="portrait"/>
+        <activity android:name="sharechat.feature.videoedit.container.VideoEditorContainerActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="sharechat.library.editor.main.VideoMainActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustNothing"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <activity android:configChanges="orientation|screenSize" android:name="io.agora.rtc2.extensions.MediaProjectionMgr$LocalScreenCaptureAssistantActivity" android:screenOrientation="unspecified" android:theme="@android:style/Theme.Translucent"/>
+        <service android:foregroundServiceType="mediaProjection" android:name="io.agora.rtc2.extensions.MediaProjectionMgr$LocalScreenSharingService"/>
+        <activity android:name="sharechat.feature.motionvideo.MotionVideoActivityV2" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="sharechat.feature.motionvideo.template.MvTemplateActivityV2" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme"/>
+        <activity android:name="sharechat.feature.motionvideo.tds.MvTemplateActivityV3" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme"/>
+        <activity android:name="sharechat.feature.motionvideo.withouttemplate.MotionVideoWithoutTemplateActivity" android:screenOrientation="portrait" android:theme="@style/MotionVideoTheme"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <activity android:name="in.mohalla.ads.adsdk.gamads.in.mohalla.ads.adsdk.ui.gamads.ui.AdsWebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.google.android.tv.ads.controls.FallbackImageActivity" android:theme="@style/Theme.AppCompat.NoActionBar.Translucent"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:name="com.inmobi.ads.rendering.InMobiAdActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitTransparentSoftwareActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="false" android:name="com.unity3d.services.ads.adunit.AdUnitSoftwareActivity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="fontScale|keyboard|keyboardHidden|locale|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode" android:exported="false" android:hardwareAccelerated="true" android:name="com.unity3d.ads.adplayer.FullScreenWebViewDisplay" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize" android:exported="false" android:name="com.facebook.ads.AudienceNetworkActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:hardwareAccelerated="true" android:launchMode="singleTop" android:name="com.vungle.ads.internal.ui.VungleActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.ControllerActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.InterstitialActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.sdk.controller.OpenUrlActivity" android:theme="@android:style/Theme.Translucent"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.ironsource.mediationsdk.testSuite.TestSuiteActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <meta-data android:name="android.webkit.WebView.EnableSafeBrowsing" android:value="true"/>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.jio.jioads.interstitial.InterstitialActivity" android:theme="@style/JIOTheme.AppCompat.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.jio.jioads.webviewhandler.InAppWebView" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.aps.ads.activity.ApsInterstitialActivity" android:theme="@style/NoWindow"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:name="com.amazon.device.ads.DTBInterstitialActivity"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="3"/>
+    </application>
+</manifest>

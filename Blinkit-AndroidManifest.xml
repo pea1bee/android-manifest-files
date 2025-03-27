@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="com.grofers.customerapp" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <permission android:name="com.grofers.customerapp.USER_DATA_CONTENT_PROVIDER" android:protectionLevel="signature"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <permission android:name="com.grofers.customerapp.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <queries>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.BROWSABLE"/>
+            <data android:scheme="@string/scheme_https"/>
+        </intent>
+        <package android:name="com.google.android.talk"/>
+        <package android:name="com.google.android.apps.docs"/>
+        <package android:name="com.google.android.gm"/>
+        <package android:name="com.google.android.googlequicksearchbox"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.facebook.orca"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.google.android.apps.messaging"/>
+        <package android:name="com.android.mms"/>
+        <package android:name="com.Slack"/>
+        <package android:name="com.application.zomato"/>
+        <package android:name="com.blinkit.delivery"/>
+        <package android:name="com.grofers.customerapp"/>
+        <package android:name="com.blinkit.bistro"/>
+        <package android:name="com.application.zomato.district"/>
+        <package android:name="com.grofers.customerapp.lit"/>
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.PICK"/>
+            <data android:mimeType="image/*"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="payAuth" android:scheme="zetapay"/>
+        </intent>
+        <package android:name="net.one97.paytm"/>
+        <intent>
+            <action android:name="com.amazon.identity.auth.device.authorization.MapAuthorizationService"/>
+        </intent>
+        <intent>
+            <action android:name="com.amazon.dcp.sso.action.session.users.changed"/>
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService"/>
+        </intent>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.google.android.apps.maps"/>
+    </queries>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.network" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.ar" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.DETECT_SCREEN_CAPTURE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:maxSdkVersion="23" android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.grofers.customerapp.gcm.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="android.permission.READ_BASIC_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED"/>
+    <uses-feature android:name="android.hardware.camera.any" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <permission android:name="com.grofers.customerapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.grofers.customerapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:configChanges="uiMode" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="false" android:fullBackupContent="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.blinkit.BlinkitApplication" android:networkSecurityConfig="@xml/network_security_config" android:roundIcon="@mipmap/ic_launcher_round" android:screenOrientation="portrait" android:supportsRtl="false" android:theme="@style/QDTheme.NoActionBar">
+        <provider android:authorities="com.grofers.customerapp.BlinkitUserDataContentProvider" android:exported="true" android:name="com.blinkit.provider.BlinkitUserDataContentProvider" android:permission="com.grofers.customerapp.USER_DATA_CONTENT_PROVIDER"/>
+        <provider android:authorities="com.grofers.customerapp.provider;com.grofers.customerapp.fileprovider;com.grofers.customerapp.chatFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.blinkit.intent.IntentReceiverActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="com.grofers.customerapp.IS_BLINKIT_INSTALLED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="@string/scheme_grofers"/>
+                <data android:scheme="@string/scheme_blinkit"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/scheme_http"/>
+                <data android:scheme="@string/scheme_https"/>
+                <data android:host="@string/web_host_grofers"/>
+                <data android:host="@string/web_host_grofers_with_www"/>
+                <data android:host="@string/web_host_blinkit"/>
+                <data android:host="@string/web_host_blinkit_with_www"/>
+                <data android:path="/"/>
+                <data android:path="/s"/>
+                <data android:path="/dc"/>
+                <data android:path="/mobile"/>
+                <data android:pathPrefix="/cart"/>
+                <data android:pathPrefix="/s/"/>
+                <data android:pathPrefix="/brand/"/>
+                <data android:pathPrefix="/store/"/>
+                <data android:pathPrefix="/recipe/"/>
+                <data android:pathPrefix="/usecase/"/>
+                <data android:pathPrefix="/prn/"/>
+                <data android:pathPrefix="/cln/"/>
+                <data android:pathPrefix="/cn/"/>
+                <data android:pathPrefix="/dc/"/>
+                <data android:pathPrefix="/mobile/"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/appsflyer_blinit_host" android:pathPrefix="/9ngH" android:scheme="@string/scheme_https"/>
+                <data android:host="@string/appsflyer_blinkit_host" android:pathPrefix="/z75u" android:scheme="@string/scheme_https"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="@string/blinkit_link_host" android:pathPrefix="/b/" android:scheme="@string/scheme_https"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.blinkit.home.HomeActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme"/>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_holi" android:label="@string/app_name" android:name="com.grofers.customerapp.HOLI" android:roundIcon="@mipmap/ic_launcher_holi_round" android:targetActivity="com.blinkit.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_hfs" android:label="@string/app_name" android:name="com.grofers.customerapp.HFS" android:roundIcon="@mipmap/ic_launcher_hfs_round" android:targetActivity="com.blinkit.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <activity-alias android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.grofers.customerapp.DEFAULT" android:roundIcon="@mipmap/ic_launcher_round" android:targetActivity="com.blinkit.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity-alias>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/maps_api_key"/>
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/app_logo"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="app_logo"/>
+        <meta-data android:name="CLEVERTAP_ACCOUNT_ID" android:value="@string/clevertap_id"/>
+        <meta-data android:name="CLEVERTAP_TOKEN" android:value="@string/clevertap_token"/>
+        <meta-data android:name="AmazonAPIKey" android:value="@string/amazon_pay_api_key"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.profile.views.ProfileActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.address.map.MapActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.address.importAddress.ImportAddressActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.login.view.ActivityLogin" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:name="com.blinkit.consumerappsdk.ui.screens.address.userAddresses.views.UserAddressesActivity" android:screenOrientation="portrait" android:theme="@style/BTheme.NoActionBar.LightStatusBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.blinkit.consumerappsdk.ui.screens.address.searchAddress.view.SearchAddressActivity" android:theme="@style/BTheme.Transparent.FullScreen"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.support.views.CustomerSupportActivity" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.aboutUs.AboutUsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.consumerappsdk.ui.screens.wallet.views.WalletActivity" android:screenOrientation="portrait" android:theme="@style/BTheme.NoActionBar.LightStatusBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.blinkit.consumerappsdk.ui.screens.nonServiceableView.NonServiceableViewActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="CLEVERTAP_USE_GOOGLE_AD_ID" android:value="0"/>
+        <meta-data android:name="CLEVERTAP_BACKGROUND_SYNC" android:value="1"/>
+        <receiver android:exported="true" android:name="com.appsflyer.SingleInstallBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.blinkit.consumerappsdk.notification.BlinkitFcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="false" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:configChanges="orientation|screenSize|uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.fullscreenMedia.FullScreenMediaActivity" android:screenOrientation="locked" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.webView.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.splitScreen.view.SplitScreenActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.ui.screens.search.views.SearchActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustNothing|stateVisible"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.grofers.quickdelivery.ui.screens.cart.views.CartActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTask" android:name="com.grofers.quickdelivery.quickDeliveryCrystalPage.view.CrystalActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.common.custom.crop.main.CroppyActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.pdpGallery.PdpGalleryActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.gifting.views.GiftingActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.cwOrderRating.OrderRatingActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.ui.screens.scratchCard.ScratchCardActivity" android:theme="@style/QDTheme.ScratchCardTheme"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.eCard.ECardActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.stories.BStoriesActivity" android:theme="@style/QDTheme.Transparent" android:windowSoftInputMode="adjustNothing"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.pdp.PdpActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.grofers.quickdelivery.ui.screens.deleteAccount.DeleteAccountActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="true" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.ui.screens.print.BlinkitPrintActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar">
+            <intent-filter android:label="@string/print_external_sharing_text">
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/jpg"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+            <intent-filter android:label="@string/print_external_sharing_text">
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/jpeg"/>
+                <data android:mimeType="image/jpg"/>
+                <data android:mimeType="application/pdf"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="uiMode" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.common.custom.camera.main.BCameraActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:launchMode="singleTop" android:name="com.grofers.quickdelivery.ui.screens.pdpCarousal.PdpCarousalActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar"/>
+        <activity android:configChanges="uiMode" android:exported="false" android:name="com.blinkit.commonWidgetizedUiKit.ui.view.activity.CwActivity" android:screenOrientation="portrait" android:theme="@style/QDTheme.NoActionBar" android:windowSoftInputMode="adjustNothing"/>
+        <meta-data android:name="com.blinkit.downloader.notification_icon" android:resource="@drawable/ic_download"/>
+        <meta-data android:name="google_analytics_automatic_screen_reporting_enabled" android:value="false"/>
+        <provider android:authorities="com.grofers.customerapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="com.blinkit.monitoring.init.MonitoringInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.blinkit.analytics.core.init.AnalyticsInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="com.blinkit.base.utility.init.BaseUtilityInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <activity android:exported="true" android:name="com.grofers.analyticsnotifier.eventlist.activities.ActivityAnalyticsEventList" android:screenOrientation="portrait" android:taskAffinity="com.grofers.analyticsnotifier" android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.grofers.analyticsnotifier.eventdetail.activities.ActivityEventDetail" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
+        <activity android:name="com.zomato.chatsdk.activities.FeedbackActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme"/>
+        <activity android:name="com.zomato.chatsdk.activities.ChatSDKDeepLinkRouter" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme"/>
+        <activity android:name="com.zomato.chatsdk.activities.ChatSDKMainActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.zomato.chatsdk.activities.ExpandedImageActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme"/>
+        <activity android:name="com.zomato.chatsdk.activities.ChatSdkShareLocationActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.zomato.chatsdk.activities.CallbackActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.zomato.chatsdk.activities.NewTicketActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.zomato.chatsdk.activities.MediaShowcaseActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme"/>
+        <activity android:name="com.zomato.chatsdk.activities.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme"/>
+        <activity android:name="com.zomato.chatsdk.activities.ChatGenericListingActivity" android:screenOrientation="portrait" android:theme="@style/UnifiedChatSDKTheme" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.zomato.android.zmediakit.photos.photos.view.SelectMediaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.zomato.android.zmediakit.photos.photos.view.SelectAlbumActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.zomato.android.zmediakit.photos.photos.view.CameraActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.zomato.walletkit.wallet.ZWalletActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.zomato.walletkit.giftCard.balancePage.view.GiftCardBalanceActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.zomato.walletkit.giftCard.purchaseFlow.ui.PurchaseGiftCardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.zomato.walletkit.giftCard.purchaseFlow.ui.GiftCardLandingPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="com.zomato.walletkit.money.intro.ZomatoMoneyIntroPageActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity android:name="payments.zomato.paymentkit.banksv2.BankOptionsActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.topupwallet.view.TopUpWalletActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.upicollect.view.VPAVerificationActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.nativeotp.view.NativeOTPActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.common.PaymentsFragmentContainerActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.wallets.activity.WalletActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="payments.zomato.paymentkit.linkpaytm.LinkWalletActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="payments.zomato.paymentkit.webview.PaymentWebviewActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.verification.view.UPIVerificationActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="payments.zomato.paymentkit.verification.view.BankTransferVerificationActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar"/>
+        <activity android:name="payments.zomato.paymentkit.paymentszomato.view.PaymentsActivity" android:theme="@style/PaymentsThemeNoToolbarTranslucent"/>
+        <activity android:name="payments.zomato.paymentkit.cards.editcard.ZomatoRenameCardActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar"/>
+        <activity android:name="payments.zomato.paymentkit.cards.addcard.ZomatoAddCardActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar"/>
+        <activity android:name="payments.zomato.paymentkit.creditlinewallet.view.CreditLineWalletSignUpActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar"/>
+        <activity android:name="payments.zomato.paymentkit.promoforward.views.PromoPaymentMethodActivity" android:theme="@style/PaymentsThemeNoToolbarTranslucent"/>
+        <activity android:name="payments.zomato.paymentkit.retry.TransparentBottomSheetActivity" android:theme="@style/PaymentsThemeNoToolbarTranslucent"/>
+        <activity android:name="payments.zomato.paymentkit.adcbtouchpoints.view.ADCBTouchPointsActivity" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar"/>
+        <activity android:name="payments.zomato.paymentkit.paymentspagev5.ui.PaymentsOptionsActivityV5" android:screenOrientation="portrait" android:theme="@style/PaymentsAppBaseTheme.NoActionBar" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.zomato.android.zcommons.zStories.ZStoriesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.ZStories.Fullscreen"/>
+        <activity android:name="com.zomato.android.zcommons.genericForm.BaseGenericFormActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.zomato.android.zcommons.referralScratchCard.view.DetailedScratchCardActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeNoToolbarTranslucent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.zomato.android.zcommons.referralScratchCard.view.DetailedScratchCardActivityV2" android:screenOrientation="portrait" android:theme="@style/AppThemeNoToolbarTranslucent" android:windowSoftInputMode="stateHidden"/>
+        <activity android:launchMode="singleTop" android:name="com.zomato.android.zcommons.referralScratchCard.view.DetailedScratchCardActivityV3" android:screenOrientation="portrait" android:theme="@style/AppThemeNoToolbarTranslucent.ActivityTransition" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zomato.android.zcommons.genericlisting.view.GenericListingActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.zomato.android.zcommons.genericsnippetslist.GenericSuccessPage" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.zomato.android.zcommons.referralScratchCard.ReferralScratchCardActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.zomato.android.zcommons.referralScratchCard.ReferralScratchCardDetailActivity" android:theme="@style/TranslucentNoToolbarTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.zomato.android.zcommons.genericHeaderFragmentComponents.FeedingIndiaHomeActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.zomato.android.zcommons.webview.ui.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name="com.zomato.android.zcommons.webview.ui.ZPLWebViewActivity" android:screenOrientation="portrait" android:theme="@style/CalendarAppTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="uiMode" android:name="com.zomato.android.zcommons.fullPageAnimationActivity.FullPageAnimationActivity" android:screenOrientation="portrait" android:theme="@style/FullPageAnimationStyle"/>
+        <activity android:configChanges="uiMode" android:name="com.zomato.android.zcommons.themeReveal.ThemeSwitchActivity" android:screenOrientation="portrait" android:theme="@style/ThemeSwitchStyle"/>
+        <activity android:name="com.zomato.android.zcommons.faq.views.GenericFaqActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.amazon.apay.hardened.activity.APayBrowserActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat"/>
+        <activity android:exported="true" android:name="com.amazon.apay.hardened.activity.RedirectUriReceiverActivity">
+            <intent-filter>
+                <data android:host="amazonpay.amazon.in" android:path="/com.grofers.customerapp" android:scheme="amzn"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.perf.FirebasePerfRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <service android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.amp.CTBackgroundIntentService" android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.clevertap.BG_EVENT"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:exported="false" android:label="@string/places_autocomplete_label" android:name="com.google.android.libraries.places.widget.AutocompleteActivity" android:theme="@style/PlacesAutocompleteOverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:allowTaskReparenting="true" android:exported="true" android:launchMode="singleTask" android:name="com.amazon.identity.auth.device.workflow.WorkflowActivity" android:theme="@android:style/Theme.NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.grofers.customerapp" android:scheme="amzn"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <provider android:authorities="com.grofers.customerapp.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="4"/>
+    </application>
+</manifest>

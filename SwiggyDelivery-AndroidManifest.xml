@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" android:requiredSplitTypes="base__abi,base__density" android:splitTypes="" package="in.swiggy.deliveryapp" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <category android:name="android.intent.category.DEFAULT"/>
+            <data android:mimeType="vnd.android.cursor.dir/contact"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.SENDTO"/>
+            <data android:scheme="mailto"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN"/>
+        </intent>
+        <intent>
+            <action android:name="android.service.wallpaper.WallpaperService"/>
+        </intent>
+        <package android:name="us.zoom.videomeetings"/>
+        <package android:name="com.google.android.apps.tachyon"/>
+        <package android:name="com.cisco.webex.meetings"/>
+        <package android:name="com.microsoft.teams"/>
+        <package android:name="com.teamviewer.blizz.market"/>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.microsoft.rdc.androidx"/>
+        <package android:name="de.robv.android.xposed.installer"/>
+        <package android:name="com.saurik.substrate"/>
+        <package android:name="de.robv.android.xposed"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.android.vending"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.google.android.gm"/>
+        <package android:name="com.google.android.youtube"/>
+        <package android:name="com.google.android.apps.maps"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.jio.myjio"/>
+        <package android:name="com.myairtelapp"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.flipkart.android"/>
+        <package android:name="com.sbi.lotusintouch"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="com.ubercab"/>
+        <package android:name="virtual.camera.app"/>
+        <package android:name="multispace.multiapp.clone.app.pro"/>
+        <package android:name="multispace.multiapp.clone.app"/>
+        <package android:name="com.clone.android.dual.space"/>
+        <package android:name="com.box.app.virtual"/>
+        <package android:name="id.bureau.sdkdemo.debug"/>
+        <package android:name="id.bureau.sdkdemo"/>
+        <package android:name="id.bureau.deviceintelligence"/>
+                <package android:name="in.shadowfax.gandalf"/>
+        <package android:name="com.rapido.rider"/>
+        <package android:name="runner.dunzo.com.dunzo_runner"/>
+        <package android:name="com.ZeptoPartner.apps"/>
+        <package android:name="com.zomato.delivery"/>
+        <package android:name="com.olacabs.oladriver"/>
+        <package android:name="com.ubercab.driver"/>
+        <package android:name="app.blinkit.onboarding"/>
+        <package android:name="com.amazon.flex.rabbit"/>
+        <package android:name="com.ekartkiranaonboarding"/>
+        <package android:name="com.theporter.android.driverapp"/>
+        <package android:name="com.zepto.rider"/>
+        <package android:name="com.application.zomato"/>
+        <package android:name="com.rapido.passenger"/>
+        <package android:name="com.olacabs.customer"/>
+        <package android:name="in.amazon.mShop.android.shopping"/>
+        <package android:name="com.flipkart.android"/>
+        <package android:name="com.grofers.customerapp"/>
+        <package android:name="com.zeptoconsumerapp"/>
+        <package android:name="com.google.android.apps.nbu.paisa.user"/>
+        <package android:name="com.phonepe.app"/>
+        <package android:name="net.one97.paytm"/>
+        <package android:name="in.org.npci.upiapp"/>
+        <package android:name="com.dreamplug.androidapp"/>
+        <package android:name="com.facebook.katana"/>
+        <package android:name="com.instagram.android"/>
+        <package android:name="com.twitter.android"/>
+        <package android:name="com.snapchat.android"/>
+        <package android:name="com.linkedin.android"/>
+        <package android:name="org.telegram.messenger"/>
+        <package android:name="com.whatsapp"/>
+        <package android:name="com.netflix.mediaclient"/>
+        <package android:name="com.amazon.avod.thirdpartyclient"/>
+        <package android:name="in.startv.hotstar"/>
+        <package android:name="com.ludo.king"/>
+        <package android:name="com.pubg.imobile"/>
+        <package android:name="com.miniclip.eightballpool"/>
+        <package android:name="com.miniclip.carrom"/>
+        <package android:name="com.dream11.fantasy.cricket.football.kabaddi"/>
+        <package android:name="com.mpl.androidapp.cash"/>
+        <package android:name="com.zerodha.kite"/>
+        <package android:name="in.upstox.app"/>
+        <package android:name="com.msf.angelmobile"/>
+        <package android:name="com.nextbillion.groww"/>
+        <package android:name="com.citrus.citruspay"/>
+        <package android:name="com.kreditbee.android"/>
+        <package android:name="com.earlysalary.android"/>
+        <package android:name="com.gopaysense.android.boost"/>
+        <package android:name="com.mycash.moneytap.app"/>
+        <intent>
+            <action android:name="android.intent.action.TTS_SERVICE"/>
+        </intent>
+        <intent>
+            <action android:name="androidx.camera.extensions.action.VENDOR_ACTION"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:host="pay" android:scheme="upi"/>
+        </intent>
+        <package android:name="com.android.chrome"/>
+        <intent>
+            <action android:name="com.appsflyer.referrer.INSTALL_PROVIDER"/>
+        </intent>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START"/>
+        </intent>
+    </queries>
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tel"/>
+        </intent>
+    </queries>
+    <uses-feature android:name="android.software.webview"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_LOCATION"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-feature android:name="android.hardware.camera" android:required="true"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION"/>
+    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID"/>
+    <permission android:name="in.swiggy.deliveryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="in.swiggy.deliveryapp.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@xml/data_extraction_rules" android:extractNativeLibs="true" android:fullBackupContent="@xml/appsflyer_backup_rules" android:hardwareAccelerated="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:largeHeap="true" android:name="in.swiggy.deliveryapp.base.MainApplication" android:networkSecurityConfig="@xml/network_security_config" android:requestLegacyExternalStorage="true" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:exported="false" android:name="in.swiggy.deliveryapp.activity.camera.CameraActivity"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:exported="true" android:label="@string/app_name" android:launchMode="singleTask" android:name="in.swiggy.deliveryapp.activity.MainActivity" android:screenOrientation="portrait" android:theme="@style/SplashTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="swiggydelivery"/>
+            </intent-filter>
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="ride.swiggy.com" android:pathPattern=".*" android:scheme="https"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="ride.swiggy.com" android:pathPattern=".*" android:scheme="app"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.superdeapp.com" android:pathPattern=".*" android:scheme="http"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="www.superdeapp.com" android:pathPattern=".*" android:scheme="app"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity"/>
+        <activity android:label="Message Center" android:name="in.swiggy.deliveryapp.core.knowSDK.ui.KNNuggetActivity" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme"/>
+        <activity android:name="in.swiggy.deliveryapp.core.knowSDK.ui.KnowNuggetsActivity" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme"/>
+        <activity android:name="in.swiggy.deliveryapp.core.knowSDK.ui.KnowMainActivity" android:screenOrientation="portrait" android:theme="@style/ActionBarThemeKnow"/>
+        <activity android:name="in.swiggy.deliveryapp.core.knowSDK.ui.KnowHotlineFormView" android:screenOrientation="portrait" android:theme="@style/ActionBarTheme"/>
+        <activity android:launchMode="singleTop" android:name="in.swiggy.deliveryapp.core.rxpermissions.ShadowActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <meta-data android:name="CLEVERTAP_REGION" android:value="@string/CLEVERTAP_REGION"/>
+        <meta-data android:name="CLEVERTAP_NOTIFICATION_ICON" android:value="@string/CLEVERTAP_NOTIFICATION_ICON"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="@string/google_api_key"/>
+        <provider android:authorities="in.swiggy.deliveryapp.provider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/providers_path"/>
+        </provider>
+        <receiver android:exported="true" android:name="in.swiggy.deliveryapp.core.smslistener.SmsReceiver">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED"/>
+            </intent-filter>
+        </receiver>
+        <service android:foregroundServiceType="dataSync|location" android:name="in.swiggy.deliveryapp.core.services.DeliveryForegroundService"/>
+        <service android:exported="true" android:name="in.swiggy.deliveryapp.core.services.fcm.SwiggyFCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:foregroundServiceType="dataSync" android:name="in.swiggy.deliveryapp.core.services.quicklaunch.QuickLaunchService"/>
+        <service android:foregroundServiceType="dataSync" android:name="in.swiggy.deliveryapp.core.services.smartpn.SmartPNUIService"/>
+        <service android:foregroundServiceType="dataSync" android:name="in.swiggy.deliveryapp.core.services.smartpn.LegacySmartPNUIService"/>
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.sdk.pushnotification.CTPushNotificationReceiver"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:launchMode="singleTop" android:name="co.hyperverge.hyperkyc.ui.WorkflowLoadingActivity" android:screenOrientation="portrait" android:theme="@style/HKTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:exported="false" android:name="co.hyperverge.hyperkyc.ui.HKMainActivity" android:screenOrientation="portrait" android:theme="@style/HKTheme" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="co.hyperverge.hyperkyc.REQUEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="hk_preloaded_fonts" android:resource="@array/hk_preloaded_fonts"/>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.CaptchaDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <activity android:excludeFromRecents="true" android:name="com.shield.android.view.InternalBlockedDialog" android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar"/>
+        <service android:enabled="true" android:isolatedProcess="true" android:name="com.shield.android.service.ShieldIsolatedService" android:process=":shieldservice"/>
+        <activity android:exported="false" android:name="com.shield.android.ShieldInitializeActivity"/>
+        <provider android:authorities="in.swiggy.deliveryapp.bureaudevicecontentprovider" android:enabled="true" android:exported="false" android:initOrder="100" android:name="com.bureau.devicefingerprint.contentprovider.DeviceContentProvider"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVRetakeActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocsActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceInstructionActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVFaceActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVDocReviewActivity" android:screenOrientation="portrait" android:theme="@style/HSTheme"/>
+        <activity android:configChanges="colorMode|density|fontScale|fontWeightAdjustment|keyboard|keyboardHidden|layoutDirection|locale|orientation|screenLayout|screenSize|uiMode" android:name="co.hyperverge.hypersnapsdk.activities.HVQRScannerActivityInternal" android:theme="@style/HSTheme"/>
+        <meta-data android:name="com.google.android.gms.vision.DEPENDENCIES" android:value="barcode"/>
+        <service android:exported="false" android:name="co.hyperverge.hypersnapsdk.analytics.mixpanel.network.MixPanelIntentService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="face"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.components.ComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ktx.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.ktx.FirebaseConfigLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.ktx.FirebaseStorageLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.ktx.FirebaseDatabaseLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.ktx.FirebaseMessagingLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.ndk.CrashlyticsNdkRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.FirebaseCrashlyticsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.sessions.FirebaseSessionsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PTPushNotificationReceiver"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.clevertap.android.pushtemplates.PushTemplateReceiver"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.InAppNotificationActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboardHidden" android:name="com.clevertap.android.sdk.inbox.CTInboxActivity" android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+        <receiver android:exported="true" android:name="com.clevertap.android.sdk.pushnotification.fcm.CTFirebaseMessagingReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter android:priority="-1">
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="in.swiggy.deliveryapp.imagepickerprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.imagepicker.ImagePickerProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/imagepicker_provider_paths"/>
+        </provider>
+        <provider android:authorities="in.swiggy.deliveryapp.start.time.provider" android:exported="false" android:initOrder="200" android:name="com.oblador.performance.StartTimeProvider"/>
+        <provider android:authorities="in.swiggy.deliveryapp.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.reactnativecommunity.webview.RNCWebViewFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_provider_paths"/>
+        </provider>
+        <meta-data android:name="org.unimodules.core.AppLoader#react-native-headless" android:value="expo.modules.adapters.react.apploader.RNHeadlessAppLoader"/>
+        <meta-data android:name="com.facebook.soloader.enabled" android:value="true"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.clevertap.android.signedcall.ui.SCNotificationOpenedActivity" android:noHistory="true" android:taskAffinity="" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="false" android:name="com.clevertap.android.signedcall.services.JobSchedulerSocketService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.clevertap.android.signedcall.ui.SignedCallActivity" android:screenOrientation="portrait" android:theme="@style/SignedCallTheme">
+            <intent-filter>
+                <action android:name="android.bluetooth.device.action.ACL_CONNECTED"/>
+                <action android:name="android.bluetooth.device.action.ACL_DISCONNECTED"/>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED"/>
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.clevertap.android.signedcall.receivers.CallNotificationActionReceiver"/>
+        <receiver android:exported="false" android:name="com.clevertap.android.signedcall.receivers.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.clevertap.android.signedcall.receivers.PhoneStateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.clevertap.android.signedcall.fcm.foregroundService.FcmNotificationClickReceiver"/>
+        <service android:foregroundServiceType="microphone" android:name="com.clevertap.android.signedcall.services.CallNotificationService"/>
+        <service android:foregroundServiceType="microphone" android:name="com.clevertap.android.signedcall.fcm.FcmPushService"/>
+        <service android:name="com.clevertap.android.signedcall.services.SCTaskCleanupService" android:stopWithTask="false"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_foreground_service_default" android:exported="false" android:foregroundServiceType="dataSync" android:name="androidx.work.impl.foreground.SystemForegroundService"/>
+        <uses-library android:name="androidx.camera.extensions.impl" android:required="false"/>
+        <service android:enabled="false" android:exported="false" android:name="androidx.camera.core.impl.MetadataHolderService">
+            <meta-data android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER" android:value="androidx.camera.camera2.Camera2Config$DefaultProvider"/>
+        </service>
+        <provider android:authorities="in.swiggy.deliveryapp.cashfreecorecontentprovider" android:exported="false" android:name="com.cashfree.pg.api.CashfreeCoreContentProvider"/>
+        <meta-data android:name="cashfree_pg_core_auto_initialization_enabled" android:value="@bool/cashfree_pg_core_auto_initialize_enabled"/>
+        <meta-data android:name="cashfree_pg_core_reporting_enabled" android:value="@bool/cashfree_pg_core_reporting_enabled"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.ui.hidden.checkout.CashfreeNativeCheckoutActivity" android:screenOrientation="portrait" android:theme="@style/CFUITheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreUPIPaymentActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CashfreeCoreNativeVerificationActivity" android:screenOrientation="portrait" android:theme="@style/CFCoreTheme"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.cashfree.pg.core.api.ui.CFCoreModalActivity" android:theme="@style/CFCoreUPIStyle"/>
+        <meta-data android:name="cashfree_pg_logging_level" android:value="@integer/cashfree_pg_logging_level"/>
+        <meta-data android:name="cashfree_custom_analytics_subscriber_enabled" android:value="@bool/cashfree_custom_analytics_subscriber_enabled"/>
+        <provider android:authorities="in.swiggy.deliveryapp.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.work.WorkManagerInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"/>
+        <service android:directBootAware="false" android:enabled="@bool/enable_system_job_service_default" android:exported="true" android:name="androidx.work.impl.background.systemjob.SystemJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="false" android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"/>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED"/>
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_OKAY"/>
+                <action android:name="android.intent.action.BATTERY_LOW"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy">
+            <intent-filter>
+                <action android:name="android.intent.action.DEVICE_STORAGE_LOW"/>
+                <action android:name="android.intent.action.DEVICE_STORAGE_OK"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="false" android:exported="false" android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.TIME_SET"/>
+                <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="@bool/enable_system_alarm_service_default" android:exported="false" android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver">
+            <intent-filter>
+                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.GenericIdpActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="genericidp"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTask" android:name="com.google.firebase.auth.internal.RecaptchaActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="firebase.auth" android:path="/" android:scheme="recaptcha"/>
+            </intent-filter>
+        </activity>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService">
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.barcode.internal.BarcodeRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.face.internal.FaceRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+            <meta-data android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED" android:value="true"/>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="com.google.firebase.messaging.FirebaseMessagingService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="in.swiggy.deliveryapp.mlkitinitprovider" android:exported="false" android:initOrder="99" android:name="com.google.mlkit.common.internal.MlKitInitProvider"/>
+        <service android:enabled="true" android:exported="false" android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder">
+            <meta-data android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY" android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl"/>
+        </service>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize" android:enabled="true" android:exported="false" android:fitsSystemWindows="true" android:name="androidx.credentials.playservices.HiddenActivity" android:theme="@style/Theme.Hidden"/>
+        <activity android:excludeFromRecents="true" android:exported="false" android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <service android:exported="true" android:name="com.google.android.gms.auth.api.signin.RevocationBoundService" android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" android:visibleToInstantApps="true"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <property android:name="android.adservices.AD_SERVICES_CONFIG" android:resource="@xml/ga_ad_services_config"/>
+        <service android:enabled="true" android:exported="false" android:name="com.google.firebase.sessions.SessionLifecycleService"/>
+        <provider android:authorities="in.swiggy.deliveryapp.firebaseinitprovider" android:directBootAware="true" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="io.sentry.auto-init" android:value="false"/>
+        <provider android:authorities="in.swiggy.deliveryapp.SentryInitProvider" android:exported="false" android:name="io.sentry.android.core.SentryInitProvider"/>
+        <provider android:authorities="in.swiggy.deliveryapp.SentryPerformanceProvider" android:exported="false" android:initOrder="200" android:name="io.sentry.android.core.SentryPerformanceProvider"/>
+        <uses-library android:name="androidx.window.extensions" android:required="false"/>
+        <uses-library android:name="androidx.window.sidecar" android:required="false"/>
+        <uses-library android:name="android.ext.adservices" android:required="false"/>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="in.swiggy.deliveryapp.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery">
+            <meta-data android:name="backend:com.google.android.datatransport.cct.CctBackendFactory" android:value="cct"/>
+        </service>
+        <service android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService" android:permission="android.permission.BIND_JOB_SERVICE"/>
+        <receiver android:exported="false" android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.PdfRenderActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.attendance.AttendanceCameraActivity"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.activities.BlockingNuggetActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSOverlayActivity" android:screenOrientation="portrait" android:theme="@style/NoTitleDialogLMS"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:hardwareAccelerated="true" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSCardBaseActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSJourneyListActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LanguageSelectionActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:exported="false" android:name="com.loctoc.knownuggetssdk.lms.activities.LMSCourseModulesActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.SurveyNuggetActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.QuizNuggetActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.CarouselActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.loctoc.knownuggetssdk.activities.nugget.MediaNuggetActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:name="com.loctoc.knownuggetssdk.activities.nugget.YoutubeNuggetIFrameActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.TextNuggetActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.TextImageNuggetActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.loctoc.knownuggetssdk.activities.nugget.VideoNuggetActivity" android:theme="@style/KNAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:hardwareAccelerated="false" android:name="com.loctoc.knownuggetssdk.activities.nugget.VerticalVideoNuggetActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/title_activity_playlist" android:name="com.loctoc.knownuggetssdk.activities.nugget.PlaylistActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:launchMode="singleTask" android:name="com.loctoc.knownuggetssdk.ErrorActivity"/>
+        <service android:name="com.loctoc.knownuggetssdk.mediaUploadService.VideoUploadService"/>
+        <receiver android:exported="false" android:label="NetworkChangeReceiver" android:name="com.loctoc.knownuggetssdk.utils.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.VerticalNuggetActivity" android:screenOrientation="portrait" android:theme="@style/DarkStatusTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.course.CourseDetailActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.form.FormViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.sdkhelper.view.DeepLinkActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.form.FormPdfShareActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.form.ResponsesFormsListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.issue.IssueCloseActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.IssueActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.VideoPlayerActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.ShareActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.CarouselActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.userSearch.UserSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.pdfRenderActivity.PdfActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.NuggetActivity" android:screenOrientation="portrait" android:theme="@style/KNAppTheme"/>
+        <activity android:name="com.loctoc.knownuggetssdk.matisse.ui.MatisseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.imageAnnotation.ImageAnnotationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.barcode.BarCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.onboarding.OnBoardingTransitionActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.views.stories.views.StoriesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nuggetDetail.NuggetDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.activities.nugget.PDFNuggetActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.loctoc.knownuggetssdk.mediaPicker.MediaPickEmptyActivity"/>
+        <activity android:name="com.loctoc.knownuggetssdk.announcementsnew.socialfeed.SocialFeedDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="false" android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity" android:stateNotNeeded="true" android:theme="@style/Theme.PlayCore.Transparent"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.stamp.source" android:value="https://play.google.com/store"/>
+        <meta-data android:name="com.android.stamp.type" android:value="STAMP_TYPE_DISTRIBUTION_APK"/>
+        <meta-data android:name="com.android.vending.splits" android:resource="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="2"/>
+    </application>
+</manifest>
